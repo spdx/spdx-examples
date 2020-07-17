@@ -2,6 +2,15 @@
 
 ## Description
 
+```
+content
+├── build
+│   └── hello
+├── Makefile
+└── src
+    └── hello.c
+```
+
 One C source file with a simple "hello world" program, compiled into a single binary with no dependencies.
 (Assumed dependencies such as the operating system kernel, C standard library, etc. are not addressed here.)
 
