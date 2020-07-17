@@ -11,10 +11,10 @@ content
     └── hello.c
 ```
 
-One C source file with a simple "hello world" program, compiled into a single binary with no dependencies.
+One [C source file](content/src/hello.c) with a simple "hello world" program, compiled into a [single binary](content/build/hello) with no dependencies via a [Makefile](content/Makefile).
 (Assumed dependencies such as the operating system kernel, C standard library, etc. are not addressed here.)
 
-One SPDX document showing the Makefile, source file and binary, together as a single package.
+One [SPDX document](spdx/example1.spdx) showing the Makefile, source file and binary, together as a single package.
 
 This assumes of course that all three files are in fact being distributed together as a single package.
 
