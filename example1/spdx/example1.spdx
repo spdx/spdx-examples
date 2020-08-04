@@ -2,10 +2,11 @@ SPDXVersion: SPDX-2.2
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: hello
-DocumentNamespace: https://swinslow.net/spdx-examples/example1/hello-db1ccd8e96508c68fb92cf670a355035ceeba4fb-v1
+DocumentNamespace: https://swinslow.net/spdx-examples/example1/hello-v2
+Creator: Person: Steve Winslow (steve@swinslow.net)
 Creator: Tool: github.com/spdx/tools-golang/builder
 Creator: Tool: github.com/spdx/tools-golang/idsearcher
-Created: 2020-07-17T23:00:36Z
+Created: 2020-08-04T02:53:17Z
 
 ##### Package: hello
 
@@ -13,23 +14,13 @@ PackageName: hello
 SPDXID: SPDXRef-Package-hello
 PackageDownloadLocation: git@github.com:swinslow/spdx-examples.git#example1/content
 FilesAnalyzed: true
-PackageVerificationCode: db1ccd8e96508c68fb92cf670a355035ceeba4fb
+PackageVerificationCode: 9d20237bb72087e87069f96afb41c6ca2fa2a342
 PackageLicenseConcluded: GPL-3.0-or-later
 PackageLicenseInfoFromFiles: GPL-3.0-or-later
 PackageLicenseDeclared: GPL-3.0-or-later
 PackageCopyrightText: NOASSERTION
 
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-hello
-
-FileName: /Makefile
-SPDXID: SPDXRef-Makefile
-FileType: SOURCE
-FileChecksum: SHA1: ad4d70d0157ac99f6d50622738d0334d171d3ba5
-FileChecksum: SHA256: 72ba3da39a65668a320f13d2658d979ccd01ab429ffc7815d095ffe446743184
-FileChecksum: MD5: 31e1dee6ea25f12e5e695a61da34d9a4
-LicenseConcluded: GPL-3.0-or-later
-LicenseInfoInFile: GPL-3.0-or-later
-FileCopyrightText: NOASSERTION
 
 FileName: /build/hello
 SPDXID: SPDXRef-hello-binary
@@ -41,12 +32,22 @@ LicenseConcluded: GPL-3.0-or-later
 LicenseInfoInFile: NOASSERTION
 FileCopyrightText: NOASSERTION
 
+FileName: /src/Makefile
+SPDXID: SPDXRef-Makefile
+FileType: SOURCE
+FileChecksum: SHA1: 69a2e85696fff1865c3f0686d6c3824b59915c80
+FileChecksum: SHA256: 5da19033ba058e322e21c90e6d6d859c90b1b544e7840859c12cae5da005e79c
+FileChecksum: MD5: 559424589a4f3f75fd542810473d8bc1
+LicenseConcluded: GPL-3.0-or-later
+LicenseInfoInFile: GPL-3.0-or-later
+FileCopyrightText: NOASSERTION
+
 FileName: /src/hello.c
 SPDXID: SPDXRef-hello-src
 FileType: SOURCE
-FileChecksum: SHA1: cf35827dfd4c780ff852337dd818a37208f894bd
-FileChecksum: SHA256: 7747b929e065192be0663ee95413977291ee712ce9af0e8f0831a2b401d21920
-FileChecksum: MD5: edf8f5f90d1b7767703a88602528975e
+FileChecksum: SHA1: 20862a6d08391d07d09344029533ec644fac6b21
+FileChecksum: SHA256: b4e5ca56d1f9110ca94ed0bf4e6d9ac11c2186eb7cd95159c6fdb50e8db5a823
+FileChecksum: MD5: b4e5ca56d1f9110ca94ed0bf4e6d9ac11c2186eb7cd95159c6fdb50e8db5a823
 LicenseConcluded: GPL-3.0-or-later
 LicenseInfoInFile: GPL-3.0-or-later
 FileCopyrightText: Copyright Contributors to the spdx-examples project.
