@@ -6,12 +6,12 @@
 content
 ├── build
 │   └── hello
-├── Makefile
 └── src
+    ├── Makefile
     └── hello.c
 ```
 
-One [C source file](content/src/hello.c) with a simple "hello world" program, compiled into a [single binary](content/build/hello) with no dependencies via a [Makefile](content/Makefile).
+One [C source file](content/src/hello.c) with a simple "hello world" program, compiled into a [single binary](content/build/hello) with no dependencies via a [Makefile](content/src/Makefile).
 (Assumed dependencies such as the operating system kernel, C standard library, etc. are not addressed here.)
 
 One [SPDX document](spdx/example1.spdx) showing the Makefile, source file and binary, together as a single package.
