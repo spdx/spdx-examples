@@ -2,7 +2,7 @@ SPDXVersion: SPDX-2.2
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: hello-src
-DocumentNamespace: https://swinslow.net/spdx-examples/example2/hello-src-v1
+DocumentNamespace: https://swinslow.net/spdx-examples/example2/hello-src-v2
 Creator: Person: Steve Winslow (steve@swinslow.net)
 Creator: Tool: github.com/spdx/tools-golang/builder
 Creator: Tool: github.com/spdx/tools-golang/idsearcher
@@ -44,5 +44,5 @@ FileCopyrightText: Copyright Contributors to the spdx-examples project.
 
 ##### Relationships
 
-Relationship: SPDXRef-Makefile BUILD_TOOL_OF SPDXRef-Package-hello
+Relationship: SPDXRef-Makefile BUILD_TOOL_OF SPDXRef-Package-hello-src
 
