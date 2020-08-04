@@ -20,6 +20,7 @@ Each directory contains a Makefile which is used to create the build artifacts. 
 |  # | Sources | Binaries | SPDX | Comments |
 |----|---------|----------|------|----------|
 |  1 | 1 C file|compiled with gcc|1 document|source and binary treated as one package|
+|  2 | 1 C file|compiled with gcc|2 documents|source and binary in separate packages|
 
 ## Licenses
 
