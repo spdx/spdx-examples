@@ -21,6 +21,7 @@ Each directory contains a Makefile which is used to create the build artifacts. 
 |----|---------|----------|------|----------|
 |  1 | 1 C file|compiled with gcc|1 document|source and binary treated as one package|
 |  2 | 1 C file|compiled with gcc|2 documents|source and binary in separate packages|
+|  3 | 2 C files|compiled with gcc|2 documents|shared library, dynamically linked at runtime|
 
 ## Licenses
 
