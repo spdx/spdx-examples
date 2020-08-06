@@ -1,0 +1,58 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: main-src
+DocumentNamespace: https://swinslow.net/spdx-examples/example3/main-src-v1
+Creator: Person: Steve Winslow (steve@swinslow.net)
+Creator: Tool: github.com/spdx/tools-golang/builder
+Creator: Tool: github.com/spdx/tools-golang/idsearcher
+Created: 2020-08-06T02:08:28Z
+
+##### Package: main-src
+
+PackageName: main-src
+SPDXID: SPDXRef-Package-main-src
+PackageDownloadLocation: git@github.com:swinslow/spdx-examples.git#example3/content/src
+FilesAnalyzed: true
+PackageVerificationCode: 7f560718ca985c9334efbb56291e494df22ed97c
+PackageLicenseConcluded: GPL-3.0-or-later AND BSD-3-Clause
+PackageLicenseInfoFromFiles: BSD-3-Clause
+PackageLicenseInfoFromFiles: GPL-3.0-or-later
+PackageLicenseDeclared: GPL-3.0-or-later
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-main-src
+
+FileName: /Makefile
+SPDXID: SPDXRef-Makefile
+FileType: SOURCE
+FileChecksum: SHA1: a496da160a7d2dec3fef13d4cb1397d15269e367
+FileChecksum: SHA256: 4031bd733239f0fe89a5c3a4d1a62301b0ce4e654207afff8564a3d45e41f85e
+FileChecksum: MD5: ef4cccbe2ad9bbedc870848c5b711e4d
+LicenseConcluded: GPL-3.0-or-later
+LicenseInfoInFile: GPL-3.0-or-later
+FileCopyrightText: NOASSERTION
+
+FileName: /lib.c
+SPDXID: SPDXRef-lib-src
+FileType: SOURCE
+FileChecksum: SHA1: f66be0b05dc754a545be49f599a7ce2c41db2b1e
+FileChecksum: SHA256: c1d6c93251d8af86c9d354510c7c7735cfb012c1a96b8b90e22d3ec1d5a5fdb2
+FileChecksum: MD5: fbda409f6aec0504e600c57a392660c2
+LicenseConcluded: BSD-3-Clause
+LicenseInfoInFile: BSD-3-Clause
+FileCopyrightText: NOASSERTION
+
+FileName: /main.c
+SPDXID: SPDXRef-main-src
+FileType: SOURCE
+FileChecksum: SHA1: 9dfa5009f890dbd4bab5624a7fbf110de5b95a40
+FileChecksum: SHA256: dd089736525455d65c283d3698bc403d12acc04736c0bcbad5fc65c80a0e46d5
+FileChecksum: MD5: 74c1464f8122373151a4e032494045fe
+LicenseConcluded: GPL-3.0-or-later
+LicenseInfoInFile: GPL-3.0-or-later
+FileCopyrightText: NOASSERTION
+
+##### Relationships
+
+Relationship: SPDXRef-Makefile BUILD_TOOL_OF SPDXRef-Package-main-src
