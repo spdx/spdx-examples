@@ -1,0 +1,77 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: main-bin
+DocumentNamespace: https://swinslow.net/spdx-examples/example4/main-bin-v1
+ExternalDocumentRef: DocumentRef-main-src https://swinslow.net/spdx-examples/example4/main-src-v1 SHA256: d9d91af832fbc5d3c4fc789f923403fcef3fd776fa087ec6ab4b6bfe0704363c
+Creator: Person: Steve Winslow (steve@swinslow.net)
+Creator: Tool: github.com/spdx/tools-golang/builder
+Creator: Tool: github.com/spdx/tools-golang/idsearcher
+Created: 2020-08-06T20:36:28Z
+
+##### Package: main-bin
+
+PackageName: main-bin
+SPDXID: SPDXRef-Package-main-bin
+PackageDownloadLocation: git@github.com:swinslow/spdx-examples.git#example4/content/build
+FilesAnalyzed: true
+PackageVerificationCode: edbf31eb11b6b1698b7eec29bde0ea7040e0a9a4
+PackageLicenseConcluded: GPL-3.0-or-later AND BSD-3-Clause
+PackageLicenseInfoFromFiles: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-main-bin
+
+FileName: /lib.so
+SPDXID: SPDXRef-lib-binary
+FileType: BINARY
+FileChecksum: SHA1: 33a9d92b21d093a781025514179659173dd34ab0
+FileChecksum: SHA256: e00847f0d4d8c682caf802cd7ab9be64d023a7042ef6fa55b4e8242c55096c80
+FileChecksum: MD5: 347a72d986d3799ef73bc6eb8d8e96f8
+LicenseConcluded: BSD-3-Clause
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: /main
+SPDXID: SPDXRef-main-binary
+FileType: BINARY
+FileChecksum: SHA1: a9fc794448dfb3c968f2aac0cd40727b4c1fae3f
+FileChecksum: SHA256: 046057f8b5b87014900f74dc1605583b2f5cc0e4c4730a397e63f2f50006e2a8
+FileChecksum: MD5: 95b1b3cbfa03562f623213fe509f2285
+LicenseConcluded: GPL-3.0-or-later
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+##### Packages representing on-system shared/dynamic dependencies
+
+PackageName: libc
+SPDXID: SPDXRef-libc
+PackageFileName: libc.so.6
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+PackageName: libdl
+SPDXID: SPDXRef-libdl
+PackageFileName: libdl.so.2
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Relationships
+
+Relationship: SPDXRef-main-binary GENERATED_FROM DocumentRef-main-src:SPDXRef-main-src
+Relationship: SPDXRef-lib-binary GENERATED_FROM DocumentRef-main-src:SPDXRef-lib-src
+
+Relationship: SPDXRef-lib-binary RUNTIME_DEPENDENCY_OF SPDXRef-main-binary
+Relationship: SPDXRef-main-binary DYNAMIC_LINK SPDXRef-lib-binary
+
+Relationship: SPDXRef-libc RUNTIME_DEPENDENCY_OF SPDXRef-main-binary
+Relationship: SPDXRef-main-binary DYNAMIC_LINK SPDXRef-libc
+Relationship: SPDXRef-libdl RUNTIME_DEPENDENCY_OF SPDXRef-main-binary
+Relationship: SPDXRef-main-binary DYNAMIC_LINK SPDXRef-libdl
