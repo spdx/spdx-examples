@@ -23,6 +23,7 @@ Each directory contains a Makefile which is used to create the build artifacts. 
 |  2 | 1 C file|compiled with gcc|2 documents|source and binary in separate packages|
 |  3 | 2 C files|compiled with gcc|2 documents|shared library, dynamically linked at runtime|
 |  4 | 2 C files|compiled with gcc|2 documents|shared library, dynamically linked at runtime, including system libs|
+|  5 | 2 Go files|compiled with go|2 documents|source and binary in separate packages|
 
 ## Licenses
 
