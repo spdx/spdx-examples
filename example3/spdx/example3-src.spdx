@@ -2,17 +2,17 @@ SPDXVersion: SPDX-2.2
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: main-src
-DocumentNamespace: https://swinslow.net/spdx-examples/example3/main-src-v1
+DocumentNamespace: https://swinslow.net/spdx-examples/example3/main-src-v2
 Creator: Person: Steve Winslow (steve@swinslow.net)
 Creator: Tool: github.com/spdx/tools-golang/builder
 Creator: Tool: github.com/spdx/tools-golang/idsearcher
-Created: 2020-08-06T02:08:28Z
+Created: 2021-08-26T01:50:30Z
 
 ##### Package: main-src
 
 PackageName: main-src
 SPDXID: SPDXRef-Package-main-src
-PackageDownloadLocation: git@github.com:swinslow/spdx-examples.git#example3/content/src
+PackageDownloadLocation: git+https://github.com/swinslow/spdx-examples.git#example1/content/src
 FilesAnalyzed: true
 PackageVerificationCode: 7f560718ca985c9334efbb56291e494df22ed97c
 PackageLicenseConcluded: GPL-3.0-or-later AND BSD-3-Clause

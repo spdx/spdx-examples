@@ -2,17 +2,17 @@ SPDXVersion: SPDX-2.2
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: hello
-DocumentNamespace: https://swinslow.net/spdx-examples/example1/hello-v2
+DocumentNamespace: https://swinslow.net/spdx-examples/example1/hello-v3
 Creator: Person: Steve Winslow (steve@swinslow.net)
 Creator: Tool: github.com/spdx/tools-golang/builder
 Creator: Tool: github.com/spdx/tools-golang/idsearcher
-Created: 2020-08-04T02:53:17Z
+Created: 2021-08-26T01:46:00Z
 
 ##### Package: hello
 
 PackageName: hello
 SPDXID: SPDXRef-Package-hello
-PackageDownloadLocation: git@github.com:swinslow/spdx-examples.git#example1/content
+PackageDownloadLocation: git+https://github.com/swinslow/spdx-examples.git#example1/content
 FilesAnalyzed: true
 PackageVerificationCode: 9d20237bb72087e87069f96afb41c6ca2fa2a342
 PackageLicenseConcluded: GPL-3.0-or-later

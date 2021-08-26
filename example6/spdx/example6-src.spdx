@@ -2,17 +2,17 @@ SPDXVersion: SPDX-2.2
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: hello-go-src
-DocumentNamespace: https://swinslow.net/spdx-examples/example6/hello-go-src-v1
+DocumentNamespace: https://swinslow.net/spdx-examples/example6/hello-go-src-v2
 Creator: Person: Steve Winslow (steve@swinslow.net)
 Creator: Tool: github.com/spdx/tools-golang/builder
 Creator: Tool: github.com/spdx/tools-golang/idsearcher
-Created: 2020-11-24T01:12:27Z
+Created: 2021-08-26T01:55:30Z
 
 ##### Package: hello-go-src
 
 PackageName: hello-go-src
 SPDXID: SPDXRef-Package-hello-go-src
-PackageDownloadLocation: git@github.com:swinslow/spdx-examples.git#example6/content/src
+PackageDownloadLocation: git+https://github.com/swinslow/spdx-examples.git#example6/content/src
 FilesAnalyzed: true
 PackageVerificationCode: 6486e016b01e9ec8a76998cefd0705144d869234
 PackageLicenseConcluded: NOASSERTION

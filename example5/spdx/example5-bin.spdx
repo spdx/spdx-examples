@@ -2,18 +2,18 @@ SPDXVersion: SPDX-2.2
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: hello-go-bin
-DocumentNamespace: https://swinslow.net/spdx-examples/example5/hello-go-bin-v1
-ExternalDocumentRef:DocumentRef-hello-go-src https://swinslow.net/spdx-examples/example5/hello-go-src-v1 SHA256: acff381d46f2386d58eb5ad017e4309c7b21a754450f6daf56d6ae50812f687b
+DocumentNamespace: https://swinslow.net/spdx-examples/example5/hello-go-bin-v2
+ExternalDocumentRef:DocumentRef-hello-go-src https://swinslow.net/spdx-examples/example5/hello-go-src-v2 SHA1: c7ecde060983373ace6ff9cfd1ddc7ccd5ce5e29
 Creator: Person: Steve Winslow (steve@swinslow.net)
 Creator: Tool: github.com/spdx/tools-golang/builder
 Creator: Tool: github.com/spdx/tools-golang/idsearcher
-Created: 2020-11-24T00:26:39Z
+Created: 2021-08-26T01:54:00Z
 
 ##### Package: hello-go-bin
 
 PackageName: hello-go-bin
 SPDXID: SPDXRef-Package-hello-go-bin
-PackageDownloadLocation: git@github.com:swinslow/spdx-examples.git#example5/content/build
+PackageDownloadLocation: git+https://github.com/swinslow/spdx-examples.git#example5/content/build
 FilesAnalyzed: true
 PackageVerificationCode: 41acac4b846ee388cb6c1234f04489ccd5daa5a5
 PackageLicenseConcluded: GPL-3.0-or-later
