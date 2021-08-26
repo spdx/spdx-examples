@@ -2,18 +2,18 @@ SPDXVersion: SPDX-2.2
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: main-bin
-DocumentNamespace: https://swinslow.net/spdx-examples/example4/main-bin-v1
-ExternalDocumentRef: DocumentRef-main-src https://swinslow.net/spdx-examples/example4/main-src-v1 SHA256: d9d91af832fbc5d3c4fc789f923403fcef3fd776fa087ec6ab4b6bfe0704363c
+DocumentNamespace: https://swinslow.net/spdx-examples/example4/main-bin-v2
+ExternalDocumentRef: DocumentRef-main-src https://swinslow.net/spdx-examples/example4/main-src-v2 SHA1: 3a365c2d58103971a721c9ee18731d3e942e002f
 Creator: Person: Steve Winslow (steve@swinslow.net)
 Creator: Tool: github.com/spdx/tools-golang/builder
 Creator: Tool: github.com/spdx/tools-golang/idsearcher
-Created: 2020-08-06T20:36:28Z
+Created: 2021-08-26T01:51:30Z
 
 ##### Package: main-bin
 
 PackageName: main-bin
 SPDXID: SPDXRef-Package-main-bin
-PackageDownloadLocation: git@github.com:swinslow/spdx-examples.git#example4/content/build
+PackageDownloadLocation: git+https://github.com/swinslow/spdx-examples.git#example4/content/build
 FilesAnalyzed: true
 PackageVerificationCode: edbf31eb11b6b1698b7eec29bde0ea7040e0a9a4
 PackageLicenseConcluded: GPL-3.0-or-later AND BSD-3-Clause
