@@ -10,7 +10,7 @@ Each example directory is structured as follows:
 
 - `content/src/`: contains the example's source code
 - `content/build/`: contains the example's built artifacts
-- `spdx/`: contains one or more tag-value SPDX documents for the sources and the build artifacts
+- `spdx/`: contains one or more SPDX documents (in tag-value or JSON format) for the sources and the build artifacts
 - `README.md`: more details about the particular example
 
 Each directory contains a Makefile which is used to create the build artifacts. It assumes that the necessary tools (make, gcc, etc.) are present on your system, and doesn't do any autoconfiguration or the like. If somebody else wants to add that for greater build flexibility, they are welcome to do so, but that isn't really my goal here  :)
