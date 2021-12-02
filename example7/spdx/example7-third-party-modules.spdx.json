@@ -5,13 +5,11 @@
   "creationInfo": {
     "created": "2020-11-24T01:12:27Z",
     "creators": [
-      {
-        "Person": "Nisha K (nishak@vmware.com)"
-      }
+      "Person: Nisha K (nishak@vmware.com)"
     ]
   },
   "name": "hello-imports.spdx.json",
-  "documentNamespace": "https://swinslow.net/spdx-examples/example7/hello-imports",
+  "documentNamespace": "https://swinslow.net/spdx-examples/example7/hello-imports-c2d068df-67aa-4c68-98c8-100b450fc408",
   "documentDescribes": [
     "SPDXRef-go-module-golang.org/x/text",
     "SPDXRef-go-module-rsc.io/quote",

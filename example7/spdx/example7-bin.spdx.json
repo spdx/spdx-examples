@@ -5,9 +5,7 @@
   "creationInfo": {
     "created": "2020-11-24T01:12:27Z",
     "creators": [
-      {
-        "Person": "Nisha K (nishak@vmware.com)"
-      }
+      "Person: Nisha K (nishak@vmware.com)"
     ]
   },
   "name": "hello-go-binary.spdx.json",
@@ -17,7 +15,7 @@
       "externalDocumentId": "DocumentRef-hello-go-module",
       "checksum": {
         "algorithm": "SHA1",
-        "checksumValue": "d661f8f831a99c288a64e5843b4794ad5181224a"
+        "checksumValue": "11d7774ac38f40e009dcee453a760750aea75bbd"
       },
       "spdxDocument": "https://swinslow.net/spdx-examples/example7/hello-go-module-cfa0c58d-79db-4860-99b6-258477e4838b"
     },
@@ -25,7 +23,7 @@
       "externalDocumentId": "DocumentRef-golang-dist",
       "checksum": {
         "algorithm": "SHA1",
-        "checksumValue": "b6cf54a46329e7cc7610aa5d244018b80103d111"
+        "checksumValue": "fd1a82d7affd688cca8896211ca1a3f177214323"
       },
       "spdxDocument": "https://swinslow.net/spdx-examples/example7/golang-dist-492dfde4-318b-49f7-b48c-934bfafbde48"
     },
@@ -33,7 +31,7 @@
       "externalDocumentId": "DocumentRef-hello-imports",
       "checksum": {
         "algorithm": "SHA1",
-        "checksumValue": "14ff98203c3ddd2bd4803c00b5225d2551ca603c"
+        "checksumValue": "c8a2beb3405bfe9eed0076b0e237ff59f6c4188f"
       },
       "spdxDocument": "https://swinslow.net/spdx-examples/example7/hello-imports-c2d068df-67aa-4c68-98c8-100b450fc408"
     }

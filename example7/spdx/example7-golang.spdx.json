@@ -5,13 +5,11 @@
   "creationInfo": {
     "created": "2020-11-24T01:12:27Z",
     "creators": [
-      {
-        "Person": "Nisha K (nishak@vmware.com)"
-      }
+      "Person: Nisha K (nishak@vmware.com)"
     ]
   },
   "name": "golang-dist",
-  "documentNamespace": "https://swinslow.net/spdx-examples/example7/golang-dist",
+  "documentNamespace": "https://swinslow.net/spdx-examples/example7/golang-dist-492dfde4-318b-49f7-b48c-934bfafbde48",
   "documentDescribes": [
     "SPDXRef-golang-dist"
   ],
