@@ -5,13 +5,11 @@
   "creationInfo": {
     "created": "2020-11-24T01:12:27Z",
     "creators": [
-      {
-        "Person": "Nisha K (nishak@vmware.com)"
-      }
+      "Person: Nisha K (nishak@vmware.com)"
     ]
   },
   "name": "hello-go-module.spdx.json",
-  "documentNamespace": "https://swinslow.net/spdx-examples/example7/hello-go-module",
+  "documentNamespace": "https://swinslow.net/spdx-examples/example7/hello-go-module-cfa0c58d-79db-4860-99b6-258477e4838b",
   "documentDescribes": [
     "SPDXRef-go-module-example.com/hello"
   ],
