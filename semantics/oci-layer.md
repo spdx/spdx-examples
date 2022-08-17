@@ -1,4 +1,13 @@
-### Containers: Layer With Operating System Packages
+# Containers: Layer With Operating System Packages
+
+## Design Goals
+
+* Ensuring a layer is packaged by itself to allow reuse.
+* Separation from other images to enable adding data about
+OS packages and other lose files.
+
+## Structure Diagram
+
 
 ```mermaid
 classDiagram

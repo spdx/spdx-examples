@@ -1,5 +1,20 @@
 # Containers: MultiArch Image Index
 
+## Design Goals
+
+* Having an design through which an SBOM can represent the
+structure of a container image index.
+* Separation of single-arch images to allow referencing SBOMs
+for each or adding a detailed structure for them in the packages
+representing each image.
+* No registry or repository information to ensure the SBOM is
+portable across registries when images are copied around.
+* Data detailing metadata about the single arch images is packaged
+in the purl external reference.
+
+## Structure Diagram
+
+
 ```mermaid
 classDiagram
   direction LR

@@ -1,4 +1,22 @@
-### Containers: Container Image
+# Containers: Container Image
+
+## Design Goals
+
+* Separation of layers to ensure OS dependencies and app data can be
+appended to the approiate layer
+* Separation of layers to be able to reuse them, for example when
+describing images  sharing the same base image.
+* No registry or repository information in `PackageName` to ensure SBOM
+is portable as image is copied across registries.
+* Layer identification metadata encapsulated in purl external reference[^1]
+* Ensure tools can differentiate which packages represent the image layers
+from the packages representing both the source code of the image and the
+base images.
+[^1]: This design uses a proposed `os` field in the `oci` purl type which
+[has been proposed](https://github.com/package-url/purl-spec/pull/179) but
+still waiting to be merged.
+
+## Structure Diagram
 
 ```mermaid
 classDiagram
