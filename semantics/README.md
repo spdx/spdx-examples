@@ -1,9 +1,10 @@
-# SPDX Semantics Reference Archive
+# SPDX 2.x Semantics Reference Archive
 
 This directory holds a number of semantic structure designs representing
 different types of repositories, artifacts and other commonly used software.
+
 The goal of these designs is to act as a source of reference for tool makers to 
-ensure a unified structure in documents produced by SPDX tools.
+ensure a unified structure in documents produced by SPDX 2.x tools.
 
 ## Semantic Reference Designs
 
