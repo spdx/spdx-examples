@@ -21,7 +21,7 @@
       "SPDXID": "SPDXRef-golang-dist",
       "downloadLocation": "https://golang.org/dl/go1.16.4.linux-amd64.tar.gz",
       "packageVersion": "1.16.4",
-      "filesAnalyzed": "false",
+      "filesAnalyzed": false,
       "checksums": [
         {
           "algorithm": "SHA256",
@@ -37,7 +37,7 @@
       "SPDXID": "SPDXRef-go-compiler",
       "downloadLocation": "https://golang.org/dl/go1.16.4.linux-amd64.tar.gz",
       "packageVersion": "1.16.4",
-      "filesAnalyzed": "false",
+      "filesAnalyzed": false,
       "packageLicenseConcluded": "NOASSERTION",
       "packageLicenseDeclared": "NOASSERTION",
       "packageCopyrightText": "NOASSERTION"
