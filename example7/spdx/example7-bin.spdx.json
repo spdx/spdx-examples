@@ -46,7 +46,7 @@
       "packageName": "hello",
       "SPDXID": "SPDXRef-go-bin-hello",
       "downloadLocation": "git@github.com:swinslow/spdx-examples.git#example7/content/build/hello",
-      "filesAnalyzed": "false",
+      "filesAnalyzed": false,
       "packageLicenseConcluded": "NOASSERTION",
       "packageLicenseDeclared": "NOASSERTION",
       "packageCopyrightText": "NOASSERTION"

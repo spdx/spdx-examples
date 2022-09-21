@@ -22,7 +22,7 @@
       "packageName": "golang.org/x/text",
       "SPDXID": "SPDXRef-go-module-golang.org/x/text",
       "downloadLocation": "go://golang.org/x/text@v0.0.0-20170915032832-14c0d48ead0c",
-      "filesAnalyzed": "false",
+      "filesAnalyzed": false,
       "packageLicenseConcluded": "NOASSERTION",
       "packageLicenseDeclared": "NOASSERTION",
       "packageCopyrightText": "NOASSERTION"
@@ -31,7 +31,7 @@
       "packageName": "rsc.io/quote",
       "SPDXID": "SPDXRef-go-module-rsc.io/quote",
       "downloadLocation": "go://rsc.io/quote@v1.5.2",
-      "filesAnalyzed": "false",
+      "filesAnalyzed": false,
       "packageLicenseConcluded": "NOASSERTION",
       "packageLicenseDeclared": "NOASSERTION",
       "packageCopyrightText": "NOASSERTION"
@@ -40,7 +40,7 @@
       "packageName": "rsc.io/sampler",
       "SPDXID": "SPDXRef-go-module-rsc.io/sampler",
       "downloadLocation": "go://rsc.io/sampler@v1.3.0",
-      "filesAnalyzed": "false",
+      "filesAnalyzed": false,
       "packageLicenseConcluded": "NOASSERTION",
       "packageLicenseDeclared": "NOASSERTION",
       "packageCopyrightText": "NOASSERTION"
