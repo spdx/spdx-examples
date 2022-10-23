@@ -1,0 +1,332 @@
+{
+  "SPDXID" : "SPDXRef-DOCUMENT",
+  "spdxVersion" : "SPDX-2.2",
+  "creationInfo" : {
+    "comment" : "Created for SPDX DocFest Sept 2021",
+    "created" : "2021-09-02T13:46:32Z",
+    "creators" : [ "Person: Gary O'Neall", "Tool: Source Auditor Open Source Console" ],
+    "licenseListVersion" : "3.14"
+  },
+  "name" : "SpdxDoc for App-BOM-ination",
+  "dataLicense" : "CC0-1.0",
+  "hasExtractedLicensingInfos" : [ {
+    "licenseId" : "LicenseRef-1",
+    "extractedText" : "This file is licensed under the following license.\r\n \r\nFAUST, INC. PROPRIETARY LICENSE:\r\n\r\nFAUST, INC. grants you a non-exclusive right to use, modify, and distribute\r\nthe file provided that (a) you distribute all copies and/or modifications of\r\nthis file, whether in source or binary form, under the same license, and (b)\r\nyou hereby irrevocably transfer and assign the ownership of your soul to Faust, \r\nInc. In the event the fair market value of your soul is less than $100 US, you\r\nagree to compensate Faust, Inc. for the difference. \r\n\r\nCopyright (C) 2016 Faust Inc. All, and I mean ALL, rights are reserved.",
+    "name" : "Faust Proprietary Notice"
+  } ],
+  "documentNamespace" : "http://www.sourceauditor.com/spdxdocs/appbomination-src/e3b71037-57de-44c9-8b7f-4e8a62f45311",
+  "documentDescribes" : [ "SPDXRef-1" ],
+  "packages" : [ {
+    "SPDXID" : "SPDXRef-5",
+    "comment" : "Package info generated from Source Auditor package database",
+    "copyrightText" : "NOASSERTION",
+    "downloadLocation" : "NOASSERTION",
+    "filesAnalyzed" : false,
+    "homepage" : "https://gradle.org/",
+    "licenseConcluded" : "Apache-2.0",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Gradle"
+  }, {
+    "SPDXID" : "SPDXRef-1",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "498cebd51a4483d6e68c2fc62d27008252fa4f7b"
+    } ],
+    "copyrightText" : "Copyright (c) 2016 Faust, Inc.",
+    "description" : "A uniquely useless project with a cataclysmic software supply chain, to serve a test case for BOM solutions.",
+    "downloadLocation" : "https://github.com/act-project/App-BOM-ination/archive/refs/tags/1.0.zip",
+    "filesAnalyzed" : true,
+    "hasFiles" : [ "SPDXRef-7", "SPDXRef-10", "SPDXRef-2", "SPDXRef-3", "SPDXRef-4", "SPDXRef-6", "SPDXRef-9", "SPDXRef-11", "SPDXRef-12", "SPDXRef-14" ],
+    "homepage" : "https://github.com/act-project/App-BOM-ination",
+    "licenseComments" : "Faust proprietary notice was found in one or more source files.  LGPL-2.0-or-later OR WTFPL was in a build configuration file and does not apply to the concluded license.",
+    "licenseConcluded" : "(LicenseRef-1 AND Apache-2.0)",
+    "licenseDeclared" : "Apache-2.0",
+    "licenseInfoFromFiles" : [ "LicenseRef-1", "Apache-2.0", "(LGPL-2.0-or-later OR WTFPL)" ],
+    "name" : "App-BOM-ination",
+    "originator" : "Person: Yevester",
+    "packageFileName" : "App-BOM-ination-1.0.zip",
+    "packageVerificationCode" : {
+      "packageVerificationCodeValue" : "be2fb65c6b22b81f1b273442d70479a41a3093e7"
+    },
+    "sourceInfo" : "",
+    "summary" : "A uniquely useless project with a cataclysmic software supply chain, to serve a test case for BOM solutions.",
+    "supplier" : "Organization: ACT Project",
+    "versionInfo" : "1.0"
+  }, {
+    "SPDXID" : "SPDXRef-13",
+    "comment" : "Package info generated from Source Auditor package database",
+    "copyrightText" : "NOASSERTION",
+    "description" : "Files containing a Faust Proprietary Notice",
+    "downloadLocation" : "NOASSERTION",
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/act-project/App-BOM-ination/blob/master/src/main/java/com/github/appbomination/InsufficientKarmaException.java",
+    "licenseConcluded" : "LicenseRef-1",
+    "licenseDeclared" : "LicenseRef-1",
+    "name" : "Faust Proprietary File",
+    "summary" : "Files containing a Faust Proprietary Notice"
+  }, {
+    "SPDXID" : "SPDXRef-23",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "42a25dc3219429f0e5d060061f71acb49bf010a0"
+    } ],
+    "comment" : "Package info from Maven Central POM file",
+    "copyrightText" : "NOASSERTION",
+    "downloadLocation" : "https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE_MANAGER",
+      "referenceLocator" : "pkg:maven/org.hamcrest/hamcrest-core@1.3",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "licenseConcluded" : "BSD-3-Clause",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "hamcrest-core",
+    "packageFileName" : "hamcrest-core-1.3.jar",
+    "versionInfo" : "1.3"
+  }, {
+    "SPDXID" : "SPDXRef-21",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "5fe28b9518e58819180a43a850fbc0dd24b7c050"
+    } ],
+    "comment" : "Package info from Maven Central POM file",
+    "copyrightText" : "NOASSERTION",
+    "downloadLocation" : "https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE_MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.commons/commons-lang3@3.4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://commons.apache.org/proper/commons-lang/",
+    "licenseConcluded" : "Apache-2.0",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "commons-lang3",
+    "packageFileName" : "commons-lang3-3.4.jar",
+    "versionInfo" : "3.4"
+  }, {
+    "SPDXID" : "SPDXRef-22",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "4e6be5af63e3373b4f0cbc4c151c13e059151e00"
+    } ],
+    "comment" : "Package info from Maven Central POM file",
+    "copyrightText" : "NOASSERTION",
+    "downloadLocation" : "https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE_MANAGER",
+      "referenceLocator" : "pkg:maven/junit/junit@4.12",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://junit.org",
+    "licenseConcluded" : "EPL-1.0",
+    "licenseDeclared" : "EPL-1.0",
+    "name" : "junit",
+    "packageFileName" : "junit-4.12.jar",
+    "versionInfo" : "4.12"
+  }, {
+    "SPDXID" : "SPDXRef-20",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "466308a5554594190da5fe2c86b4a8e5037c37cc"
+    } ],
+    "comment" : "Package info from Maven Central POM file",
+    "copyrightText" : "NOASSERTION",
+    "downloadLocation" : "https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE_MANAGER",
+      "referenceLocator" : "pkg:maven/org.slf4j/slf4j-api@1.7.21",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://www.slf4j.org",
+    "licenseConcluded" : "Apache-2.0",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "slf4j-api",
+    "packageFileName" : "slf4j-api-1.7.21.jar",
+    "versionInfo" : "1.7.21"
+  } ],
+  "files" : [ {
+    "SPDXID" : "SPDXRef-7",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "92170cdc034b2ff819323ff670d3b7266c8bffcd"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./App-BOM-ination-1.0/LICENSE",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "Apache-2.0",
+    "licenseInfoInFiles" : [ "NOASSERTION" ],
+    "noticeText" : "NOASSERTION"
+  }, {
+    "SPDXID" : "SPDXRef-9",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "340e8b696bc50d76cf50df943dbaf46591da9ef4"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./App-BOM-ination-1.0/logo.png",
+    "fileTypes" : [ "BINARY" ],
+    "licenseConcluded" : "Apache-2.0",
+    "licenseInfoInFiles" : [ "NOASSERTION" ],
+    "noticeText" : "NOASSERTION"
+  }, {
+    "SPDXID" : "SPDXRef-3",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "67174de726d5caae455cd22e9c4450e9c490ac6b"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./App-BOM-ination-1.0/gradle/wrapper/gradle-wrapper.properties",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "(LicenseRef-1 AND Apache-2.0)",
+    "licenseInfoInFiles" : [ "NOASSERTION" ],
+    "noticeText" : "NOASSERTION"
+  }, {
+    "SPDXID" : "SPDXRef-4",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "b86a8c3bab5a3ed0441b3fe3b1f6b31ec1ead901"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./App-BOM-ination-1.0/gradlew",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "Apache-2.0",
+    "licenseInfoInFiles" : [ "NOASSERTION" ],
+    "noticeText" : "NOASSERTION"
+  }, {
+    "SPDXID" : "SPDXRef-6",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "d841ffc9855dcc642901e8abf28dee20b0485864"
+    } ],
+    "comment" : "BOMNOTE:File|",
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./App-BOM-ination-1.0/gradlew.bat",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "Apache-2.0",
+    "licenseInfoInFiles" : [ "NOASSERTION" ],
+    "noticeText" : "NOASSERTION"
+  }, {
+    "SPDXID" : "SPDXRef-2",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "9c55f0e3bd70363a02377f729d139a5d91325d40"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./App-BOM-ination-1.0/build.gradle",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "(LGPL-2.0-or-later OR WTFPL)",
+    "licenseInfoInFiles" : [ "NOASSERTION" ],
+    "noticeText" : "NOASSERTION"
+  }, {
+    "SPDXID" : "SPDXRef-14",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "2b7b936a3f185a53528724e4f4141030906963c2"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./App-BOM-ination-1.0/src/main/java/com/github/appbomination/Main.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseComments" : "Seen licenses generated by Source Auditor Scanner.  Results should be manually verified.",
+    "licenseConcluded" : "Apache-2.0",
+    "licenseInfoInFiles" : [ "Apache-2.0" ],
+    "noticeText" : "NOASSERTION"
+  }, {
+    "SPDXID" : "SPDXRef-12",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "fd668bc0096794e4d8125a29f9a746c0ab1edc57"
+    } ],
+    "comment" : "BOMNOTE:File|Matched Notice='Faust Proprietary Notice'|",
+    "copyrightText" : "Copyright Faust Inc. All, and I mean ALL, rights are reserved",
+    "fileName" : "./App-BOM-ination-1.0/src/main/java/com/github/appbomination/InsufficientKarmaException.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "LicenseRef-1",
+    "licenseInfoInFiles" : [ "NOASSERTION" ],
+    "noticeText" : "NOASSERTION"
+  }, {
+    "SPDXID" : "SPDXRef-10",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "15399fcbbe6f3ff84c82039d446d820ecbbc3ac6"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./App-BOM-ination-1.0/README.md",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "Apache-2.0",
+    "licenseInfoInFiles" : [ "NOASSERTION" ],
+    "noticeText" : "NOASSERTION"
+  }, {
+    "SPDXID" : "SPDXRef-11",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "1458a5c5fb1189d2cc8212052975f39ae710d622"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./App-BOM-ination-1.0/settings.gradle",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "Apache-2.0",
+    "licenseInfoInFiles" : [ "NOASSERTION" ],
+    "noticeText" : "NOASSERTION"
+  } ],
+  "relationships" : [ {
+    "spdxElementId" : "SPDXRef-DOCUMENT",
+    "relatedSpdxElement" : "SPDXRef-1",
+    "relationshipType" : "DESCRIBES"
+  }, {
+    "spdxElementId" : "SPDXRef-23",
+    "relatedSpdxElement" : "SPDXRef-22",
+    "relationshipType" : "DEPENDENCY_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-21",
+    "relatedSpdxElement" : "SPDXRef-1",
+    "relationshipType" : "DEPENDENCY_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-22",
+    "relatedSpdxElement" : "SPDXRef-1",
+    "relationshipType" : "TEST_DEPENDENCY_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-20",
+    "relatedSpdxElement" : "SPDXRef-1",
+    "relationshipType" : "DEPENDENCY_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-7",
+    "relatedSpdxElement" : "SPDXRef-1",
+    "relationshipType" : "CONTAINED_BY"
+  }, {
+    "spdxElementId" : "SPDXRef-9",
+    "relatedSpdxElement" : "SPDXRef-1",
+    "relationshipType" : "CONTAINED_BY"
+  }, {
+    "spdxElementId" : "SPDXRef-4",
+    "relatedSpdxElement" : "SPDXRef-5",
+    "relationshipType" : "CONTAINED_BY"
+  }, {
+    "spdxElementId" : "SPDXRef-6",
+    "relatedSpdxElement" : "SPDXRef-5",
+    "relationshipType" : "CONTAINED_BY"
+  }, {
+    "spdxElementId" : "SPDXRef-2",
+    "relatedSpdxElement" : "SPDXRef-1",
+    "relationshipType" : "METAFILE_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-14",
+    "relatedSpdxElement" : "SPDXRef-1",
+    "relationshipType" : "CONTAINED_BY"
+  }, {
+    "spdxElementId" : "SPDXRef-12",
+    "relatedSpdxElement" : "SPDXRef-13",
+    "relationshipType" : "CONTAINED_BY"
+  }, {
+    "spdxElementId" : "SPDXRef-10",
+    "relatedSpdxElement" : "SPDXRef-1",
+    "relationshipType" : "CONTAINED_BY"
+  }, {
+    "spdxElementId" : "SPDXRef-11",
+    "relatedSpdxElement" : "SPDXRef-1",
+    "relationshipType" : "CONTAINED_BY"
+  } ]
+}
