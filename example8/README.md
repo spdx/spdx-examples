@@ -1,4 +1,4 @@
-# Example 7
+# Example 8
 
 ## Description
 
@@ -7,13 +7,13 @@ content
 └── examplemaven
 	├── pom.xml
 	├── pom-with-spdx-plugin.xml
-    └── src
-		└── main
-			└── java
-				└── org
-					└── spdx
-						└── examplemaven
-							└── App.java
+	└── src
+	|	└── main
+	|		└── java
+	|			└── org
+	|				└── spdx
+	|					└── examplemaven
+	|						└── App.java
 	└── test
 		└── java
 			└── org
