@@ -1,0 +1,33 @@
+/*
+ * The AppBOMination build file.
+ * SPDX­License­Identifier: LGPL-2.0+ OR WTFPL
+ */
+
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "com.github.appbomination.Main"
+
+repositories {
+
+    jcenter()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+	// The production code uses the SLF4J logging API at compile time
+	compile 'org.slf4j:slf4j-api:1.7.21'
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+	// Let's add the famous Equifax vulnerability in here. Shame to exclude it.
+	compile group: 'org.apache.struts', name: 'struts2-core', version: '2.1.6'
+	// Also, let's add some GPL-ed MySQL JDBC connector (with Universal FOSS Exception)
+	compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'
+        // Shouldn't we also be vulnerable to CVE-2014-3612? I think we should.
+	compile group: 'org.apache.activemq', name: 'activemq-broker', version: '5.8.0'
+	// A vulnerability AND LGPL? Yes please!
+	compile group: 'org.hibernate', name: 'hibernate-validator', version: '5.2.0.Final'
+
+	testCompile 'junit:junit:4.12'
+}
+
