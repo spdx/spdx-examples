@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.spdx</groupId>
+  <artifactId>examplemaven</artifactId>
+  <version>0.0.1</version>
+  <packaging>jar</packaging>
+
+  <name>examplemaven</name>
+  <url>https://github.com/spdx/spdx-examples</url>
+  <description>This is a simple example Maven project created using the Maven quickstart archetype with one dependency added.</description>
+  <scm>
+  	<url>https://github.com/spdx/spdx-examples/</url>
+  	<connection>https://github.com/spdx/spdx-examples.git</connection>
+  </scm>
+  <issueManagement>
+  	<system>Github</system>
+  	<url>https://github.com/spdx/spdx-examples/issues</url>
+  </issueManagement>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>goneall</id>
+      <name>Gary O'Neall</name>
+      <email>gary@sourceauditor.com</email>
+      <organization>SPDX</organization>
+      <organizationUrl>http://spdx.org</organizationUrl>
+    </developer>
+  </developers>
+  <organization>
+    <name>SPDX</name>
+    <url>http://spdx.org</url>
+  </organization>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.logging.log4j</groupId>
+    	<artifactId>log4j-slf4j-impl</artifactId>
+    	<version>2.15.0</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.spdx</groupId>
+        <artifactId>spdx-maven-plugin</artifactId>
+        <version>0.6.2</version>
+        <executions>
+          <execution>
+            <id>build-spdx</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>createSPDX</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <spdxDocumentNamespace>http://spdx.org/documents/examplemaven-${project.version}</spdxDocumentNamespace>
+          <defaultFileCopyright>Copyright (c) 2020 Source Auditor Inc.</defaultFileCopyright>
+          <defaultFileContributors>
+            <param>Gary O'Neall</param>
+          </defaultFileContributors>
+          <defaultLicenseInformationInFile>Apache-2.0</defaultLicenseInformationInFile>
+          <defaultFileConcludedLicense>Apache-2.0</defaultFileConcludedLicense>
+          <defaultFileNotice>
+SPDX-License-Identifier: Apache-2.0
+Copyright (c) 2022 Source Auditor Inc.
+          </defaultFileNotice>
+          <licenseDeclared>Apache-2.0</licenseDeclared>
+          <licenseConcluded>Apache-2.0</licenseConcluded>
+          <copyrightText>Copyright (c) 2022 Source Auditor Inc.</copyrightText>
+          <creators>
+            <param>Person: Gary O'Neall</param>
+          </creators>
+          <originator>Organization: Linux Foundation</originator>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
