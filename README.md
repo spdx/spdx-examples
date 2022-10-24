@@ -27,6 +27,7 @@ Each directory contains a Makefile which is used to create the build artifacts. 
 |  6 | 1 Go file|compiled with go|3 documents|source and binary in separate packages, separate doc for standard libs|
 |  7 | 1 Go file|compiled with go|4 documents|JSON SPDX doc; source and binary in separate packages, separate docs for go tools and third-party module; thank you @nishakm!|
 |  8 | 2 Java files|generated from Maven|1 document|Simple Maven Java project with a minimal set of dependencies|
+|  9 | 2 Java files|generated from Gradle|1 document|a copy of the [App-BOM-ination SPDX example](https://github.com/yevster/App-BOM-ination) contributed by @yevster for the SPDX spec version 2.0 docfest|
 
 ## Licenses
 
