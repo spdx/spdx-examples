@@ -1,0 +1,128 @@
+{
+  "SPDXID": "SPDXRef-Document", 
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2022-10-28T17:24:21Z",
+    "creators": [
+      "Person: Nisha Kumar"
+    ],
+    "licenseListVersion": "3.18"
+  },
+  "name": "hello",
+  "dataLicense": "CC0-1.0",
+  "documentDescribes": [
+    "SPDXRef-hello-source"
+  ],
+  "documentNamespace": "https://github.com/spdx/spdx-examples/example10/spdx",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-hello-source",
+      "name": "hello",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Person: Nisha Kumar",
+      "licenseDeclared": "MIT",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "Copyright (c) 2022 Authors of Hello",
+      "homepage": "https://github.com/spdx/spdx-examples",
+      "filesAnalyzed": true,
+      "primaryPackagePurpose": "LIBRARY",
+      "hasFiles": [
+        "SPDXRef-hello-py",
+        "SPDXRef-hello-init",
+        "SPDXRef-hello-pyproject",
+        "SPDXRef-hello-license",
+        "SPDXRef-hello-readme"
+      ],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "2dce8a5d1c734df7a46b88e62a751b4b30063d78"
+      }
+    }
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-hello-py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c2ddb1bc9641d602a4cec707f9d3ea3d6bfd2687ed0e90e523802beb7f02ab4c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "810b63b67229d14e4687df80502d160a3545c852"
+        }
+      ],
+      "fileName": "hello.py",
+      "fileTypes": [
+        "SOURCE"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-hello-init",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        }
+      ],
+      "fileName": "__init__.py",
+      "fileTypes": [
+        "SOURCE"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-hello-pyproject",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "58f8786e67c5adbbdc2a7b70d0227785d295ae01e9d491e1bfda755043815fb0"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9a1ca5d00712aa9029172d50ab2bcf62784560b9"
+        }
+      ],
+      "fileName": "pyproject.toml",
+      "fileTypes": [
+        "SOURCE"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-hello-license",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "acb9c4a44e4e8cb9f332002d2a407932eea7d22496a74ac43f5eb53f9610f4b9"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8ec142b2c6bc7826d18075923b7d2c0cb4db0253"
+        }
+      ],
+      "fileName": "LICENSE",
+      "fileTypes": [
+        "TEXT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-hello-readme",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4d442a156f678a19c6728a2d9fcaebeff521e2665e1f58202856c627158dd511"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4fd366f723928905612bb8dcfb04aa5c7ad389fa"
+        }
+      ],
+      "fileName": "README.md",
+      "fileTypes": [
+        "DOCUMENTATION"
+      ]
+    }
+  ]
+}
