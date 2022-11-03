@@ -1,0 +1,152 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "SBOM-SPDX-2d85f548-12fa-46d5-87ce-5e78e5e111f4",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2022-11-03T07:10:10Z",
+    "creators": [
+      "Tool: sigs.k8s.io/bom/pkg/spdx"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://spdx.org/spdxdocs/k8s-releng-bom-7c6a33ab-bd76-4b06-b291-a850e0815b07",
+  "documentDescribes": [
+    "SPDXRef-Package-hello-server-src",
+    "SPDXRef-File-hello-server"
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-hello-server-src",
+      "name": "hello-server-src",
+      "versionInfo": "0.1.0",
+      "filesAnalyzed": false,
+      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/debian/libselinux1-dev@3.1-3?arch=s390x",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-cargo-hyper-0.14",
+      "name": "hyper",
+      "versionInfo": "0.14",
+      "filesAnalyzed": false,
+      "licenseDeclared": "NOASSERTION",
+      "licenseConcluded": "MIT",
+      "downloadLocation": "registry+https://github.com/rust-lang/crates.io-index",
+      "copyrightText": "NOASSERTION",
+      "checksums": [{
+        "algorithm" : "SHA256",
+        "checksumValue" : "02c929dc5c39e335a03c405292728118860721b10190d98c2a0f0efd5baafbac"
+      } ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:cargo/hyper@0.14",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-cargo-tokio-1",
+      "name": "tokio",
+      "versionInfo": "1.19.2",
+      "filesAnalyzed": false,
+      "licenseDeclared": "NOASSERTION",
+      "licenseConcluded": "MIT",
+      "downloadLocation": "registry+https://github.com/rust-lang/crates.io-index",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+         {
+          "algorithm" : "SHA256",
+          "checksumValue" : "c51a52ed6686dd62c320f9b89299e9dfb46f730c7a48e635c19f21d116cb1439498cebd51a4483d6e68c2fc62d27008252fa4f7b"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:cargo/tokio@1.19.2",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-cargo-pretty_env_logger-0.4.0",
+      "name": "pretty_env_logger",
+      "versionInfo": "0.4.0",
+      "filesAnalyzed": false,
+      "licenseDeclared": "NOASSERTION",
+      "licenseConcluded": "MIT OR Apache-2.0",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [{
+        "algorithm" : "SHA256",
+        "checksumValue" : "926d36b9553851b8b0005f1275891b392ee4d2d833852c417ed025477350fb9d"
+      }],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:cargo/pretty_env_logger@0.4.0",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-hello-server",
+      "fileName": "hello-server",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "79b7bfed022c9c7c9957d8aec36cb6492a25b42a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bd2195f2551328fa3ad870726f5591fd82fdc5dd33a359be79d356dbecd5868b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c61eeb0b489bb219b898c6d3044fc431dec58ad999dae2cf0a8067dd1b3e4eef2b186d0f8af63b4d80732aa5146f7b13b1feb7a454227cf26d4525874231a281"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-hello-server-src",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-cargo-pretty_env_logger-0.4.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-hello-server-src",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-cargo-tokio-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-hello-server-src",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-cargo-hyper-0.14"
+    },
+    {
+      "spdxElementId": "SPDXRef-File-hello-server",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-hello-server-src"
+    }
+  ]
+}

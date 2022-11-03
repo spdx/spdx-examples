@@ -19,15 +19,17 @@ Each directory contains a Makefile which is used to create the build artifacts. 
 
 |  # | Sources | Binaries | SPDX | Comments |
 |----|---------|----------|------|----------|
-|  1 | 1 C file|compiled with gcc|1 document|source and binary treated as one package|
-|  2 | 1 C file|compiled with gcc|2 documents|source and binary in separate packages|
-|  3 | 2 C files|compiled with gcc|2 documents|shared library, dynamically linked at runtime|
-|  4 | 2 C files|compiled with gcc|2 documents|shared library, dynamically linked at runtime, including system libs|
-|  5 | 1 Go file|compiled with go|2 documents|source and binary in separate packages|
-|  6 | 1 Go file|compiled with go|3 documents|source and binary in separate packages, separate doc for standard libs|
-|  7 | 1 Go file|compiled with go|4 documents|JSON SPDX doc; source and binary in separate packages, separate docs for go tools and third-party module; thank you @nishakm!|
-|  8 | 2 Java files|generated from Maven|1 document|Simple Maven Java project with a minimal set of dependencies|
-|  9 | 2 Java files|generated from Gradle|1 document|a copy of the [App-BOM-ination SPDX example](https://github.com/yevster/App-BOM-ination) contributed by @yevster for the SPDX spec version 2.0 docfest|
+|  1 | 1 C file | compiled with gcc | 1 document | source and binary treated as one package |
+|  2 | 1 C file | compiled with gcc | 2 documents | source and binary in separate packages |
+|  3 | 2 C files | compiled with gcc | 2 documents | shared library, dynamically linked at runtime |
+|  4 | 2 C files | compiled with gcc | 2 documents | shared library, dynamically linked at runtime, including system libs |
+|  5 | 1 Go file | compiled with go | 2 documents | source and binary in separate packages |
+|  6 | 1 Go file | compiled with go | 3 documents | source and binary in separate packages, separate doc for standard libs |
+|  7 | 1 Go file | compiled with go | 4 documents | JSON SPDX doc; source and binary in separate packages, separate docs for go tools and third-party module; thank you @nishakm! |
+|  8 | 2 Java files | generated from Maven | 1 document | Simple Maven Java project with a minimal set of dependencies |
+|  9 | 2 Java files | generated from Gradle | 1 document |a copy of the [App-BOM-ination SPDX example](https://github.com/yevster/App-BOM-ination) contributed by @yevster for the SPDX spec version 2.0 docfest |
+| 10 | 1 Python file | python package | 1 document | packaged using the [instructions from python.org](https://packaging.python.org/en/latest/tutorials/packaging-projects/) |
+| 11 | 1 Rust file | compiled with Cargo | 1 document | SBOM describing both source and artifact, related with GENERATED_FROM |
 
 ## Licenses
 
