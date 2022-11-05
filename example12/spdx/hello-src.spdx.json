@@ -1,0 +1,293 @@
+{
+  "files": [
+    {
+      "fileName": "./CHANGELOG.md",
+      "SPDXID": "SPDXRef-File--CHANGELOG.md-60D67ED18C1946A93A47B7D30FF010024C843A16",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "46e3278d9ad88f04bee1e3e8797f77e11833674d744647ac7d43954f7b2b199a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "60d67ed18c1946a93a47b7d30ff010024c843a16"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./Rakefile",
+      "SPDXID": "SPDXRef-File--Rakefile-7D82872A906A22904A3419329427B957EDF26E7F",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "37745cce994a91bda95e5ddabad0e2c4df489361c619826240d49f52d752c392"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7d82872a906a22904a3419329427b957edf26e7f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./README.md",
+      "SPDXID": "SPDXRef-File--README.md-F5A5B10F3E0FEEAB03D48E9D377692DAD9B7BD52",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5283a80567ec44c5cafc4434b8c15d59a261eb9faf14ec1d648f2f762840cfae"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f5a5b10f3e0feeab03d48e9d377692dad9b7bd52"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./lib/hello/version.rb",
+      "SPDXID": "SPDXRef-File--lib-hello-version.rb-B5BE44EF7A6F7F6DED5CC28EC27BD3CB9A67CCB2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "19dfdedc02d042051495e22c522446664235ffcff56d9d9ecc30c31b22a6815c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b5be44ef7a6f7f6ded5cc28ec27bd3cb9a67ccb2"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./lib/hello.rb",
+      "SPDXID": "SPDXRef-File--lib-hello.rb-F84D3A18EAF5AA1D343BE06A8C456B2E2A614D4C",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "87e1aa32dcc9b590ad37b0c51bbff0b90d992ac017b24190b1403479c73fe373"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f84d3a18eaf5aa1d343be06a8c456b2e2a614d4c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./sig/hello.rbs",
+      "SPDXID": "SPDXRef-File--sig-hello.rbs-F11ED3C48976FA5EFF33CEA9EEF89DC36DB3D68C",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "43be4a455dc8d2ae2844e1fd3ea7353d33c2411997dff8d3d4e8cc9377c6f5df"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f11ed3c48976fa5eff33cea9eef89dc36db3d68c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./LICENSE.txt",
+      "SPDXID": "SPDXRef-File--LICENSE.txt-42D586FD523FE822C198E99AF5866BC26BBA4EB5",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b6dc3c62c55aa27af79a6e9d0d33a033e8ac4a50c8574aa18dbbfb75de2322ae"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "42d586fd523fe822c198e99af5866bc26bba4eb5"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./bin/setup",
+      "SPDXID": "SPDXRef-File--bin-setup-38AE71152A2D22A6B6418E0ADD993DF2268CCE81",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e201190bc24e9f00849b3efa5fbaece2cbf069703232e50c7fa15d41c47f2ead"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "38ae71152a2d22a6b6418e0add993df2268cce81"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./Gemfile",
+      "SPDXID": "SPDXRef-File--Gemfile-D95216A381538DE969C759A32A427D8EB437E532",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bb1f875a243678ad0267c354424efaedab526a159576b2c2f20fb12527b39ba4"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d95216a381538de969c759a32a427d8eb437e532"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./hello.gemspec",
+      "SPDXID": "SPDXRef-File--hello.gemspec-7FD905D8BA81BEB7E4194BDEF067E68620C42A91",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e55578b18df9ac77fab26e36ae165ff1e4b5d498e1005880f570739d206cbfef"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7fd905d8ba81beb7e4194bdef067e68620c42a91"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./bin/console",
+      "SPDXID": "SPDXRef-File--bin-console-BCED536ADBE99BDE1B1D0D0039F57BA83F10D727",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1034271790dc61a4a4c444dfb05c77cb1f01a1f1622f9f6ada3d4034645947c9"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bced536adbe99bde1b1d0d0039f57ba83f10d727"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./Gemfile.lock",
+      "SPDXID": "SPDXRef-File--Gemfile.lock-DD14EBD399202141553C772590FE3977CE39F36C",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dca446f7e4e73589403ecfc03515c75dd3853711dbfb809f6d53f99ba3d13be1"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dd14ebd399202141553c772590fe3977ce39f36c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "packages": [
+    {
+      "name": "hello",
+      "SPDXID": "SPDXRef-RootPackage",
+      "downloadLocation": "NOASSERTION",
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "87568b828a4fd64624024c6ab26009fe9ece46e2"
+      },
+      "filesAnalyzed": true,
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "0.0.1",
+      "supplier": "Organization: DocFest",
+      "hasFiles": [
+        "SPDXRef-File--Gemfile.lock-DD14EBD399202141553C772590FE3977CE39F36C",
+        "SPDXRef-File--Gemfile-D95216A381538DE969C759A32A427D8EB437E532",
+        "SPDXRef-File--sig-hello.rbs-F11ED3C48976FA5EFF33CEA9EEF89DC36DB3D68C",
+        "SPDXRef-File--CHANGELOG.md-60D67ED18C1946A93A47B7D30FF010024C843A16",
+        "SPDXRef-File--LICENSE.txt-42D586FD523FE822C198E99AF5866BC26BBA4EB5",
+        "SPDXRef-File--bin-setup-38AE71152A2D22A6B6418E0ADD993DF2268CCE81",
+        "SPDXRef-File--lib-hello-version.rb-B5BE44EF7A6F7F6DED5CC28EC27BD3CB9A67CCB2",
+        "SPDXRef-File--Rakefile-7D82872A906A22904A3419329427B957EDF26E7F",
+        "SPDXRef-File--bin-console-BCED536ADBE99BDE1B1D0D0039F57BA83F10D727",
+        "SPDXRef-File--hello.gemspec-7FD905D8BA81BEB7E4194BDEF067E68620C42A91",
+        "SPDXRef-File--lib-hello.rb-F84D3A18EAF5AA1D343BE06A8C456B2E2A614D4C",
+        "SPDXRef-File--README.md-F5A5B10F3E0FEEAB03D48E9D377692DAD9B7BD52"
+      ]
+    }
+  ],
+  "externalDocumentRefs": [],
+  "relationships": [
+    {
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-RootPackage",
+      "spdxElementId": "SPDXRef-DOCUMENT"
+    },
+    {
+      "relationshipType": "DOCUMENTATION_OF",
+      "relatedSpdxElement": "SPDXRef-RootPackage",
+      "spdxElementId": "SPDXRef-File--CHANGELOG.md-60D67ED18C1946A93A47B7D30FF010024C843A16"
+    }
+  ],
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "hello 0.0.1",
+  "documentNamespace": "https://swinslow.net/spdx-examples/example11/hello/hello/0.0.1/csf4PsHt3k6fM6HJmv4tGQ",
+  "creationInfo": {
+    "created": "2022-11-04T11:11:52Z",
+    "creators": [
+      "Organization: DocFest",
+      "Tool: Microsoft.SBOMTool-0.2.7"
+    ]
+  },
+  "documentDescribes": [
+    "SPDXRef-RootPackage"
+  ]
+}

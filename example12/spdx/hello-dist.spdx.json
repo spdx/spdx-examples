@@ -1,0 +1,68 @@
+{
+  "files": [
+    {
+      "fileName": "./hello-0.0.1.tar.gz",
+      "SPDXID": "SPDXRef-File--hello-0.0.1.tar.gz-0BE4586C7DBCB2081AB136BDAFF7362530E5D364",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3e11868522b3c014cd7ef27b8472c19cf6911e6faa222b3aa7179b167d4c0b0b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0be4586c7dbcb2081ab136bdaff7362530e5d364"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "packages": [
+    {
+      "name": "hello",
+      "SPDXID": "SPDXRef-RootPackage",
+      "downloadLocation": "NOASSERTION",
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "b305e250fb019ba01deb27ccbd255fafe5a8d988"
+      },
+      "filesAnalyzed": true,
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "0.0.1",
+      "supplier": "Organization: DocFest",
+      "hasFiles": [
+        "SPDXRef-File--hello-0.0.1.tar.gz-0BE4586C7DBCB2081AB136BDAFF7362530E5D364"
+      ]
+    }
+  ],
+  "externalDocumentRefs": [],
+  "relationships": [
+    {
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-RootPackage",
+      "spdxElementId": "SPDXRef-DOCUMENT"
+    }
+  ],
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "hello 0.0.1",
+  "documentNamespace": "https://swinslow.net/spdx-examples/example11/hello/hello/0.0.1/q7S1LJe0Tke-HnphZSB1MQ",
+  "creationInfo": {
+    "created": "2022-11-04T11:13:29Z",
+    "creators": [
+      "Organization: DocFest",
+      "Tool: Microsoft.SBOMTool-0.2.7"
+    ]
+  },
+  "documentDescribes": [
+    "SPDXRef-RootPackage"
+  ]
+}
