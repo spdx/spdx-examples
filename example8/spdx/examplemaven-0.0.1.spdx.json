@@ -8,7 +8,7 @@
   },
   "name" : "examplemaven",
   "dataLicense" : "CC0-1.0",
-  "documentDescribes" : [ "SPDXREf-example" ],
+  "documentDescribes" : [ "SPDXRef-example" ],
   "documentNamespace" : "http://spdx.org/documents/examplemaven-0.0.1",
   "packages" : [ {
     "SPDXID" : "SPDXRef-junit",
@@ -20,11 +20,11 @@
     "licenseConcluded" : "NOASSERTION",
     "licenseDeclared" : "CPL-1.0",
     "name" : "JUnit",
-    "originator" : "Organization:JUnit",
+    "originator" : "Organization: JUnit",
     "summary" : "JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.",
     "versionInfo" : "3.8.1"
   }, {
-    "SPDXID" : "SPDXREf-log4jslf4jbinding",
+    "SPDXID" : "SPDXRef-log4jslf4jbinding",
     "copyrightText" : "UNSPECIFIED",
     "description" : "The Apache Log4j SLF4J API binding to Log4j 2 Core",
     "downloadLocation" : "NOASSERTION",
@@ -34,7 +34,7 @@
     "name" : "Apache Log4j SLF4J Binding",
     "summary" : "The Apache Log4j SLF4J API binding to Log4j 2 Core"
   }, {
-    "SPDXID" : "SPDXREf-log4jslf4jApi",
+    "SPDXID" : "SPDXRef-log4jslf4jApi",
     "copyrightText" : "UNSPECIFIED",
     "description" : "The slf4j API",
     "downloadLocation" : "NOASSERTION",
@@ -45,7 +45,7 @@
     "name" : "SLF4J API Module",
     "summary" : "The slf4j API"
   }, {
-    "SPDXID" : "SPDXREf-log4jApi",
+    "SPDXID" : "SPDXRef-log4jApi",
     "copyrightText" : "UNSPECIFIED",
     "description" : "The Apache Log4j API",
     "downloadLocation" : "NOASSERTION",
@@ -55,7 +55,7 @@
     "name" : "Apache Log4j API",
     "summary" : "The Apache Log4j API"
   }, {
-    "SPDXID" : "SPDXREf-log4jImpl",
+    "SPDXID" : "SPDXRef-log4jImpl",
     "copyrightText" : "UNSPECIFIED",
     "description" : "The Apache Log4j Implementation",
     "downloadLocation" : "NOASSERTION",
@@ -65,7 +65,7 @@
     "name" : "Apache Log4j Core",
     "summary" : "The Apache Log4j Implementation"
   }, {
-    "SPDXID" : "SPDXREf-example",
+    "SPDXID" : "SPDXRef-example",
     "checksums" : [ {
       "algorithm" : "SHA1",
       "checksumValue" : "b8a7e6c75001e6d78625cfc9a3103bf121abf8b4"
@@ -85,13 +85,13 @@
       "packageVerificationCodeValue" : "c12417def36d7804096521de4280721e5863e68b"
     },
     "primaryPackagePurpose" : "LIBRARY",
-    "hasFiles" : [ "SPDXREf-appsource", "SPDXREf-apptest" ],
+    "hasFiles" : [ "SPDXRef-appsource", "SPDXRef-apptest" ],
     "summary" : "This is a simple example Maven project created using the Maven quickstart archetype with one dependency added.",
     "supplier" : "Organization: SPDX",
     "versionInfo" : "0.0.1"
   } ],
   "files" : [ {
-    "SPDXID" : "SPDXREf-appsource",
+    "SPDXID" : "SPDXRef-appsource",
     "checksums" : [ {
       "algorithm" : "SHA1",
       "checksumValue" : "a6f47dbc7e4615058490055172fe0065c55f8fc5"
@@ -105,7 +105,7 @@
     "licenseInfoInFiles" : [ "Apache-2.0" ],
     "noticeText" : "SPDX-License-Identifier: Apache-2.0\nCopyright (c) 2022 Source Auditor Inc."
   }, {
-    "SPDXID" : "SPDXREf-apptest",
+    "SPDXID" : "SPDXRef-apptest",
     "checksums" : [ {
       "algorithm" : "SHA1",
       "checksumValue" : "4b4df52d36588c8e9482d56eebc42336447f3dad"
@@ -122,37 +122,37 @@
   "relationships" : [ {
     "spdxElementId" : "SPDXRef-junit",
     "relationshipType" : "TEST_DEPENDENCY_OF",
-    "relatedSpdxElement" : "SPDXREf-example",
+    "relatedSpdxElement" : "SPDXRef-example",
     "comment" : "Relationship created based on Maven POM information"
   }, {
-    "spdxElementId" : "SPDXREf-example",
+    "spdxElementId" : "SPDXRef-example",
     "relationshipType" : "DYNAMIC_LINK",
-    "relatedSpdxElement" : "SPDXREf-log4jslf4jbinding",
+    "relatedSpdxElement" : "SPDXRef-log4jslf4jbinding",
     "comment" : "Relationship based on Maven POM file dependency information"
   }, {
-    "spdxElementId" : "SPDXREf-example",
+    "spdxElementId" : "SPDXRef-example",
     "relationshipType" : "DYNAMIC_LINK",
-    "relatedSpdxElement" : "SPDXREf-log4jslf4jApi",
+    "relatedSpdxElement" : "SPDXRef-log4jslf4jApi",
     "comment" : "Relationship based on Maven POM file dependency information"
   }, {
-    "spdxElementId" : "SPDXREf-example",
+    "spdxElementId" : "SPDXRef-example",
     "relationshipType" : "DYNAMIC_LINK",
-    "relatedSpdxElement" : "SPDXREf-log4jApi",
+    "relatedSpdxElement" : "SPDXRef-log4jApi",
     "comment" : "Relationship based on Maven POM file dependency information"
   }, {
-    "spdxElementId" : "SPDXREf-example",
+    "spdxElementId" : "SPDXRef-example",
     "relationshipType" : "DYNAMIC_LINK",
-    "relatedSpdxElement" : "SPDXREf-log4jImpl",
+    "relatedSpdxElement" : "SPDXRef-log4jImpl",
     "comment" : "Relationship based on Maven POM file dependency information"
   }, {
-    "spdxElementId" : "SPDXREf-appsource",
+    "spdxElementId" : "SPDXRef-appsource",
     "relationshipType" : "GENERATES",
-    "relatedSpdxElement" : "SPDXREf-example",
+    "relatedSpdxElement" : "SPDXRef-example",
     "comment" : ""
   }, {
-    "spdxElementId" : "SPDXREf-apptest",
+    "spdxElementId" : "SPDXRef-apptest",
     "relationshipType" : "TEST_CASE_OF",
-    "relatedSpdxElement" : "SPDXREf-example",
+    "relatedSpdxElement" : "SPDXRef-example",
     "comment" : ""
   } ]
 }
