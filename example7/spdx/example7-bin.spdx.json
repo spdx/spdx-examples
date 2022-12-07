@@ -15,7 +15,7 @@
       "externalDocumentId": "DocumentRef-hello-go-module",
       "checksum": {
         "algorithm": "SHA1",
-        "checksumValue": "11d7774ac38f40e009dcee453a760750aea75bbd"
+        "checksumValue": "0d81fd1366563fcd47c506fc26df47f5b63187c3"
       },
       "spdxDocument": "https://swinslow.net/spdx-examples/example7/hello-go-module-cfa0c58d-79db-4860-99b6-258477e4838b"
     },
@@ -23,7 +23,7 @@
       "externalDocumentId": "DocumentRef-golang-dist",
       "checksum": {
         "algorithm": "SHA1",
-        "checksumValue": "fd1a82d7affd688cca8896211ca1a3f177214323"
+        "checksumValue": "05cad37dc3aff07b1852e3642f68de457b0806b5"
       },
       "spdxDocument": "https://swinslow.net/spdx-examples/example7/golang-dist-492dfde4-318b-49f7-b48c-934bfafbde48"
     },
@@ -31,7 +31,7 @@
       "externalDocumentId": "DocumentRef-hello-imports",
       "checksum": {
         "algorithm": "SHA1",
-        "checksumValue": "c8a2beb3405bfe9eed0076b0e237ff59f6c4188f"
+        "checksumValue": "018ca697ea33f6e50b8056e2e8f11ae7197b11d3"
       },
       "spdxDocument": "https://swinslow.net/spdx-examples/example7/hello-imports-c2d068df-67aa-4c68-98c8-100b450fc408"
     }
@@ -41,19 +41,19 @@
   ],
   "packages": [
     {
-      "packageName": "hello",
+      "name": "hello",
       "SPDXID": "SPDXRef-go-bin-hello",
-      "downloadLocation": "git@github.com:swinslow/spdx-examples.git#example7/content/build/hello",
+      "downloadLocation": "git://git@github.com:swinslow/spdx-examples.git#example7/content/build/hello",
       "filesAnalyzed": false,
-      "packageLicenseConcluded": "NOASSERTION",
-      "packageLicenseDeclared": "NOASSERTION",
-      "packageCopyrightText": "NOASSERTION"
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
     }
   ],
   "relationships": [
     {
-      "spdxElementId": "DocumentRef-golang-dist",
-      "relatedSpdxElement": "DocumentRef-hello-go-module",
+      "spdxElementId": "DocumentRef-golang-dist:SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "DocumentRef-hello-go-module:SPDXRef-DOCUMENT",
       "relationshipType": "BUILD_TOOL_OF"
     },
     {
@@ -62,7 +62,7 @@
       "relationshipType": "GENERATES"
     },
     {
-      "spdxElementId": "DocumentRef-hello-imports",
+      "spdxElementId": "DocumentRef-hello-imports:SPDXRef-DOCUMENT",
       "relatedSpdxElement": "SPDXRef-go-bin-hello",
       "relationshipType": "STATIC_LINK"
     }

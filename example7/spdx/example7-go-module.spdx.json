@@ -15,13 +15,13 @@
   ],
   "packages": [
     {
-      "packageName": "example.com/hello",
-      "SPDXID": "SPDXRef-go-module-example.com/hello",
-      "downloadLocation": "git@github.com:swinslow/spdx-examples.git#example7/content/src/hello",
+      "name": "example.com/hello",
+      "SPDXID": "SPDXRef-go-module-example.com-hello",
+      "downloadLocation": "git://git@github.com:swinslow/spdx-examples.git#example7/content/src/hello",
       "filesAnalyzed": false,
-      "packageLicenseConcluded": "NOASSERTION",
-      "packageLicenseDeclared": "NOASSERTION",
-      "packageCopyrightText": "NOASSERTION"
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
     }
   ]
 }
