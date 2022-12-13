@@ -40,7 +40,7 @@
       "filesAnalyzed": false,
       "licenseDeclared": "NOASSERTION",
       "licenseConcluded": "MIT",
-      "downloadLocation": "registry+https://github.com/rust-lang/crates.io-index",
+      "downloadLocation": "https://github.com/rust-lang/crates.io-index",
       "copyrightText": "NOASSERTION",
       "checksums": [{
         "algorithm" : "SHA256",
@@ -61,7 +61,7 @@
       "filesAnalyzed": false,
       "licenseDeclared": "NOASSERTION",
       "licenseConcluded": "MIT",
-      "downloadLocation": "registry+https://github.com/rust-lang/crates.io-index",
+      "downloadLocation": "https://github.com/rust-lang/crates.io-index",
       "copyrightText": "NOASSERTION",
       "checksums": [
          {
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Package-SPDXRef-Package-cargo-pretty_env_logger-0.4.0",
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-cargo-pretty-env-logger-0.4.0",
       "name": "pretty_env_logger",
       "versionInfo": "0.4.0",
       "filesAnalyzed": false,
@@ -131,7 +131,7 @@
     {
       "spdxElementId": "SPDXRef-Package-hello-server-src",
       "relationshipType": "DEPENDS_ON",
-      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-cargo-pretty_env_logger-0.4.0"
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-cargo-pretty-env-logger-0.4.0"
     },
     {
       "spdxElementId": "SPDXRef-Package-hello-server-src",
