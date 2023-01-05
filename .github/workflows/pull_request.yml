@@ -1,0 +1,18 @@
+name: SPDX validation
+on: pull_request
+
+jobs:
+  SPDX_Validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup
+        run: |
+          sudo apt install -y default-jdk maven
+          git clone https://github.com/spdx/tools-java.git && cd tools-java
+          export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
+          mvn clean install && cd ..
+            
+      - name: Validate SPDX Documents
+        run: |
+          find . -name *.spdx -o name *.json -exec java -jar tools-java/target/tools-java-*-jar-with-dependencies.jar '{}'
