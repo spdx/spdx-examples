@@ -1,6 +1,8 @@
-# SPDX Examples
+# SPDX Usage Examples
 
 This repository includes demonstrations of [SPDX documents](https://spdx.dev) for various examples of software combinations.
+
+Please note that this repository does not contain all of the supported fields nor all of the supported serialization formats in the latest version of the spec.  Please see the [SPDX Specification Examples](https://github.com/spdx/spdx-spec/tree/development/v2.3.1/examples) for the latest and examples that contain all of the supporte fields and format.
 
 The examples include source code and built / packaged binaries for a variety of scenarios. The software in the repository is (for the most part) not taken from real projects. However, the examples are intended to be demonstrations of how SPDX can convey software bill of materials (SBOM) information for a variety of real-world scenarios.
 
