@@ -8,7 +8,7 @@ The examples include source code and built / packaged binaries for a variety of 
 
 ## Format of examples
 
-Each example directory is structured as follows:
+Directories of the form `example#` are structured as follows:
 
 - `content/src/`: contains the example's source code
 - `content/build/`: contains the example's built artifacts
@@ -16,6 +16,8 @@ Each example directory is structured as follows:
 - `README.md`: more details about the particular example
 
 Each directory contains a Makefile which is used to create the build artifacts. It assumes that the necessary tools (make, gcc, etc.) are present on your system, and doesn't do any autoconfiguration or the like. If somebody else wants to add that for greater build flexibility, they are welcome to do so, but that isn't really my goal here  :)
+
+The OSSSumit2023 directory contains the SPDX JSON files used in the SBOM Primary presentation [An SBOM Primer: From Licenses to Security, Know What’s in Your Code, or Someone Else’s!](https://ossna2023.sched.com/event/1KtE8/an-sbom-primer-from-licenses-to-security-know-whats-in-your-code-or-someone-elses-jeff-shapiro-the-linux-foundation-gary-oneall-source-auditor) at the Open Source Summit North America 2023. 
 
 ## Examples
 

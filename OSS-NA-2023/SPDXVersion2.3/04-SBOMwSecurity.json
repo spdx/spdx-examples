@@ -1,0 +1,70 @@
+{
+  "SPDXID" : "SPDXRef-DOCUMENT",
+  "spdxVersion" : "SPDX-2.3",
+  "creationInfo" : {
+    "created" : "2023-05-12T18:30:22Z",
+    "creators" : [ "Person: Gary O'Neall (gary@sourceauditor.com)" ]
+  },
+  "name" : "SPDX Tools v1.1.5 Java SBOM",
+  "dataLicense" : "CC0-1.0",
+  "documentNamespace" : "http://spdx.org/spdxdocs/tools-java/v1.1.5-444504E0-4F89-41D3-9A0C-0305E82C3301",
+  "packages" : [ {
+    "SPDXID" : "SPDXRef-Package",
+    "name" : "tools-java",
+    "versionInfo" : "1.5.1",
+    "supplier" : "Organization: SPDX (Spdx-tech@lists.spdx.org)",
+    "packageFileName" : "tools-java-1.1.5.zip",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "e01bcba3c55fa7f0c82d08d0cdce9061b21bf32f"
+    } ],
+    "downloadLocation" : "https://github.com/spdx/tools-java/releases/download/v1.1.5/tools-java-1.1.5.zip",
+    "filesAnalyzed" : false,
+	"externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:github/spdx/tools-java@2235d5d7f7fe46ce1e0d54b7831c5681633b25cc",
+      "referenceType" : "purl"
+    } ]
+    },
+    {
+      "SPDXID": "SPDXRef-xlsx",
+      "comment": "This is a demonstration of a dependency - it is NOT really a dependency of tools-java",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8f2715fa4ea3619b08615aa8f57828a80e6eb703"
+        }
+      ],
+      "downloadLocation": "https://repo1.maven.org/maven2/org/webjars/npm/xlsx/0.16.6/xlsx-0.16.6.jar",
+      "filesAnalyzed": false,
+      "name": "xlsx",
+      "packageFileName": "xlsx-0.16.6.jar",
+      "supplier": "Organization: Webjar",
+      "versionInfo": "0.16.6",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.webjars.npm/xlsx@0.16.6",
+          "referenceType": "purl"
+        },
+		{
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "https://nvd.nist.gov/vuln/detail/CVE-2021-32012",
+          "referenceType": "advisory"
+		}
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "DYNAMIC_LINK",
+      "relatedSpdxElement": "SPDXRef-xlsx"
+    }
+  ]
+}
