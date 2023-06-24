@@ -15,4 +15,4 @@ jobs:
             
       - name: Validate SPDX Documents
         run: |
-          find . -name *.spdx -o -name *.json -exec java -jar tools-java/target/tools-java-*-jar-with-dependencies.jar {} \;
+          find . -name *.spdx -o -name *.json -exec echo {} \; -exec java -jar tools-java/target/tools-java-*-jar-with-dependencies.jar Verify {} \;
