@@ -15,10 +15,10 @@
   ],
   "packages": [
     {
-      "packageName": "go1.16.4.linux-amd64",
+      "name": "go1.16.4.linux-amd64",
       "SPDXID": "SPDXRef-golang-dist",
       "downloadLocation": "https://golang.org/dl/go1.16.4.linux-amd64.tar.gz",
-      "packageVersion": "1.16.4",
+      "versionInfo": "1.16.4",
       "filesAnalyzed": false,
       "checksums": [
         {
@@ -26,19 +26,25 @@
           "checksumValue": "7154e88f5a8047aad4b80ebace58a059e36e7e2e4eb3b383127a28c711b4ff59"
         }
       ],
-      "packageLicenseConcluded": "NOASSERTION",
-      "packageLicenseDeclared": "LicenseRef-Golang-BSD-plus-Patents",
-      "packageCopyrightText": "Copyright (c) 2009 The Go Authors. All rights reserved."
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LicenseRef-Golang-BSD-plus-Patents",
+      "copyrightText": "Copyright (c) 2009 The Go Authors. All rights reserved."
     },
     {
-      "packageName": "go",
+      "name": "go",
       "SPDXID": "SPDXRef-go-compiler",
       "downloadLocation": "https://golang.org/dl/go1.16.4.linux-amd64.tar.gz",
-      "packageVersion": "1.16.4",
+      "versionInfo": "1.16.4",
       "filesAnalyzed": false,
-      "packageLicenseConcluded": "NOASSERTION",
-      "packageLicenseDeclared": "NOASSERTION",
-      "packageCopyrightText": "NOASSERTION"
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "hasExtractedLicensingInfos": [
+    {
+      "licenseId": "LicenseRef-Golang-BSD-plus-Patents",
+      "extractedText": "Golang BSD plus Patents"
     }
   ]
 }
