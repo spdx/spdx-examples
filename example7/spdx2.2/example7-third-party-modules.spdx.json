@@ -11,37 +11,37 @@
   "name": "hello-imports.spdx.json",
   "documentNamespace": "https://swinslow.net/spdx-examples/example7/hello-imports-c2d068df-67aa-4c68-98c8-100b450fc408",
   "documentDescribes": [
-    "SPDXRef-go-module-golang.org/x/text",
-    "SPDXRef-go-module-rsc.io/quote",
-    "SPDXRef-go-module-rsc.io/sampler"
+    "SPDXRef-go-module-text",
+    "SPDXRef-go-module-quote",
+    "SPDXRef-go-module-sampler"
   ],
   "packages": [
     {
-      "packageName": "golang.org/x/text",
-      "SPDXID": "SPDXRef-go-module-golang.org/x/text",
-      "downloadLocation": "go://golang.org/x/text@v0.0.0-20170915032832-14c0d48ead0c",
+      "name": "golang.org/x/text",
+      "SPDXID": "SPDXRef-go-module-text",
+      "downloadLocation": "git://golang.org/x/text@v0.0.0-20170915032832-14c0d48ead0c",
       "filesAnalyzed": false,
-      "packageLicenseConcluded": "NOASSERTION",
-      "packageLicenseDeclared": "NOASSERTION",
-      "packageCopyrightText": "NOASSERTION"
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
     },
     {
-      "packageName": "rsc.io/quote",
-      "SPDXID": "SPDXRef-go-module-rsc.io/quote",
-      "downloadLocation": "go://rsc.io/quote@v1.5.2",
+      "name": "rsc.io/quote",
+      "SPDXID": "SPDXRef-go-module-quote",
+      "downloadLocation": "git://rsc.io/quote@v1.5.2",
       "filesAnalyzed": false,
-      "packageLicenseConcluded": "NOASSERTION",
-      "packageLicenseDeclared": "NOASSERTION",
-      "packageCopyrightText": "NOASSERTION"
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
     },
     {
-      "packageName": "rsc.io/sampler",
-      "SPDXID": "SPDXRef-go-module-rsc.io/sampler",
-      "downloadLocation": "go://rsc.io/sampler@v1.3.0",
+      "name": "rsc.io/sampler",
+      "SPDXID": "SPDXRef-go-module-sampler",
+      "downloadLocation": "git://rsc.io/sampler@v1.3.0",
       "filesAnalyzed": false,
-      "packageLicenseConcluded": "NOASSERTION",
-      "packageLicenseDeclared": "NOASSERTION",
-      "packageCopyrightText": "NOASSERTION"
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
     }
   ]
 }
