@@ -12,7 +12,6 @@ PackageName: go-1.15
 SPDXID: SPDXRef-Package-godist
 PackageFileName: go_6715.snap
 PackageVersion: 1.15.4
-PackageSupplier: Person: Michael Hudson-Doyle
 PackageSupplier: Organization: Canonical Ltd.
 PackageOriginator: Organization: Google LLC
 PackageDownloadLocation: NOASSERTION
