@@ -23,7 +23,7 @@ PackageCopyrightText: NOASSERTION
 
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-main-src
 
-FileName: /Makefile
+FileName: ./Makefile
 SPDXID: SPDXRef-Makefile
 FileType: SOURCE
 FileChecksum: SHA1: a496da160a7d2dec3fef13d4cb1397d15269e367
@@ -33,7 +33,7 @@ LicenseConcluded: GPL-3.0-or-later
 LicenseInfoInFile: GPL-3.0-or-later
 FileCopyrightText: NOASSERTION
 
-FileName: /lib.c
+FileName: ./lib.c
 SPDXID: SPDXRef-lib-src
 FileType: SOURCE
 FileChecksum: SHA1: f66be0b05dc754a545be49f599a7ce2c41db2b1e
@@ -43,7 +43,7 @@ LicenseConcluded: BSD-3-Clause
 LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: NOASSERTION
 
-FileName: /main.c
+FileName: ./main.c
 SPDXID: SPDXRef-main-src
 FileType: SOURCE
 FileChecksum: SHA1: 9dfa5009f890dbd4bab5624a7fbf110de5b95a40

@@ -23,7 +23,7 @@ PackageCopyrightText: NOASSERTION
 
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-hello-bin
 
-FileName: /hello
+FileName: ./hello
 SPDXID: SPDXRef-hello-binary
 FileType: BINARY
 FileChecksum: SHA1: 20291a81ef065ff891b537b64d4fdccaf6f5ac02
