@@ -22,7 +22,7 @@ PackageCopyrightText: NOASSERTION
 
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-hello-src
 
-FileName: /Makefile
+FileName: ./Makefile
 SPDXID: SPDXRef-Makefile
 FileType: SOURCE
 FileChecksum: SHA1: 69a2e85696fff1865c3f0686d6c3824b59915c80
@@ -32,7 +32,7 @@ LicenseConcluded: GPL-3.0-or-later
 LicenseInfoInFile: GPL-3.0-or-later
 FileCopyrightText: NOASSERTION
 
-FileName: /hello.c
+FileName: ./hello.c
 SPDXID: SPDXRef-hello-src
 FileType: SOURCE
 FileChecksum: SHA1: 20862a6d08391d07d09344029533ec644fac6b21

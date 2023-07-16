@@ -23,7 +23,7 @@ PackageCopyrightText: NOASSERTION
 
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-main-bin
 
-FileName: /lib.so
+FileName: ./lib.so
 SPDXID: SPDXRef-lib-binary
 FileType: BINARY
 FileChecksum: SHA1: 33a9d92b21d093a781025514179659173dd34ab0
@@ -33,7 +33,7 @@ LicenseConcluded: BSD-3-Clause
 LicenseInfoInFile: NOASSERTION
 FileCopyrightText: NOASSERTION
 
-FileName: /main
+FileName: ./main
 SPDXID: SPDXRef-main-binary
 FileType: BINARY
 FileChecksum: SHA1: a9fc794448dfb3c968f2aac0cd40727b4c1fae3f

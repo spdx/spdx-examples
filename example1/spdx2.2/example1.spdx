@@ -22,7 +22,7 @@ PackageCopyrightText: NOASSERTION
 
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-hello
 
-FileName: /build/hello
+FileName: ./build/hello
 SPDXID: SPDXRef-hello-binary
 FileType: BINARY
 FileChecksum: SHA1: 20291a81ef065ff891b537b64d4fdccaf6f5ac02
@@ -32,7 +32,7 @@ LicenseConcluded: GPL-3.0-or-later
 LicenseInfoInFile: NOASSERTION
 FileCopyrightText: NOASSERTION
 
-FileName: /src/Makefile
+FileName: ./src/Makefile
 SPDXID: SPDXRef-Makefile
 FileType: SOURCE
 FileChecksum: SHA1: 69a2e85696fff1865c3f0686d6c3824b59915c80
@@ -42,7 +42,7 @@ LicenseConcluded: GPL-3.0-or-later
 LicenseInfoInFile: GPL-3.0-or-later
 FileCopyrightText: NOASSERTION
 
-FileName: /src/hello.c
+FileName: ./src/hello.c
 SPDXID: SPDXRef-hello-src
 FileType: SOURCE
 FileChecksum: SHA1: 20862a6d08391d07d09344029533ec644fac6b21

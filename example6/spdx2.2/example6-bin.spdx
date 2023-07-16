@@ -24,7 +24,7 @@ PackageCopyrightText: NOASSERTION
 
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-hello-go-bin
 
-FileName: /hello
+FileName: ./hello
 SPDXID: SPDXRef-hello-go-binary
 FileChecksum: SHA1: 78ed46e8e6f86f19d3a6782979029be5f918235f
 FileChecksum: SHA256: 3d51cb6c9a38d437e8ee20a1902a15875ea1d3771a215622e14739532be14949

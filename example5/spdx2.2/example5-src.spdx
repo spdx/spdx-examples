@@ -22,7 +22,7 @@ PackageCopyrightText: NOASSERTION
 
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-hello-go-src
 
-FileName: /Makefile
+FileName: ./Makefile
 SPDXID: SPDXRef-Makefile
 FileChecksum: SHA1: 5cb1c1c76bd0694fe5be2774c7df8166f52498a0
 FileChecksum: SHA256: 23ffc10f988297282e29b32e9c520fd33b4122a487ccaa74c979d225181aa8bf
@@ -31,7 +31,7 @@ LicenseConcluded: GPL-3.0-or-later
 LicenseInfoInFile: GPL-3.0-or-later
 FileCopyrightText: NOASSERTION
 
-FileName: /hello.go
+FileName: ./hello.go
 SPDXID: SPDXRef-hello-go-src
 FileChecksum: SHA1: bb5ae27c76cd4332edd0da834eb4bd8a7c31ca93
 FileChecksum: SHA256: 1ce078bb915470348fcf481198b8ab1cdb7d36481564959387153e8d4cd1bbf2
