@@ -1,0 +1,92 @@
+{
+  "SPDXID" : "SPDXRef-DOCUMENT",
+  "spdxVersion" : "SPDX-2.3",
+  "creationInfo" : {
+    "comment" : "SPDX 2.3 SBOM for the ACME example",
+    "created" : "2023-10-08T18:30:22Z",
+    "creators" : [ "Organization: ExampleCodeInspect ()", "Person: Jane Doe ()" ],
+    "licenseListVersion" : "3.17"
+  },
+  "name" : "ACME SBOM",
+  "dataLicense" : "CC0-1.0",
+  "comment" : "This document is an example of the ACME example",
+  "documentDescribes" : [ "SPDXRef-Acme" ],
+  "documentNamespace" : "http://spdx.org/spdxdocs/spdx-example-4ca64a7e-2f6f-41bf-8b18-16da59d67824",
+  "packages" : [ {
+    "SPDXID" : "SPDXRef-Acme",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "85ed0817af83a24ad8da68c2b5094de69833983c"
+    } ],
+    "copyrightText" : "Copyright 2008-2010 John Smith",
+    "description" : "The ACME package is a typical application we use in SPDX examples",
+    "downloadLocation" : "https://examle.com/download/acme-v1.3.tar.gz",
+    "filesAnalyzed" : false,
+    "licenseConcluded" : "Apache-2.0",
+    "licenseDeclared" : "Apache-2.0",
+    "licenseInfoFromFiles" : [ "Apache-2.0" ],
+    "name" : "Acme Applcation",
+    "originator" : "Organization: ExampleCodeInspect (contact@example.com)",
+    "packageFileName" : "acme-v1.3.tar.gz",
+    "primaryPackagePurpose" : "APPLICATION",
+    "summary" : "Example ACME Application",
+    "supplier" : "Person: Jane Doe (jane.doe@example.com)",
+    "versionInfo" : "2.3"
+  }, {
+    "SPDXID" : "SPDXRef-npm-elliptic",
+    "downloadLocation" : "https://github.com/indutny/elliptic/blob/v6.5.2/dist/elliptic.min.js",
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/indutny/elliptic",
+    "licenseConcluded" : "MIT",
+    "licenseDeclared" : "MIT",
+    "name" : "elliptic",
+	"versionInfo" : "6.5.2",
+	"externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:npm/elliptic@6.5.2",
+      "referenceType" : "purl"
+    }, {
+      "referenceCategory" : "SECURITY",
+      "referenceLocator" : "https://nvd.nist.gov/vuln/detail/CVE-2020-28498",
+      "referenceType" : "advisory"
+    } ]
+  }, {
+    "SPDXID" : "SPDXRef-alpine",
+    "downloadLocation" : "NOASSERTION",
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/indutny/elliptic",
+    "name" : "alpine",
+	"versionInfo" : "latest"
+  }, {
+    "SPDXID" : "SPDXRef-openssl",
+    "downloadLocation" : "NOASSERTION",
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.openssl.org/source/",
+    "licenseConcluded" : "Apache-2.0",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "OpenSSL",
+    "versionInfo" : "3.0.4",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:alpine/openssl@3.0.4",
+      "referenceType" : "purl"
+    }, {
+      "referenceCategory" : "SECURITY",
+      "referenceLocator" : "https://nvd.nist.gov/vuln/detail/CVE-2022-2274",
+      "referenceType" : "advisory"
+    } ]
+  } ],
+  "relationships" : [ {
+    "spdxElementId" : "SPDXRef-Acme",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-npm-elliptic"
+  }, {
+    "spdxElementId" : "SPDXRef-Acme",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-alpine"
+  }, {
+    "spdxElementId" : "SPDXRef-Acme",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-openssl"
+  } ]
+}
