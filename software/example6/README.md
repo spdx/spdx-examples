@@ -15,9 +15,9 @@ The content is identical to [example5](../example5).
 Nothing has changed -- in fact, the comments still refer to "Example 5" -- for illustration purposes, so that the file hashes are identical to those in Example 5.
 
 The differences are in the SPDX documents.
-The [sources SPDX document](spdx/example6-src.spdx) is substantively identical to its Example 5 counterpart.
-However, we've introduced [a new (third) SPDX document](spdx/example6-lib.spdx), this one describing the Go distribution used to build the Hello World program, along with Packages describing a small portion of its contents.
-The [binary SPDX document](spdx/example6-bin.spdx) then includes Relationships describing how some portions of the Go distribution relate to the build results -- e.g., referencing the compiler used to build it, and the standard libraries that are incorporated into / statically linked with the binary.
+The [sources SPDX document](spdx2.2/example6-src.spdx) is substantively identical to its Example 5 counterpart.
+However, we've introduced [a new (third) SPDX document](spdx2.2/example6-lib.spdx), this one describing the Go distribution used to build the Hello World program, along with Packages describing a small portion of its contents.
+The [binary SPDX document](spdx2.2/example6-bin.spdx) then includes Relationships describing how some portions of the Go distribution relate to the build results -- e.g., referencing the compiler used to build it, and the standard libraries that are incorporated into / statically linked with the binary.
 
 ## Comments
 
