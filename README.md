@@ -15,18 +15,17 @@ Please note that this repository does not contain all of the supported fields
 nor all of the supported serialization formats in the latest version of the
 spec.
 
-Please see the `examples/` directory in
-[spdx-spec](https://github.com/spdx/spdx-spec/) repo for the examples that
-contain all of the supported fields and formats for a specific spec version.
-This is organized using repo branch. For example, SPDX 3.0 examples will be
-in [v3.0](https://github.com/spdx/spdx-spec/tree/development/v3.0/examples)
-branch and SPDX 2.3 examples will be in
-[v2.3](https://github.com/spdx/spdx-spec/tree/development/v2.3/examples)
-branch.
-
-Moreover, in a page for each field in
-[SPDX Specification](https://spdx.github.io/spdx-spec/) there can also
-be a code snippet demonstrating possible ways to use that particular field.
+- Please see the `examples/` directory in
+  [spdx-spec](https://github.com/spdx/spdx-spec/) repo for the examples that
+  contain all of the supported fields and formats for a specific spec version.
+  This is organized using repo branch. For example, SPDX 3.0 examples will be
+  in [v3.0](https://github.com/spdx/spdx-spec/tree/development/v3.0/examples)
+  branch and SPDX 2.3 examples will be in
+  [v2.3](https://github.com/spdx/spdx-spec/tree/development/v2.3/examples)
+  branch.
+- Moreover, in a page for each field in
+  [SPDX Specification](https://spdx.github.io/spdx-spec/), there can also
+  be a code snippet demonstrating how to use that particular field.
 
 ## Licenses
 
