@@ -28,12 +28,12 @@ The `spdx` directory contains an SBOM describing the source,
 and the binary. They are linked with a GENERATED_FROM relationship.
 
 The source package lists the 3 top level dependencies. Trnasients
-are not included to make thins easier. 
+are not included to make thins easier.
 
 The SBOM structure (outlinedgenerate with
 [bom](https://github.com/kubernetes-sigs/bom)) looks like this:
 
-```
+```shell
 $ bom document outline example11/spdx/sbom.spdx.json
 
  📂 SPDX Document SBOM-SPDX-2d85f548-12fa-46d5-87ce-5e78e5e111f4
@@ -52,6 +52,5 @@ $ bom document outline example11/spdx/sbom.spdx.json
   └ SPDXRef-File-hello-server (hello-server)
      │ 🔗 1 Relationships
      └ GENERATED_FROM PACKAGE hello-server-src (version 0.4.0)
-  
 
 ```
