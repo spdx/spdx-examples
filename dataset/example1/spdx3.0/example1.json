@@ -1,0 +1,21 @@
+{
+  "@type": "DatasetPackage",
+  "@id": "urn:spdx.dev:dsex-1",
+  "name": "Our World in Data CO2 and Greenhouse Gas Emissions dataset",
+  "builtTime": "2024-04-24T11:22:05Z",
+  "originatedBy": "Our World in Data",
+  "releaseTime": "2024-04-15T08:10:00Z",
+  "software_downloadLocation": "https://github.com/owid/co2-data/",
+  "software_primaryPurpose": "data",
+  "dataset_confidentialityLevel": "clear",
+  "dataset_dataCollectionProcess": "",
+  "dataset_dataPreprocessing": "",
+  "dataset_datasetAvailability": "directDownload",
+  "dataset_datasetNoise": "",
+  "dataset_datasetSize": "2689",
+  "dataset_datasetType": ["structured", "timestamp"],
+  "dataset_datasetUpdateMechanism": "We will continue to publish updated data on CO2 and Greenhouse Gas Emissions as it becomes available. Most metrics are published on an annual basis.",
+  "dataset_hasSensitivePersonalInformation": "no",
+  "dataset_intendedUse": "To make the research and data about carbon dioxide and greenhouse gas emissions accessible and understandable.",
+  "dataset_knownBias": "Data in some geographical areas are more completed than the others."
+}
