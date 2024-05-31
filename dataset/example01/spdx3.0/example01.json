@@ -2,12 +2,33 @@
   "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
   "@graph": [
     {
+      "type": "CreationInfo",
+      "@id": "_:creationinfo",
+      "specVersion": "3.0.0",
+      "createdBy": [
+        "urn:humble.rosa@example.com-1000e6a2-0229-4875-baa7-c99be213b6e1",
+        "urn:ourworldindata.org-cb617656-1023-45e7-84c7-a9311644337b"
+      ],
+      "created": "2024-05-02T00:00:00Z"
+    },
+    {
+      "type": "Bom",
+      "spdxId": "urn:dataset-ex01.example.com-d44af211-2646-43bc-9058-f6aabd30f7ab",
+      "creationInfo": "_:creationinfo",
+      "profileConformance": [
+        "core",
+        "software"
+      ],
+      "rootElement": [
+        ""
+      ]
+    },
+    {
       "type": "SpdxDocument",
       "spdxId": "http://spdx.example.com/dataset/Example1",
       "creationInfo": "_:creationinfo",
       "profileConformance": [
         "core",
-        "software",
         "dataset"
       ],
       "rootElement": [
@@ -46,23 +67,13 @@
       "spdxId": "urn:humble.rosa@example.com-1000e6a2-0229-4875-baa7-c99be213b6e1",
       "creationInfo": "_:creationinfo",
       "name": "Dataset Maintainer Humble Rosa",
-      "externalIdentifiers": [
+      "externalIdentifier": [
         {
           "type": "ExternalIdentifier",
           "externalIdentifierType": "email",
           "identifier": "humble.rosa@example.com"
         }
       ]
-    },
-    {
-      "type": "CreationInfo",
-      "@id": "_:creationinfo",
-      "specVersion": "3.0.0",
-      "createdBy": [
-        "urn:humble.rosa@example.com-1000e6a2-0229-4875-baa7-c99be213b6e1",
-        "urn:ourworldindata.org-cb617656-1023-45e7-84c7-a9311644337b"
-      ],
-      "created": "2024-05-02T00:00:00Z"
     },
     {
       "type": "Relationship",

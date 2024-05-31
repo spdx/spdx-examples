@@ -2,6 +2,8 @@
 
 ## Description
 
+An example of a simple dataset in tabular format.
+
 ```text
 content
 ├── codebook.csv
