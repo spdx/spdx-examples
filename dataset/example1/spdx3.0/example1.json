@@ -37,9 +37,32 @@
     },
     {
       "type": "Organization",
-      "spdxId": "urn:",
+      "spdxId": "urn:ourworldindata.org-cb617656-1023-45e7-84c7-a9311644337b",
       "creationInfo": "_:creationinfo",
       "name": "Our World in Data"
+    },
+    {
+      "type": "Person",
+      "spdxId": "urn:humble.rosa@example.com-1000e6a2-0229-4875-baa7-c99be213b6e1",
+      "creationInfo": "_:creationinfo",
+      "name": "Dataset Maintainer Humble Rosa",
+      "externalIdentifiers": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "email",
+          "identifier": "humble.rosa@example.com"
+        }
+      ]
+    },
+    {
+      "type": "CreationInfo",
+      "@id": "_:creationinfo",
+      "specVersion": "3.0.0",
+      "createdBy": [
+        "urn:humble.rosa@example.com-1000e6a2-0229-4875-baa7-c99be213b6e1",
+        "urn:ourworldindata.org-cb617656-1023-45e7-84c7-a9311644337b"
+      ],
+      "created": "2024-05-02T00:00:00Z"
     },
     {
       "type": "Relationship",
