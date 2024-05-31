@@ -1,0 +1,98 @@
+@startuml
+Package "example-13-spdx-3.json" as 5abe2462b683277680f44676f7f97084 {
+object "<b>Fedor Indutny</b>\nPerson" as 5abe2462b683277680f44676f7f97084_o1
+object "CreationInfo" as 5abe2462b683277680f44676f7f97084_o2
+object "<b>Application Owner Jane Doe</b>\nPerson" as 5abe2462b683277680f44676f7f97084_o3
+object "ExternalIdentifier" as 5abe2462b683277680f44676f7f97084_o4
+object "<b>Acme Company</b>\nOrganization" as 5abe2462b683277680f44676f7f97084_o5
+object "ExternalIdentifier" as 5abe2462b683277680f44676f7f97084_o6
+object "<b>openssl</b>\nsoftware_Package" as 5abe2462b683277680f44676f7f97084_o7
+object "urn:example13-sbom.com-4fe40e24-20e3-11ee-be56-0242ac120002\nsoftware_Sbom" as 5abe2462b683277680f44676f7f97084_o8
+object "<b>Acme Application</b>\nsoftware_Package" as 5abe2462b683277680f44676f7f97084_o9
+object "urn:acme-relationship-1-4fe40e24-20e3-11ee-be56-0242ac120002\nRelationship" as 5abe2462b683277680f44676f7f97084_o10
+object "<b>Alpine Linux</b>\nOrganization" as 5abe2462b683277680f44676f7f97084_o11
+object "http://spdx.example.com/Document1\nSpdxDocument" as 5abe2462b683277680f44676f7f97084_o12
+object "<b>alpine:latest</b>\nsoftware_Package" as 5abe2462b683277680f44676f7f97084_o13
+object "urn:acme-relationship-3-4fe40e24-20e3-11ee-be56-0242ac120002\nRelationship" as 5abe2462b683277680f44676f7f97084_o14
+object "urn:acme-relationship-4-4fe40e24-20e3-11ee-be56-0242ac120002\nRelationship" as 5abe2462b683277680f44676f7f97084_o15
+object "<b>npm-elliptic</b>\nsoftware_Package" as 5abe2462b683277680f44676f7f97084_o16
+object "ExternalIdentifier" as 5abe2462b683277680f44676f7f97084_o17
+object "urn:acme-relationship-2-4fe40e24-20e3-11ee-be56-0242ac120002\nRelationship" as 5abe2462b683277680f44676f7f97084_o18
+}
+5abe2462b683277680f44676f7f97084_o1 : spdxId = "urn:github.com-indutny-c4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o2 : created = 2024-05-02 00:00:00+00:00
+5abe2462b683277680f44676f7f97084_o3 : spdxId = "urn:jane-doe-1@acme.com-4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o3::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o4 : externalIdentifierType = "https://spdx.org/rdf/3.0.0/terms/Core/ExternalIdentifierType/email"
+5abe2462b683277680f44676f7f97084_o4 : identifier = "jane-doe-1@acme.com"
+5abe2462b683277680f44676f7f97084_o3::externalIdentifier --> 5abe2462b683277680f44676f7f97084_o4 : externalIdentifier
+5abe2462b683277680f44676f7f97084_o3 : name = "Application Owner Jane Doe"
+5abe2462b683277680f44676f7f97084_o2::createdBy --> 5abe2462b683277680f44676f7f97084_o3 : createdBy
+5abe2462b683277680f44676f7f97084_o5 : spdxId = "urn:acme.com-4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o5::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o5 : name = "Acme Company"
+5abe2462b683277680f44676f7f97084_o2::createdBy --> 5abe2462b683277680f44676f7f97084_o5 : createdBy
+5abe2462b683277680f44676f7f97084_o2 : specVersion = "3.0.0"
+5abe2462b683277680f44676f7f97084_o1::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o6 : externalIdentifierType = "https://spdx.org/rdf/3.0.0/terms/Core/ExternalIdentifierType/other"
+5abe2462b683277680f44676f7f97084_o6 : identifierLocator = ['https://github.com/indutny']
+5abe2462b683277680f44676f7f97084_o1::externalIdentifier --> 5abe2462b683277680f44676f7f97084_o6 : externalIdentifier
+5abe2462b683277680f44676f7f97084_o1 : name = "Fedor Indutny"
+5abe2462b683277680f44676f7f97084_o7 : spdxId = "urn:openssl-3.0.4-4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o7::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o7 : name = "openssl"
+5abe2462b683277680f44676f7f97084_o7 : software_primaryPurpose = "https://spdx.org/rdf/3.0.0/terms/Software/SoftwarePurpose/library"
+5abe2462b683277680f44676f7f97084_o7 : software_packageVersion = "3.0.4"
+5abe2462b683277680f44676f7f97084_o8 : spdxId = "urn:example13-sbom.com-4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o8::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o8 : profileConformance = ['https://spdx.org/rdf/3.0.0/terms/Core/ProfileIdentifierType/core', 'https://spdx.org/rdf/3.0.0/terms/Core/ProfileIdentifierType/software']
+5abe2462b683277680f44676f7f97084_o9 : spdxId = "urn:product-acme-application-1.3-4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o9::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o9 : name = "Acme Application"
+5abe2462b683277680f44676f7f97084_o9::suppliedBy --> 5abe2462b683277680f44676f7f97084_o5 : suppliedBy
+5abe2462b683277680f44676f7f97084_o9 : software_primaryPurpose = "https://spdx.org/rdf/3.0.0/terms/Software/SoftwarePurpose/application"
+5abe2462b683277680f44676f7f97084_o9 : software_packageVersion = "1.3"
+5abe2462b683277680f44676f7f97084_o8::rootElement --> 5abe2462b683277680f44676f7f97084_o9 : rootElement
+5abe2462b683277680f44676f7f97084_o10 : spdxId = "urn:acme-relationship-1-4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o10::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o9 <-- 5abe2462b683277680f44676f7f97084_o10::from : from
+5abe2462b683277680f44676f7f97084_o10 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/availableFrom"
+5abe2462b683277680f44676f7f97084_o10::to --> 5abe2462b683277680f44676f7f97084_o3 : to
+5abe2462b683277680f44676f7f97084_o11 : spdxId = "urn:github.com-alpinelinux-4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o11::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o11 : name = "Alpine Linux"
+5abe2462b683277680f44676f7f97084_o12 : spdxId = "http://spdx.example.com/Document1"
+5abe2462b683277680f44676f7f97084_o12::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o12 : profileConformance = ['https://spdx.org/rdf/3.0.0/terms/Core/ProfileIdentifierType/core', 'https://spdx.org/rdf/3.0.0/terms/Core/ProfileIdentifierType/software']
+5abe2462b683277680f44676f7f97084_o12::rootElement --> 5abe2462b683277680f44676f7f97084_o8 : rootElement
+5abe2462b683277680f44676f7f97084_o13 : spdxId = "urn:container-alpine-latest-sha256:69665d02cb32192e52e07644d76bc6f25abeb5410edc1c7a81a10ba3f0efb90a-4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o13::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o13 : name = "alpine:latest"
+5abe2462b683277680f44676f7f97084_o13::suppliedBy --> 5abe2462b683277680f44676f7f97084_o11 : suppliedBy
+5abe2462b683277680f44676f7f97084_o13 : software_primaryPurpose = "https://spdx.org/rdf/3.0.0/terms/Software/SoftwarePurpose/container"
+5abe2462b683277680f44676f7f97084_o13 : software_packageVersion = "69665d02cb32192e52e07644d76bc6f25abeb5410edc1c7a81a10ba3f0efb90a"
+5abe2462b683277680f44676f7f97084_o14 : spdxId = "urn:acme-relationship-3-4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o14::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o9 <-- 5abe2462b683277680f44676f7f97084_o14::from : from
+5abe2462b683277680f44676f7f97084_o14 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/dependsOn"
+5abe2462b683277680f44676f7f97084_o14::to --> 5abe2462b683277680f44676f7f97084_o13 : to
+5abe2462b683277680f44676f7f97084_o15 : spdxId = "urn:acme-relationship-4-4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o15::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o13 <-- 5abe2462b683277680f44676f7f97084_o15::from : from
+5abe2462b683277680f44676f7f97084_o15 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/contains"
+5abe2462b683277680f44676f7f97084_o15::to --> 5abe2462b683277680f44676f7f97084_o7 : to
+5abe2462b683277680f44676f7f97084_o16 : spdxId = "urn:npm-elliptic-6.5.2-4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o16::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o17 : externalIdentifierType = "https://spdx.org/rdf/3.0.0/terms/Core/ExternalIdentifierType/other"
+5abe2462b683277680f44676f7f97084_o17 : identifierLocator = ['https://github.com/indutny/elliptic/releases/tag/v6.5.2']
+5abe2462b683277680f44676f7f97084_o16::externalIdentifier --> 5abe2462b683277680f44676f7f97084_o17 : externalIdentifier
+5abe2462b683277680f44676f7f97084_o16 : name = "npm-elliptic"
+5abe2462b683277680f44676f7f97084_o16::suppliedBy --> 5abe2462b683277680f44676f7f97084_o1 : suppliedBy
+5abe2462b683277680f44676f7f97084_o16 : software_primaryPurpose = "https://spdx.org/rdf/3.0.0/terms/Software/SoftwarePurpose/library"
+5abe2462b683277680f44676f7f97084_o16 : software_packageVersion = "6.5.2"
+5abe2462b683277680f44676f7f97084_o18 : spdxId = "urn:acme-relationship-2-4fe40e24-20e3-11ee-be56-0242ac120002"
+5abe2462b683277680f44676f7f97084_o18::creationInfo --> 5abe2462b683277680f44676f7f97084_o2 : creationInfo
+5abe2462b683277680f44676f7f97084_o9 <-- 5abe2462b683277680f44676f7f97084_o18::from : from
+5abe2462b683277680f44676f7f97084_o18 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/contains"
+5abe2462b683277680f44676f7f97084_o18::to --> 5abe2462b683277680f44676f7f97084_o16 : to
+@enduml
