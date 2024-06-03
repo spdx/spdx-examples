@@ -7,13 +7,32 @@
       "specVersion": "3.0.0",
       "createdBy": [
         "urn:humble.rosa@example.com-1000e6a2-0229-4875-baa7-c99be213b6e1",
-        "urn:ourworldindata.org-cb617656-1023-45e7-84c7-a9311644337b"
+        "urn:ourworldindata.example.com-cb617656-1023-45e7-84c7-a9311644337b"
       ],
-      "created": "2024-05-02T00:00:00Z"
+      "created": "2024-05-31T00:00:00Z"
+    },
+    {
+      "type": "Organization",
+      "spdxId": "urn:ourworldindata.example.com-cb617656-1023-45e7-84c7-a9311644337b",
+      "creationInfo": "_:creationinfo",
+      "name": "Our World in Data"
+    },
+    {
+      "type": "Person",
+      "spdxId": "urn:humble.rosa@example.com-1000e6a2-0229-4875-baa7-c99be213b6e1",
+      "creationInfo": "_:creationinfo",
+      "name": "Maintainer Humble Rosa",
+      "externalIdentifier": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "email",
+          "identifier": "humble.rosa@example.com"
+        }
+      ]
     },
     {
       "type": "Bom",
-      "spdxId": "urn:dataset-ex01.example.com-d44af211-2646-43bc-9058-f6aabd30f7ab",
+      "spdxId": "urn:dataset-ex01-bom.example.com-d44af211-2646-43bc-9058-f6aabd30f7ab",
       "creationInfo": "_:creationinfo",
       "profileConformance": [
         "core",
@@ -25,19 +44,19 @@
     },
     {
       "type": "SpdxDocument",
-      "spdxId": "http://spdx.example.com/dataset/Example1",
+      "spdxId": "http://spdx.example.com/dataset/Example01",
       "creationInfo": "_:creationinfo",
       "profileConformance": [
         "core",
         "dataset"
       ],
       "rootElement": [
-        "urn:"
+        "urn:co2-data.example.com-035470d9-3ede-4952-91c8-c2abb943c90b"
       ]
     },
     {
       "@type": "dataset_DatasetPackage",
-      "@id": "urn:spdx.dev:dsex-1",
+      "@id": "urn:co2-data.example.com-035470d9-3ede-4952-91c8-c2abb943c90b",
       "name": "Our World in Data CO2 and Greenhouse Gas Emissions dataset",
       "builtTime": "2024-04-24T11:22:05Z",
       "originatedBy": "Our World in Data",
@@ -57,38 +76,19 @@
       "dataset_knownBias": "Data in some geographical areas are more completed than the others."
     },
     {
-      "type": "Organization",
-      "spdxId": "urn:ourworldindata.org-cb617656-1023-45e7-84c7-a9311644337b",
-      "creationInfo": "_:creationinfo",
-      "name": "Our World in Data"
-    },
-    {
-      "type": "Person",
-      "spdxId": "urn:humble.rosa@example.com-1000e6a2-0229-4875-baa7-c99be213b6e1",
-      "creationInfo": "_:creationinfo",
-      "name": "Dataset Maintainer Humble Rosa",
-      "externalIdentifier": [
-        {
-          "type": "ExternalIdentifier",
-          "externalIdentifierType": "email",
-          "identifier": "humble.rosa@example.com"
-        }
-      ]
-    },
-    {
       "type": "Relationship",
-      "spdxId": "urn:",
+      "spdxId": "urn:dataset-ex01-concluded-license.example.com-",
       "relationshipType": "concludedLicense",
-      "from": "",
+      "from": "urn:co2-data.example.com-035470d9-3ede-4952-91c8-c2abb943c90b",
       "to": "CC-BY-4.0",
       "creationInfo": "_:creationinfo",
       "_comments": "for every /Dataset/DatasetPackage there MUST exist exactly one /Core/Relationship of type concludedLicense having that element as its from property and an /SimpleLicensing/AnyLicenseInfo as its to property."
     },
     {
       "type": "Relationship",
-      "spdxId": "urn:",
+      "spdxId": "urn:co2-data-declared-license.example.com-",
       "relationshipType": "declaredLicense",
-      "from": "",
+      "from": "urn:co2-data.example.com-035470d9-3ede-4952-91c8-c2abb943c90b",
       "to": "CC-BY-4.0",
       "creationInfo": "_:creationinfo",
       "_comments": "for every /Dataset/DatasetPackage there MUST exist exactly one /Core/Relationship of type declaredLicense having that element as its from property and an /SimpleLicensing/AnyLicenseInfo as its to property."
