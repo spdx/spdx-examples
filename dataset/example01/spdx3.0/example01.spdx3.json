@@ -57,6 +57,7 @@
     {
       "@type": "dataset_DatasetPackage",
       "@id": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
+      "creationInfo": "_:creationinfo",
       "name": "Our World in Data CO2 and Greenhouse Gas Emissions dataset",
       "builtTime": "2024-04-24T11:22:05Z",
       "originatedBy": "Our World in Data",
@@ -87,19 +88,17 @@
       "type": "Relationship",
       "spdxId": "https://spdx.org/spdxdocs/Relationship/concludedLicense-8575546c-c4f7-41ec-bb8f-cbd66e70090a",
       "creationInfo": "_:creationinfo",
-      "relationshipType": "concludedLicense",
+      "relationshipType": "hasConcludedLicense",
       "from": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
-      "to": "CC-BY-4.0",
-      "_comments": "for every /Dataset/DatasetPackage there MUST exist exactly one /Core/Relationship of type concludedLicense having that element as its from property and an /SimpleLicensing/AnyLicenseInfo as its to property."
+      "to": "CC-BY-4.0"
     },
     {
       "type": "Relationship",
       "spdxId": "https://spdx.org/spdxdocs/Relationship/declaredLicense-e5536c5e-c8b5-4d24-947f-674c27c0b6c1",
       "creationInfo": "_:creationinfo",
-      "relationshipType": "declaredLicense",
+      "relationshipType": "hasDeclaredLicense",
       "from": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
-      "to": "CC-BY-4.0",
-      "_comments": "for every /Dataset/DatasetPackage there MUST exist exactly one /Core/Relationship of type declaredLicense having that element as its from property and an /SimpleLicensing/AnyLicenseInfo as its to property."
+      "to": "CC-BY-4.0"
     }
   ]
 }
