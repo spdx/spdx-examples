@@ -65,7 +65,7 @@
       "software_primaryPurpose": "data",
       "dataset_confidentialityLevel": "clear",
       "dataset_datasetAvailability": "directDownload",
-      "dataset_datasetSize": "2689",
+      "dataset_datasetSize": 2689,
       "dataset_datasetType": [
         "structured",
         "timestamp"
