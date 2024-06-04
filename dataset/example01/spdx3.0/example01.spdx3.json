@@ -6,16 +6,9 @@
       "@id": "_:creationinfo",
       "specVersion": "3.0.0",
       "createdBy": [
-        "https://spdx.org/spdxdocs/Person/HumbleRosa-1000e6a2-0229-4875-baa7-c99be213b6e1",
-        "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b"
+        "https://spdx.org/spdxdocs/Person/HumbleRosa-1000e6a2-0229-4875-baa7-c99be213b6e1"
       ],
       "created": "2024-05-31T00:00:00Z"
-    },
-    {
-      "type": "Organization",
-      "spdxId": "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b",
-      "creationInfo": "_:creationinfo",
-      "name": "Our World in Data"
     },
     {
       "type": "Person",
@@ -29,6 +22,12 @@
           "identifier": "humble.rosa@example.com"
         }
       ]
+    },
+    {
+      "type": "Organization",
+      "spdxId": "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b",
+      "creationInfo": "_:creationinfo",
+      "name": "Our World in Data"
     },
     {
       "type": "SpdxDocument",
@@ -59,8 +58,10 @@
       "@id": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
       "creationInfo": "_:creationinfo",
       "name": "Our World in Data CO2 and Greenhouse Gas Emissions dataset",
-      "builtTime": "2024-04-24T11:22:05Z",
-      "originatedBy": "Our World in Data",
+      "originatedBy": [
+        "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b"
+      ],
+      "builtTime": "2023-12-16T11:22:38Z",
       "releaseTime": "2024-04-15T08:10:00Z",
       "software_downloadLocation": "https://github.com/owid/co2-data/",
       "software_primaryPurpose": "data",
@@ -71,10 +72,34 @@
         "structured",
         "timestamp"
       ],
-      "dataset_datasetUpdateMechanism": "We will continue to publish updated data on CO2 and Greenhouse Gas Emissions as it becomes available. Most metrics are published on an annual basis.",
+      "dataset_datasetUpdateMechanism": "We will continue to publish updated data as it becomes available. Most metrics are published on an annual basis.",
       "dataset_hasSensitivePersonalInformation": "no",
       "dataset_intendedUse": "To make the research and data about carbon dioxide and greenhouse gas emissions accessible and understandable.",
       "dataset_knownBias": "Data in some geographical areas are more completed than the others."
+    },
+    {
+      "type": "software_File",
+      "spdxId": "https://spdx.org/spdxdocs/File1-d029fccb-7ee9-42be-a445-5e2066db0de8",
+      "creationInfo": "_:creationinfo",
+      "name": "data.csv",
+      "software_contentType": "text/csv",
+      "software_primaryPurpose": "data",
+      "releaseTime": "2024-04-15T08:10:00Z",
+      "originatedBy": [
+        "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b"
+      ]
+    },
+    {
+      "type": "software_File",
+      "spdxId": "https://spdx.org/spdxdocs/File2-caf55baf-cd02-406a-b7ec-838842ca869f",
+      "creationInfo": "_:creationinfo",
+      "name": "codebook.csv",
+      "software_contentType": "text/csv",
+      "software_primaryPurpose": "data",
+      "releaseTime": "2024-04-15T08:10:00Z",
+      "originatedBy": [
+        "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b"
+      ]
     },
     {
       "type": "Relationship",
