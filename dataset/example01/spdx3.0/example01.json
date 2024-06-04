@@ -6,20 +6,20 @@
       "@id": "_:creationinfo",
       "specVersion": "3.0.0",
       "createdBy": [
-        "urn:humble.rosa@example.com-1000e6a2-0229-4875-baa7-c99be213b6e1",
-        "urn:ourworldindata.example.com-cb617656-1023-45e7-84c7-a9311644337b"
+        "https://spdx.org/spdxdocs/Person/HumbleRosa-1000e6a2-0229-4875-baa7-c99be213b6e1",
+        "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b"
       ],
       "created": "2024-05-31T00:00:00Z"
     },
     {
       "type": "Organization",
-      "spdxId": "urn:ourworldindata.example.com-cb617656-1023-45e7-84c7-a9311644337b",
+      "spdxId": "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b",
       "creationInfo": "_:creationinfo",
       "name": "Our World in Data"
     },
     {
       "type": "Person",
-      "spdxId": "urn:humble.rosa@example.com-1000e6a2-0229-4875-baa7-c99be213b6e1",
+      "spdxId": "https://spdx.org/spdxdocs/Person/HumbleRosa-1000e6a2-0229-4875-baa7-c99be213b6e1",
       "creationInfo": "_:creationinfo",
       "name": "Maintainer Humble Rosa",
       "externalIdentifier": [
@@ -31,32 +31,32 @@
       ]
     },
     {
-      "type": "Bom",
-      "spdxId": "urn:dataset-ex01-bom.example.com-d44af211-2646-43bc-9058-f6aabd30f7ab",
-      "creationInfo": "_:creationinfo",
-      "profileConformance": [
-        "core",
-        "software"
-      ],
-      "rootElement": [
-        ""
-      ]
-    },
-    {
       "type": "SpdxDocument",
-      "spdxId": "http://spdx.example.com/dataset/Example01",
+      "spdxId": "https://spdx.org/spdxdocs/Document1-a7a6f7a8-68d5-4052-b3f7-a005d6af28f1",
       "creationInfo": "_:creationinfo",
       "profileConformance": [
         "core",
         "dataset"
       ],
       "rootElement": [
-        "urn:co2-data.example.com-035470d9-3ede-4952-91c8-c2abb943c90b"
+        "https://spdx.org/spdxdocs/BOM-d44af211-2646-43bc-9058-f6aabd30f7ab"
+      ]
+    },
+    {
+      "type": "Bom",
+      "spdxId": "https://spdx.org/spdxdocs/BOM-d44af211-2646-43bc-9058-f6aabd30f7ab",
+      "creationInfo": "_:creationinfo",
+      "profileConformance": [
+        "core",
+        "dataset"
+      ],
+      "rootElement": [
+        "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b"
       ]
     },
     {
       "@type": "dataset_DatasetPackage",
-      "@id": "urn:co2-data.example.com-035470d9-3ede-4952-91c8-c2abb943c90b",
+      "@id": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
       "name": "Our World in Data CO2 and Greenhouse Gas Emissions dataset",
       "builtTime": "2024-04-24T11:22:05Z",
       "originatedBy": "Our World in Data",
@@ -77,20 +77,28 @@
     },
     {
       "type": "Relationship",
-      "spdxId": "urn:dataset-ex01-concluded-license.example.com-",
-      "relationshipType": "concludedLicense",
-      "from": "urn:co2-data.example.com-035470d9-3ede-4952-91c8-c2abb943c90b",
-      "to": "CC-BY-4.0",
+      "spdxId": "https://spdx.org/spdxdocs/Relationship/availableFrom-1b7fb297-b3db-47a2-a6ff-4c6ac424b319",
       "creationInfo": "_:creationinfo",
+      "from": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
+      "to": "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b",
+      "relationshipType": "availableFrom"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "https://spdx.org/spdxdocs/Relationship/concludedLicense-8575546c-c4f7-41ec-bb8f-cbd66e70090a",
+      "creationInfo": "_:creationinfo",
+      "relationshipType": "concludedLicense",
+      "from": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
+      "to": "CC-BY-4.0",
       "_comments": "for every /Dataset/DatasetPackage there MUST exist exactly one /Core/Relationship of type concludedLicense having that element as its from property and an /SimpleLicensing/AnyLicenseInfo as its to property."
     },
     {
       "type": "Relationship",
-      "spdxId": "urn:co2-data-declared-license.example.com-",
-      "relationshipType": "declaredLicense",
-      "from": "urn:co2-data.example.com-035470d9-3ede-4952-91c8-c2abb943c90b",
-      "to": "CC-BY-4.0",
+      "spdxId": "https://spdx.org/spdxdocs/Relationship/declaredLicense-e5536c5e-c8b5-4d24-947f-674c27c0b6c1",
       "creationInfo": "_:creationinfo",
+      "relationshipType": "declaredLicense",
+      "from": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
+      "to": "CC-BY-4.0",
       "_comments": "for every /Dataset/DatasetPackage there MUST exist exactly one /Core/Relationship of type declaredLicense having that element as its from property and an /SimpleLicensing/AnyLicenseInfo as its to property."
     }
   ]
