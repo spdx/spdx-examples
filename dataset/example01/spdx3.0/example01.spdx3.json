@@ -54,7 +54,7 @@
       ]
     },
     {
-      "@type": "dataset_DatasetPackage",
+      "type": "dataset_DatasetPackage",
       "@id": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
       "creationInfo": "_:creationinfo",
       "name": "Our World in Data CO2 and Greenhouse Gas Emissions dataset",
