@@ -4,7 +4,7 @@
   ],
   "@graph": [
     {
-      "spdxId": "mailto:nishak@vmware.com",
+      "spdxId": "urn:uuid:cc81c9c0-c466-4e22-b3f6-945a65f5d07b",
       "type": "Person",
       "creationInfo": "_:creationInfo",
       "comment": "Person or Tool that created this document",
@@ -18,7 +18,7 @@
       ]
     },
     {
-      "spdxId": "https://golang.org",
+      "spdxId": "urn:uuid:a5d2b614-1c0a-477d-b1fc-dc391f2c1c6d",
       "type": "Organization",
       "creationInfo": "_:creationInfo",
       "comment": "The organization that originated the software package",
@@ -29,20 +29,23 @@
       "type": "CreationInfo",
       "created": "2020-11-24T01:12:27Z",
       "createdBy": [
-        "mailto:nishak@vmware.com"
+        "urn:uuid:cc81c9c0-c466-4e22-b3f6-945a65f5d07b"
+      ],
+      "createdUsing": [
+        "manual"  
       ],
       "comment": "All objects within the graph will have this same CreationInfo"
     },
     {
-      "spdxId": "https://golang.org/dl/go1.16.4.linux-amd64.tar.gz",
-      "type": "Software_Package",
-      "name": "go1.16.4.linux-amd64",
+      "spdxId": "urn:uuid:a9f18ff3-17fa-419d-8966-abe4b992312b",
+      "type": "software_Package",
+      "name": "go1.16.4.linux-amd64.tar.gz",
       "creationInfo": "_:creationInfo",
       "comment": "This is the downloaded tarball to be installed on disk",
       "software_packageVersion": "1.16.4",
       "software_primaryPurpose": "install",
       "software_downloadLocation": "https://golang.org/dl/go1.16.4.linux-amd64.tar.gz",
-      "originatedBy": "https://golang.org",
+      "originatedBy": "urn:uuid:a5d2b614-1c0a-477d-b1fc-dc391f2c1c6d",
       "verifiedUsing": [
         {
           "type": "Hash",
@@ -52,52 +55,49 @@
       ]
     },
     {
-      "spdxId": "https://golang.org/dl/go-compiler",
-      "type": "Software_File",
+      "spdxId": "urn:uuid:3b2939bf-fcce-4617-a06f-115168870b95",
+      "type": "software_File",
       "name": "go",
       "creationInfo": "_:creationInfo",
       "comment": "The installation comes with an executable",
-      "originatedBy": "https://golang.org",
+      "originatedBy": "urn:uuid:a5d2b614-1c0a-477d-b1fc-dc391f2c1c6d",
       "software_primaryPurpose": "executable"
     },
     {
       "type": "Relationship",
-      "spdxId": "https://spdx.org/golang-dist-contains",
+      "spdxId": "urn:uuid:92c6754b-d6e9-48b7-8b86-54fdc89995a6",
       "creationInfo": "_:creationInfo",
       "relationshipType": "contains",
-      "from": "https://golang.org/dl/go1.16.4.linux-amd64.tar.gz",
+      "from": "urn:uuid:a9f18ff3-17fa-419d-8966-abe4b992312b",
       "to": [
-        "https://golang.org/dl/go-compiler"
+        "urn:uuid:3b2939bf-fcce-4617-a06f-115168870b95"
       ] 
     },
     {
       "type": "software_Sbom",
-      "spdxId": "https://spdx.org/go1.16.4-sbom",
+      "spdxId": "urn:uuid:d523d308-8348-4051-85ea-a67a14978fad",
       "creationInfo": "_:creationInfo",
       "comment": "The SBOM communicates that this document is an SBOM",
       "rootElement": [
-        "https://golang.org/dl/go1.16.4.linux-amd64.tar.gz"
+        "urn:uuid:a9f18ff3-17fa-419d-8966-abe4b992312b"
       ],
       "element": [
-        "https://golang.org/dl/go-compiler",
-        "https://spdx.org/golang-dist-contains"
+        "urn:uuid:3b2939bf-fcce-4617-a06f-115168870b95",
+        "urn:uuid:92c6754b-d6e9-48b7-8b86-54fdc89995a6"
       ]
     },
     {
-      "spdxId": "https://github.com/spdx-examples/example7-golang.spdx.jsonld",
+      "spdxId": "urn:uuid:93867a66-8945-45c2-ac11-4277d3af38fa",
       "type": "SpdxDocument",
       "creationInfo": "_:creationInfo",
       "comment": "This document's primary communication is the SBOM",
-      "name": "example7-golang.spdx.jsonld",
+      "name": "example7-golang.spdx",
       "profileConformance": [
 	"core",
         "software"
       ],
       "dataLicense": "CC0-1.0",
-      "createdUsing": [
-        "manual"  
-      ],
-      "rootElement": "https://golang.org/dl/go1.16.4-sbom"
+      "rootElement": "urn:uuid:d523d308-8348-4051-85ea-a67a14978fad"
     }
   ]
 }
