@@ -31,9 +31,6 @@
       "createdBy": [
         "urn:uuid:cc81c9c0-c466-4e22-b3f6-945a65f5d07b"
       ],
-      "createdUsing": [
-        "manual"  
-      ],
       "comment": "All objects within the graph will have this same CreationInfo"
     },
     {
@@ -82,6 +79,9 @@
         "urn:uuid:a9f18ff3-17fa-419d-8966-abe4b992312b"
       ],
       "element": [
+        "urn:uuid:a5d2b614-1c0a-477d-b1fc-dc391f2c1c6d",
+        "urn:uuid:cc81c9c0-c466-4e22-b3f6-945a65f5d07b",
+        "urn:uuid:a9f18ff3-17fa-419d-8966-abe4b992312b",
         "urn:uuid:3b2939bf-fcce-4617-a06f-115168870b95",
         "urn:uuid:92c6754b-d6e9-48b7-8b86-54fdc89995a6"
       ]
@@ -97,7 +97,9 @@
         "software"
       ],
       "dataLicense": "CC0-1.0",
-      "rootElement": "urn:uuid:d523d308-8348-4051-85ea-a67a14978fad"
+      "rootElement": [
+        "urn:uuid:d523d308-8348-4051-85ea-a67a14978fad"
+      ]
     }
   ]
 }
