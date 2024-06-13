@@ -16,9 +16,23 @@ jobs:
             -not -path './tools-java/*' \
             -not -path '*/spdx2.2/*' \
             -not -path '*/spdx2.3/*' \
-            -not -path '*/spdx-3.0/*' | tee flist.txt
+            -not -path '*/spdx-3.0/*' > flist.txt
 
-          test "$(cat flist.txt | wc -l)" = "0"
+          if [ "$(cat flist.txt | wc -l)" != "0" ]; then
+            echo "The following files are in the wrong location and will not be checked:"
+            cat flist.txt
+            exit 1
+          fi
+
+      - name: Look for files with the wrong extension
+        run: |
+          find . -name '*.jsonld' > flist.txt
+
+          if [ "$(cat flist.txt | wc -l)" != "0" ]; then
+            echo "The following files have the wrong extension and will not be checked:"
+            cat flist.txt
+            exit 1
+          fi
 
       - name: Update apt
         run: |
