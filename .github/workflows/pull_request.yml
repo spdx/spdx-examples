@@ -16,7 +16,7 @@ jobs:
             -not -path './tools-java/*' \
             -not -path '*/spdx2.2/*' \
             -not -path '*/spdx2.3/*' \
-            -not -path '*/spdx-3.0/*' | tee flist.txt
+            -not -path '*/spdx3.0/*' | tee flist.txt
 
           test "$(cat flist.txt | wc -l)" = "0"
 
@@ -49,7 +49,7 @@ jobs:
           SPDX30_SCHEMA_URL="https://spdx.org/schema/3.0.0/spdx-json-schema.json"
           SPDX30_SHACL_URL="https://spdx.org/rdf/3.0.0/spdx-model.ttl"
 
-          for f in $(find . -type f -path '*/spdx-3.0/*.json'); do
+          for f in $(find . -type f -path '*/spdx3.0/*.json'); do
               echo "Checking $f..."
               check-jsonschema -v --schemafile $SPDX30_SCHEMA_URL $f
               pyshacl -s $SPDX30_SHACL_URL -e $SPDX30_SHACL_URL $f
