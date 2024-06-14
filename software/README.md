@@ -1,30 +1,22 @@
 # SPDX Software Usage Examples
 
-This repository includes demonstrations of [SPDX documents](https://spdx.dev)
-for various examples of software combinations.
+This repository includes demonstrations of [SPDX documents](https://spdx.dev) for various examples of software combinations.
 
-The examples include source code and built / packaged binaries for a variety of
-scenarios. The software in the repository is (for the most part) not taken from
-real projects. However, the examples are intended to be demonstrations of how
-SPDX can convey software bill of materials (SBOM) information for a variety of
-real-world scenarios.
+The examples include source code and built / packaged binaries for a variety of scenarios. The software in the repository is (for the most part) not taken from real projects. However, the examples are intended to be demonstrations of how SPDX can convey software bill of materials (SBOM) information for a variety of real-world scenarios.
 
 ## Format of examples
 
 Directories of the form `example#` are structured as follows:
 
-- `content/src/`: contains the example's source code
 - `content/build/`: contains the example's built artifacts
+- `content/src/`: contains the example's source code
 - `spdx2.2/`: contains one or more SPDX 2.2 documents (in tag-value or JSON
   format) for the sources and the build artifacts
 - `spdx3.0/`: contains one or more SPDX 3.0 documents for the sources and the
   build artifacts
-
 - `README.md`: more details about the particular example
 
-Each directory contains build metadata which is used to create the build
-artifacts. It assumes that the necessary tools (make, gcc, etc.) are present on
-your system, and doesn't do any autoconfiguration or the like.
+Each directory contains build metadata which is used to create the build artifacts. It assumes that the necessary tools (make, gcc, etc.) are present on your system, and doesn't do any autoconfiguration or the like.
 
 ## Examples
 
