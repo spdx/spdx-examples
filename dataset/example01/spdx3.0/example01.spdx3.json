@@ -55,7 +55,7 @@
     },
     {
       "type": "dataset_DatasetPackage",
-      "@id": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
+      "spdxId": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
       "creationInfo": "_:creationinfo",
       "name": "Our World in Data CO2 and Greenhouse Gas Emissions dataset",
       "originatedBy": [
@@ -126,7 +126,7 @@
       "creationInfo": "_:creationinfo",
       "relationshipType": "hasConcludedLicense",
       "from": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
-      "to": "CC-BY-4.0"
+      "to": "https://spdx.org/licenses/CC-BY-4.0"
     },
     {
       "type": "Relationship",
@@ -134,7 +134,14 @@
       "creationInfo": "_:creationinfo",
       "relationshipType": "hasDeclaredLicense",
       "from": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
-      "to": "CC-BY-4.0"
+      "to": "https://spdx.org/licenses/CC-BY-4.0"
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "https://spdx.org/licenses/CC-BY-4.0",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "CC-BY-4.0",
+      "simplelicensing_licenseListVersion": "3.24.0"
     }
   ]
 }
