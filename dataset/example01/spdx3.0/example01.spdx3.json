@@ -6,13 +6,13 @@
       "@id": "_:creationinfo",
       "specVersion": "3.0.0",
       "createdBy": [
-        "https://spdx.org/spdxdocs/Person/ArthitSuriyawongkul-1000e6a2-0229-4875-baa7-c99be213b6e1"
+        "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1"
       ],
       "created": "2024-05-31T00:00:00Z"
     },
     {
       "type": "Person",
-      "spdxId": "https://spdx.org/spdxdocs/Person/ArthitSuriyawongkul-1000e6a2-0229-4875-baa7-c99be213b6e1",
+      "spdxId": "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1",
       "creationInfo": "_:creationinfo",
       "name": "Arthit Suriyawongkul",
       "externalIdentifier": [
@@ -25,7 +25,7 @@
     },
     {
       "type": "Organization",
-      "spdxId": "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b",
+      "spdxId": "https://spdx.org/spdxdocs/Organization1-cb617656-1023-45e7-84c7-a9311644337b",
       "creationInfo": "_:creationinfo",
       "name": "Our World in Data"
     },
@@ -38,28 +38,28 @@
         "dataset"
       ],
       "rootElement": [
-        "https://spdx.org/spdxdocs/BOM-d44af211-2646-43bc-9058-f6aabd30f7ab"
+        "https://spdx.org/spdxdocs/BOM1-d44af211-2646-43bc-9058-f6aabd30f7ab"
       ]
     },
     {
       "type": "Bom",
-      "spdxId": "https://spdx.org/spdxdocs/BOM-d44af211-2646-43bc-9058-f6aabd30f7ab",
+      "spdxId": "https://spdx.org/spdxdocs/BOM1-d44af211-2646-43bc-9058-f6aabd30f7ab",
       "creationInfo": "_:creationinfo",
       "profileConformance": [
         "core",
         "dataset"
       ],
       "rootElement": [
-        "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b"
+        "https://spdx.org/spdxdocs/DatasetPackage1-035470d9-3ede-4952-91c8-c2abb943c90b"
       ]
     },
     {
       "type": "dataset_DatasetPackage",
-      "spdxId": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
+      "spdxId": "https://spdx.org/spdxdocs/DatasetPackage1-035470d9-3ede-4952-91c8-c2abb943c90b",
       "creationInfo": "_:creationinfo",
       "name": "Our World in Data CO2 and Greenhouse Gas Emissions dataset",
       "originatedBy": [
-        "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b"
+        "https://spdx.org/spdxdocs/Organization1-cb617656-1023-45e7-84c7-a9311644337b"
       ],
       "builtTime": "2023-12-16T11:22:38Z",
       "releaseTime": "2024-04-15T08:10:00Z",
@@ -88,7 +88,7 @@
       "software_primaryPurpose": "data",
       "releaseTime": "2024-04-15T08:10:00Z",
       "originatedBy": [
-        "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b"
+        "https://spdx.org/spdxdocs/Organization1-cb617656-1023-45e7-84c7-a9311644337b"
       ]
     },
     {
@@ -100,7 +100,7 @@
       "software_primaryPurpose": "data",
       "releaseTime": "2024-04-15T08:10:00Z",
       "originatedBy": [
-        "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b"
+        "https://spdx.org/spdxdocs/Organization1-cb617656-1023-45e7-84c7-a9311644337b"
       ]
     },
     {
@@ -108,7 +108,7 @@
       "spdxId": "https://spdx.org/spdxdocs/Relationship/contains-c64903fa-cab9-4880-8065-0b9b226ce009",
       "creationInfo": "_:creationinfo",
       "relationshipType": "contains",
-      "from": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
+      "from": "https://spdx.org/spdxdocs/DatasetPackage1-035470d9-3ede-4952-91c8-c2abb943c90b",
       "to": [
         "https://spdx.org/spdxdocs/File1-d029fccb-7ee9-42be-a445-5e2066db0de8",
         "https://spdx.org/spdxdocs/File2-caf55baf-cd02-406a-b7ec-838842ca869f"
@@ -119,9 +119,9 @@
       "spdxId": "https://spdx.org/spdxdocs/Relationship/availableFrom-1b7fb297-b3db-47a2-a6ff-4c6ac424b319",
       "creationInfo": "_:creationinfo",
       "relationshipType": "availableFrom",
-      "from": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
+      "from": "https://spdx.org/spdxdocs/DatasetPackage1-035470d9-3ede-4952-91c8-c2abb943c90b",
       "to": [
-        "https://spdx.org/spdxdocs/Organization/OurWorldInData-cb617656-1023-45e7-84c7-a9311644337b"
+        "https://spdx.org/spdxdocs/Organization1-cb617656-1023-45e7-84c7-a9311644337b"
       ]
     },
     {
@@ -129,7 +129,7 @@
       "spdxId": "https://spdx.org/spdxdocs/Relationship/concludedLicense-8575546c-c4f7-41ec-bb8f-cbd66e70090a",
       "creationInfo": "_:creationinfo",
       "relationshipType": "hasConcludedLicense",
-      "from": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
+      "from": "https://spdx.org/spdxdocs/DatasetPackage1-035470d9-3ede-4952-91c8-c2abb943c90b",
       "to": [
         "https://spdx.org/licenses/CC-BY-4.0"
       ]
@@ -139,7 +139,7 @@
       "spdxId": "https://spdx.org/spdxdocs/Relationship/declaredLicense-e5536c5e-c8b5-4d24-947f-674c27c0b6c1",
       "creationInfo": "_:creationinfo",
       "relationshipType": "hasDeclaredLicense",
-      "from": "https://spdx.org/spdxdocs/DatasetPackage-035470d9-3ede-4952-91c8-c2abb943c90b",
+      "from": "https://spdx.org/spdxdocs/DatasetPackage1-035470d9-3ede-4952-91c8-c2abb943c90b",
       "to": [
         "https://spdx.org/licenses/CC-BY-4.0"
       ]

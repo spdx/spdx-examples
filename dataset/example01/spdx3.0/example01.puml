@@ -1,0 +1,93 @@
+@startuml
+Package "example01.spdx3.json" as e0f93e760a7ca4a42977ad38b538ed73 {
+object "<b>data.csv</b>\nsoftware_File" as e0f93e760a7ca4a42977ad38b538ed73_o1
+object "CreationInfo" as e0f93e760a7ca4a42977ad38b538ed73_o2
+object "<b>Arthit Suriyawongkul</b>\nPerson" as e0f93e760a7ca4a42977ad38b538ed73_o3
+object "ExternalIdentifier" as e0f93e760a7ca4a42977ad38b538ed73_o4
+object "<b>Our World in Data</b>\nOrganization" as e0f93e760a7ca4a42977ad38b538ed73_o5
+object "https://spdx.org/spdxdocs/BOM1-d44af211-2646-43bc-9058-f6aabd30f7ab\nBom" as e0f93e760a7ca4a42977ad38b538ed73_o6
+object "<b>Our World in Data CO2 and Greenhouse Gas Emissions dataset</b>\ndataset_DatasetPackage" as e0f93e760a7ca4a42977ad38b538ed73_o7
+object "https://spdx.org/spdxdocs/Relationship/declaredLicense-e5536c5e-c8b5-4d24-947f-674c27c0b6c1\nRelationship" as e0f93e760a7ca4a42977ad38b538ed73_o8
+object "https://spdx.org/licenses/CC-BY-4.0\nsimplelicensing_LicenseExpression" as e0f93e760a7ca4a42977ad38b538ed73_o9
+object "<b>codebook.csv</b>\nsoftware_File" as e0f93e760a7ca4a42977ad38b538ed73_o10
+object "https://spdx.org/spdxdocs/Relationship/contains-c64903fa-cab9-4880-8065-0b9b226ce009\nRelationship" as e0f93e760a7ca4a42977ad38b538ed73_o11
+object "https://spdx.org/spdxdocs/Relationship/concludedLicense-8575546c-c4f7-41ec-bb8f-cbd66e70090a\nRelationship" as e0f93e760a7ca4a42977ad38b538ed73_o12
+object "https://spdx.org/spdxdocs/Document1-a7a6f7a8-68d5-4052-b3f7-a005d6af28f1\nSpdxDocument" as e0f93e760a7ca4a42977ad38b538ed73_o13
+object "https://spdx.org/spdxdocs/Relationship/availableFrom-1b7fb297-b3db-47a2-a6ff-4c6ac424b319\nRelationship" as e0f93e760a7ca4a42977ad38b538ed73_o14
+}
+e0f93e760a7ca4a42977ad38b538ed73_o1 : spdxId = "https://spdx.org/spdxdocs/File1-d029fccb-7ee9-42be-a445-5e2066db0de8"
+e0f93e760a7ca4a42977ad38b538ed73_o2 : created = 2024-05-31 00:00:00+00:00
+e0f93e760a7ca4a42977ad38b538ed73_o3 : spdxId = "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1"
+e0f93e760a7ca4a42977ad38b538ed73_o3::creationInfo --> e0f93e760a7ca4a42977ad38b538ed73_o2 : creationInfo
+e0f93e760a7ca4a42977ad38b538ed73_o4 : externalIdentifierType = "https://spdx.org/rdf/3.0.0/terms/Core/ExternalIdentifierType/email"
+e0f93e760a7ca4a42977ad38b538ed73_o4 : identifier = "arthit@example.com"
+e0f93e760a7ca4a42977ad38b538ed73_o3::externalIdentifier --> e0f93e760a7ca4a42977ad38b538ed73_o4 : externalIdentifier
+e0f93e760a7ca4a42977ad38b538ed73_o3 : name = "Arthit Suriyawongkul"
+e0f93e760a7ca4a42977ad38b538ed73_o2::createdBy --> e0f93e760a7ca4a42977ad38b538ed73_o3 : createdBy
+e0f93e760a7ca4a42977ad38b538ed73_o2 : specVersion = "3.0.0"
+e0f93e760a7ca4a42977ad38b538ed73_o1::creationInfo --> e0f93e760a7ca4a42977ad38b538ed73_o2 : creationInfo
+e0f93e760a7ca4a42977ad38b538ed73_o1 : name = "data.csv"
+e0f93e760a7ca4a42977ad38b538ed73_o5 : spdxId = "https://spdx.org/spdxdocs/Organization1-cb617656-1023-45e7-84c7-a9311644337b"
+e0f93e760a7ca4a42977ad38b538ed73_o5::creationInfo --> e0f93e760a7ca4a42977ad38b538ed73_o2 : creationInfo
+e0f93e760a7ca4a42977ad38b538ed73_o5 : name = "Our World in Data"
+e0f93e760a7ca4a42977ad38b538ed73_o1::originatedBy --> e0f93e760a7ca4a42977ad38b538ed73_o5 : originatedBy
+e0f93e760a7ca4a42977ad38b538ed73_o1 : releaseTime = 2024-04-15 08:10:00+00:00
+e0f93e760a7ca4a42977ad38b538ed73_o1 : software_primaryPurpose = "https://spdx.org/rdf/3.0.0/terms/Software/SoftwarePurpose/data"
+e0f93e760a7ca4a42977ad38b538ed73_o1 : software_contentType = "text/csv"
+e0f93e760a7ca4a42977ad38b538ed73_o6 : spdxId = "https://spdx.org/spdxdocs/BOM1-d44af211-2646-43bc-9058-f6aabd30f7ab"
+e0f93e760a7ca4a42977ad38b538ed73_o6::creationInfo --> e0f93e760a7ca4a42977ad38b538ed73_o2 : creationInfo
+e0f93e760a7ca4a42977ad38b538ed73_o6 : profileConformance = ['https://spdx.org/rdf/3.0.0/terms/Core/ProfileIdentifierType/core', 'https://spdx.org/rdf/3.0.0/terms/Core/ProfileIdentifierType/dataset']
+e0f93e760a7ca4a42977ad38b538ed73_o7 : spdxId = "https://spdx.org/spdxdocs/DatasetPackage1-035470d9-3ede-4952-91c8-c2abb943c90b"
+e0f93e760a7ca4a42977ad38b538ed73_o7::creationInfo --> e0f93e760a7ca4a42977ad38b538ed73_o2 : creationInfo
+e0f93e760a7ca4a42977ad38b538ed73_o7 : name = "Our World in Data CO2 and Greenhouse Gas Emissions dataset"
+e0f93e760a7ca4a42977ad38b538ed73_o7 : builtTime = 2023-12-16 11:22:38+00:00
+e0f93e760a7ca4a42977ad38b538ed73_o7::originatedBy --> e0f93e760a7ca4a42977ad38b538ed73_o5 : originatedBy
+e0f93e760a7ca4a42977ad38b538ed73_o7 : releaseTime = 2024-04-15 08:10:00+00:00
+e0f93e760a7ca4a42977ad38b538ed73_o7 : software_primaryPurpose = "https://spdx.org/rdf/3.0.0/terms/Software/SoftwarePurpose/data"
+e0f93e760a7ca4a42977ad38b538ed73_o7 : software_downloadLocation = "https://github.com/owid/co2-data/"
+e0f93e760a7ca4a42977ad38b538ed73_o7 : dataset_confidentialityLevel = "https://spdx.org/rdf/3.0.0/terms/Dataset/ConfidentialityLevelType/clear"
+e0f93e760a7ca4a42977ad38b538ed73_o7 : dataset_datasetAvailability = "https://spdx.org/rdf/3.0.0/terms/Dataset/DatasetAvailabilityType/directDownload"
+e0f93e760a7ca4a42977ad38b538ed73_o7 : dataset_datasetSize = 2689
+e0f93e760a7ca4a42977ad38b538ed73_o7 : dataset_datasetType = ['https://spdx.org/rdf/3.0.0/terms/Dataset/DatasetType/structured', 'https://spdx.org/rdf/3.0.0/terms/Dataset/DatasetType/timestamp']
+e0f93e760a7ca4a42977ad38b538ed73_o7 : dataset_datasetUpdateMechanism = "We will continue to publish updated data as it becomes available. Most metrics are published on an annual basis."
+e0f93e760a7ca4a42977ad38b538ed73_o7 : dataset_hasSensitivePersonalInformation = "https://spdx.org/rdf/3.0.0/terms/Core/PresenceType/no"
+e0f93e760a7ca4a42977ad38b538ed73_o7 : dataset_intendedUse = "To make the research and data about carbon dioxide and greenhouse gas emissions accessible and understandable."
+e0f93e760a7ca4a42977ad38b538ed73_o7 : dataset_knownBias = ['Data in some geographical areas are more completed than the others.']
+e0f93e760a7ca4a42977ad38b538ed73_o6::rootElement --> e0f93e760a7ca4a42977ad38b538ed73_o7 : rootElement
+e0f93e760a7ca4a42977ad38b538ed73_o8 : spdxId = "https://spdx.org/spdxdocs/Relationship/declaredLicense-e5536c5e-c8b5-4d24-947f-674c27c0b6c1"
+e0f93e760a7ca4a42977ad38b538ed73_o8::creationInfo --> e0f93e760a7ca4a42977ad38b538ed73_o2 : creationInfo
+e0f93e760a7ca4a42977ad38b538ed73_o7 <-- e0f93e760a7ca4a42977ad38b538ed73_o8::from : from
+e0f93e760a7ca4a42977ad38b538ed73_o8 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/hasDeclaredLicense"
+e0f93e760a7ca4a42977ad38b538ed73_o9 : spdxId = "https://spdx.org/licenses/CC-BY-4.0"
+e0f93e760a7ca4a42977ad38b538ed73_o9::creationInfo --> e0f93e760a7ca4a42977ad38b538ed73_o2 : creationInfo
+e0f93e760a7ca4a42977ad38b538ed73_o9 : simplelicensing_licenseExpression = "CC-BY-4.0"
+e0f93e760a7ca4a42977ad38b538ed73_o9 : simplelicensing_licenseListVersion = "3.24.0"
+e0f93e760a7ca4a42977ad38b538ed73_o8::to --> e0f93e760a7ca4a42977ad38b538ed73_o9 : to
+e0f93e760a7ca4a42977ad38b538ed73_o10 : spdxId = "https://spdx.org/spdxdocs/File2-caf55baf-cd02-406a-b7ec-838842ca869f"
+e0f93e760a7ca4a42977ad38b538ed73_o10::creationInfo --> e0f93e760a7ca4a42977ad38b538ed73_o2 : creationInfo
+e0f93e760a7ca4a42977ad38b538ed73_o10 : name = "codebook.csv"
+e0f93e760a7ca4a42977ad38b538ed73_o10::originatedBy --> e0f93e760a7ca4a42977ad38b538ed73_o5 : originatedBy
+e0f93e760a7ca4a42977ad38b538ed73_o10 : releaseTime = 2024-04-15 08:10:00+00:00
+e0f93e760a7ca4a42977ad38b538ed73_o10 : software_primaryPurpose = "https://spdx.org/rdf/3.0.0/terms/Software/SoftwarePurpose/data"
+e0f93e760a7ca4a42977ad38b538ed73_o10 : software_contentType = "text/csv"
+e0f93e760a7ca4a42977ad38b538ed73_o11 : spdxId = "https://spdx.org/spdxdocs/Relationship/contains-c64903fa-cab9-4880-8065-0b9b226ce009"
+e0f93e760a7ca4a42977ad38b538ed73_o11::creationInfo --> e0f93e760a7ca4a42977ad38b538ed73_o2 : creationInfo
+e0f93e760a7ca4a42977ad38b538ed73_o7 <-- e0f93e760a7ca4a42977ad38b538ed73_o11::from : from
+e0f93e760a7ca4a42977ad38b538ed73_o11 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/contains"
+e0f93e760a7ca4a42977ad38b538ed73_o11::to --> e0f93e760a7ca4a42977ad38b538ed73_o1 : to
+e0f93e760a7ca4a42977ad38b538ed73_o11::to --> e0f93e760a7ca4a42977ad38b538ed73_o10 : to
+e0f93e760a7ca4a42977ad38b538ed73_o12 : spdxId = "https://spdx.org/spdxdocs/Relationship/concludedLicense-8575546c-c4f7-41ec-bb8f-cbd66e70090a"
+e0f93e760a7ca4a42977ad38b538ed73_o12::creationInfo --> e0f93e760a7ca4a42977ad38b538ed73_o2 : creationInfo
+e0f93e760a7ca4a42977ad38b538ed73_o7 <-- e0f93e760a7ca4a42977ad38b538ed73_o12::from : from
+e0f93e760a7ca4a42977ad38b538ed73_o12 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/hasConcludedLicense"
+e0f93e760a7ca4a42977ad38b538ed73_o12::to --> e0f93e760a7ca4a42977ad38b538ed73_o9 : to
+e0f93e760a7ca4a42977ad38b538ed73_o13 : spdxId = "https://spdx.org/spdxdocs/Document1-a7a6f7a8-68d5-4052-b3f7-a005d6af28f1"
+e0f93e760a7ca4a42977ad38b538ed73_o13::creationInfo --> e0f93e760a7ca4a42977ad38b538ed73_o2 : creationInfo
+e0f93e760a7ca4a42977ad38b538ed73_o13 : profileConformance = ['https://spdx.org/rdf/3.0.0/terms/Core/ProfileIdentifierType/core', 'https://spdx.org/rdf/3.0.0/terms/Core/ProfileIdentifierType/dataset']
+e0f93e760a7ca4a42977ad38b538ed73_o13::rootElement --> e0f93e760a7ca4a42977ad38b538ed73_o6 : rootElement
+e0f93e760a7ca4a42977ad38b538ed73_o14 : spdxId = "https://spdx.org/spdxdocs/Relationship/availableFrom-1b7fb297-b3db-47a2-a6ff-4c6ac424b319"
+e0f93e760a7ca4a42977ad38b538ed73_o14::creationInfo --> e0f93e760a7ca4a42977ad38b538ed73_o2 : creationInfo
+e0f93e760a7ca4a42977ad38b538ed73_o7 <-- e0f93e760a7ca4a42977ad38b538ed73_o14::from : from
+e0f93e760a7ca4a42977ad38b538ed73_o14 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/availableFrom"
+e0f93e760a7ca4a42977ad38b538ed73_o14::to --> e0f93e760a7ca4a42977ad38b538ed73_o5 : to
+@enduml
