@@ -16,4 +16,4 @@ Directories of the form `example##` are structured as follows:
 
 | ## | Data | Sources | SPDX | Comments |
 |----|------|---------|------|----------|
-|  1 | 2 CSV files | - | 1 document | - |
+| [01](./example01/) | 2 CSV files | - | 1 document | An example of a simple dataset in tabular format. |
