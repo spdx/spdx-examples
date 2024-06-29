@@ -19,7 +19,7 @@
         {
           "type": "ExternalIdentifier",
           "externalIdentifierType": "email",
-          "identifier": "arthit@example.com"
+          "identifier": "suriyawa@tcd.ie"
         }
       ]
     },
@@ -27,7 +27,18 @@
       "type": "Organization",
       "spdxId": "https://spdx.org/spdxdocs/Organization1-cb617656-1023-45e7-84c7-a9311644337b",
       "creationInfo": "_:creationinfo",
-      "name": "Our World in Data"
+      "name": "Our World in Data",
+      "externalIdentifier": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "other",
+          "issuingAuthority": "GitHub",
+          "identifier": "owid",
+          "identifierLocator": [
+            "https://github.com/owid/"
+          ]
+        }
+      ]
     },
     {
       "type": "SpdxDocument",
@@ -66,7 +77,11 @@
       "software_downloadLocation": "https://github.com/owid/co2-data/",
       "software_primaryPurpose": "data",
       "dataset_confidentialityLevel": "clear",
+      "dataset_dataPreprocessing": [
+        "The dataset is built upon a number of datasets and processing steps. See: https://github.com/owid/co2-data/blob/master/README.md"
+      ],
       "dataset_datasetAvailability": "directDownload",
+      "dataset_dataCollectionProcess": "The data is collected from various sources, including international organizations and research institutions.",
       "dataset_datasetSize": 2689,
       "dataset_datasetType": [
         "structured",
@@ -77,14 +92,15 @@
       "dataset_intendedUse": "To make the data about greenhouse gas emissions accessible.",
       "dataset_knownBias": [
         "Data in some geographical areas are more completed than the others."
-      ]
+      ],
+      "comment": "This is a small excerpt of the full dataset."
     },
     {
       "type": "software_File",
       "spdxId": "https://spdx.org/spdxdocs/File1-d029fccb-7ee9-42be-a445-5e2066db0de8",
       "creationInfo": "_:creationinfo",
       "name": "data.csv",
-      "software_contentType": "text/csv",
+      "software_contentType": "text/csv;charset=UTF-8",
       "software_primaryPurpose": "data",
       "releaseTime": "2024-04-15T08:10:00Z",
       "originatedBy": [
@@ -96,12 +112,13 @@
       "spdxId": "https://spdx.org/spdxdocs/File2-caf55baf-cd02-406a-b7ec-838842ca869f",
       "creationInfo": "_:creationinfo",
       "name": "codebook.csv",
-      "software_contentType": "text/csv",
+      "software_contentType": "text/csv;charset=UTF-8",
       "software_primaryPurpose": "data",
       "releaseTime": "2024-04-15T08:10:00Z",
       "originatedBy": [
         "https://spdx.org/spdxdocs/Organization1-cb617656-1023-45e7-84c7-a9311644337b"
-      ]
+      ],
+      "description": "A description of each column in data.csv."
     },
     {
       "type": "Relationship",
@@ -112,7 +129,19 @@
       "to": [
         "https://spdx.org/spdxdocs/File1-d029fccb-7ee9-42be-a445-5e2066db0de8",
         "https://spdx.org/spdxdocs/File2-caf55baf-cd02-406a-b7ec-838842ca869f"
-      ]
+      ],
+      "description": "DatasetPackage1 contains data.csv and codebook.csv."
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "https://spdx.org/spdxdocs/Relationship/describes-de3f5855-bd5a-403f-9aa6-95dd97599c32",
+      "creationInfo": "_:creationinfo",
+      "relationshipType": "describes",
+      "from": "https://spdx.org/spdxdocs/File2-caf55baf-cd02-406a-b7ec-838842ca869f",
+      "to": [
+        "https://spdx.org/spdxdocs/File1-d029fccb-7ee9-42be-a445-5e2066db0de8"
+      ],
+      "description": "codebook.csv describes data.csv."
     },
     {
       "type": "Relationship",
@@ -122,7 +151,8 @@
       "from": "https://spdx.org/spdxdocs/DatasetPackage1-035470d9-3ede-4952-91c8-c2abb943c90b",
       "to": [
         "https://spdx.org/licenses/CC-BY-4.0"
-      ]
+      ],
+      "description": "DatasetPackage1 has a concluded license as CC-BY-4.0."
     },
     {
       "type": "Relationship",
@@ -132,14 +162,16 @@
       "from": "https://spdx.org/spdxdocs/DatasetPackage1-035470d9-3ede-4952-91c8-c2abb943c90b",
       "to": [
         "https://spdx.org/licenses/CC-BY-4.0"
-      ]
+      ],
+      "description": "DatasetPackage1 has a declared license as CC-BY-4.0."
     },
     {
       "type": "simplelicensing_LicenseExpression",
       "spdxId": "https://spdx.org/licenses/CC-BY-4.0",
       "creationInfo": "_:creationinfo",
       "simplelicensing_licenseExpression": "CC-BY-4.0",
-      "simplelicensing_licenseListVersion": "3.24.0"
+      "simplelicensing_licenseListVersion": "3.24.0",
+      "comment": "Added as a workaround for the lack of https://spdx.org/licenses/CC-BY-4.0 as a valid ListedLicense in SPDX 3.0.0 RDF. This will be removed once https://github.com/spdx/LicenseListPublisher/issues/183 is implemented."
     }
   ]
 }

@@ -20,8 +20,9 @@ Each record consists mostly of numerical data with some categorical data.
 The file `codebook.csv` contains the column names from the header of
 `data.csv`, together with their description, unit, and source.
 
-The content of this example is an excerpt of Our World in Data CO2 and
-Greenhouse Gas Emissions dataset, available in full, under Creative Commons
-Attribution 4.0 International License, at <https://github.com/owid/co2-data/>.
+The content of this example is an excerpt of the Our World in Data CO2 and
+Greenhouse Gas Emissions dataset. It is available in full, under Creative
+Commons Attribution 4.0 International License, at
+<https://github.com/owid/co2-data/>.
 
-[![A diagram of SPDX 3.0 of Dataset Example 01](./spdx3.0/example01.spdx3.png "A diagram of SPDX 3.0 of Dataset Example 01")](./spdx3.0/example01.spdx3.png)
+[![A diagram of a bill of materials of Dataset Example 01](./spdx3.0/example01.png "A diagram of a bill of materials of Dataset Example 01")](./spdx3.0/example01.png)
