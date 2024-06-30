@@ -25,4 +25,9 @@ Greenhouse Gas Emissions dataset. It is available in full, under Creative
 Commons Attribution 4.0 International License, at
 <https://github.com/owid/co2-data/>.
 
+This simplified
+[Unified Modeling Language (UML)](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
+illustrates Example 01.  Long string values are truncated and the spdxIds are
+shortened (by removing the UUID suffix), for brevity.
+
 [![A diagram of a bill of materials of Dataset Example 01](./spdx3.0/example01.png "A diagram of a bill of materials of Dataset Example 01")](./spdx3.0/example01.png)
