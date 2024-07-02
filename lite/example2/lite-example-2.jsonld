@@ -1,0 +1,135 @@
+{
+    "@context": "https://raw.githubusercontent.com/spdx/spdx-3-serialization-prototype-playground/main/jsonld/spdx-3.0-context.json-ld",
+    "@graph": [
+        {
+            "type": "SpdxDocument",
+            "spdxId": "http://spdx.example.com/Document/1",
+            "name": "Lite-SpdxDocument",
+            "comment": "if any",
+            "creationInfo": "_:creationinfo",
+            "verifiedUsing": [{
+                "type": "Hash",
+                "algorithm": "sha3_512",
+                "hashValue": "hash value of Sbom object"
+            }],
+            "rootElement": "http://spdx.example.com/Sbom/1",
+            "element": [
+                "http://spdx.example.com/Sbom/1",
+                "http://spdx.example.com/Package/2"
+            ],
+            "namespaceMap": [{
+                "type": "NamespaceMap",
+                "prefix": "lite-example",
+                "namespace": "http://spdx.example.com/Lite/1"
+            }],
+            "dataLicense": "CC0-1.0"
+        },
+        {
+            "type": "Sbom",
+            "spdxId": "http://spdx.example.com/Sbom/1",
+            "creationInfo": "_:creationinfo",
+            "rootElement": "http://spdx.example.com/Package/1",
+            "element": [
+                "http://spdx.example.com/Package/1",
+                "http://spdx.example.com/LicenseExpression/1",
+                "http://spdx.example.com/Relationship/1",
+                "http://spdx.example.com/Relationship/2",
+                "http://spdx.example.com/Relationship/3"
+            ],
+            "sbomType": "build"
+        },
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.0.0",
+            "comment": "if any",
+            "created": "2024-05-06T00:00:00Z",
+            "createdBy": "http://spdx.example.com/Agent/NorioKobota"
+        },
+        {
+            "type": "Person",
+            "spdxId": "http://spdx.example.com/Agent/NorioKobota",
+            "name": "Norio Kobota",
+            "creationInfo": "_:creationinfo",
+            "externalIdentifier": {
+                "type": "ExternalIdentifier",
+                "externalIdentifierType": "email",
+                "identifier": "norio.kobota@sony.com"
+            }
+        },
+        {
+            "type": "Package",
+            "spdxId": "http://spdx.example.com/Package/1",
+            "name": "my-package",
+            "comment": "if any",
+            "creationInfo": "_:creationinfo",
+            "verifiedUsing": [{
+                "type": "Hash",
+                "algorithm": "sha3_512",
+                "hashValue": "hash value of the package file"
+            }],
+            "originatedBy": [
+                "http://spdx.example.com/Agent/NorioKobota"
+            ],
+            "suppliedBy": "http://spdx.example.com/Agent/NorioKobota",
+            "builtTime": "2024-05-06T00:00:00Z",
+            "releaseTime": "2024-05-06T00:00:00Z",
+            "validUntilTime": "2034-05-06T00:00:00Z",
+            "supportLevel": "limitedSupport",
+            "copyrightText": "copyright text",
+            "attributionText": "other attribution text",
+            "packageVersion": "v1.0",
+            "downloadLocation": "http://dl.example.com/my-package_v1.0.tar",
+            "packageUrl": "pkg:github/example/my-package/releases/tag/v1.0",
+            "homepage": "website for the Package/1"
+        },
+        {
+            "type": "Package",
+            "spdxId": "http://spdx.example.com/Package/2",
+            "name": "my-package_1.0.0.tar.gz",
+            "creationInfo": "_:creationinfo",
+            "verifiedUsing": [{
+                "type": "Hash",
+                "algorithm": "sha3_512",
+                "hashValue": "hash value of my-package_1.0.0.tar.gz file"
+            }]
+        },
+        {
+            "type": "LicenseExpression",
+            "spdxId": "http://spdx.example.com/LicenseExpression/1",
+            "creationInfo": "_:creationinfo",
+            "licenseExpression": "GPL-2.0-only",
+            "licenseListVersion": "3.23.0"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "http://spdx.example.com/Relationship/1",
+            "creationInfo": "_:creationinfo",
+            "from": "http://spdx.example.com/Sbom/1",
+            "to": [
+                "http://spdx.example.com/Package/1"
+            ],
+            "relationshipType": "contains"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "http://spdx.example.com/Relationship/2",
+            "creationInfo": "_:creationinfo",
+            "from": "http://spdx.example.com/Package/1",
+            "to": [
+                "http://spdx.example.com/LicenseExpression/1"
+            ],
+            "relationshipType": "hasDeclaredLicense"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "http://spdx.example.com/Relationship/3",
+            "creationInfo": "_:creationinfo",
+            "from": "http://spdx.example.com/Package/1",
+            "to": [
+                "http://spdx.example.com/LicenseExpression/1"
+            ],
+            "relationshipType": "hasConcludedLicense"
+        }
+    ]
+}
