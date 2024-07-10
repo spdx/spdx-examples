@@ -26,7 +26,7 @@
         },
         {
             "type": "software_Sbom",
-            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Sbom/1",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Sbom/2",
             "creationInfo": "_:creationinfo",
             "rootElement": [ "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Package/1" ],
             "element": [
@@ -86,7 +86,7 @@
             "supportLevel": "limitedSupport",
             "software_copyrightText": "copyright text",
             "software_attributionText": "other attribution text",
-            "software_packageVersion": "v1.0",
+            "software_packageVersion": "v1.1",
             "software_downloadLocation": "http://dl.example.com/my-package_v1.0.tar",
             "software_packageUrl": "pkg:github/example/my-package/releases/tag/v1.0",
             "software_homepage": "website for the Package/1"
