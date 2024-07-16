@@ -29,7 +29,7 @@ According to `readelf`, the example4 binary `main` relies on two shared librarie
  0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
 ```
 
-In [`example4-bin.spdx`](spdx/example4-bin.spdx), we can create Package Information sections for each of `libdl` and `libc`.
+In [`example4-bin.spdx`](spdx2.2/example4-bin.spdx), we can create Package Information sections for each of `libdl` and `libc`.
 Keep in mind that these are _not_ files that are provided by the software distribution that the SPDX documents reflect: the `content/` directory does not contain libdl.so.2 or libc.so.6.
 Because they are not part of the software distribution that the SPDX document is primarily describing, there is _not_ a `DESCRIBES` relationship between the document and these shared libraries.
 
