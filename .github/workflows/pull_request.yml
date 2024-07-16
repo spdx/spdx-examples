@@ -9,16 +9,39 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Look for files that are not checked
+      - name: Look for files with the wrong location
         run: |
           find . \( -name '*.spdx' -o -name '*.json' \) \
             -not -path './presentations/*' \
             -not -path './tools-java/*' \
             -not -path '*/spdx2.2/*' \
             -not -path '*/spdx2.3/*' \
-            -not -path '*/spdx3.0/*' | tee flist.txt
+            -not -path '*/spdx3.0/*' > flist.txt
 
-          test "$(cat flist.txt | wc -l)" = "0"
+          if [ "$(cat flist.txt | wc -l)" != "0" ]; then
+            echo "The following files are in the wrong location and will not be checked:"
+            cat flist.txt
+            echo "Expected locations:"
+            echo "./presentations/"
+            echo "./tools-java/
+            echo "*/spdx2.2/"
+            echo "*/spdx2.3/"
+            echo "*/spdx3.0/"
+            exit 1
+          fi
+
+      - name: Look for files with the wrong extension
+        run: |
+          find . -name '*.jsonld' > flist.txt
+
+          if [ "$(cat flist.txt | wc -l)" != "0" ]; then
+            echo "The following files have the wrong extension and will not be checked:"
+            cat flist.txt
+            echo "Expected extensions:"
+            echo "*.spdx"
+            echo "*.json"
+            exit 1
+          fi
 
       - name: Update apt
         run: |
