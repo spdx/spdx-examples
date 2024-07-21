@@ -7,11 +7,11 @@ And Security Profile(Minimum Requirement VEX) information is added.
 Package1 has one vulnerability, CVE-1234-1234.
 This sample contains 3 files to show the VEX status transition.
 The trasition is as follows:
-1. UnderInvestigation: Lite-example-1-1-with-VEX.json
+1. UnderInvestigation: Lite-example-1-1-with-VEX.spdx.json
    ![Fig1](img/Lite-example-1-1-with-VEX.png)
-2. Affected: Lite-example-1-2-with-VEX.json
+2. Affected: Lite-example-1-2-with-VEX.spdx.json
    ![Fig2](img/Lite-example-1-2-with-VEX.png)
-3. Fixed: Lite-example-1-3-with-VEX.json
+3. Fixed: Lite-example-1-3-with-VEX.spdx.json
    ![Fig3](img/Lite-example-1-3-with-VEX.png) 
 
 ```
