@@ -164,7 +164,7 @@
             "createdBy": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Agent/NorioKobota"
         },
         {
-            "type": "Vulnerability",
+            "type": "security_Vulnerability",
             "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Vulnerability/1",
             "name": "CVE-1234-1234",
             "comment": "if any",
@@ -187,7 +187,7 @@
             "relationshipType": "hasAssociatedVulnerability"
         },
         {
-            "type": "VexUnderInvestigationVulnAssessmentRelationship",
+            "type": "security_VexUnderInvestigationVulnAssessmentRelationship",
             "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexUnderInvestigationVulnAssessmentRelationship/1",
             "name": "if any",
             "comment": "if any",
@@ -204,7 +204,7 @@
             "security_statusNotes": "if any"
         },
         {
-            "type": "VexAffectedVulnAssessmentRelationship",
+            "type": "security_VexAffectedVulnAssessmentRelationship",
             "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexAffectedVulnAssessmentRelationship/1",
             "name": "if any",
             "comment": "if any",
@@ -223,7 +223,7 @@
             "security_actionStatementTime": "2024-05-07T00:00:00Z"
         },
         {
-            "type": "VulnAssessmentRelationship",
+            "type": "security_VulnAssessmentRelationship",
             "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VulnAssessmentRelationship/1",
             "creationInfo": "_:creationinfo_vex2",
             "from": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexUnderInvestigationVulnAssessmentRelationship/1",
