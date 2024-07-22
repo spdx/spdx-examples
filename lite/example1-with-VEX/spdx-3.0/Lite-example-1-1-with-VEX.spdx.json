@@ -152,6 +152,8 @@
             "comment": "if any",
             "creationInfo": "_:creationinfo_vex1",
             "externalIdetifier": {
+                "type": "ExternalIdentifier",
+                "externalIdentifierType": "cve",
                 "identifier": "CVE-1234-1234",
                 "comment": "must"
             },
