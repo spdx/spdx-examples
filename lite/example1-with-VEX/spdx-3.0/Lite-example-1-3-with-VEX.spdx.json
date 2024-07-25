@@ -259,7 +259,7 @@
             "to": [
                     "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexAffectedVulnAssessmentRelationship/1"
             ],
-            "relationshipType": "amends"
+            "relationshipType": "amendedBy"
         },
         {
             "type": "security_VulnAssessmentRelationship",
@@ -269,7 +269,7 @@
             "to": [
                 "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexFixedVulnAssessmentRelationship/1"
             ],
-            "relationshipType": "amends"
+            "relationshipType": "amendedBy"
         }
     ]
 }
