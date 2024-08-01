@@ -56,7 +56,7 @@
 			"type": "software_Package",
 			"spdxId": "https://my-first-aibom.com/SimpleHTR",
 			"creationInfo": "_:creationinfo_of_package",
-			"name": "simpleHTR",
+			"name": "SimpleHTR",
 			"software_downloadLocation": "https://github.com/githubharald/SimpleHTR/tree/master",
 			"originatedBy": [
 				"https://github.com/githubharald"
@@ -147,7 +147,7 @@
 				"https://github.com/githubharald"
 			],
 			"software_primaryPurpose": "source",
-			"comment": "This directory contains all the source code files that is required for simpleHTR application",
+			"comment": "This directory contains all the source code files that is required for SimpleHTR application",
 			"software_fileKind": "directory"
 		},
 		{
