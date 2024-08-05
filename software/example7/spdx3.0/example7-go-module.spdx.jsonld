@@ -50,11 +50,11 @@
       "comment": "The SBOM communicates that this document is an SBOM. The SBOM only has one element",
       "rootElement": [
         "urn:uuid:a9f18ff3-17fa-419d-8966-abe4b992312b"
-      ]
+      ],
       "element": [
         "urn:uuid:cf7dddac-8ce5-4a16-8860-ee255be7b4c8",
         "urn:uuid:a9f18ff3-17fa-419d-8966-abe4b992312b",
-        "urn:uuid:d8bfb4bd-f3b9-4d5e-b83d-dd48038ecfde",
+        "urn:uuid:d8bfb4bd-f3b9-4d5e-b83d-dd48038ecfde"
       ]
     },
     {
