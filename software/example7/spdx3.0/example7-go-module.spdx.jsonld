@@ -18,13 +18,6 @@
       ]
     },
     {
-      "spdxId": "urn:uuid:d8bfb4bd-f3b9-4d5e-b83d-dd48038ecfde",
-      "type": "Organization",
-      "creationInfo": "_:creationInfo",
-      "comment": "The organization that originated the software package",
-      "name": "golang.org"
-    },
-    {
       "@id": "_:creationInfo",
       "type": "CreationInfo",
       "created": "2020-11-25T01:12:27Z",
@@ -47,14 +40,13 @@
       "type": "software_Sbom",
       "spdxId": "urn:uuid:711c6f39-6c80-494e-b848-1c01e8962345",
       "creationInfo": "_:creationInfo",
-      "comment": "The SBOM communicates that this document is an SBOM. The SBOM only has one element",
+      "comment": "The SBOM communicates that this document is an SBOM. The SBOM only has one software package and its creator",
       "rootElement": [
-        "urn:uuid:a9f18ff3-17fa-419d-8966-abe4b992312b"
+        "urn:uuid:e1877974-0aaa-48e6-931f-db4898c543f8"
       ],
       "element": [
         "urn:uuid:cf7dddac-8ce5-4a16-8860-ee255be7b4c8",
-        "urn:uuid:a9f18ff3-17fa-419d-8966-abe4b992312b",
-        "urn:uuid:d8bfb4bd-f3b9-4d5e-b83d-dd48038ecfde"
+        "urn:uuid:e1877974-0aaa-48e6-931f-db4898c543f8"
       ]
     },
     {
