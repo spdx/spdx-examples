@@ -1,7 +1,5 @@
 { 
-  "@context": [
-    "https://spdx.org/rdf/3.0.0/spdx-context.jsonld"
-  ],
+  "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
   "@graph": [
     {
       "spdxId": "urn:uuid:75f4bf57-0976-446d-869a-67856a1fa5bb",
@@ -34,6 +32,7 @@
     {
       "@id": "_:creationInfo",
       "type": "CreationInfo",
+      "specVersion": "3.0.0",
       "created": "2020-11-25T01:12:27Z",
       "createdBy": [
         "urn:uuid:75f4bf57-0976-446d-869a-67856a1fa5bb"
@@ -48,7 +47,9 @@
       "comment": "Go module dependency. The author is not given",
       "software_primaryPurpose": "library",
       "software_downloadLocation": "git://golang.org/x/text@v0.0.0-20170915032832-14c0d48ead0c",
-      "originatedBy": "urn:uuid:4b3add7d-8d36-488d-b7cc-f3891af633d1"
+      "originatedBy": [
+        "urn:uuid:4b3add7d-8d36-488d-b7cc-f3891af633d1"
+      ]
     },
     {
       "spdxId": "urn:uuid:84e4231d-fc1d-4b4e-9609-05781f81fa73",
@@ -58,7 +59,9 @@
       "comment": "Go module dependency. The author is not given",
       "software_primaryPurpose": "library",
       "software_downloadLocation": "git://rsc.io/sampler@v1.3.0",
-      "originatedBy": "urn:uuid:1c20ec6e-6e84-417a-8b7f-51bb69f62cb2"
+      "originatedBy": [
+        "urn:uuid:1c20ec6e-6e84-417a-8b7f-51bb69f62cb2"
+      ]
     },
     {
       "type": "software_Sbom",
@@ -71,7 +74,8 @@
       ],
       "element": [
         "urn:uuid:75f4bf57-0976-446d-869a-67856a1fa5bb",
-        "urn:uuid:0ae67aec-e3f7-4020-b0bc-068486068127",
+        "urn:uuid:4b3add7d-8d36-488d-b7cc-f3891af633d1",
+        "urn:uuid:1c20ec6e-6e84-417a-8b7f-51bb69f62cb2",
         "urn:uuid:4918b993-36f8-4e75-bf94-2f017575eae5",
         "urn:uuid:84e4231d-fc1d-4b4e-9609-05781f81fa73"      
       ]
@@ -86,7 +90,6 @@
 	"core",
         "software"
       ],
-      "dataLicense": "CC0-1.0",
       "rootElement": [
         "urn:uuid:30bebcfc-096f-4cbd-9fea-da1b8c5f8ea6"
       ]

@@ -1,7 +1,5 @@
 {
-  "@context": [
-    "https://spdx.org/rdf/3.0.0/spdx-context.jsonld"
-  ],
+  "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
   "@graph": [
     {
       "spdxId": "urn:uuid:cc81c9c0-c466-4e22-b3f6-945a65f5d07b",
@@ -27,6 +25,7 @@
     {
       "@id": "_:creationInfo",
       "type": "CreationInfo",
+      "specVersion": "3.0.0",
       "created": "2020-11-24T01:12:27Z",
       "createdBy": [
         "urn:uuid:cc81c9c0-c466-4e22-b3f6-945a65f5d07b"
@@ -42,7 +41,9 @@
       "software_packageVersion": "1.16.4",
       "software_primaryPurpose": "install",
       "software_downloadLocation": "https://golang.org/dl/go1.16.4.linux-amd64.tar.gz",
-      "originatedBy": "urn:uuid:a5d2b614-1c0a-477d-b1fc-dc391f2c1c6d",
+      "originatedBy": [
+        "urn:uuid:a5d2b614-1c0a-477d-b1fc-dc391f2c1c6d"
+      ],
       "verifiedUsing": [
         {
           "type": "Hash",
@@ -57,7 +58,9 @@
       "name": "go",
       "creationInfo": "_:creationInfo",
       "comment": "The installation comes with an executable",
-      "originatedBy": "urn:uuid:a5d2b614-1c0a-477d-b1fc-dc391f2c1c6d",
+      "originatedBy": [
+        "urn:uuid:a5d2b614-1c0a-477d-b1fc-dc391f2c1c6d"
+      ],
       "software_primaryPurpose": "executable"
     },
     {
@@ -93,10 +96,9 @@
       "comment": "This document's primary communication is the SBOM",
       "name": "example7-golang.spdx",
       "profileConformance": [
-	"core",
+        "core",
         "software"
       ],
-      "dataLicense": "CC0-1.0",
       "rootElement": [
         "urn:uuid:d523d308-8348-4051-85ea-a67a14978fad"
       ]
