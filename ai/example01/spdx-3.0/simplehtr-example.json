@@ -1634,7 +1634,7 @@
 		},
 		{
 			"type": "Relationship",
-			"spdxId": "https://my-first-aibom.com/SimpleHTR-declaredLicense/IAMdataset",
+			"spdxId": "https://my-first-aibom.com/SimpleHTR-concludedLicense/IAMdataset",
 			"creationInfo": "_:creationinfo",
 			"relationshipType": "hasConcludedLicense",
 			"from": "https://my-first-aibom.com/IAMdataset",
