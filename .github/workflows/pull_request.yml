@@ -1,13 +1,38 @@
 name: SPDX validation
 on:
-  - pull_request
-  - push
+  pull_request:
+    paths:
+      - '!presentations/**/*.json'
+      - '!presentations/**/*.jsonld'
+      - '!tools-java/**/*.json'
+      - '!tools-java/**/*.jsonld'
+      - '!**/spdx2.2/**/*.json'
+      - '!**/spdx2.2/**/*.jsonld'
+      - '!**/spdx2.3/**/*.json'
+      - '!**/spdx2.3/**/*.jsonld'
+      - '!**/spdx3.0/**/*.json'
+      - '!**/spdx3.0/**/*.jsonld'
+  push:
+    paths:
+      - '**/*.json'
+      - '**/*.jsonld'
+      - '!presentations/**/*.json'
+      - '!presentations/**/*.jsonld'
+      - '!tools-java/**/*.json'
+      - '!tools-java/**/*.jsonld'
+      - '!**/spdx2.2/**/*.json'
+      - '!**/spdx2.2/**/*.jsonld'
+      - '!**/spdx2.3/**/*.json'
+      - '!**/spdx2.3/**/*.jsonld'
+      - '!**/spdx3.0/**/*.json'
+      - '!**/spdx3.0/**/*.jsonld'
 
 jobs:
   SPDX_Validation:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout spdx-examples
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332  #v4.1.7
 
       - name: Look for files with the wrong location
         run: |
@@ -19,14 +44,15 @@ jobs:
             -not -path '*/spdx3.0/*' > flist.txt
 
           if [ "$(cat flist.txt | wc -l)" != "0" ]; then
-            echo "The following files are in the wrong location and will not be checked:"
-            cat flist.txt
-            echo "Expected locations:"
+            echo "SPDX JSON files are only expected in these locations:"
             echo "./presentations/"
             echo "./tools-java/
             echo "*/spdx2.2/"
             echo "*/spdx2.3/"
             echo "*/spdx3.0/"
+            echo ""
+            echo "The following files are in the wrong location and will not be checked:"
+            cat flist.txt
             exit 1
           fi
 
@@ -35,11 +61,12 @@ jobs:
           find . -name '*.jsonld' > flist.txt
 
           if [ "$(cat flist.txt | wc -l)" != "0" ]; then
-            echo "The following files have the wrong extension and will not be checked:"
-            cat flist.txt
-            echo "Expected extensions:"
+            echo "SPDX JSON can only has these extensions:"
             echo "*.spdx"
             echo "*.json"
+            echo ""
+            echo "The following files have the wrong extension and will not be checked:"
+            cat flist.txt
             exit 1
           fi
 
