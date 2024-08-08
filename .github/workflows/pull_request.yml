@@ -44,7 +44,7 @@ jobs:
           if [ "$(cat flist.txt | wc -l)" != "0" ]; then
             echo "SPDX JSON files are only expected in these locations:"
             echo "./presentations/"
-            echo "./tools-java/
+            echo "./tools-java/"
             echo "*/spdx2.2/"
             echo "*/spdx2.3/"
             echo "*/spdx3.0/"
