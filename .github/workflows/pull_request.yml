@@ -1,18 +1,82 @@
 name: SPDX validation
-on: pull_request
+on:
+  - pull_request
+  - push
 
 jobs:
   SPDX_Validation:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup
+      - name: Checkout spdx-examples
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332  #v4.1.7
+
+      - name: Look for files with the wrong location
+        run: |
+          find . \( -name '*.spdx' -o -name '*.json' \) \
+            -not -path './presentations/*' \
+            -not -path './tools-java/*' \
+            -not -path '*/spdx2.2/*' \
+            -not -path '*/spdx2.3/*' \
+            -not -path '*/spdx3.0/*' > flist.txt
+
+          if [ "$(cat flist.txt | wc -l)" != "0" ]; then
+            echo "SPDX JSON files are only expected in these locations:"
+            echo "./presentations/"
+            echo "./tools-java/"
+            echo "*/spdx2.2/"
+            echo "*/spdx2.3/"
+            echo "*/spdx3.0/"
+            echo ""
+            echo "The following files are in the wrong location and will not be checked:"
+            cat flist.txt
+            exit 1
+          fi
+
+      - name: Look for files with the wrong extension
+        run: |
+          find . -name '*.jsonld' > flist.txt
+
+          if [ "$(cat flist.txt | wc -l)" != "0" ]; then
+            echo "SPDX JSON can only has these extensions:"
+            echo "*.spdx"
+            echo "*.json"
+            echo ""
+            echo "The following files have the wrong extension and will not be checked:"
+            cat flist.txt
+            exit 1
+          fi
+
+      - name: Update apt
+        run: |
+          sudo apt update -y
+
+      - name: Setup Java tools
         run: |
           sudo apt install -y default-jdk maven
           git clone https://github.com/spdx/tools-java.git && cd tools-java
           export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
           mvn clean install && cd ..
-            
-      - name: Validate SPDX Documents
+
+      - name: Setup Python tools
         run: |
-          find . -name *.spdx -o -name *.json -exec echo {} \; -exec java -jar tools-java/target/tools-java-*-jar-with-dependencies.jar Verify {} \;
+          python3 -m pip install -U pip
+          python3 -m pip install \
+            check-jsonschema \
+            pyshacl
+
+      - name: Validate SPDX 2.2 & SPDX 2.3 Documents
+        run: |
+          find . \( -path '*/spdx2.2/*' -o -path '*/spdx2.3/*' \) \( -name *.spdx -o -name *.json \) \
+            -exec echo {} \; \
+            -exec java -jar tools-java/target/tools-java-*-jar-with-dependencies.jar Verify {} \;
+
+      - name: Validate SPDX 3.0 Documents
+        run: |
+          SPDX30_SCHEMA_URL="https://spdx.org/schema/3.0.0/spdx-json-schema.json"
+          SPDX30_SHACL_URL="https://spdx.org/rdf/3.0.0/spdx-model.ttl"
+
+          for f in $(find . -type f -path '*/spdx3.0/*.json'); do
+              echo "Checking $f..."
+              check-jsonschema -v --schemafile $SPDX30_SCHEMA_URL $f
+              pyshacl -s $SPDX30_SHACL_URL -e $SPDX30_SHACL_URL $f
+          done
