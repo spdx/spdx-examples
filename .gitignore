@@ -23,4 +23,15 @@ tags
 
 # macOS
 .DS_Store
+.AppleDouble
+.LSOverride
 ._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
