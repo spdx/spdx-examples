@@ -12,6 +12,8 @@ Directories of the form `example#` are structured as follows:
 - `content/src/`: contains the example's source code
 - `spdx2.2/`: contains one or more SPDX 2.2 documents (in tag-value or JSON
   format) for the sources and the build artifacts
+- `spdx2.3/`: contains one or more SPDX 2.3 documents (in tag-value or JSON
+  format) for the sources and the build artifacts
 - `spdx3.0/`: contains one or more SPDX 3.0 documents for the sources and the
   build artifacts
 - `README.md`: more details about the particular example
