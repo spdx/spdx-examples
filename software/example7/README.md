@@ -27,10 +27,11 @@ This would also enable the supplier's SPDX document to become a "single source o
 ### Package details
 
 This example reflects the workflow of a golang developer. As such, there are some differences with example6:
-* The Golang binary is downloaded from Golang.org as per the website's instructions. Therefore, I assume the originator is "Golang.org". In this case I know the exact URL where I had downloaded the golang distribution from.
-* The external modules downloaded from `rsc.io` is less certain because go supports vanity import paths which redirect the network call to a VCS. Therefore `rsc.io` is not the canonical download location. I have used [pURL](https://github.com/package-url/purl-spec) to describe the download location.
-* `FilesAnalyzed: false`: Developers think in terms of modules and the final binary distribution. File level knowledge is only restricted to their module. Here, I do not include `go.mod`, `go.sum`, and `hello.go` in my `Package` definition.
-* Some of the fields, like `PackageSourceInfo` and `PackageSummary`, are optional free-text fields. There are several others describe in the Package Information section of the SPDX spec.
+
+- The Golang binary is downloaded from Golang.org as per the website's instructions. Therefore, I assume the originator is "Golang.org". In this case I know the exact URL where I had downloaded the golang distribution from.
+- The external modules downloaded from `rsc.io` is less certain because go supports vanity import paths which redirect the network call to a VCS. Therefore `rsc.io` is not the canonical download location. I have used [pURL](https://github.com/package-url/purl-spec) to describe the download location.
+- `FilesAnalyzed: false`: Developers think in terms of modules and the final binary distribution. File level knowledge is only restricted to their module. Here, I do not include `go.mod`, `go.sum`, and `hello.go` in my `Package` definition.
+- Some of the fields, like `PackageSourceInfo` and `PackageSummary`, are optional free-text fields. There are several others describe in the Package Information section of the SPDX spec.
 
 ### hello module
 
