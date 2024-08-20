@@ -5,30 +5,34 @@ scenarios and use cases.
 
 The repository is organized by profiles which represents a set of scenarios and
 use cases for a particular domain (e.g. security, license compliance).
+
+- [AI](./ai/)
+- [Dataset](./dataset/)
+- [Software](./software/)
+
 Each directory contains a README.md file describing the profile and the
 examples contained within that directory.
+Please note that they do not contain all supported fields or serialization
+formats specified in the latest version of the specification.
 
-The [`presentations`](./presentations/) directory contains examples included in
-various SPDX presentations.
+## More examples
 
-Please note that this repository does not contain all of the supported fields
-nor all of the supported serialization formats in the latest version of the
-specification.
-
-Additional version-specific examples can be found in the `examples` directory
-of each specification version, for example:
-
-- [v3.0.1](https://github.com/spdx/spdx-spec/tree/development/v3.0.1/examples)
-- [v2.3.1](https://github.com/spdx/spdx-spec/tree/development/v2.3.1/examples)
-
-Moreover, in a page for each field in
-[SPDX Specification](https://spdx.github.io/spdx-spec/), there can also
-be a code snippet demonstrating how to use that particular field.
-
-More guidance on using SPDX, including how to use SPDX License List short
-identifiers in source files and leverage SPDX for compliance with standards and
-regulations, is available in the [`spdx/using`](https://github.com/spdx/using/)
-repository.
+- The [`presentations`](./presentations/) directory in this repository
+  contains examples included in various SPDX presentations.
+- Moreover, in a page for each field in
+  [SPDX Specification](https://spdx.github.io/spdx-spec/), there can also
+  be a code snippet demonstrating how to use that particular field.
+- Additional version-specific examples can be found in the `examples` directory
+  of each specification version in [`spdx-spec`](https://github.com/spdx/spdx-spec/) repository.
+  For example:
+  - [`v3.0.1`](https://github.com/spdx/spdx-spec/tree/development/v3.0.1/examples)
+  - [`v2.3.1`](https://github.com/spdx/spdx-spec/tree/development/v2.3.1/examples)
+- More guidance on using SPDX, including how to use SPDX License List short
+  identifiers in source files and leverage SPDX for compliance with standards
+  and regulations, is available in the [`spdx/using`](https://github.com/spdx/using/)
+  repository.
+- The Playground repository at [`spdx-3-serialization-prototype-playground`](https://github.com/spdx/spdx-3-serialization-prototype-playground)
+  contains some examples that may not pass validation.
 
 ## Licenses
 
