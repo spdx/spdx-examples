@@ -26,6 +26,9 @@ identifiers in source files and leverage SPDX for compliance with standards and
 regulations, is available in the [`spdx/using`](https://github.com/spdx/using/)
 repository.
 
+The Playground repository at [`spdx-3-serialization-prototype-playground`](https://github.com/spdx/spdx-3-serialization-prototype-playground)
+contains some examples that may not pass validation.
+
 ## Licenses
 
 Copyright Contributors to the spdx-examples project.
