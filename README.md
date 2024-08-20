@@ -27,6 +27,9 @@ formats specified in the latest version of the specification.
   For example:
   - [`v3.0.1`](https://github.com/spdx/spdx-spec/tree/development/v3.0.1/examples)
   - [`v2.3.1`](https://github.com/spdx/spdx-spec/tree/development/v2.3.1/examples)
+- JSON-LD serialization examples can be found in
+  [`spdx/spdx-3-model`](https://github.com/spdx/spdx-3-model/blob/main/serialization/jsonld/examples.md)
+  repository.
 - More guidance on using SPDX, including how to use SPDX License List short
   identifiers in source files and leverage SPDX for compliance with standards
   and regulations, is available in the [`spdx/using`](https://github.com/spdx/using/)
