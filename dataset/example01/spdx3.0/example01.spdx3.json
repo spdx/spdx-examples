@@ -78,7 +78,8 @@
       "software_primaryPurpose": "data",
       "dataset_confidentialityLevel": "clear",
       "dataset_dataPreprocessing": [
-        "The dataset is built upon a number of datasets and processing steps. See: https://github.com/owid/co2-data/blob/master/README.md"
+        "The dataset is built upon a number of datasets and processing steps.",
+        "See: https://github.com/owid/co2-data/blob/master/README.md"
       ],
       "dataset_datasetAvailability": "directDownload",
       "dataset_dataCollectionProcess": "The data is collected from various sources, including international organizations and research institutions.",
