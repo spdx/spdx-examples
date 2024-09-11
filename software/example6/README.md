@@ -35,18 +35,20 @@ This would enable the distributor's SPDX document to become a "single source of 
 ### Package details
 
 In this example, I've also gone into greater detail about the Go distribution I used, to demonstrate some of the optional fields.
-These fields are fully documented in the [SPDX spec](https://spdx.github.io/spdx-spec/3-package-information/), but here are a few comments:
-* I compiled this example using a distribution of Go installed via a Ubuntu snap package. Because of that, the "PackageSupplier" (Canonical) is the immediate / most recent step in the distribution chain, but the "PackageOriginator" (Google) is the primary upstream project organization.
-* Even though I have the particular snap file and checksum, from a cursory review I wasn't able to determine a download location for the snap file, so `PackageDownloadLocation` is `NOASSERTION`.
-* `FilesAnalyzed: false`: We are not listing out all of the files from the distribution.
-* Some of the fields, like `PackageSourceInfo` and `PackageSummary`, are optional free-text fields. There are several others describe in the Package Information section of the SPDX spec.
+These fields are fully documented in the [SPDX spec](https://spdx.github.io/spdx-spec/v2.2.2/package-information/), but here are a few comments:
+
+- I compiled this example using a distribution of Go installed via a Ubuntu snap package. Because of that, the "PackageSupplier" (Canonical) is the immediate / most recent step in the distribution chain, but the "PackageOriginator" (Google) is the primary upstream project organization.
+- Even though I have the particular snap file and checksum, from a cursory review I wasn't able to determine a download location for the snap file, so `PackageDownloadLocation` is `NOASSERTION`.
+- `FilesAnalyzed: false`: We are not listing out all of the files from the distribution.
+- Some of the fields, like `PackageSourceInfo` and `PackageSummary`, are optional free-text fields. There are several others describe in the Package Information section of the SPDX spec.
 
 ### Libraries
 
 After defining the Go distribution as a Package, we then define a few other Packages that correspond to subcomponents of the Go distribution:
-* `SPDXRef-Package-go-compiler` refers to the `go` command.
-* `SPDXRef-Package-go.fmt` refers to the `fmt` standard library package.
-* There are also Packages defined for the `reflect` and `strconv` libraries as well.
+
+- `SPDXRef-Package-go-compiler` refers to the `go` command.
+- `SPDXRef-Package-go.fmt` refers to the `fmt` standard library package.
+- There are also Packages defined for the `reflect` and `strconv` libraries as well.
 
 Each of these Packages is then declared as being contained in the Go distribution via a `CONTAINS` Relationship.
 
@@ -71,7 +73,7 @@ That enables us to then create Relationships referring to the Go distribution's 
 
 Our [original source file](content/src/hello.go) imports the `"fmt"` library.
 Because of that, the binaries document includes a `RUNTIME_DEPENDENCY_OF` Relationship.
-There are a variety of `*_DEPENDENCY_OF` [Relationship types](https://spdx.github.io/spdx-spec/7-relationships-between-SPDX-elements/), and the SPDX document creator may use any or all of them depending on their particular use case.
+There are a variety of `*_DEPENDENCY_OF` [Relationship types](https://spdx.github.io/spdx-spec/v2.2.2/relationships-between-SPDX-elements/), and the SPDX document creator may use any or all of them depending on their particular use case.
 Keep in mind that SPDX is a language, and just like a regular spoken language, multiple words might be usable in place of one another depending on the desired context or connotation.
 
 This SPDX document also lists a `STATIC_LINK` Relationship between the binary and the `fmt` library.

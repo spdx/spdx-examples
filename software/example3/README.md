@@ -26,7 +26,7 @@ This describes a scenario where there are multiple binary files, and we want to 
 ## Comments
 
 Note that the [binary SPDX document](spdx2.2/example3-bin.spdx) includes the `RUNTIME_DEPENDENCY_OF` relationship between the main binary and the library binary.
-There are many different dependency types of Relationships defined in [v2.2 of the SPDX spec](https://spdx.github.io/spdx-spec/7-relationships-between-SPDX-elements/).
+There are many different dependency types of Relationships defined in [v2.2 of the SPDX spec](https://spdx.github.io/spdx-spec/v2.2.2/relationships-between-SPDX-elements/).
 We could have also used, e.g., `DEPENDENCY_OF` and/or `PREREQUISITE_FOR`.
 `RUNTIME_DEPENDENCY_OF` was chosen here because of the extra specificity that the library is 'required for the execution' of the main binary.
 
