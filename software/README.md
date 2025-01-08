@@ -37,3 +37,4 @@ Each directory contains build metadata which is used to create the build artifac
 | 11 | 1 Rust file | compiled with Cargo | 1 document | SBOM describing both source and artifact, related with GENERATED_FROM |
 | 12 | 1 Ruby library | built using `bundle` | 1 document | SBOM describing Ruby library packaged in a gem |
 | 13 | Bundled app with a package and container | No compiling - hypothetical example | Documents in progress | SBOM describing a hypothetical "Acme Aplication" |
+| 14 | SPDX file from example 8 | N/A | 1 document | SPDX file is enriched using a tool such as [Parlay](https://github.com/snyk/parlay) - includes relationship to original SPDX document |
