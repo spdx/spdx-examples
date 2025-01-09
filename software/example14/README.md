@@ -1,4 +1,4 @@
-# Example 1
+# Example 14
 
 ## Description
 
@@ -7,16 +7,16 @@ An [existing (original) SPDX document](content/examplemaven-0.0.1.spdx.json) is 
 ## Comments
 
 In addition to any modifications made to the original SPDX document, the following changes are made to the resultant enriched SPDX document:
+
 - Create a new `documentNamespace` - this is required since the enriched document does not contain exactly the same SPDX metadata
 - Update the `created` timestamp to the time this document was generated
 - Add a tool to the creators for the enrichment tool
 - Create an `AMENDS` relationship from the enriched document to the original document
 - Add an `externalDocumentRef` for the original document - this is necessary to create the relationship and provides a checksum for verifying the integrity of the original document 
 
-
 Below is a diff for the above-mentioned changes:
 
-```
+```diff
 6c6
 <   "documentNamespace": "http://spdx.org/documents/examplemaven-0.0.1",
 ---
@@ -46,5 +46,4 @@ Below is a diff for the above-mentioned changes:
 >       "relationshipType": "AMENDS",
 >       "comment": "The original document and been enriched by the Parlay application"
 >     },
-
 ```
