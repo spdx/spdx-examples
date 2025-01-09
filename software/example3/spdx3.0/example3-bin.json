@@ -100,7 +100,9 @@
   }, {
     "spdxId" : "https://swinslow.net/spdx-examples/example3/main-bin-v2-specv3/document0",
     "type" : "SpdxDocument",
-    "spdxImport" : [ {
+    "dataLicense" : "https://swinslow.net/spdx-examples/example3/main-bin-v2-specv3/SPDXRef-gnrtd23",
+    "rootElement" : [ "https://swinslow.net/spdx-examples/example3/main-bin-v2-specv3/SPDXRef-gnrtd4" ],
+    "import" : [ {
       "type" : "ExternalMap",
       "verifiedUsing" : [ {
         "type" : "Hash",
@@ -119,8 +121,6 @@
       "externalSpdxId" : "https://swinslow.net/spdx-examples/example3/main-src-v2#SPDXRef-main-src",
       "locationHint" : "https://swinslow.net/spdx-examples/example3/main-src-v2"
     } ],
-    "dataLicense" : "https://swinslow.net/spdx-examples/example3/main-bin-v2-specv3/SPDXRef-gnrtd23",
-    "rootElement" : [ "https://swinslow.net/spdx-examples/example3/main-bin-v2-specv3/SPDXRef-gnrtd4" ],
     "name" : "main-bin",
     "namespaceMap" : [ {
       "type" : "NamespaceMap",
