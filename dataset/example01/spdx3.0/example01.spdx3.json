@@ -1,10 +1,10 @@
 {
-  "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
   "@graph": [
     {
       "type": "CreationInfo",
       "@id": "_:creationinfo",
-      "specVersion": "3.0.0",
+      "specVersion": "3.0.1",
       "createdBy": [
         "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1"
       ],
@@ -78,7 +78,8 @@
       "software_primaryPurpose": "data",
       "dataset_confidentialityLevel": "clear",
       "dataset_dataPreprocessing": [
-        "The dataset is built upon a number of datasets and processing steps. See: https://github.com/owid/co2-data/blob/master/README.md"
+        "The dataset is built upon a number of datasets and processing steps.",
+        "See https://github.com/owid/co2-data/blob/master/README.md for sources and processing codes."
       ],
       "dataset_datasetAvailability": "directDownload",
       "dataset_dataCollectionProcess": "The data is collected from various sources, including international organizations and research institutions.",
@@ -100,7 +101,7 @@
       "spdxId": "https://spdx.org/spdxdocs/File1-d029fccb-7ee9-42be-a445-5e2066db0de8",
       "creationInfo": "_:creationinfo",
       "name": "data.csv",
-      "software_contentType": "text/csv;charset=UTF-8",
+      "contentType": "text/csv;charset=UTF-8",
       "software_primaryPurpose": "data",
       "releaseTime": "2024-04-15T08:10:00Z",
       "originatedBy": [
@@ -112,7 +113,7 @@
       "spdxId": "https://spdx.org/spdxdocs/File2-caf55baf-cd02-406a-b7ec-838842ca869f",
       "creationInfo": "_:creationinfo",
       "name": "codebook.csv",
-      "software_contentType": "text/csv;charset=UTF-8",
+      "contentType": "text/csv;charset=UTF-8",
       "software_primaryPurpose": "data",
       "releaseTime": "2024-04-15T08:10:00Z",
       "originatedBy": [
@@ -170,8 +171,8 @@
       "spdxId": "https://spdx.org/licenses/CC-BY-4.0",
       "creationInfo": "_:creationinfo",
       "simplelicensing_licenseExpression": "CC-BY-4.0",
-      "simplelicensing_licenseListVersion": "3.24.0",
-      "comment": "Added as a workaround for the lack of https://spdx.org/licenses/CC-BY-4.0 as a valid ListedLicense in SPDX 3.0.0 RDF. This will be removed once https://github.com/spdx/LicenseListPublisher/issues/183 is implemented."
+      "simplelicensing_licenseListVersion": "3.25.0",
+      "comment": "Added as a workaround for the lack of https://spdx.org/licenses/CC-BY-4.0 as a valid ListedLicense in SPDX 3.0.1 RDF. This will be removed once https://github.com/spdx/LicenseListPublisher/issues/183 is implemented."
     }
   ]
 }
