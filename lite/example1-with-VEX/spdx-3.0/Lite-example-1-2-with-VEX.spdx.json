@@ -1,5 +1,5 @@
 {
-    "@context": "https://spdx.github.io/spdx-spec/v3.0/model/spdx-context.jsonld",
+    "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
     "@graph": [
         {
             "type": "SpdxDocument",
