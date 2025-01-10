@@ -109,8 +109,44 @@
     "type" : "SpdxDocument",
     "dataLicense" : "https://swinslow.net/spdx-examples/example6/hello-go-bin-v2-specv3/SPDXRef-gnrtd16",
     "rootElement" : [ "https://swinslow.net/spdx-examples/example6/hello-go-bin-v2-specv3/SPDXRef-gnrtd4" ],
-    "import" : [ {
+	"import" : [ {
       "type" : "ExternalMap",
+      "verifiedUsing" : [ {
+        "type" : "Hash",
+        "algorithm" : "sha1",
+        "hashValue" : "58e4a6d5745f032b9788142e49edee1b508c7ac5"
+      } ],
+      "externalSpdxId" : "https://swinslow.net/spdx-examples/example6/go-lib-v2#SPDXRef-Package-go-compiler",
+      "locationHint" : "https://swinslow.net/spdx-examples/example6/go-lib-v2"
+    }, {
+	"type" : "ExternalMap",
+      "verifiedUsing" : [ {
+        "type" : "Hash",
+        "algorithm" : "sha1",
+        "hashValue" : "58e4a6d5745f032b9788142e49edee1b508c7ac5"
+      } ],
+      "externalSpdxId" : "https://swinslow.net/spdx-examples/example6/go-lib-v2#SPDXRef-Package-go.fmt",
+      "locationHint" : "https://swinslow.net/spdx-examples/example6/go-lib-v2"
+    }, {
+	"type" : "ExternalMap",
+      "verifiedUsing" : [ {
+        "type" : "Hash",
+        "algorithm" : "sha1",
+        "hashValue" : "58e4a6d5745f032b9788142e49edee1b508c7ac5"
+      } ],
+      "externalSpdxId" : "https://swinslow.net/spdx-examples/example6/go-lib-v2#SPDXRef-Package-go.reflect",
+      "locationHint" : "https://swinslow.net/spdx-examples/example6/go-lib-v2"
+    }, {
+	"type" : "ExternalMap",
+      "verifiedUsing" : [ {
+        "type" : "Hash",
+        "algorithm" : "sha1",
+        "hashValue" : "58e4a6d5745f032b9788142e49edee1b508c7ac5"
+      } ],
+      "externalSpdxId" : "https://swinslow.net/spdx-examples/example6/go-lib-v2#SPDXRef-Package-go.strconv",
+      "locationHint" : "https://swinslow.net/spdx-examples/example6/go-lib-v2"
+    }, {
+	"type" : "ExternalMap",
       "verifiedUsing" : [ {
         "type" : "Hash",
         "algorithm" : "sha1",
