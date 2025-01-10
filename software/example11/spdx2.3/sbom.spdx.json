@@ -5,7 +5,8 @@
   "creationInfo": {
     "created": "2022-11-03T07:10:10Z",
     "creators": [
-      "Tool: sigs.k8s.io/bom/pkg/spdx"
+      "Tool: sigs.k8s.io/bom/pkg/spdx",
+	  "Organization: Unknown"
     ]
   },
   "dataLicense": "CC0-1.0",
