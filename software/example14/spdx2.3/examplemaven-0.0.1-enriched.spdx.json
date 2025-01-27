@@ -1,0 +1,225 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "examplemaven",
+  "documentNamespace": "http://spdx.org/documents/examplemaven-0.0.1/enriched",
+  "creationInfo": {
+    "licenseListVersion": "3.18",
+    "creators": [
+      "Person: Gary O'Neall",
+      "Tool: spdx-maven-plugin",
+	  "Tool: Parlay"
+    ],
+    "created": "2024-11-18T10:22:12Z"
+  },
+  "externalDocumentRefs" : [ {
+    "externalDocumentId" : "DocumentRef-original",
+    "checksum" : {
+      "algorithm" : "SHA1",
+      "checksumValue" : "3f9deeef2efdbb0eb4b15ec216f5c4e3af2d13e2"
+    },
+    "spdxDocument" : "http://spdx.org/documents/examplemaven-0.0.1"
+  } ],
+  "packages": [
+    {
+      "name": "JUnit",
+      "SPDXID": "SPDXRef-junit",
+      "versionInfo": "3.8.1",
+      "originator": "Organization: JUnit",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "homepage": "http://junit.org",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "CPL-1.0",
+      "copyrightText": "UNSPECIFIED",
+      "summary": "JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.",
+      "description": "JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java."
+    },
+    {
+      "name": "Apache Log4j SLF4J Binding",
+      "SPDXID": "SPDXRef-log4jslf4jbinding",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "UNSPECIFIED",
+      "summary": "The Apache Log4j SLF4J API binding to Log4j 2 Core",
+      "description": "The Apache Log4j SLF4J API binding to Log4j 2 Core"
+    },
+    {
+      "name": "SLF4J API Module",
+      "SPDXID": "SPDXRef-log4jslf4jApi",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "homepage": "http://www.slf4j.org",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "UNSPECIFIED",
+      "summary": "The slf4j API",
+      "description": "The slf4j API"
+    },
+    {
+      "name": "Apache Log4j API",
+      "SPDXID": "SPDXRef-log4jApi",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "UNSPECIFIED",
+      "summary": "The Apache Log4j API",
+      "description": "The Apache Log4j API"
+    },
+    {
+      "name": "Apache Log4j Core",
+      "SPDXID": "SPDXRef-log4jImpl",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "UNSPECIFIED",
+      "summary": "The Apache Log4j Implementation",
+      "description": "The Apache Log4j Implementation"
+    },
+    {
+      "name": "examplemaven",
+      "SPDXID": "SPDXRef-example",
+      "versionInfo": "0.0.1",
+      "packageFileName": "examplemaven-0.0.1.jar",
+      "supplier": "Organization: SPDX",
+      "originator": "Organization: Linux Foundation",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "c12417def36d7804096521de4280721e5863e68b"
+      },
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b8a7e6c75001e6d78625cfc9a3103bf121abf8b4"
+        }
+      ],
+      "homepage": "https://github.com/spdx/spdx-examples",
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "Apache-2.0"
+      ],
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "Copyright (c) 2022 Source Auditor Inc.",
+      "summary": "This is a simple example Maven project created using the Maven quickstart archetype with one dependency added.",
+      "description": "This is a simple example Maven project created using the Maven quickstart archetype with one dependency added.",
+      "primaryPackagePurpose": "LIBRARY"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./src/main/java/org/spdx/examplemaven/App.java",
+      "SPDXID": "SPDXRef-appsource",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a6f47dbc7e4615058490055172fe0065c55f8fc5"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "licenseComments": "This file contains SPDX-License-Identifiers for Apache-2.0",
+      "copyrightText": "Copyright (c) 2020 Source Auditor Inc.",
+      "noticeText": "SPDX-License-Identifier: Apache-2.0\nCopyright (c) 2022 Source Auditor Inc.",
+      "fileContributors": [
+        "Gary O'Neall"
+      ]
+    },
+    {
+      "fileName": "./src/test/java/org/spdx/examplemaven/AppTest.java",
+      "SPDXID": "SPDXRef-apptest",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4b4df52d36588c8e9482d56eebc42336447f3dad"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "licenseComments": "This file contains SPDX-License-Identifiers for Apache-2.0",
+      "copyrightText": "Copyright (c) 2020 Source Auditor Inc.",
+      "noticeText": "SPDX-License-Identifier: Apache-2.0\nCopyright (c) 2022 Source Auditor Inc.",
+      "fileContributors": [
+        "Gary O'Neall"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "DocumentRef-original:SPDXRef-DOCUMENT",
+      "relationshipType": "AMENDS",
+      "comment": "The original document and been enriched by the Parlay application"
+    },
+    {
+      "spdxElementId": "SPDXRef-junit",
+      "relatedSpdxElement": "SPDXRef-example",
+      "relationshipType": "TEST_DEPENDENCY_OF",
+      "comment": "Relationship created based on Maven POM information"
+    },
+    {
+      "spdxElementId": "SPDXRef-example",
+      "relatedSpdxElement": "SPDXRef-log4jslf4jbinding",
+      "relationshipType": "DYNAMIC_LINK",
+      "comment": "Relationship based on Maven POM file dependency information"
+    },
+    {
+      "spdxElementId": "SPDXRef-example",
+      "relatedSpdxElement": "SPDXRef-log4jslf4jApi",
+      "relationshipType": "DYNAMIC_LINK",
+      "comment": "Relationship based on Maven POM file dependency information"
+    },
+    {
+      "spdxElementId": "SPDXRef-example",
+      "relatedSpdxElement": "SPDXRef-log4jApi",
+      "relationshipType": "DYNAMIC_LINK",
+      "comment": "Relationship based on Maven POM file dependency information"
+    },
+    {
+      "spdxElementId": "SPDXRef-example",
+      "relatedSpdxElement": "SPDXRef-log4jImpl",
+      "relationshipType": "DYNAMIC_LINK",
+      "comment": "Relationship based on Maven POM file dependency information"
+    },
+    {
+      "spdxElementId": "SPDXRef-appsource",
+      "relatedSpdxElement": "SPDXRef-example",
+      "relationshipType": "GENERATES"
+    },
+    {
+      "spdxElementId": "SPDXRef-apptest",
+      "relatedSpdxElement": "SPDXRef-example",
+      "relationshipType": "TEST_CASE_OF"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-example",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-example",
+      "relatedSpdxElement": "SPDXRef-appsource",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-example",
+      "relatedSpdxElement": "SPDXRef-apptest",
+      "relationshipType": "CONTAINS"
+    }
+  ]
+}

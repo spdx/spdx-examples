@@ -7,5 +7,3 @@ This is a copy of the [App-BOM-ination SPDX example](https://github.com/yevster/
 This is a particulary challenging SPDX example in that it contains several unique relationships.
 
 Note: If you disagree with the SPDX document produced - be sure to add an issue to this repo!
-
-

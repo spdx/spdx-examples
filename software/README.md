@@ -8,9 +8,14 @@ The examples include source code and built / packaged binaries for a variety of 
 
 Directories of the form `example#` are structured as follows:
 
-- `content/src/`: contains the example's source code
 - `content/build/`: contains the example's built artifacts
-- `spdx/`: contains one or more SPDX documents (in tag-value or JSON format) for the sources and the build artifacts
+- `content/src/`: contains the example's source code
+- `spdx2.2/`: contains one or more SPDX 2.2 documents (in tag-value or JSON
+  format) for the sources and the build artifacts
+- `spdx2.3/`: contains one or more SPDX 2.3 documents (in tag-value or JSON
+  format) for the sources and the build artifacts
+- `spdx3.0/`: contains one or more SPDX 3.0 documents for the sources and the
+  build artifacts
 - `README.md`: more details about the particular example
 
 Each directory contains build metadata which is used to create the build artifacts. It assumes that the necessary tools (make, gcc, etc.) are present on your system, and doesn't do any autoconfiguration or the like.
@@ -32,4 +37,4 @@ Each directory contains build metadata which is used to create the build artifac
 | 11 | 1 Rust file | compiled with Cargo | 1 document | SBOM describing both source and artifact, related with GENERATED_FROM |
 | 12 | 1 Ruby library | built using `bundle` | 1 document | SBOM describing Ruby library packaged in a gem |
 | 13 | Bundled app with a package and container | No compiling - hypothetical example | Documents in progress | SBOM describing a hypothetical "Acme Aplication" |
-
+| 14 | SPDX file from example 8 | N/A | 1 document | SPDX file is enriched using a tool such as [Parlay](https://github.com/snyk/parlay) - includes relationship to original SPDX document |
