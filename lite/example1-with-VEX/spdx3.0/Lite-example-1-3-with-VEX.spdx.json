@@ -1,0 +1,293 @@
+{
+    "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "SpdxDocument",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Document/3",
+            "name": "Lite-SpdxDocument",
+            "comment": "if any",
+            "creationInfo": "_:creationinfo_spdx",
+            "verifiedUsing": [{
+                "type": "Hash",
+                "algorithm": "sha3_512",
+                "hashValue": "hash value of Sbom object"
+            }],
+            "rootElement": [ "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Sbom/1" ],
+            "element": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Sbom/1",
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Bom/1"
+            ],
+            "namespaceMap": [{
+                "type": "NamespaceMap",
+                "prefix": "lite-example",
+                "namespace": "http://spdx.example.com/Lite/1"
+            }],
+            "dataLicense": "CC0-1.0"
+        },
+        {
+            "type": "software_Sbom",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Sbom/2",
+            "creationInfo": "_:creationinfo",
+            "rootElement": [ "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Package/1" ],
+            "element": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Package/1",
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/LicenseExpression/1",
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Relationship/1",
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Relationship/2",
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Relationship/3"
+            ],
+            "software_sbomType": "build"
+        },
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.0.0",
+            "comment": "if any",
+            "created": "2024-05-08T00:00:00Z",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Agent/NorioKobota"
+            ]
+        },
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo_spdx",
+            "specVersion": "3.0.0",
+            "comment": "if any",
+            "created": "2024-05-08T00:00:00Z",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Agent/NorioKobota"
+            ]
+        },
+        {
+            "type": "Person",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Agent/NorioKobota",
+            "name": "Norio Kobota",
+            "creationInfo": "_:creationinfo",
+            "externalIdentifier": [
+                {
+                    "type": "ExternalIdentifier",
+                    "externalIdentifierType": "email",
+                    "identifier": "norio.kobota@sony.com"
+                }
+            ]
+        },
+        {
+            "type": "software_Package",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Package/1",
+            "name": "my-package",
+            "comment": "if any",
+            "creationInfo": "_:creationinfo",
+            "verifiedUsing": [{
+                "type": "Hash",
+                "algorithm": "sha3_512",
+                "hashValue": "hash value of the package file"
+            }],
+            "originatedBy": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Agent/NorioKobota"
+            ],
+            "suppliedBy": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Agent/NorioKobota",
+            "builtTime": "2024-05-08T00:00:00Z",
+            "releaseTime": "2024-05-08T00:00:00Z",
+            "validUntilTime": "2034-05-08T00:00:00Z",
+            "supportLevel": [
+                "limitedSupport"
+            ],
+            "software_copyrightText": "copyright text",
+            "software_attributionText": [
+                "other attribution text"
+            ],
+            "software_packageVersion": "v1.1",
+            "software_downloadLocation": "http://dl.example.com/my-package_v1.0.tar",
+            "software_packageUrl": "pkg:github/example/my-package/releases/tag/v1.0",
+            "software_homePage": "website for the Package/1"
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/LicenseExpression/1",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "MIT",
+            "simplelicensing_licenseListVersion": "3.23.0"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Relationship/1",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Sbom/1",
+            "to": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Package/1"
+            ],
+            "relationshipType": "contains"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Relationship/2",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Package/1",
+            "to": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/LicenseExpression/1"
+            ],
+            "relationshipType": "hasDeclaredLicense"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Relationship/3",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Package/1",
+            "to": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/LicenseExpression/1"
+            ],
+            "relationshipType": "hasConcludedLicense"
+        },
+        {
+            "type": "Bom",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Bom/1",
+            "creationInfo": "_:creationinfo_vex3",
+            "extension": [{
+	      "cdxPropName": "VexDocumentVersion",
+	      "cdxPropValue": "2"
+	    }],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Vulnerability/1"
+            ],
+            "element": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Vunlnerability/1",
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Relationship/vul1",
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexUnderInvestigationVulnAssessmentRelationship/1",
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexAffectedVulnAssessmentRelationship/1",
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexFixedVulnAssessmentRelationship/1",
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VulnAssessmentRelationship/1",
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VulnAssessmentRelationship/2"
+            ]
+        },
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo_vex1",
+            "specVersion": "3.0.0",
+            "comment": "if any",
+            "created": "2024-05-06T00:00:00Z",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Agent/NorioKobota"
+            ]
+        },
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo_vex2",
+            "specVersion": "3.0.0",
+            "comment": "if any",
+            "created": "2024-05-07T00:00:00Z",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Agent/NorioKobota"
+            ]
+        },
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo_vex3",
+            "specVersion": "3.0.0",
+            "comment": "if any",
+            "created": "2024-05-08T00:00:00Z",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Agent/NorioKobota"
+            ]
+        },
+        {
+            "type": "security_Vulnerability",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Vulnerability/1",
+            "name": "CVE-1234-1234",
+            "comment": "if any",
+            "creationInfo": "_:creationinfo_vex4",
+            "externalIdetifier": [
+                {
+                    "type": "ExternalIdentifier",
+                    "externalIdentifierType": "cve",
+                    "identifier": "CVE-1234-1234",
+                    "comment": "must"
+                }
+            ],
+            "security_publishedTime": "2024-05-06T00:00:00Z",
+            "security_modifiedTime": "2024-05-08T00:00:00Z"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Relationship/vul1",
+            "creationInfo": "_:creationinfo_vex1",
+            "from": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Package/1",
+            "to": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Vulnerability/1"
+            ],
+            "relationshipType": "hasAssociatedVulnerability"
+        },
+        {
+            "type": "security_VexUnderInvestigationVulnAssessmentRelationship",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexUnderInvestigationVulnAssessmentRelationship/1",
+            "name": "if any",
+            "comment": "if any",
+            "creationInfo": "_:creationinfo_vex1",
+            "from": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Vulnerability/1",
+            "to": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Package/1"
+            ],
+            "relationshipType": "underInvestigationFor",
+            "suppliedBy": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Agent/NorioKobota"
+            ],
+            "security_vexVersion": "0",
+            "security_statusNotes": "if any"
+        },
+        {
+            "type": "security_VexAffectedVulnAssessmentRelationship",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexAffectedVulnAssessmentRelationship/1",
+            "name": "if any",
+            "comment": "if any",
+            "creationInfo": "_:creationinfo_vex2",
+            "from": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Vulnerability/1",
+            "to": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Package/1"
+            ],
+            "relationshipType": "affects",
+            "suppliedBy": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Agent/NorioKobota"
+            ],
+            "security_vexVersion": "1",
+            "security_statusNotes": "if any",
+            "security_actionStatetment": "something",
+            "security_actionStatementTime": "2024-05-07T00:00:00Z"
+        },
+        {
+            "type": "security_VexFixedVulnAssessmentRelationship",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexFixedVulnAssessmentRelationship/1",
+            "name": "if any",
+            "comment": "if any",
+            "creationInfo": "_:creationinfo_vex3",
+            "from": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Vulnerability/1",
+            "to": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Package/1"
+            ],
+            "relationshipType": "fixedIn",
+            "suppliedBy": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/Agent/NorioKobota"
+            ],
+            "security_vexVersion": "2",
+            "security_statusNotes": "if any"
+        },
+        {
+            "type": "security_VulnAssessmentRelationship",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VulnAssessmentRelationship/1",
+            "creationInfo": "_:creationinfo_vex2",
+            "from": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexUnderInvestigationVulnAssessmentRelationship/1",
+            "to": [
+                    "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexAffectedVulnAssessmentRelationship/1"
+            ],
+            "relationshipType": "amendedBy"
+        },
+        {
+            "type": "security_VulnAssessmentRelationship",
+            "spdxId": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VulnAssessmentRelationship/2",
+            "creationInfo": "_:creationinfo_vex4",
+            "from": "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexAffectedVulnAssessmentRelationship/1",
+            "to": [
+                "https://spdx.org/spdxdocs/08f113e9-a0b0-4482-a0ed-c4e18e5136be/VexFixedVulnAssessmentRelationship/1"
+            ],
+            "relationshipType": "amendedBy"
+        }
+    ]
+}
