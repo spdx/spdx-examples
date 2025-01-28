@@ -3,7 +3,7 @@
 ## Description
 
 This is a JSON-LD file provided using Lite profile when providing Package1, a software package provided under the MIT license.
-And Security Profile(Minimum Requirement VEX) information is added.
+And Security Profile (Minimum Requirement VEX) information is added.
 Package1 has one vulnerability, CVE-1234-1234.
 This sample contains 3 files to show the VEX status transition.
 The trasition is as follows:
