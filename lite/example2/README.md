@@ -24,7 +24,7 @@ For conformant to the Lite profile, JSON-LD should meet the following:
 4. for every /Software/Package object MUST exist exactly one /Core/Relationship object of type declaredLicense having that element as its from property and /SimpleLicensing/AnyLicenseInfo object as its to property. (MANDATORY)  
 
 5. Following properties should be described as much as possible. (RECOMMENDED properties)  
-```comment```, ```verifiedUsing```, ```sbomType```, ```externalIdentifier```, ```originatedBy```, ```builtTime```, ```releaseTime```, ```validUntilTime```, ```supportLevel```, ```attributionText```, ```homepage``` and ```licenseListVersion```  
+```comment```, ```verifiedUsing```, ```sbomType```, ```externalIdentifier```, ```originatedBy```, ```builtTime```, ```releaseTime```, ```validUntilTime```, ```supportLevel```, ```attributionText```, ```homePage``` and ```licenseListVersion```  
 
 6. Other classes and properties may or may not be described. (OPTIONAL properties)  
 
