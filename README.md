@@ -25,8 +25,8 @@ formats specified in the latest version of the specification.
 - Additional version-specific examples can be found in the `examples` directory
   of each specification version in [`spdx-spec`](https://github.com/spdx/spdx-spec/) repository.
   For example:
-  - [`v3.0.1`](https://github.com/spdx/spdx-spec/tree/development/v3.0.1/examples)
-  - [`v2.3.1`](https://github.com/spdx/spdx-spec/tree/development/v2.3.1/examples)
+  - [`3.0`](https://github.com/spdx/spdx-spec/tree/support/3.0/examples)
+  - [`2.3.1`](https://github.com/spdx/spdx-spec/tree/support/2.3.1/examples)
 - JSON-LD serialization examples can be found in
   [`spdx/spdx-3-model`](https://github.com/spdx/spdx-3-model/blob/main/serialization/jsonld/examples.md)
   repository.
