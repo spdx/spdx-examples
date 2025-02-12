@@ -1,0 +1,4 @@
+fasttext==0.9.3
+newmm-tokenizer==0.2.2
+numpy==1.26.4
+th-simple-preprocessor==0.10.1
