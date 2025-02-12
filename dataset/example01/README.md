@@ -1,3 +1,8 @@
+---
+SPDX-FileType: DOCUMENTATION
+SPDX-License-Identifier: CC-BY-4.0
+---
+
 # Example 01
 
 ## Description
