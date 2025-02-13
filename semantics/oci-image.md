@@ -3,7 +3,7 @@
 ## Design Goals
 
 * Separation of layers to ensure OS dependencies and app data can be
-appended to the approiate layer
+appended to the appropriate layer
 * Separation of layers to be able to reuse them, for example when
 describing images  sharing the same base image.
 * No registry or repository information in `PackageName` to ensure SBOM
@@ -12,6 +12,7 @@ is portable as image is copied across registries.
 * Ensure tools can differentiate which packages represent the image layers
 from the packages representing both the source code of the image and the
 base images.
+
 [^1]: This design uses a proposed `os` field in the `oci` purl type which
 [has been proposed](https://github.com/package-url/purl-spec/pull/179) but
 still waiting to be merged.
@@ -79,14 +80,14 @@ The image package can con contain three types of packages:
 
 #### Container Layer
 
-Each of the image layers hould be represented in a package. Ideally, the image
+Each of the image layers should be represented in a package. Ideally, the image
 SBOM should describe the whole container image structure. Just as the image,
 layers should also be named using their digests. The can layer can contain a
 purl of type OCI to reference it.
 
 #### Base Image
 
-Images often are derived from other images. When the described image uses as a 
+Images often are derived from other images. When the described image uses as a
 base another image, the SBOM can reference it using a package. In order to ensure
 that tools can discern the base image from other OCI artifacts, the base image
 package should be related to the image via a `DESCENDANT_OF` relationship.
@@ -96,7 +97,7 @@ package should be related to the image via a `DESCENDANT_OF` relationship.
 The SBOM describing the image should also reference the VCS URL where the source
 to build the image lives. To describe the build code, the image SBOM should have
 a package pointing to the source repository. This package should be related to the
-image package using a `GENERATED_FROM` relationship. 	  
+image package using a `GENERATED_FROM` relationship.
 
 ### Software Identifiers
 
@@ -111,7 +112,5 @@ code that generated the image.
 **Note:** This is not a reference to the application source code, it is a reference
 to the code that was used to build the image (eg its Dockerfile).
 
-The purl referncing the source repository should be of type [github](https://github.com/package-url/purl-spec/blob/master/PURL-TYPES.rst#github) if the code lives there. Check for other
+The purl referencing the source repository should be of type [github](https://github.com/package-url/purl-spec/blob/master/PURL-TYPES.rst#github) if the code lives there. Check for other
 suitable types if the source is not hosted in GitHub.  
-
-

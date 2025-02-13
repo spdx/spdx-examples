@@ -8,7 +8,6 @@ OS packages and other lose files.
 
 ## Structure Diagram
 
-
 ```mermaid
 classDiagram
 direction LR
@@ -35,6 +34,7 @@ Layer --> busybox: CONTAINS
 
 Layer --> cacertificatesbundle: CONTAINS
 ```
+
 ## Design Specification
 
 The goal of this design is to allow maximum flexibility when adding metadata
@@ -46,16 +46,16 @@ room for current and unexpected uses.
 
 The package in this design represents a layer in a container image. Separating the
 layers into their own packages ensures that adding data about packages can be added
-to the appropiate section of the SBOM. For example, a layer can express an added file
+to the appropriate section of the SBOM. For example, a layer can express an added file
 via a `curl` pull while another can add child packages detailing the installed OS
 dependencies.
 
 Things inside of images should be added as SPDX Packages and Files and related using a
-CONTAINS relationship. 
+CONTAINS relationship.
 
 ### Software Identifiers
 
-The package representing a layer should have a purl of type `oci` referencing the 
-layer in a registry-neutral way. No os/arch data needs be added to the purl as 
-the layer will mostl likely live under an image SBOM which should include the platform
-info. 
+The package representing a layer should have a purl of type `oci` referencing the
+layer in a registry-neutral way. No os/arch data needs be added to the purl as
+the layer will most likely live under an image SBOM which should include the platform
+info.
