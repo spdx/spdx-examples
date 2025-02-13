@@ -55,4 +55,3 @@ Each of the packages in this design should contain a reference to the OCI object
 a [purl of type `oci`](https://github.com/package-url/purl-spec/blob/master/PURL-TYPES.rst#oci).
 Packages representing the single arch images must contain the os/arch metadata and optionally
 can add tag and repository metadata.
-
