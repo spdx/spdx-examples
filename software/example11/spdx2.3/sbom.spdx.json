@@ -6,7 +6,7 @@
     "created": "2022-11-03T07:10:10Z",
     "creators": [
       "Tool: sigs.k8s.io/bom/pkg/spdx",
-	  "Organization: Unknown"
+	    "Organization: Unknown"
     ]
   },
   "dataLicense": "CC0-1.0",
@@ -43,10 +43,12 @@
       "licenseConcluded": "MIT",
       "downloadLocation": "https://github.com/rust-lang/crates.io-index",
       "copyrightText": "NOASSERTION",
-      "checksums": [{
-        "algorithm" : "SHA256",
-        "checksumValue" : "02c929dc5c39e335a03c405292728118860721b10190d98c2a0f0efd5baafbac"
-      } ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "02c929dc5c39e335a03c405292728118860721b10190d98c2a0f0efd5baafbac"
+        }
+      ],
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
@@ -65,9 +67,9 @@
       "downloadLocation": "https://github.com/rust-lang/crates.io-index",
       "copyrightText": "NOASSERTION",
       "checksums": [
-         {
-          "algorithm" : "SHA256",
-          "checksumValue" : "c51a52ed6686dd62c320f9b89299e9dfb46f730c7a48e635c19f21d116cb1439498cebd51a4483d6e68c2fc62d27008252fa4f7b"
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c51a52ed6686dd62c320f9b89299e9dfb46f730c7a48e635c19f21d116cb1439"
         }
       ],
       "externalRefs": [
@@ -87,10 +89,12 @@
       "licenseConcluded": "MIT OR Apache-2.0",
       "downloadLocation": "NONE",
       "copyrightText": "NOASSERTION",
-      "checksums": [{
-        "algorithm" : "SHA256",
-        "checksumValue" : "926d36b9553851b8b0005f1275891b392ee4d2d833852c417ed025477350fb9d"
-      }],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "926d36b9553851b8b0005f1275891b392ee4d2d833852c417ed025477350fb9d"
+        }
+      ],
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
