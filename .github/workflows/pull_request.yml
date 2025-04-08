@@ -64,7 +64,6 @@ jobs:
           python3 -m pip install spdx3-validate
 
       - name: Validate SPDX 2.2 & SPDX 2.3 Documents
-        continue-on-error: true
         run: |
           set +e
           EXIT_CODE=0
