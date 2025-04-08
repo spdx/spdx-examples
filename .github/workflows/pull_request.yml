@@ -72,7 +72,7 @@ jobs:
           for f in $(find . \( -path '*/spdx2.2/*' -o -path '*/spdx2.3/*' \) \( -name *.spdx -o -name *.json \)); do
               echo "$f"
               java -jar tools-java.jar Verify "$f"
-              if [ $? -neq 0 ]; then
+              if [ $? -ne 0 ]; then
                   FAIL_COUNT=$((FAIL_COUNT + 1))
                   FAIL_FILES="$FAIL_FILES\n$f"
               fi
