@@ -73,7 +73,7 @@ jobs:
           FAILED_FILES=""
 
           for f in $(find . \( -path '*/spdx2.2/*' -o -path '*/spdx2.3/*' \) \( -name *.spdx -o -name *.json \)); do
-              echo "Checking $f..."
+              echo "$f"
               TOTAL_COUNT=$((TOTAL_COUNT + 1))
               java -jar tools-java.jar Verify "$f"
               if [ $? -eq 0 ]; then
@@ -92,7 +92,7 @@ jobs:
 
           if [ $FAILURE_COUNT -ne 0 ]; then
               echo ""
-              echo "Failed files:"
+              echo -n "Failed files:"
               echo -e "$FAILED_FILES"
           fi
 
@@ -103,7 +103,7 @@ jobs:
       - name: Validate SPDX 3.0 Documents
         run: |
           for f in $(find . -type f -path '*/spdx3.0/*.json'); do
-              echo "Checking $f..."
+              echo "$f"
               TOTAL_COUNT=$((TOTAL_COUNT + 1))
               spdx3-validate -j $f
               if [ $? -eq 0 ]; then
@@ -122,7 +122,7 @@ jobs:
 
           if [ $FAILURE_COUNT -ne 0 ]; then
               echo ""
-              echo "Failed files:"
+              echo -n "Failed files:"
               echo -e "$FAILED_FILES"
           fi
 
