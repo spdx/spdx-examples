@@ -65,6 +65,7 @@ jobs:
 
       - name: Validate SPDX 2.2 & SPDX 2.3 Documents
         run: |
+          set -e
           find . \( -path '*/spdx2.2/*' -o -path '*/spdx2.3/*' \) \( -name *.spdx -o -name *.json \) \
             -exec echo {} \; \
             -exec java -jar tools-java.jar Verify {} \;
