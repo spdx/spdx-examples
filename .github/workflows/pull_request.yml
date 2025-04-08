@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout spdx-examples
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332  #v4.1.7
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  #v4.2.2
 
       - name: Look for files with the wrong location
         run: |
@@ -52,11 +52,11 @@ jobs:
           sudo apt update -y
 
       - name: Setup Java tools
+        env:
+          VERSION: 2.0.0-RC2
         run: |
-          sudo apt install -y default-jdk maven
-          git clone https://github.com/spdx/tools-java.git && cd tools-java
-          export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
-          mvn clean install && cd ..
+          sudo apt install -y default-jdk
+          curl --location https://repo1.maven.org/maven2/org/spdx/tools-java/${VERSION}/tools-java-${VERSION}-jar-with-dependencies.jar --output tools-java.jar
 
       - name: Setup Python tools
         run: |
@@ -67,7 +67,7 @@ jobs:
         run: |
           find . \( -path '*/spdx2.2/*' -o -path '*/spdx2.3/*' \) \( -name *.spdx -o -name *.json \) \
             -exec echo {} \; \
-            -exec java -jar tools-java/target/tools-java-*-jar-with-dependencies.jar Verify {} \;
+            -exec java -jar tools-java.jar Verify {} \;
 
       - name: Validate SPDX 3.0 Documents
         run: |
@@ -75,4 +75,3 @@ jobs:
               echo "Checking $f..."
               spdx3-validate -j $f
           done
-
