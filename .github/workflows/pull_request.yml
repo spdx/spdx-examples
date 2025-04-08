@@ -65,10 +65,22 @@ jobs:
 
       - name: Validate SPDX 2.2 & SPDX 2.3 Documents
         run: |
-          set -e
-          find . \( -path '*/spdx2.2/*' -o -path '*/spdx2.3/*' \) \( -name *.spdx -o -name *.json \) \
-            -exec echo {} \; \
-            -exec java -jar tools-java.jar Verify {} \;
+          set +e
+          EXIT_CODE=0
+
+          for f in $(find . \( -path '*/spdx2.2/*' -o -path '*/spdx2.3/*' \) \( -name *.spdx -o -name *.json \)); do
+              echo "Checking $f..."
+              java -jar tools-java.jar Verify "$f"
+              if [ $? -ne 0 ]; then
+                  EXIT_CODE=1
+              fi
+          done
+
+          if [ $EXIT_CODE -ne 0 ]; then
+              echo ""
+              echo "One or more files failed validation."
+              exit $EXIT_CODE
+          fi
 
       - name: Validate SPDX 3.0 Documents
         run: |
