@@ -93,7 +93,7 @@ jobs:
 
           for f in $(find . -type f -path '*/spdx3.0/*.json'); do
               echo "$f"
-              spdx3-validate -j $f
+              spdx3-validate --quiet --json $f
               if [ $? -ne 0 ]; then
                   FAIL_COUNT=$((FAIL_COUNT + 1))
                   FAIL_FILES="$FAIL_FILES\n$f"
