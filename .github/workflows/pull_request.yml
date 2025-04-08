@@ -63,28 +63,52 @@ jobs:
           python3 -m pip install -U pip
           python3 -m pip install spdx3-validate
 
-      - name: Validate SPDX 2.2 & SPDX 2.3 Documents
+      - name: Validate SPDX documents
         run: |
           set +e
           EXIT_CODE=0
+          TOTAL_COUNT=0
+          PASSED_COUNT=0
+          FAILURE_COUNT=0
+          FAILED_FILES=""
 
           for f in $(find . \( -path '*/spdx2.2/*' -o -path '*/spdx2.3/*' \) \( -name *.spdx -o -name *.json \)); do
               echo "Checking $f..."
+              TOTAL_COUNT=$((TOTAL_COUNT + 1))
               java -jar tools-java.jar Verify "$f"
-              if [ $? -ne 0 ]; then
+              if [ $? -eq 0 ]; then
+                  PASSED_COUNT=$((PASSED_COUNT + 1))
+              else
+                  FAILURE_COUNT=$((FAILURE_COUNT + 1))
+                  FAILED_FILES="$FAILED_FILES\n$f"
                   EXIT_CODE=1
               fi
           done
 
-          if [ $EXIT_CODE -ne 0 ]; then
-              echo ""
-              echo "One or more files failed validation."
-              exit $EXIT_CODE
-          fi
-
-      - name: Validate SPDX 3.0 Documents
-        run: |
           for f in $(find . -type f -path '*/spdx3.0/*.json'); do
               echo "Checking $f..."
+              TOTAL_COUNT=$((TOTAL_COUNT + 1))
               spdx3-validate -j $f
+              if [ $? -eq 0 ]; then
+                  PASSED_COUNT=$((PASSED_COUNT + 1))
+              else
+                  FAILURE_COUNT=$((FAILURE_COUNT + 1))
+                  FAILED_FILES="$FAILED_FILES\n$f"
+                  EXIT_CODE=1
+              fi
           done
+
+          echo ""
+          echo "Files tested: $TOTAL_COUNT"
+          echo "Files passed: $PASSED_COUNT"
+          echo "Files failed: $FAILURE_COUNT"
+
+          if [ $FAILURE_COUNT -ne 0 ]; then
+              echo ""
+              echo "Failed files:"
+              echo -e "$FAILED_FILES"
+          fi
+
+          if [ $EXIT_CODE -ne 0 ]; then
+              exit $EXIT_CODE
+          fi
