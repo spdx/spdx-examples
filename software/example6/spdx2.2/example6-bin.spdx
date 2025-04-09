@@ -4,7 +4,7 @@ SPDXID: SPDXRef-DOCUMENT
 DocumentName: hello-go-bin
 DocumentNamespace: https://swinslow.net/spdx-examples/example6/hello-go-bin-v2
 ExternalDocumentRef:DocumentRef-hello-go-src https://swinslow.net/spdx-examples/example6/hello-go-src-v2 SHA1: b3018ddb18802a56b60ad839c98d279687b60bd6
-ExternalDocumentRef:DocumentRef-go-lib https://swinslow.net/spdx-examples/example6/go-lib-v2 SHA1: 58e4a6d5745f032b9788142e49edee1b508c7ac5
+
 Creator: Person: Steve Winslow (steve@swinslow.net)
 Creator: Tool: github.com/spdx/tools-golang/builder
 Creator: Tool: github.com/spdx/tools-golang/idsearcher
@@ -33,18 +33,61 @@ LicenseConcluded: GPL-3.0-or-later AND LicenseRef-Golang-BSD-plus-Patents
 LicenseInfoInFile: NOASSERTION
 FileCopyrightText: NOASSERTION
 
+##### Package representing the Go compiler
+
+PackageName: go
+SPDXID: SPDXRef-Package-go-compiler
+PackageFileName: go
+PackageVersion: 1.15.4
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageChecksum: SHA256: 4448b9e62b3c364a073808e22643985d9f49c4ad44aa11d8e4a17c49600a7c3a
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Packages representing Go standard library packages
+
+PackageName: go.fmt
+SPDXID: SPDXRef-Package-go.fmt
+PackageVersion: 1.15.4
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageComment: This represents the fmt standard library, not the gofmt command.
+
+PackageName: go.reflect
+SPDXID: SPDXRef-Package-go.reflect
+PackageVersion: 1.15.4
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+PackageName: go.strconv
+SPDXID: SPDXRef-Package-go.strconv
+PackageVersion: 1.15.4
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
 ##### Relationships
 
 Relationship: SPDXRef-hello-go-binary GENERATED_FROM DocumentRef-hello-go-src:SPDXRef-hello-go-src
 Relationship: SPDXRef-hello-go-binary GENERATED_FROM DocumentRef-hello-go-src:SPDXRef-Makefile
 
-Relationship: DocumentRef-go-lib:SPDXRef-Package-go-compiler BUILD_TOOL_OF SPDXRef-Package-hello-go-bin
+Relationship: SPDXRef-Package-go-compiler BUILD_TOOL_OF SPDXRef-Package-hello-go-bin
 
-Relationship: DocumentRef-go-lib:SPDXRef-Package-go.fmt RUNTIME_DEPENDENCY_OF SPDXRef-Package-hello-go-bin
-Relationship: DocumentRef-go-lib:SPDXRef-Package-go.fmt STATIC_LINK SPDXRef-Package-hello-go-bin
+Relationship: SPDXRef-Package-go.fmt RUNTIME_DEPENDENCY_OF SPDXRef-Package-hello-go-bin
+Relationship: SPDXRef-Package-go.fmt STATIC_LINK SPDXRef-Package-hello-go-bin
 
-Relationship: DocumentRef-go-lib:SPDXRef-Package-go.reflect STATIC_LINK SPDXRef-Package-hello-go-bin
-Relationship: DocumentRef-go-lib:SPDXRef-Package-go.strconv STATIC_LINK SPDXRef-Package-hello-go-bin
+Relationship: SPDXRef-Package-go.reflect STATIC_LINK SPDXRef-Package-hello-go-bin
+Relationship: SPDXRef-Package-go.strconv STATIC_LINK SPDXRef-Package-hello-go-bin
 
 ##### Non-standard license
 
