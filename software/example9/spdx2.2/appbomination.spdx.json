@@ -41,7 +41,7 @@
     "licenseComments" : "Faust proprietary notice was found in one or more source files.  LGPL-2.0-or-later OR WTFPL was in a build configuration file and does not apply to the concluded license.",
     "licenseConcluded" : "(LicenseRef-1 AND Apache-2.0)",
     "licenseDeclared" : "Apache-2.0",
-    "licenseInfoFromFiles" : [ "LicenseRef-1", "Apache-2.0", "(LGPL-2.0-or-later OR WTFPL)" ],
+    "licenseInfoFromFiles" : [ "LicenseRef-1", "Apache-2.0", "LGPL-2.0-or-later", "WTFPL)" ],
     "name" : "App-BOM-ination",
     "originator" : "Person: Yevester",
     "packageFileName" : "App-BOM-ination-1.0.zip",
