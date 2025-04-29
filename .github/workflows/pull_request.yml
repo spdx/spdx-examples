@@ -53,10 +53,10 @@ jobs:
 
       - name: Setup Java tools
         env:
-          VERSION: 2.0.0-RC2
+          TOOLS_JAVA_VER: 2.0.1
         run: |
           sudo apt install -y default-jdk
-          curl --location https://repo1.maven.org/maven2/org/spdx/tools-java/${VERSION}/tools-java-${VERSION}-jar-with-dependencies.jar --output tools-java.jar
+          curl --location https://repo1.maven.org/maven2/org/spdx/tools-java/${TOOLS_JAVA_VER}/tools-java-${TOOLS_JAVA_VER}-jar-with-dependencies.jar --output tools-java.jar
 
       - name: Setup Python tools
         run: |
