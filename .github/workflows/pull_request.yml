@@ -47,15 +47,16 @@ jobs:
             exit 1
           fi
 
-      - name: Update apt
-        run: |
-          sudo apt update -y
+      - name: Setup Java
+        uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00  #v4.7.1
+        with:
+          distribution: 'temurin'
+          java-version: '21'
 
       - name: Setup Java tools
         env:
           TOOLS_JAVA_VER: 2.0.1
         run: |
-          sudo apt install -y default-jdk
           curl --location https://repo1.maven.org/maven2/org/spdx/tools-java/${TOOLS_JAVA_VER}/tools-java-${TOOLS_JAVA_VER}-jar-with-dependencies.jar --output tools-java.jar
 
       - name: Setup Python tools
