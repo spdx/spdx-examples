@@ -49,12 +49,12 @@
         "dataset"
       ],
       "rootElement": [
-        "https://spdx.org/spdxdocs/BOM1-d44af211-2646-43bc-9058-f6aabd30f7ab"
+        "https://spdx.org/spdxdocs/SBOM1-d44af211-2646-43bc-9058-f6aabd30f7ab"
       ]
     },
     {
-      "type": "Bom",
-      "spdxId": "https://spdx.org/spdxdocs/BOM1-d44af211-2646-43bc-9058-f6aabd30f7ab",
+      "type": "software_Sbom",
+      "spdxId": "https://spdx.org/spdxdocs/SBOM1-d44af211-2646-43bc-9058-f6aabd30f7ab",
       "creationInfo": "_:creationinfo",
       "profileConformance": [
         "core",
@@ -62,6 +62,9 @@
       ],
       "rootElement": [
         "https://spdx.org/spdxdocs/DatasetPackage1-035470d9-3ede-4952-91c8-c2abb943c90b"
+      ],
+      "software_sbomType": [
+        "analyzed"
       ]
     },
     {
@@ -75,6 +78,8 @@
       "suppliedBy": "https://spdx.org/spdxdocs/Organization1-cb617656-1023-45e7-84c7-a9311644337b",
       "builtTime": "2023-12-16T11:22:38Z",
       "releaseTime": "2024-04-15T08:10:00Z",
+      "software_packageVersion": "2024-04-15",
+      "software_copyrightText": "Copyright Our World in Data",
       "software_downloadLocation": "https://github.com/owid/co2-data/",
       "verifiedUsing": [
         {
