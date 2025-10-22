@@ -8,6 +8,7 @@ use cases for a particular domain (e.g. security, license compliance).
 
 - [AI](./ai/)
 - [Dataset](./dataset/)
+- [Hardware](./hardware/)
 - [Software](./software/)
 
 Each directory contains a README.md file describing the profile and the
