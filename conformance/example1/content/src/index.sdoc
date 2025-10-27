@@ -19,3 +19,6 @@ FILE: sysReqs/sdoc/index.sdoc
 [DOCUMENT_FROM_FILE]
 FILE: sysVerifications/sdoc/index.sdoc
 
+[DOCUMENT_FROM_FILE]
+FILE: sysArch/sdoc/index.sdoc
+
