@@ -1,0 +1,26 @@
+[DOCUMENT]
+MID: af66c5de119447b58b950dd710d34b8a
+TITLE: System Architecture(s)
+OPTIONS:
+  ENABLE_MID: True
+
+[GRAMMAR]
+IMPORT_FROM_FILE: @sample_system_architectures_grammar
+
+[TEXT]
+MID: 84713f51e27b4ea4bc3242a8e2f1fba7
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+MID: 0f68a238be874bdcb25a5fbb9f9bcb5c
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - Architecture <https://sebokwiki.org/wiki/Architecture_(glossary)>`_:
+
+- fundamental concepts or properties of a system in its environment embodied in its elements, relationships, and in the principles of its design and evolution (ISO/IEC/IEEE 2015, Section 4.5)
+
+- The organizational structure of a system or component; the organizational structure of a system and its implementation guidelines. (ISO/IEC 2009, 1)
+
+- Fundamental concepts or properties of a system in its environment embodied in its elements, relationships, and in the principles of its design and evolution. (ISO/IEC 2011, section 3.2)
+<<<

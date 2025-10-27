@@ -37,3 +37,6 @@ FILE: ../system_requirements/sdoc/index.sdoc
 
 [DOCUMENT_FROM_FILE]
 FILE: ../system_verifications/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: ../system_architectures/sdoc/index.sdoc
