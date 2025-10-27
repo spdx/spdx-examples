@@ -16,3 +16,6 @@ FILE: sysValidations/sdoc/index.sdoc
 [DOCUMENT_FROM_FILE]
 FILE: sysReqs/sdoc/index.sdoc
 
+[DOCUMENT_FROM_FILE]
+FILE: sysVerifications/sdoc/index.sdoc
+
