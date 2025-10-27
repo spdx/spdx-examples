@@ -1,0 +1,24 @@
+[DOCUMENT]
+MID: 6a4553bc55b944b9a60c3c760d07ea76
+TITLE: Stakeholder Requirements
+OPTIONS:
+  ENABLE_MID: True
+
+[GRAMMAR]
+IMPORT_FROM_FILE: @sample_stakeholder_requirements_grammar
+
+[TEXT]
+MID: 91e3de0e259e43ecbc9dc4c3987d5f8e
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+MID: 974887912703457da5e0bc2022cf29d7
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - stakeholder requirement <https://sebokwiki.org/wiki/Stakeholder_Needs_and_Requirements_(glossary)>`_:
+
+- Stakeholder requirements are transformed from the stakeholder needs to objectively adequate, structured and more formal statements. (ISO/IEC/IEEE 29148, 2018, Section 5.2.3)
+
+- Stakeholder requirements express the intended interaction the system will have with its operational environment and that are the reference against which each resulting operational capability is validated. The stakeholder requirements are defined considering the context of the system of interest with the interoperating systems and enabling systems. This also includes consideration of laws and regulations, environmental restrictions, and ethical values. (ISO/IEC/IEEE 15288, 2023, Section 6.4.2)
+<<<

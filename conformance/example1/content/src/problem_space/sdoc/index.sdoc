@@ -23,3 +23,6 @@ FILE: ../personas/sdoc/index.sdoc
 
 [DOCUMENT_FROM_FILE]
 FILE: ../stakeholder_needs/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: ../stakeholder_requirements/sdoc/index.sdoc
