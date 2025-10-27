@@ -28,3 +28,6 @@ FILE: ifcReqs/sdoc/index.sdoc
 [DOCUMENT_FROM_FILE]
 FILE: ifcSpecs/sdoc/index.sdoc
 
+[DOCUMENT_FROM_FILE]
+FILE: sysElemReqs/sdoc/index.sdoc
+
