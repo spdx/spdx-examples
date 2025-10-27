@@ -1,4 +1,4 @@
-# SPDX Regulatory Conformance Examples
+# SPDX Examples - Regulatory Conformance
 
 This repository includes representative content of systems which must conform to one or more regulations.
 The representative content is intended to cover the types and relationships of information that must be
@@ -21,3 +21,4 @@ Each directory contains build metadata which is used to create the build artifac
 
 |  # | System | Regulations | Comments |
 |----|--------|-------------|----------|
+|  1 | [Consumer Electronics Product Line: Rebrandable Network Interface vi USB Dongle](./example1/README.md) | EU CRA, | Draft (CRA horizontal stds net yet released) |
