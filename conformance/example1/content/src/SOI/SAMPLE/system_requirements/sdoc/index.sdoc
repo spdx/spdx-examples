@@ -1,0 +1,24 @@
+[DOCUMENT]
+MID: 85ae378632b7425589c55bed12493f99
+TITLE: System Requirements
+OPTIONS:
+  ENABLE_MID: True
+
+[GRAMMAR]
+IMPORT_FROM_FILE: @sample_system_requirements_grammar
+
+[TEXT]
+MID: caf6ea3cac33409b990281d4d820cc27
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+MID: ccbf7caa1def41da93bd3fb1e1f1d760
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - system requirement <https://sebokwiki.org/wiki/System_Requirement_(glossary)>`_:
+
+- A statement that transforms the stakeholder, user-oriented view of desired capabilities into a technical view, of a solution that meets the operational needs of the user. (ISO/IEC/IEEE, 2015, section 6.4.2)
+
+- The System Requirement Definition process creates a set of measurable system requirements that specify, from the supplier’s perspective, what characteristics, attributes, and functional and performance requirements the system is to possess, in order to satisfy stakeholder requirements. (ISO/IEC/IEEE, 2015, section 6.4.2)
+<<<
