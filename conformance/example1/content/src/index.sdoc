@@ -31,3 +31,6 @@ FILE: ifcSpecs/sdoc/index.sdoc
 [DOCUMENT_FROM_FILE]
 FILE: sysElemReqs/sdoc/index.sdoc
 
+[DOCUMENT_FROM_FILE]
+FILE: sysElemVerifications/sdoc/index.sdoc
+
