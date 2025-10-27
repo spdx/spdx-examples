@@ -1,0 +1,14 @@
+[DOCUMENT]
+TITLE: Stakeholder Needs
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - stakeholder needs <https://sebokwiki.org/wiki/Stakeholder_Needs_and_Requirements_(glossary)>`_:
+
+- Stakeholder needs include elicitation of needs, wants, desires, expectations and perceived constraints of identified stakeholders. Needs concentrate on system purpose and behavior, and are described in the context of the operational environment and conditions. (ISO/IEC/IEEE 15288, 2023, Section 6.4.2)
+<<<
