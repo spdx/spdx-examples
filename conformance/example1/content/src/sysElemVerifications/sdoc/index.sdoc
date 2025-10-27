@@ -1,0 +1,22 @@
+[DOCUMENT]
+TITLE: System Element Verifications
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - verification <https://sebokwiki.org/wiki/Verification_(glossary)>`_:
+
+- Confirmation, through the provision of objective evidence, that specified (system) requirements have been fulfilled. (ISO/IEC 2008, section 4.38)
+
+- Verification is a set of activities that compares a system or system element against the required characteristics. This includes, but is not limited to, specified requirements, design description and the system itself. The system was built right. (ISO/IEC/IEEE 2015, 1, Section 6.4.6)
+
+- The evaluation of whether or not a product, service, or system complies with a regulation, requirement, specification, or imposed condition. It is often an internal process. Contrast with validation. (PMI 2013)
+
+- The process of evaluating a system or component to determine whether the products of a given development phase satisfy the conditions imposed at the start of that phase. (IEEE 1012-2004, 3.1.36)
+
+- Process of providing objective evidence that the software and its associated products comply with requirements for all life cycle activities during each life cycle process, satisfy standards, practices, and conventions during life cycle processes, and successfully complete each life cycle activity and satisfy all the criteria for initiating succeeding life cycle activities. (IEEE 829-2008, 3.1.54)
+<<<
