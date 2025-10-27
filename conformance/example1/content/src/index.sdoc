@@ -6,3 +6,6 @@ FILE: problem_space/sdoc/index.sdoc
 
 [DOCUMENT_FROM_FILE]
 FILE: system_concept_of_operations/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: system_validations/sdoc/index.sdoc

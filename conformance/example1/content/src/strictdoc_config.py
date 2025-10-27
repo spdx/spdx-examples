@@ -31,6 +31,7 @@ def create_config() -> ProjectConfig:
             "/*",
             "/*/sdoc/**",
             "/*/*/sdoc/**",
+            "/SOI/*/*/sdoc/**",
         ],
 
         exclude_doc_paths=[
