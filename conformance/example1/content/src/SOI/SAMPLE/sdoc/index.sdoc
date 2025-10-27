@@ -34,3 +34,6 @@ It is expected to be composed of the following subsystems:
 
 [DOCUMENT_FROM_FILE]
 FILE: ../system_requirements/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: ../system_verifications/sdoc/index.sdoc
