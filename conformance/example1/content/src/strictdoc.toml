@@ -1,0 +1,28 @@
+[project]
+title = "SPDX Regulation Conformance Example 1: SEBoK Product as System : Commodity Consumer Electronics"
+
+include_doc_paths = [
+  "*",
+  "*/sdoc/**"
+]
+
+features = [
+  # Stable features.
+  "DEEP_TRACEABILITY_SCREEN",
+  # "MATHJAX",  - not used by this project
+  "SEARCH",
+  "TABLE_SCREEN",
+  "TRACEABILITY_SCREEN",
+
+  # Experimental features
+  "DIFF",
+  "HTML2PDF",
+  "MERMAID",
+  "NESTOR",
+  "PROJECT_STATISTICS_SCREEN",
+  # "REQIF",
+  # "REQUIREMENT_TO_SOURCE_TRACEABILITY",
+  # "SOURCE_FILE_LANGUAGE_PARSERS",
+  # "STANDALONE_DOCUMENT_SCREEN",
+  "TRACEABILITY_MATRIX_SCREEN",
+]
