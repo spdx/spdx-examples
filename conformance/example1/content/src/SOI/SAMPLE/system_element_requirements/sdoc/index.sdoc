@@ -1,0 +1,22 @@
+[DOCUMENT]
+MID: 9a5689a75c354b019acf55761ae02ca7
+TITLE: System Element Requirements
+OPTIONS:
+  ENABLE_MID: True
+
+[GRAMMAR]
+IMPORT_FROM_FILE: @sample_system_element_requirements_grammar
+
+[TEXT]
+MID: 2f9e70c900604e35a4a61961afb6e19b
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+MID: 49ebfa8c1d414aa2aa66aff2153c2f13
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - system element <https://sebokwiki.org/wiki/System_Element_(glossary)>`_:
+
+- A member of a set of elements that constitutes a system. A system element is a discrete part of a system that can be implemented to fulfill specified requirements. A system element can be hardware, software, data, humans, processes (e.g., processes for providing service to users), procedures (e.g., operator instructions), facilities, materials, and naturally occurring entities (e.g., water, organisms, minerals), or any combination. (ISO/IEC 15288:2015)
+<<<
