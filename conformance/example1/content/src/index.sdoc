@@ -7,3 +7,6 @@ FILE: stakeholders/sdoc/index.sdoc
 [DOCUMENT_FROM_FILE]
 FILE: stkNeeds/sdoc/index.sdoc
 
+[DOCUMENT_FROM_FILE]
+FILE: stkReqs/sdoc/index.sdoc
+
