@@ -14,3 +14,6 @@ that describes the potential problem space under consideration for a solution.
 This problem space is likely larger than what will be addressed by a specific solution 
 (e.g., product, product-line, or business).
 <<<
+
+[DOCUMENT_FROM_FILE]
+FILE: ../stakeholders/sdoc/index.sdoc

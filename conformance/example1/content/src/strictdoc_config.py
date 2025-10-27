@@ -30,6 +30,7 @@ def create_config() -> ProjectConfig:
         include_doc_paths=[
             "/*",
             "/*/sdoc/**",
+            "/*/*/sdoc/**",
         ],
 
         exclude_doc_paths=[
