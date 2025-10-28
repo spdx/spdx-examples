@@ -22,3 +22,6 @@ FILE: sysVerifications/sdoc/index.sdoc
 [DOCUMENT_FROM_FILE]
 FILE: sysArch/sdoc/index.sdoc
 
+[DOCUMENT_FROM_FILE]
+FILE: ifcReqs/sdoc/index.sdoc
+
