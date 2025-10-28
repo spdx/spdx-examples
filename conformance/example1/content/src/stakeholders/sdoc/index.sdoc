@@ -1,6 +1,9 @@
 [DOCUMENT]
 TITLE: Stakeholders
 
+[GRAMMAR]
+IMPORT_FROM_FILE: stakeholders.sgra
+
 [TEXT]
 STATEMENT: >>>
 SPDX-License-Identifier: Apache-2.0

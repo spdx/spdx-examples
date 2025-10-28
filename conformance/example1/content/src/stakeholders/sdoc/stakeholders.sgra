@@ -1,0 +1,24 @@
+[GRAMMAR]
+ELEMENTS:
+- TAG: STAKEHOLDER
+  PROPERTIES:
+    PREFIX: STKHLDR-
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: False
+  - TITLE: UID
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATUS
+    TYPE: SingleChoice(Draft, Active, Deleted)
+    REQUIRED: True
+  - TITLE: TITLE
+    TYPE: String
+    REQUIRED: True
+  - TITLE: DESCRIPTION
+    TYPE: String
+    REQUIRED: False
+  - TITLE: COMMENT
+    TYPE: String
+    REQUIRED: False
