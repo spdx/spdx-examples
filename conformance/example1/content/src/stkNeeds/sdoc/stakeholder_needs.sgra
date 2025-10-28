@@ -1,0 +1,30 @@
+[GRAMMAR]
+ELEMENTS:
+- TAG: NEED
+  PROPERTIES:
+    PREFIX: STKNEED-
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: False
+  - TITLE: UID
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATUS
+    TYPE: SingleChoice(Draft, Active, Deleted)
+    REQUIRED: True
+  - TITLE: SOURCE
+    TYPE: String
+    REQUIRED: True
+  - TITLE: PRIORITY
+    TYPE: SingleChoice(Must, HighWant, Want)
+    REQUIRED: True
+  - TITLE: TITLE
+    TYPE: String
+    REQUIRED: True
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: True
+  - TITLE: RATIONALE
+    TYPE: String
+    REQUIRED: True
