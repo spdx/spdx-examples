@@ -1,6 +1,9 @@
 [DOCUMENT]
 TITLE: System Element Verifications
 
+[GRAMMAR]
+IMPORT_FROM_FILE: syselem_verifications.sgra
+
 [TEXT]
 STATEMENT: >>>
 SPDX-License-Identifier: Apache-2.0
