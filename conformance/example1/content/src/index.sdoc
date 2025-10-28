@@ -25,3 +25,6 @@ FILE: sysArch/sdoc/index.sdoc
 [DOCUMENT_FROM_FILE]
 FILE: ifcReqs/sdoc/index.sdoc
 
+[DOCUMENT_FROM_FILE]
+FILE: ifcSpecs/sdoc/index.sdoc
+
