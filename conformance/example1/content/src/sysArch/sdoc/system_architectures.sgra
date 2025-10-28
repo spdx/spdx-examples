@@ -1,0 +1,27 @@
+[GRAMMAR]
+ELEMENTS:
+- TAG: ARCH_DECISION
+  PROPERTIES:
+    PREFIX: SYSARCH-
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: False
+  - TITLE: UID
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATUS
+    TYPE: SingleChoice(Draft, Active, Deleted)
+    REQUIRED: True
+  - TITLE: TITLE
+    TYPE: String
+    REQUIRED: True
+  - TITLE: DECISION
+    TYPE: String
+    REQUIRED: True
+  - TITLE: RATIONALE
+    TYPE: String
+    REQUIRED: True
+  RELATIONS:
+  - TYPE: Parent
+
