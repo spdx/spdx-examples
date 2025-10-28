@@ -1,6 +1,9 @@
 [DOCUMENT]
 TITLE: System Verifications
 
+[GRAMMAR]
+IMPORT_FROM_FILE: system_verifications.sgra
+
 [TEXT]
 STATEMENT: >>>
 From `SEBoK Wiki Glossary -  verification <https://sebokwiki.org/wiki/Verification_(glossary)>`_:
