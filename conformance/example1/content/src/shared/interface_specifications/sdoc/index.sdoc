@@ -1,0 +1,26 @@
+[DOCUMENT]
+MID: 40559692c69c4186b2988f397fae3705
+TITLE: Interface Specifications
+OPTIONS:
+  ENABLE_MID: True
+
+[GRAMMAR]
+IMPORT_FROM_FILE: @sample_interface_specifications_grammar
+
+[TEXT]
+MID: 25e15526eef84b76b402e4ee758a48d6
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+MID: 4b16cedcc0fd4ff39a7816b32ebbe4e4
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - interface <https://sebokwiki.org/wiki/Interface_(glossary)>`_:
+
+- A shared boundary between two functional units, defined by various characteristics pertaining to the functions, physical signal exchanges, and other characteristics. (ISO/IEC 1993)
+
+- A hardware or software component that connects two or more other components for the purpose of passing information from one to the other. (ISO/IEC 1993)
+
+- To connect two or more components for the purpose of passing information from one to the other. (ISO/IEC/IEEE 2009)
+<<<
