@@ -1,6 +1,9 @@
 [DOCUMENT]
 TITLE: System Element Requirements
 
+[GRAMMAR]
+IMPORT_FROM_FILE: syselem_requirements.sgra
+
 [TEXT]
 STATEMENT: >>>
 SPDX-License-Identifier: Apache-2.0
