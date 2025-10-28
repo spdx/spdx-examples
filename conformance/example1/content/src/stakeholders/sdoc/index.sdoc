@@ -46,4 +46,9 @@ DESCRIPTION: >>>
 Stakeholder authorizing the expenditure of resources to the project.
 <<<
 
+[STAKEHOLDER]
+UID: STKHLDR-4
+STATUS: Draft
+TITLE: Suppliers
+
 [[/SECTION]]
