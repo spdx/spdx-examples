@@ -62,6 +62,11 @@ TITLE: Suppliers
 TITLE: Markets
 
 [STAKEHOLDER]
+UID: STKHLDR-8
+STATUS: Draft
+TITLE: Paying Customer
+
+[STAKEHOLDER]
 UID: STKHLDR-6
 STATUS: Draft
 TITLE: Regulating Authorities
