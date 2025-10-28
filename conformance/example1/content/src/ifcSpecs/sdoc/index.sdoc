@@ -1,6 +1,9 @@
 [DOCUMENT]
 TITLE: Interface Specifications
 
+[GRAMMAR]
+IMPORT_FROM_FILE: interface_specifications.sgra
+
 [TEXT]
 STATEMENT: >>>
 SPDX-License-Identifier: Apache-2.0
