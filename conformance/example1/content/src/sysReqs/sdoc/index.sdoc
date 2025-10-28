@@ -1,6 +1,9 @@
 [DOCUMENT]
 TITLE: System Requirements
 
+[GRAMMAR]
+IMPORT_FROM_FILE: system_requirements.sgra
+
 [TEXT]
 STATEMENT: >>>
 SPDX-License-Identifier: Apache-2.0
