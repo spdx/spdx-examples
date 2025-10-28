@@ -25,5 +25,12 @@ From `SEBoK Wiki Glossary - stakeholder <https://sebokwiki.org/wiki/Stakeholder_
 [[SECTION]]
 TITLE: Manufacturer
 
-[[/SECTION]]
+[STAKEHOLDER]
+UID: STKHLDR-1
+STATUS: Draft
+TITLE: Sponsor
+DESCRIPTION: >>>
+Stakeholder authorizing the expenditure of resources to the project.
+<<<
 
+[[/SECTION]]
