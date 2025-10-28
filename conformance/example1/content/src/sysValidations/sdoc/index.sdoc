@@ -1,6 +1,9 @@
 [DOCUMENT]
 TITLE: System Validations
 
+[GRAMMAR]
+IMPORT_FROM_FILE: system_validations.sgra
+
 [TEXT]
 STATEMENT: >>>
 SPDX-License-Identifier: Apache-2.0
