@@ -69,6 +69,13 @@ From `4+1 Architectural View Model <https://en.wikipedia.org/wiki/4%2B1_architec
 [[SECTION]]
 TITLE: Development View
 
+[TEXT]
+STATEMENT: >>>
+From `4+1 Architectural View Model <https://en.wikipedia.org/wiki/4%2B1_architectural_view_model>`_:
+
+  The development view (aka the implementation view) illustrates a system from a programmer's perspective and is concerned with software management. UML Diagrams used to represent the development view include the Package diagram and the Component diagram. (Mikko Kontio (2008, July) Architectural manifesto: Designing software architectures, Part 5)
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
