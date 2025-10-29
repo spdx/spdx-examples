@@ -23,9 +23,37 @@ From `SEBoK Wiki Glossary - Architecture <https://sebokwiki.org/wiki/Architectur
 [[SECTION]]
 TITLE: Architecture Decision Timeline
 
+[TEXT]
+STATEMENT: >>>
+YYYY Mmm DD - Follow 4+1 Architectural View Model
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
 TITLE: Architecture Decisions
+
+[ARCH_DECISION]
+UID: SYSARCH-1
+STATUS: Draft
+TITLE: Follow 4+1 Architectural View Model
+DECISION: >>>
+The SEBoK Commodity Consumer Electronics example will describe the architecture using the `4+1 Architectural View Model <https://en.wikipedia.org/wiki/4%2B1_architectural_view_model>`_, substituting the equivalent term "Concurrency View" for "Process View".
+<<<
+RATIONALE: >>>
+From `SEBoK Wiki - Product as a System Fundamentals <https://sebokwiki.org/wiki/Product_as_a_System_Fundamentals#Product_Architecture,_Modeling,_and_Analysis>`_:
+
+  A product's purpose (stakeholder’s need) is realized by a product system (the SoI). Because product systems are composed of different entities (components, assemblies, subsystems, information, facilities, processes, organizations, people, etc.) that together produce the results unachievable by any of the entities alone, architecting the product is based on a whole systems approach. To architect with a whole systems approach means to define, document, design, develop, manufacture, distribute, maintain, improve, and to certify proper implementation of the product’s objectives in terms of the functional (the "what"), the behavioral (the use, or intended operations), the logical (interaction and relationships between entities) and the physical constructs (Wasson 2006; Maier 2009; Blanchard and Fabrycky 2011).
+
+  The system architect starts at the highest level of abstraction, concentrating on needs, functions, systems characteristics and constraints (concerns) before identifying components, assemblies, or subsystems. This is the systems view, and it is used to represent the stakeholder’s market service description or the concept of operations (understanding of the opportunity/problem space).
+
+  Next to be documented, as needs become better understood, are architectural descriptions at different levels of abstraction, representing various stakeholders interests. These are the architecture models. They define the possible solution spaces for the product purpose in the form of detailed system, operational, behavioral, and physical requirements of the product system.
+
+  ...
+
+  Different architecture frameworks have been developed to guide product teams in defining the product architecture for commercial and for public enterprises. In general, an architecture framework describes a "view," meaning a "collection of models that represent the whole system from the perspective of a set of related stakeholder concerns."
+
+The 4+1 Architectural View Model description is freely available and has been foundational for decades and is relatively simple to understand once the term "Process" is replaced with the term "Concurrency".
+<<<
 
 [[/SECTION]]
