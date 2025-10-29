@@ -33,6 +33,13 @@ TITLE: Architecture Decisions
 [[SECTION]]
 TITLE: Logical View
 
+[TEXT]
+STATEMENT: >>>
+From `4+1 Architectural View Model <https://en.wikipedia.org/wiki/4%2B1_architectural_view_model>`_:
+
+  The logical view is concerned with the functionality that the system provides to end-users. UML diagrams are used to represent the logical view, and include class diagrams, and state diagrams. (Mikko Kontio (2008, July) Architectural manifesto: Designing software architectures, Part 5)
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
