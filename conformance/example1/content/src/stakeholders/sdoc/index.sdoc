@@ -65,6 +65,20 @@ TITLE: Markets
 UID: STKHLDR-9
 TITLE: Operator/User
 
+[STAKEHOLDER]
+UID: STKHLDR-11
+STATUS: Draft
+TITLE: Youth
+DESCRIPTION: >>>
+This operator is characterized by:
+
+- in primary/middle school
+- a novice to technology
+- does not have administrative access to computer technology
+- is provided with an inexpensive computer that is several years old
+- must share computer technology with other students.
+<<<
+
 [[/SECTION]]
 
 [STAKEHOLDER]
