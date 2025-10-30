@@ -12,6 +12,7 @@ features = [
   # Experimental features
   "DIFF",
   "HTML2PDF",
+  "MERMAID",
   "NESTOR",
   "PROJECT_STATISTICS_SCREEN",
   # "REQIF",
