@@ -40,6 +40,36 @@ From `4+1 Architectural View Model <https://en.wikipedia.org/wiki/4%2B1_architec
   The logical view is concerned with the functionality that the system provides to end-users. UML diagrams are used to represent the logical view, and include class diagrams, and state diagrams. (Mikko Kontio (2008, July) Architectural manifesto: Designing software architectures, Part 5)
 <<<
 
+[TEXT]
+STATEMENT: >>>
+.. raw:: html
+
+    <pre class="mermaid">
+    ---
+    title: Example UML State Diagram
+    ---
+    stateDiagram-v2
+
+        productMfg: Product Manufacturer
+        productMfgWebsite: Product Mfg. Website
+        productMfgSupport: Product Mfg. Customer Support
+        productSecurityReporting: Product Mfg. <br/> Security Reporting
+
+        state productMfg {
+            direction LR
+
+            productMfgWebsite
+            productMfgSupport
+            productSecurityReporting
+        }
+
+        Customer
+
+        Product
+
+    </pre>
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
