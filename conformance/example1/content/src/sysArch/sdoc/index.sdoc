@@ -82,6 +82,22 @@ From `4+1 Architectural View Model <https://en.wikipedia.org/wiki/4%2B1_architec
   The physical view (aka the deployment view) depicts the system from a system engineer's point of view. It is concerned with the topology of software components on the physical layer as well as the physical connections between these components. UML diagrams used to represent the physical view include the deployment diagram. (Mikko Kontio (2008, July) Architectural manifesto: Designing software architectures, Part 5)
 <<<
 
+[TEXT]
+STATEMENT: >>>
+.. raw:: html
+
+    <pre class="mermaid">
+    ---
+    title: Example UML Entity Relationship
+    ---
+    erDiagram
+        CUSTOMER ||--o{ ORDER : places
+        ORDER ||--|{ LINE-ITEM : contains
+        CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+
+    </pre>
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
