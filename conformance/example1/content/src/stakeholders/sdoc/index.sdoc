@@ -98,6 +98,20 @@ This operator is characterized by:
 <<<
 
 [STAKEHOLDER]
+UID: STKHLDR-18
+STATUS: Draft
+TITLE: Engineering Student
+DESCRIPTION: >>>
+This operator is characterized by:
+
+- relatively high technical knowledge
+- access to sophisticated equipment
+- need to customize devices for personal and school projects
+- under relatively little oversight
+- may be operating device in a very high density environment (e.g., test labs, dormitories)
+<<<
+
+[STAKEHOLDER]
 UID: STKHLDR-11
 STATUS: Draft
 TITLE: Youth
