@@ -139,6 +139,11 @@ TITLE: Service Technician
 TITLE: Others
 
 [STAKEHOLDER]
+UID: STKHLDR-16
+STATUS: Draft
+TITLE: Conformity Assessment Body
+
+[STAKEHOLDER]
 UID: STKHLDR-15
 STATUS: Draft
 TITLE: Open-Source Software Steward
