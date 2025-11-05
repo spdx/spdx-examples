@@ -67,6 +67,11 @@ TITLE: Suppliers
 TITLE: Markets
 
 [STAKEHOLDER]
+UID: STKHLDR-14
+STATUS: Draft
+TITLE: Distributor
+
+[STAKEHOLDER]
 UID: STKHLDR-13
 STATUS: Draft
 TITLE: Importer
