@@ -66,6 +66,11 @@ TITLE: Suppliers
 [[SECTION]]
 TITLE: Markets
 
+[STAKEHOLDER]
+UID: STKHLDR-13
+STATUS: Draft
+TITLE: Importer
+
 [[SECTION]]
 UID: STKHLDR-9
 TITLE: Operator/User
