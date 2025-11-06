@@ -29,6 +29,26 @@ TITLE: Manufacturer
 MID: b4c59f53e33e46e2a8e2c0d0c52468b0
 TITLE: Sponsor
 
+[NEED]
+MID: adaee0f0bf7a47c5b3503444fdb1e477
+UID: STKNEED-1
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Market new consumer electronics product in EU as early as 2028 Jan 1.
+STATEMENT: >>>
+The business Sponsor for Commodity Consumer Electronics needs to market a new product in the European Union as early as 2028 Jan 1.
+<<<
+RATIONALE: >>>
+The European Union is a major economic market for commodity-level Consumer Electronics. The new product (or product platform) development lifecycle for consumer electronics often ranges from 12 to 36 months or more.
+
+On 2027 Dec 11 the EU Cyber Resilience Act will be fully enforced, which requires passing a EU CRA Conformance Assessment covering both product functionality, secure development processes, and security vulnerability reporting and handling services. It is very practical for consumer electronics for this to be considered a *new product* rather than an additional label added to an existing product.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-1
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[/SECTION]]
