@@ -666,4 +666,16 @@ RATIONALE: >>>
 Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-52
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (7)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements, the technical documentation referred to in EU CRA Article 31 shall contain a copy of the EU declaration of conformity.
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
