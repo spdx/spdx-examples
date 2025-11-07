@@ -389,4 +389,16 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-32
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (3)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by name and type and any additional information enabling the unique identification of the product with digital elements.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
