@@ -68,6 +68,19 @@ Engineering students have the background and access to tools to repair commodity
 [[SECTION]]
 TITLE: Youth
 
+[NEED]
+UID: STKNEED-3
+STATUS: Draft
+SOURCE: Observation
+PRIORITY: Must
+TITLE: Visible device alive indication soon after applying power
+STATEMENT: >>>
+Youth need a visible indication that a consumer electronics device is alive soon after applying power to the consumer electronics device.
+<<<
+RATIONALE: >>>
+Youth experiment with connections and have very little patience for devices that do not immediately seem to "work". The visible indication appearing soon after applying power gives the youth quick feedback on whether the device is actually powered and expected to be functional
+<<<
+
 [[/SECTION]]
 
 [[/SECTION]]
