@@ -174,6 +174,23 @@ RELATIONS:
   VALUE: STKREQ-1
   ROLE: Refines
 
+[REQUIREMENT]
+MID: f3d88193890c40b8bd240c82218c6a70
+UID: STKREQ-11
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2i)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall minimise the negative impact by the products themselves or connected devices on the availability of services provided by other devices or networks.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[SECTION]]
