@@ -1,0 +1,11 @@
+[DOCUMENT]
+TITLE: EU Cyber Resilience Act - Requirements
+
+[GRAMMAR]
+IMPORT_FROM_FILE: stakeholder_requirements.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
