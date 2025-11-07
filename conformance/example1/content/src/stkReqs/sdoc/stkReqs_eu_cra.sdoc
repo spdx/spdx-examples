@@ -465,4 +465,19 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-38
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (7)(b)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the end-date of the support period during which users can expect:
+
+- vulnerabilities to be handled,
+- to receive security updates.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
