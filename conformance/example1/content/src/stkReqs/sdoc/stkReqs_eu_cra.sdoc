@@ -224,6 +224,18 @@ RATIONALE: >>>
 Rephrased quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-19
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (3)
+STATEMENT: >>>
+Manufacturers of products with digital elements shall apply effective and regular tests and reviews of the security of the product with digital elements.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
 
 [[/SECTION]]
