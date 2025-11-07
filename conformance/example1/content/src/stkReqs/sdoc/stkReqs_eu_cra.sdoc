@@ -135,6 +135,18 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-12
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2j)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall be designed, developed and produced to limit attack surfaces, including external interfaces.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
