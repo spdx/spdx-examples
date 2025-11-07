@@ -712,4 +712,21 @@ RELATIONS:
   VALUE: STKREQ-1
   ROLE: Refines
 
+[REQUIREMENT]
+MID: c0b39436092c4fc4bf81491b4435a145
+UID: STKREQ-41
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (8)(c)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by detailed instructions or an internet address referring to such detailed instructions and information on how security-relevant updates can be installed.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
