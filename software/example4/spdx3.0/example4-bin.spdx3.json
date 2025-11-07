@@ -89,7 +89,7 @@
     "relationshipType" : "generates",
     "to" : [ "https://swinslow.net/spdx-examples/example4/main-bin-v2-specv3/SPDXRef-gnrtd6" ],
     "completeness" : "noAssertion",
-    "from" : "https://swinslow.net/spdx-examples/example4/main-src-v2#SPDXRef-main-src",
+    "from" : "https://swinslow.net/spdx-examples/example4/main-src-v2-specv3/SPDXRef-gnrtd17",
     "creationInfo" : "_:creationInfo_0"
   }, {
     "spdxId" : "https://swinslow.net/spdx-examples/example4/main-bin-v2-specv3/SPDXRef-gnrtd23",
@@ -105,7 +105,7 @@
     "relationshipType" : "generates",
     "to" : [ "https://swinslow.net/spdx-examples/example4/main-bin-v2-specv3/SPDXRef-gnrtd24" ],
     "completeness" : "noAssertion",
-    "from" : "https://swinslow.net/spdx-examples/example4/main-src-v2#SPDXRef-lib-src",
+    "from" : "https://swinslow.net/spdx-examples/example4/main-src-v2-specv3/SPDXRef-gnrtd6",
     "creationInfo" : "_:creationInfo_0"
   }, {
     "spdxId" : "https://swinslow.net/spdx-examples/example4/main-bin-v2-specv3/SPDXRef-gnrtd27",
@@ -169,8 +169,8 @@
         "algorithm" : "sha1",
         "hashValue" : "3a365c2d58103971a721c9ee18731d3e942e002f"
       } ],
-      "externalSpdxId" : "https://swinslow.net/spdx-examples/example4/main-src-v2#SPDXRef-lib-src",
-      "locationHint" : "https://swinslow.net/spdx-examples/example4/main-src-v2"
+      "externalSpdxId" : "https://swinslow.net/spdx-examples/example4/main-src-v2-specv3/SPDXRef-gnrtd6",
+      "locationHint" : "https://swinslow.net/spdx-examples/example4/main-src-v2-specv3"
     }, {
       "type" : "ExternalMap",
       "verifiedUsing" : [ {
@@ -178,14 +178,14 @@
         "algorithm" : "sha1",
         "hashValue" : "3a365c2d58103971a721c9ee18731d3e942e002f"
       } ],
-      "externalSpdxId" : "https://swinslow.net/spdx-examples/example4/main-src-v2#SPDXRef-main-src",
-      "locationHint" : "https://swinslow.net/spdx-examples/example4/main-src-v2"
+      "externalSpdxId" : "https://swinslow.net/spdx-examples/example4/main-src-v2-specv3/SPDXRef-gnrtd17",
+      "locationHint" : "https://swinslow.net/spdx-examples/example4/main-src-v2-specv3"
     } ],
     "name" : "main-bin",
     "namespaceMap" : [ {
       "type" : "NamespaceMap",
       "prefix" : "DocumentRef-main-src",
-      "namespace" : "https://swinslow.net/spdx-examples/example4/main-src-v2#"
+      "namespace" : "https://swinslow.net/spdx-examples/example4/main-src-v2-specv3/"
     } ],
     "creationInfo" : "_:creationInfo_0"
   }, {
