@@ -188,6 +188,18 @@ Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_2
 [[SECTION]]
 TITLE: Part II Vulnerability handling requirements
 
+[REQUIREMENT]
+UID: STKREQ-16
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (1)
+STATEMENT: >>>
+Manufacturers of products with digital elements shall identify and document vulnerabilities and components contained in products with digital elements, including by drawing up a software bill of materials in a commonly used and machine-readable format covering at the very least the top-level dependencies of the products.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
 
 [[/SECTION]]
