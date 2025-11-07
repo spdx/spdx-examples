@@ -63,6 +63,19 @@ RATIONALE: >>>
 Engineering students have the background and access to tools to repair commodity consumer electronics themselves. The expectation of consumers is that they purchase the device itself (hardware) and own it after it goes out-of-warranty. Engineering students are very cost-sensitive. They want to apply their knowledge and skills to repair devices rather than replace them.
 <<<
 
+[NEED]
+UID: STKNEED-4
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Visible indication of digital hardware held in reset
+STATEMENT: >>>
+Engineering Students need consumer hardware to give a visible indication that the digital electronics is held in reset.
+<<<
+RATIONALE: >>>
+Digital hardware that is held in reset is necessarily powered, indicating a need for heightened safety awareness. Digital electronics that is held in reset indicates the digital electronics is **not** executing a computer program.
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
