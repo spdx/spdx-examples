@@ -236,6 +236,18 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-20
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (4)(a)
+STATEMENT: >>>
+Once a security update has been made available, Manufacturers of products with digital elements shall share and publicly disclose information about fixed vulnerabilities, including a description of the vulnerabilities, information allowing users to identify the product with digital elements affected, the impacts of the vulnerabilities, their severity and clear and accessible information helping users to remediate the vulnerabilities.
+<<<
+RATIONALE: >>>
+Reordered quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
 
 [[/SECTION]]
