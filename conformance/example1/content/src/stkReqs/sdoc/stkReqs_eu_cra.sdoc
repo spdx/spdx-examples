@@ -212,6 +212,18 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-18
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (2)(b)
+STATEMENT: >>>
+Where technically feasible, Manufacturers of products with digital elements shall provide new security updates separately from functionality updates.
+<<<
+RATIONALE: >>>
+Rephrased quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
 
 [[/SECTION]]
