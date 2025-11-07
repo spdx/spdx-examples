@@ -65,6 +65,26 @@ TITLE: Operator/User
 MID: 91af5e86c4f84651a9e704a34355e971
 TITLE: Elderly
 
+[NEED]
+MID: 1f027faa422e4ad5aadbf73faebd84b6
+UID: STKNEED-6
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Consumer devices reboot automatically upon detecting a catastrophic error
+STATEMENT: >>>
+Elderly need consumer devices to reboot automatically upon detecting an internal catastrophic error.
+<<<
+RATIONALE: >>>
+Elderly may not be physically capable of accessing a consumer device to power cycle it when it detects a catastrophic error.
+
+Elderly may not be aware or around a when a consumer device detects a catastrophic error.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-12
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[SECTION]]
