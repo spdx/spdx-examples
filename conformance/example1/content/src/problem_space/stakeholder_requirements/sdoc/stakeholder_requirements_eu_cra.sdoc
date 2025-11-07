@@ -899,4 +899,28 @@ RELATIONS:
   VALUE: STKREQ-1
   ROLE: Refines
 
+[REQUIREMENT]
+MID: ca0a148bd645431f8995392332a25cf7
+UID: STKREQ-50
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (5)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements, the technical documentation referred to in EU CRA Article 31 shall contain:
+
+- a list of the harmonised standards applied in full or in part the references of which have been published in the Official Journal of the European Union, common specifications as set out in Article 27 of this Regulation or European cybersecurity certification schemes adopted pursuant to Regulation (EU) 2019/881 pursuant to Article 27(8) of this Regulation;
+- where those harmonised standards, common specifications or European cybersecurity certification schemes have not been applied, descriptions of the solutions adopted to meet the essential cybersecurity requirements set out in Parts I and II of Annex I, including a list of other relevant technical specifications applied.
+
+In the event of partly applied harmonised standards, common specifications or European cybersecurity certification schemes, the technical documentation shall specify the parts which have been applied;
+<<<
+RATIONALE: >>>
+Reordered statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847 to have the condition/trigger before the subject (following the convention of EARS). Original text is:
+
+  [The technical documentation referred to in Article 31 shall contain at least the following information, as applicable to the relevant product with digital elements:]  a list of the harmonised standards applied in full or in part the references of which have been published in the Official Journal of the European Union, common specifications as set out in Article 27 of this Regulation or European cybersecurity certification schemes adopted pursuant to Regulation (EU) 2019/881 pursuant to Article 27(8) of this Regulation, and, where those harmonised standards, common specifications or European cybersecurity certification schemes have not been applied, descriptions of the solutions adopted to meet the essential cybersecurity requirements set out in Parts I and II of Annex I, including a list of other relevant technical specifications applied. In the event of partly applied harmonised standards, common specifications or European cybersecurity certification schemes, the technical documentation shall specify the parts which have been applied;
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
