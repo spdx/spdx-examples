@@ -149,6 +149,11 @@ STATUS: Draft
 TITLE: Market Surveillance Authority
 
 [STAKEHOLDER]
+UID: STKHLDR-20
+STATUS: Draft
+TITLE: Open-Source Software Developer
+
+[STAKEHOLDER]
 UID: STKHLDR-15
 STATUS: Draft
 TITLE: Open-Source Software Steward
