@@ -651,4 +651,19 @@ RATIONALE: >>>
 Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-51
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (6)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements, the technical documentation referred to in EU CRA Article 31 shall contain reports of:
+
+- the tests carried out to verify the conformity of the product with digital elements
+- the vulnerability handling processes with the applicable essential cybersecurity requirements as set out in Parts I and II of Annex I;
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
