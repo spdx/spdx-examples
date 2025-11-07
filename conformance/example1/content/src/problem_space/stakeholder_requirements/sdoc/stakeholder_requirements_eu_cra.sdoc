@@ -1,0 +1,14 @@
+[DOCUMENT]
+MID: 45588823124c47c184e581877e6fd6a8
+TITLE: EU Cyber Resilience Act - Requirements
+OPTIONS:
+  ENABLE_MID: True
+
+[GRAMMAR]
+IMPORT_FROM_FILE: @sample_stakeholder_requirements_grammar
+
+[TEXT]
+MID: a4963063a5c0464780bc203f80caa9eb
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
