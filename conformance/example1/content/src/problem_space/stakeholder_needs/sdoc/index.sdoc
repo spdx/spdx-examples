@@ -125,6 +125,24 @@ RELATIONS:
   VALUE: STKHLDR-11
   ROLE: Refines
 
+[NEED]
+MID: 449be10602d24613b44babd186cdd39a
+UID: STKNEED-5
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Visible indication of "bricked" device
+STATEMENT: >>>
+Youth need a visible indication on a device for when the device is no longer usable and not able to receive a FW update.
+<<<
+RATIONALE: >>>
+Devices may become unusable due to corrupted persistent data, expired certificates, or being explicitly revoked by a device owner. The critical need is to indicate between a device that knows it is no longer usable vs a device that may be recovered through a reset and/or a FW update.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-11
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[/SECTION]]
