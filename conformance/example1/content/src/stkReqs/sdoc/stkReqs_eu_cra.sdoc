@@ -317,4 +317,16 @@ Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_2
 [[SECTION]]
 TITLE: Annex II - INFORMATION AND INSTRUCTIONS TO THE USER
 
+[REQUIREMENT]
+UID: STKREQ-26
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (1)(a)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the name, registered trade name or registered trademark of the manufacturer.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
