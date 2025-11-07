@@ -677,4 +677,22 @@ RELATIONS:
   VALUE: STKREQ-1
   ROLE: Refines
 
+[REQUIREMENT]
+MID: 280e0d2c50604be1b0db23410a301131
+UID: STKREQ-39
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (8)(a)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by detailed instructions or an internet address referring to such detailed instructions and information on the necessary measures during initial commissioning and throughout the lifetime of the product with digital
+elements to ensure its secure use.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
