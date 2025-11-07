@@ -72,6 +72,11 @@ STATUS: Draft
 TITLE: Distributor
 
 [STAKEHOLDER]
+UID: STKHLDR-19
+STATUS: Draft
+TITLE: Integrator
+
+[STAKEHOLDER]
 UID: STKHLDR-13
 STATUS: Draft
 TITLE: Importer
