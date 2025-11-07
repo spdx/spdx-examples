@@ -530,4 +530,16 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-43
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (8)(e)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by detailed instructions or an internet address referring to such detailed instructions and information on how the default setting enabling the automatic installation of security updates, as required by Part I, point (2)(c), of Annex I, can be turned off.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
