@@ -945,4 +945,23 @@ RELATIONS:
   VALUE: STKREQ-1
   ROLE: Refines
 
+[REQUIREMENT]
+MID: bab31f15b52c409393edf753741639cb
+UID: STKREQ-52
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (7)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements, the technical documentation referred to in EU CRA Article 31 shall contain a copy of the EU declaration of conformity.
+<<<
+RATIONALE: >>>
+Reordered statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847 to have the condition/trigger before the subject (following the convention of EARS). Original text is:
+
+  [The technical documentation referred to in Article 31 shall contain at least the following information, as applicable to the relevant product with digital elements:] a copy of the EU declaration of conformity;
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
