@@ -534,4 +534,21 @@ RELATIONS:
   VALUE: STKREQ-1
   ROLE: Refines
 
+[REQUIREMENT]
+MID: 653b21f25d9b4bf5b5577f3938714f5e
+UID: STKREQ-31
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (2)(b)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by where the manufacturer’s policy on coordinated vulnerability disclosure can be found.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
