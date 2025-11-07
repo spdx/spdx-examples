@@ -606,4 +606,21 @@ RELATIONS:
   VALUE: STKREQ-1
   ROLE: Refines
 
+[REQUIREMENT]
+MID: f31b7a3e6ea74f439c8e09d755574a32
+UID: STKREQ-35
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (5)(b)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by any known or foreseeable circumstance, related to the use of the product with digital elements under conditions of reasonably foreseeable misuse, which may lead to significant cybersecurity risks.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
