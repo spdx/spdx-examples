@@ -417,4 +417,16 @@ RATIONALE: >>>
 Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-34
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (5)(a)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by any known or foreseeable circumstance, related to the use of the product with digital elements in accordance with its intended purpose, which may lead to significant cybersecurity risks.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
