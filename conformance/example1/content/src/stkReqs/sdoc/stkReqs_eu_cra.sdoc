@@ -505,4 +505,16 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-41
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (8)(c)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by detailed instructions or an internet address referring to such detailed instructions and information on how security-relevant updates can be installed.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
