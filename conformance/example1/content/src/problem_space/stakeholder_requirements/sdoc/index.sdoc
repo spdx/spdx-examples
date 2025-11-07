@@ -37,6 +37,24 @@ TITLE: Engineering
 MID: ad475da8ced044a696830a504c80cf9c
 TITLE: Marketing
 
+[REQUIREMENT]
+MID: a76649de31a84f49ba7037db9b938f03
+UID: STKREQ-1
+STATUS: Draft
+VERIFICATION: Analysis
+TITLE: Released product conforms to EU CRA
+STATEMENT: >>>
+Where a consumer electronics product is designated for the European Union market,
+the product shall be developed in conformance to the EU Cyber Resilience Act.
+<<<
+RATIONALE: >>>
+EU regulation that comes into full enforcement on 2027 Dec 11.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-1
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[/SECTION]]
