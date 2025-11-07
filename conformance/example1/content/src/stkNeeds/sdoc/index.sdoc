@@ -94,6 +94,19 @@ RATIONALE: >>>
 Youth experiment with connections and have very little patience for devices that do not immediately seem to "work". The visible indication appearing soon after applying power gives the youth quick feedback on whether the device is actually powered and expected to be functional
 <<<
 
+[NEED]
+UID: STKNEED-5
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Visible indication of "bricked" device
+STATEMENT: >>>
+Youth need a visible indication on a device for when the device is no longer usable and not able to receive a FW update.
+<<<
+RATIONALE: >>>
+Devices may become unusable due to corrupted persistent data, expired certificates, or being explicitly revoked by a device owner. The critical need is to indicate between a device that knows it is no longer usable vs a device that may be recovered through a reset and/or a FW update.
+<<<
+
 [[/SECTION]]
 
 [[/SECTION]]
