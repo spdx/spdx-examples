@@ -517,4 +517,17 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-42
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (8)(d)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by detailed instructions or an internet address referring to such detailed instructions and information on the secure decommissioning of the product with digital elements, including information on how user data can be
+securely removed.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
