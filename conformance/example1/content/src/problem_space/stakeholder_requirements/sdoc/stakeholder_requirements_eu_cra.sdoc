@@ -861,4 +861,23 @@ RELATIONS:
   VALUE: STKREQ-1
   ROLE: Refines
 
+[REQUIREMENT]
+MID: 0c54548e96ff4e15b1610daa5d61f305
+UID: STKREQ-48
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (3)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements, the technical documentation referred to in EU CRA Article 31 shall contain an assessment of the cybersecurity risks against which the product with digital elements is designed, developed, produced, delivered and maintained pursuant to Article 13, including how the essential cybersecurity requirements set out in Part I of Annex I are applicable;
+<<<
+RATIONALE: >>>
+Reordered statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847 to have the condition/trigger before the subject (following the convention of EARS). Original text is:
+
+  [The technical documentation referred to in Article 31 shall contain at least the following information, as applicable to the relevant product with digital elements:] an assessment of the cybersecurity risks against which the product with digital elements is designed, developed, produced, delivered and maintained pursuant to Article 13, including how the essential cybersecurity requirements set out in Part I of Annex I are applicable;
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
