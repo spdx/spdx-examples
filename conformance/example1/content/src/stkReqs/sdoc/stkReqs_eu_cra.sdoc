@@ -353,4 +353,16 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-29
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (1)(d)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by, where available, the website at which the manufacturer can be contacted.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
