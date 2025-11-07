@@ -441,4 +441,16 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-36
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (6)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by where applicable, the internet address at which the EU declaration of conformity can be accessed.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
