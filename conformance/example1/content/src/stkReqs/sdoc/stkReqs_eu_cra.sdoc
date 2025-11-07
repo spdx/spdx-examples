@@ -542,4 +542,20 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-44
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (8)(f)
+STATEMENT: >>>
+Where the product with digital elements is intended for integration into other products with digital elements,
+the product with digital elements shall be accompanied by detailed instructions or an internet address referring to such detailed instructions and information on the information necessary for the integrator to comply with:
+
+- the essential cybersecurity requirements set out in Annex I,
+- the documentation requirements set out in Annex VII.
+<<<
+RATIONALE: >>>
+Reordered quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
