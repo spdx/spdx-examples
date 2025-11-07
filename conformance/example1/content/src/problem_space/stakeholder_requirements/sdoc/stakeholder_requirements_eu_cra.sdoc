@@ -838,4 +838,27 @@ RELATIONS:
   VALUE: STKREQ-1
   ROLE: Refines
 
+[REQUIREMENT]
+MID: 0b87618a1c9e4630aa18263dad40f4e2
+UID: STKREQ-47
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (2)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements, the technical documentation referred to in EU CRA Article 31 shall contain a description of the design, development and production of the product with digital elements and vulnerability handling processes, including:
+
+- necessary information on the design and development of the product with digital elements, including, where applicable, drawings and schemes and a description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing;
+- necessary information and specifications of the vulnerability handling processes put in place by the manufacturer, including the software bill of materials, the coordinated vulnerability disclosure policy, evidence of the provision of a contact address for the reporting of the vulnerabilities and a description of the technical solutions chosen for the secure distribution of updates;
+- necessary information and specifications of the production and monitoring processes of the product with digital elements and the validation of those processes;
+<<<
+RATIONALE: >>>
+Reordered statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847 to have the condition/trigger before the subject (following the convention of EARS). Original text is:
+
+ [The technical documentation referred to in Article 31 shall contain at least the following information, as applicable to the relevant product with digital elements:] a description of the design, development and production of the product with digital elements and vulnerability handling processes, including: (a)  necessary information on the design and development of the product with digital elements, including, where applicable, drawings and schemes and a description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing; (b) necessary information and specifications of the vulnerability handling processes put in place by the manufacturer, including the software bill of materials, the coordinated vulnerability disclosure policy, evidence of the provision of a contact address for the reporting of the vulnerabilities and a description of the technical solutions chosen for the secure distribution of updates; (c) necessary information and specifications of the production and monitoring processes of the product with digital elements and the validation of those processes;
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
