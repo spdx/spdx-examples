@@ -63,6 +63,18 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-6
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2d)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall ensure protection from unauthorised access by appropriate control mechanisms, including but not limited to authentication, identity or access management systems, and report on possible unauthorised access.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
