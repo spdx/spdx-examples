@@ -15,6 +15,18 @@ TITLE: Annex I - ESSENTIAL CYBERSECURITY REQUIREMENTS
 [[SECTION]]
 TITLE: Part I Cybersecurity requirements relating to the properties of products with digital elements
 
+[REQUIREMENT]
+UID: STKREQ-2
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (1)
+STATEMENT: >>>
+Products with digital elements shall be designed, developed and produced in such a way that they ensure an appropriate level of cybersecurity based on the risks.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
