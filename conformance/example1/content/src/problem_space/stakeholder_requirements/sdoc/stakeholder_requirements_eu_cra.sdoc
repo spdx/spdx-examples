@@ -517,4 +517,21 @@ RELATIONS:
   VALUE: STKREQ-1
   ROLE: Refines
 
+[REQUIREMENT]
+MID: c688de2c91464628998f6a445208769f
+UID: STKREQ-30
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (2)(a)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the single point of contact where information about vulnerabilities of the product with digital elements can be reported and received.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
