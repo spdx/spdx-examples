@@ -813,4 +813,29 @@ RELATIONS:
 MID: c21798598cae419981b3162ca6703efc
 TITLE: Annex VII - CONTENT OF THE TECHNICAL DOCUMENTATION
 
+[REQUIREMENT]
+MID: 89d6ea0ab62f4113a131523a114d8321
+UID: STKREQ-46
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (1)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements,
+the technical documentation referred to in EU CRA Article 31 shall contain a general description of the product with digital elements, including:
+
+- the intended purpose of said product,
+- versions of software affecting compliance with essential cybersecurity requirements,
+- where the product with digital elements is a hardware product, photographs or illustrations showing external features, marking and internal layout,
+- user information and instructions as set out in EU CRA Annex II.
+<<<
+RATIONALE: >>>
+Reordered statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847 to have the condition/trigger before the subject (following the convention of EARS). Original text is:
+
+  [The technical documentation referred to in Article 31 shall contain at least the following information, as applicable to the relevant product with digital elements:] a general description of the product with digital elements, including: (a) its intended purpose; (b) versions of software affecting compliance with essential cybersecurity requirements; (c) where the product with digital elements is a hardware product, photographs or illustrations showing external features, marking and internal layout; (d) user information and instructions as set out in Annex II;
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
