@@ -678,4 +678,17 @@ RATIONALE: >>>
 Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-53
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (8)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements,
+the technical documentation referred to in EU CRA Article 31 shall contain where applicable, the software bill of materials, further to a reasoned request from a market surveillance authority provided that it is necessary in order for that authority to be able to check compliance with the essential cybersecurity requirements set out in Annex I.
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
