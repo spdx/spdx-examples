@@ -449,4 +449,21 @@ RELATIONS:
 MID: dc789251b3c3434f8860298bbca599a4
 TITLE: Annex II - INFORMATION AND INSTRUCTIONS TO THE USER
 
+[REQUIREMENT]
+MID: 230e5744173f4cc7855f74335dc2e75c
+UID: STKREQ-26
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (1)(a)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the name, registered trade name or registered trademark of the manufacturer.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
