@@ -262,6 +262,18 @@ RATIONALE: >>>
 Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847 into a requirement.
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-22
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (5)
+STATEMENT: >>>
+Manufacturers of products with digital elements shall put in place and enforce a policy on coordinated vulnerability disclosure.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
 
 [[/SECTION]]
