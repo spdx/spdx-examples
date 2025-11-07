@@ -466,4 +466,21 @@ RELATIONS:
   VALUE: STKREQ-1
   ROLE: Refines
 
+[REQUIREMENT]
+MID: 875167f7449b4f7ca0d63a12abc93e41
+UID: STKREQ-27
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (1)(b)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the postal address at which the manufacturer can be contacted.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-1
+  ROLE: Refines
+
 [[/SECTION]]
