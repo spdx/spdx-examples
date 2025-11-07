@@ -65,6 +65,24 @@ TITLE: Operator/User
 MID: e61137150e2f46f3b48f3b3bb562249c
 TITLE: Engineering Student
 
+[NEED]
+MID: 3c7a167185e5452aa7d3717484628c88
+UID: STKNEED-2
+STATUS: Draft
+SOURCE: Interview
+PRIORITY: HighWant
+TITLE: Out-of-warranty devices repairable by user
+STATEMENT: >>>
+Engineering students need the freedom to repair out-of-warranty commodity consumer electronics devices themselves.
+<<<
+RATIONALE: >>>
+Engineering students have the background and access to tools to repair commodity consumer electronics themselves. The expectation of consumers is that they purchase the device itself (hardware) and own it after it goes out-of-warranty. Engineering students are very cost-sensitive. They want to apply their knowledge and skills to repair devices rather than replace them.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-18
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[/SECTION]]
