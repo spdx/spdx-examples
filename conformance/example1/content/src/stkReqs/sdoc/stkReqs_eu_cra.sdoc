@@ -248,6 +248,20 @@ RATIONALE: >>>
 Reordered quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-21
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (4)(b)
+STATEMENT: >>>
+Where Manufacturers of products with digital elements consider the security risks of publication to outweigh the security benefits,
+said Manufacturers shall duly justify for this case any delay in making public information regarding a fixed vulnerability until after users have
+been given the possibility to apply the relevant patch.
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847 into a requirement.
+<<<
+
 [[/SECTION]]
 
 [[/SECTION]]
