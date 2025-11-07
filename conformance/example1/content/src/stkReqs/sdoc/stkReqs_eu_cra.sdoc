@@ -401,4 +401,20 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-33
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (4)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the intended purpose of the product with digital elements, including:
+
+- the security environment provided by the manufacturer,
+- the product’s essential functionalities,
+- information about the security properties.
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
