@@ -558,4 +558,17 @@ RATIONALE: >>>
 Reordered quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-45
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (9)
+STATEMENT: >>>
+Where the manufacturer of the product with digital elements decides to make available the software bill of materials to the user,
+the product with digital elements shall be accompanied by information on where the software bill of materials can be accessed.
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
