@@ -51,6 +51,18 @@ RATIONALE: >>>
 Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
 <<<
 
+[REQUIREMENT]
+UID: STKREQ-5
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2c)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall ensure that vulnerabilities can be addressed through security updates, including, where applicable, through automatic security updates that are installed within an appropriate timeframe enabled as a default setting, with a clear and easy-to-use opt-out mechanism, through the notification of available updates to users, and the option to temporarily postpone them.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
