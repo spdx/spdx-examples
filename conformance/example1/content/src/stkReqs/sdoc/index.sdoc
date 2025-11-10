@@ -72,6 +72,25 @@ RELATIONS:
   VALUE: STKNEED-7
   ROLE: Refines
 
+[REQUIREMENT]
+UID: STKREQ-57
+STATUS: Draft
+VERIFICATION: Review
+TITLE: Technical Docs Captured in StrictDoc
+STATEMENT: >>>
+The System shall capture technical documentation in the open-source software tool StrictDoc.
+<<<
+RATIONALE: >>>
+- StrictDoc is a Free Open-Source Software package.
+- StrictDoc has already been used for capturing and tracing technical documentation for a space flight product.
+- StrictDoc has already been selected for capturing and tracing requirements for the Linux Foundation's Zephyr Project.
+- StrictDoc already has integrated the Free Open-Source Software graph generation tool MermaidUML.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-7
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[SECTION]]
