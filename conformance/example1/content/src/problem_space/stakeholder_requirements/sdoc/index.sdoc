@@ -100,6 +100,23 @@ RELATIONS:
   ROLE: Refines
 
 [REQUIREMENT]
+MID: 4567facd0e8341fca6635bd7bd6e8c0f
+UID: STKREQ-60
+STATUS: Draft
+VERIFICATION: Review
+TITLE: Architectures Description Includes Decision Timeline
+STATEMENT: >>>
+The System shall include documentation of the timeline of architectural decisions.
+<<<
+RATIONALE: >>>
+Engineering staff undergoes significant turnover during a product development and support lifetime. Following documented best practices minimizes the training overhead.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-8
+  ROLE: Refines
+
+[REQUIREMENT]
 MID: d4cc3815c4fb4d0dba80d253a276ca0c
 UID: STKREQ-57
 STATUS: Draft
