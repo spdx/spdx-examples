@@ -26,6 +26,11 @@ From `SEBoK Wiki Glossary - stakeholder <https://sebokwiki.org/wiki/Stakeholder_
 TITLE: Manufacturer
 
 [STAKEHOLDER]
+UID: STKHLDR-21
+STATUS: Draft
+TITLE: Engineering
+
+[STAKEHOLDER]
 UID: STKHLDR-3
 STATUS: Draft
 TITLE: Marketing
