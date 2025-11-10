@@ -40,6 +40,22 @@ RELATIONS:
   VALUE: STKNEED-7
   ROLE: Refines
 
+[REQUIREMENT]
+UID: STKREQ-55
+STATUS: Draft
+VERIFICATION: Review
+TITLE: Requirements Written in EARS
+STATEMENT: >>>
+The System shall express requirements in the Easy Approach to Requirements Syntax (EARS).
+<<<
+RATIONALE: >>>
+EARS is a simple syntax already used in the development of certified safety-critical regulated products. The syntax is simple enough for accurate use by non-native English speakers.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-7
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[SECTION]]
