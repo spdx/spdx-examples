@@ -29,6 +29,24 @@ TITLE: Manufacturer
 MID: 72b885145dee417ebd8e82ea394b97c7
 TITLE: Engineering
 
+[NEED]
+MID: 25eb26f6a7f74c759434e02550b9e4e6
+UID: STKNEED-7
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Follow system engineering best practices
+STATEMENT: >>>
+Engineering needs product-as-a-system development to follow Systems Engineering best practices.
+<<<
+RATIONALE: >>>
+Engineering staff undergoes significant turnover during a product development and support lifetime. Following documented best practices minimizes the training overhead.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-21
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[SECTION]]
