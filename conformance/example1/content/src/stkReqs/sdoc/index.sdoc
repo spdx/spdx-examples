@@ -91,6 +91,22 @@ RELATIONS:
   VALUE: STKNEED-7
   ROLE: Refines
 
+[REQUIREMENT]
+UID: STKREQ-58
+STATUS: Draft
+VERIFICATION: Review
+TITLE: StrictDoc configured with MermaidUML enabled
+STATEMENT: >>>
+The System shall configure StrictDoc such that embedded MermaidUML digrams are rendered.
+<<<
+RATIONALE: >>>
+StrictDoc provides an experimental feature to support embedded MermaidUML diagrams. This feature enables the StrictDoc server to render the diagrams for display on the web pages.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-7
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[SECTION]]
