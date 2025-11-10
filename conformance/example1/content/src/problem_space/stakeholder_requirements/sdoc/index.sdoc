@@ -83,6 +83,23 @@ RELATIONS:
   ROLE: Refines
 
 [REQUIREMENT]
+MID: 44502658969447bc9cfb7b2d03e2fc91
+UID: STKREQ-59
+STATUS: Draft
+VERIFICATION: Review
+TITLE: Architectures Description Includes Decision Statements
+STATEMENT: >>>
+The System shall include documentation of the architectural decisions.
+<<<
+RATIONALE: >>>
+Engineering staff undergoes significant turnover during a product development and support lifetime. Following documented best practices minimizes the training overhead.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-8
+  ROLE: Refines
+
+[REQUIREMENT]
 MID: d4cc3815c4fb4d0dba80d253a276ca0c
 UID: STKREQ-57
 STATUS: Draft
