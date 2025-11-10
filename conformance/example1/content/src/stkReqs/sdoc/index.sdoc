@@ -56,6 +56,22 @@ RELATIONS:
   VALUE: STKNEED-7
   ROLE: Refines
 
+[REQUIREMENT]
+UID: STKREQ-56
+STATUS: Draft
+VERIFICATION: Review
+TITLE: Architectures Description Follows 4+1 View Model
+STATEMENT: >>>
+The System shall follow the 4+1 Architectural View Model for describing the architecture(s) within.
+<<<
+RATIONALE: >>>
+A System Engineering best practice is to describe architecture(s) from multiple viewpoints. One of the earliest successful examples of this is the 4+1 Architectural View Model (https://en.wikipedia.org/wiki/4%2B1_architectural_view_model), which provides a high-level breakdown that maps well for describing physical products-with-digital-elements.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-7
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[SECTION]]
