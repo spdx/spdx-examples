@@ -24,6 +24,22 @@ TITLE: Manufacturer
 [[SECTION]]
 TITLE: Engineering
 
+[REQUIREMENT]
+UID: STKREQ-54
+STATUS: Draft
+VERIFICATION: Review
+TITLE: System Engineering follows SEBoK 2.12 Wiki
+STATEMENT: >>>
+The System shall be developed following the best practices described in the Systems Engineering Body of Knowledge (SEBoK) v2.12 Wiki.
+<<<
+RATIONALE: >>>
+The SEBoK Wiki presents the Systems Engineering best practices without cost.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-7
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[SECTION]]
