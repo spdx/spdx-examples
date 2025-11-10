@@ -22,6 +22,19 @@ TITLE: Manufacturer
 [[SECTION]]
 TITLE: Engineering
 
+[NEED]
+UID: STKNEED-7
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Follow system engineering best practices
+STATEMENT: >>>
+Engineering needs product-as-a-system development to follow Systems Engineering best practices.
+<<<
+RATIONALE: >>>
+Engineering staff undergoes significant turnover during a product development and support lifetime. Following documented best practices minimizes the training overhead.
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
