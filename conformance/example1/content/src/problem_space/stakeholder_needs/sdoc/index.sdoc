@@ -91,6 +91,24 @@ RELATIONS:
   VALUE: STKHLDR-1
   ROLE: Refines
 
+[NEED]
+MID: 3b7b70d1a8dd49c7a9a96723b3081536
+UID: STKNEED-9
+STATUS: Draft
+SOURCE: Survey
+PRIORITY: Must
+TITLE: Use "example.com" for business URL
+STATEMENT: >>>
+The business Sponsor for Commodity Consumer Electronics needs products and business systems to use "example.com" for the business domain name.
+<<<
+RATIONALE: >>>
+'example.com' is a domain name reserved by IANA specifically for documents to use in examples.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-1
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[/SECTION]]
