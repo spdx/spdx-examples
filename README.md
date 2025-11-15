@@ -8,6 +8,7 @@ use cases for a particular domain (e.g. security, license compliance).
 
 - [AI](./ai/)
 - [Dataset](./dataset/)
+- [Hardware](./hardware/)
 - [Regulatory Conformance](./conformance/)
 - [Software](./software/)
 
