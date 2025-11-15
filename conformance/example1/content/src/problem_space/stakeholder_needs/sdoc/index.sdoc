@@ -109,6 +109,24 @@ RELATIONS:
   VALUE: STKHLDR-1
   ROLE: Refines
 
+[NEED]
+MID: eb1e9b086d264960a606984e4679fc7e
+UID: STKNEED-10
+STATUS: Draft
+SOURCE: Survey
+PRIORITY: Must
+TITLE: Use "example.org" for OSS Steward URL
+STATEMENT: >>>
+The business Sponsor for Commodity Consumer Electronics needs products and business systems to use "example.org" for representing Open-Source Software Steward domain name.
+<<<
+RATIONALE: >>>
+'example.org' is a domain name reserved by IANA specifically for documents to use in examples.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-1
+  ROLE: Refines
+
 [[/SECTION]]
 
 [[/SECTION]]
