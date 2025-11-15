@@ -81,6 +81,19 @@ RATIONALE: >>>
 'example.com' is a domain name reserved by IANA specifically for documents to use in examples.
 <<<
 
+[NEED]
+UID: STKNEED-10
+STATUS: Draft
+SOURCE: Survey
+PRIORITY: Must
+TITLE: Use "example.org" for OSS Steward URL
+STATEMENT: >>>
+The business Sponsor for Commodity Consumer Electronics needs products and business systems to use "example.org" for representing Open-Source Software Steward domain name.
+<<<
+RATIONALE: >>>
+'example.org' is a domain name reserved by IANA specifically for documents to use in examples.
+<<<
+
 [[/SECTION]]
 
 [[/SECTION]]
