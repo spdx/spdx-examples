@@ -48,6 +48,19 @@ RATIONALE: >>>
 Engineering staff undergoes significant turnover during a product development and support lifetime. Following documented best practices minimizes the training overhead.
 <<<
 
+[NEED]
+UID: STKNEED-11
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Product-as-System Internal Name
+STATEMENT: >>>
+Engineering needs an internal code name for the Product-as-a-System.
+<<<
+RATIONALE: >>>
+System Engineering best practices requires clearly identifying the subject in each requirement statement.
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
