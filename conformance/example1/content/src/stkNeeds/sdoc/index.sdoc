@@ -68,6 +68,19 @@ The European Union is a major economic market for commodity-level Consumer Elect
 On 2027 Dec 11 the EU Cyber Resilience Act will be fully enforced, which requires passing a EU CRA Conformance Assessment covering both product functionality, secure development processes, and security vulnerability reporting and handling services. It is very practical for consumer electronics for this to be considered a *new product* rather than an additional label added to an existing product.
 <<<
 
+[NEED]
+UID: STKNEED-9
+STATUS: Draft
+SOURCE: Survey
+PRIORITY: Must
+TITLE: Use "example.com" for business URL
+STATEMENT: >>>
+The business Sponsor for Commodity Consumer Electronics needs products and business systems to use "example.com" for the business domain name.
+<<<
+RATIONALE: >>>
+'example.com' is a domain name reserved by IANA specifically for documents to use in examples.
+<<<
+
 [[/SECTION]]
 
 [[/SECTION]]
