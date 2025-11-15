@@ -61,6 +61,23 @@ RATIONALE: >>>
 System Engineering best practices requires clearly identifying the subject in each requirement statement.
 <<<
 
+[NEED]
+UID: STKNEED-12
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: HighWant
+TITLE: Product-as-a-System Name PRESCEDE
+STATEMENT: >>>
+System Engineering needs the internal name to be:
+
+- PROduct line Engineered to Support Consumer Electronics with Digital Elements (PRESCEDE).
+<<<
+RATIONALE: >>>
+- The term is easy to pronounce consistently and correctly.
+- Visually the acronym is not easily confused with the same sounding verb.
+- The term indicates that this is an example of what comes **before** a product is introduced on the market.
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
