@@ -9,6 +9,7 @@ use cases for a particular domain (e.g. security, license compliance).
 - [AI](./ai/)
 - [Dataset](./dataset/)
 - [Hardware](./hardware/)
+- [Regulatory Conformance](./conformance/)
 - [Software](./software/)
 
 Each directory contains a README.md file describing the profile and the
@@ -20,6 +21,9 @@ formats specified in the latest version of the specification.
 
 - The [`presentations`](./presentations/) directory in this repository
   contains examples included in various SPDX presentations.
+- The [`conformance`](./conformance/) directory in this repository
+  contains demonstrations of SPDX encoded documents needed for
+  regulatory conformance submissions for various types of products.
 - Moreover, in a page for each field in
   [SPDX Specification](https://spdx.github.io/spdx-spec/), there can also
   be a code snippet demonstrating how to use that particular field.
