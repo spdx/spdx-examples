@@ -1,0 +1,35 @@
+[DOCUMENT]
+TITLE: SEBoK Product as System - Commodity Consumer Electronics
+
+[DOCUMENT_FROM_FILE]
+FILE: stakeholders/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: stkNeeds/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: stkReqs/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: sysValidations/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: sysReqs/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: sysVerifications/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: sysArch/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: ifcReqs/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: ifcSpecs/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: sysElemReqs/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: sysElemVerifications/sdoc/index.sdoc

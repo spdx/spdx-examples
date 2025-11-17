@@ -1,0 +1,175 @@
+[DOCUMENT]
+TITLE: Stakeholders
+
+[GRAMMAR]
+IMPORT_FROM_FILE: stakeholders.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - stakeholder <https://sebokwiki.org/wiki/Stakeholder_(glossary)>`_:
+
+- Individual or organization having a right, share, claim, or interest in a system or in its possession of characteristics that meet their needs and expectations (ISO/IEC/IEEE 2015)
+
+- Individual or organization having a right, share, claim, or interest in a system or in its possession of characteristics that meet their needs and expectations; N.B. Stakeholders include, but are not limited to end users, end user organizations, supporters, developers, producers, trainers, maintainers, disposers, acquirers, customers, operators, supplier organizations and regulatory bodies. (ISO/IEC June 2010)
+
+- An individual, team, or organization (or classes thereof) with interests in, or concerns relative to, a system. (ISO/IEC 2007)
+
+- A stakeholder in an organisation is (by definition) any group or individual who can affect or is affected by the achievement of the organisation's objectives. (Freeman 1984)
+<<<
+
+[[SECTION]]
+TITLE: Manufacturer
+
+[STAKEHOLDER]
+UID: STKHLDR-21
+STATUS: Draft
+TITLE: Engineering
+
+[STAKEHOLDER]
+UID: STKHLDR-3
+STATUS: Draft
+TITLE: Marketing
+
+[STAKEHOLDER]
+UID: STKHLDR-5
+STATUS: Draft
+TITLE: Production Organization
+
+[STAKEHOLDER]
+UID: STKHLDR-2
+STATUS: Draft
+TITLE: Project Manager
+DESCRIPTION: >>>
+Stakeholder overseeing the expenditure of resource to the project.
+<<<
+
+[STAKEHOLDER]
+UID: STKHLDR-1
+STATUS: Draft
+TITLE: Sponsor
+DESCRIPTION: >>>
+Stakeholder authorizing the expenditure of resources to the project.
+<<<
+
+[STAKEHOLDER]
+UID: STKHLDR-4
+STATUS: Draft
+TITLE: Suppliers
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Markets
+
+[STAKEHOLDER]
+UID: STKHLDR-14
+STATUS: Draft
+TITLE: Distributor
+
+[STAKEHOLDER]
+UID: STKHLDR-19
+STATUS: Draft
+TITLE: Integrator
+
+[STAKEHOLDER]
+UID: STKHLDR-13
+STATUS: Draft
+TITLE: Importer
+
+[[SECTION]]
+UID: STKHLDR-9
+TITLE: Operator/User
+
+[STAKEHOLDER]
+UID: STKHLDR-12
+STATUS: Draft
+TITLE: Elderly
+DESCRIPTION: >>>
+This operator is characterized by:
+- living alone or in an assisted living facility,
+- not being a "digital native",
+- may be easily confused,
+- has dedicated computing technology.
+<<<
+
+[STAKEHOLDER]
+UID: STKHLDR-18
+STATUS: Draft
+TITLE: Engineering Student
+DESCRIPTION: >>>
+This operator is characterized by:
+
+- relatively high technical knowledge
+- access to sophisticated equipment
+- need to customize devices for personal and school projects
+- under relatively little oversight
+- may be operating device in a very high density environment (e.g., test labs, dormitories)
+<<<
+
+[STAKEHOLDER]
+UID: STKHLDR-11
+STATUS: Draft
+TITLE: Youth
+DESCRIPTION: >>>
+This operator is characterized by:
+
+- in primary/middle school
+- a novice to technology
+- does not have administrative access to computer technology
+- is provided with an inexpensive computer that is several years old
+- must share computer technology with other students.
+<<<
+
+[[/SECTION]]
+
+[STAKEHOLDER]
+UID: STKHLDR-8
+STATUS: Draft
+TITLE: Paying Customer
+
+[STAKEHOLDER]
+UID: STKHLDR-6
+STATUS: Draft
+TITLE: Regulating Authorities
+
+[STAKEHOLDER]
+UID: STKHLDR-7
+STATUS: Draft
+TITLE: Regulators
+
+[STAKEHOLDER]
+UID: STKHLDR-10
+STATUS: Draft
+TITLE: Service Technician
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Others
+
+[STAKEHOLDER]
+UID: STKHLDR-16
+STATUS: Draft
+TITLE: Conformity Assessment Body
+
+[STAKEHOLDER]
+UID: STKHLDR-17
+STATUS: Draft
+TITLE: Market Surveillance Authority
+
+[STAKEHOLDER]
+UID: STKHLDR-20
+STATUS: Draft
+TITLE: Open-Source Software Developer
+
+[STAKEHOLDER]
+UID: STKHLDR-15
+STATUS: Draft
+TITLE: Open-Source Software Steward
+
+[[/SECTION]]

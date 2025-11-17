@@ -1,0 +1,694 @@
+[DOCUMENT]
+TITLE: EU Cyber Resilience Act - Requirements
+
+[GRAMMAR]
+IMPORT_FROM_FILE: stakeholder_requirements.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[[SECTION]]
+TITLE: Annex I - ESSENTIAL CYBERSECURITY REQUIREMENTS
+
+[[SECTION]]
+TITLE: Part I Cybersecurity requirements relating to the properties of products with digital elements
+
+[REQUIREMENT]
+UID: STKREQ-2
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (1)
+STATEMENT: >>>
+Products with digital elements shall be designed, developed and produced in such a way that they ensure an appropriate level of cybersecurity based on the risks.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-3
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2a)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall be made available on the market without known exploitable vulnerabilities.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-4
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2b)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall be made available on the market with a secure by default configuration, unless otherwise agreed between manufacturer and business user in relation to a tailor-made product with digital elements, including the possibility to reset the product to its original state.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-5
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2c)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall ensure that vulnerabilities can be addressed through security updates, including, where applicable, through automatic security updates that are installed within an appropriate timeframe enabled as a default setting, with a clear and easy-to-use opt-out mechanism, through the notification of available updates to users, and the option to temporarily postpone them.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-6
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2d)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall ensure protection from unauthorised access by appropriate control mechanisms, including but not limited to authentication, identity or access management systems, and report on possible unauthorised access.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-7
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2e)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall protect the confidentiality of stored, transmitted or otherwise processed data, personal or other, such as by encrypting relevant data at rest or in transit by state of the art mechanisms, and by using other technical means.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-8
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2f)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall protect the integrity of stored, transmitted or otherwise processed data, personal or other, commands, programs and configuration against any manipulation or modification not authorised by the user, and report on corruptions.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-9
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2g)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall process only data, personal or other, that are adequate, relevant and limited to what is necessary in relation to the intended purpose of the product with digital elements (data minimisation).
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-10
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2h)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall protect the availability of essential and basic functions, also after an incident, including through resilience and mitigation measures against denial-of-service attacks.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-11
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2i)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall minimise the negative impact by the products themselves or connected devices on the availability of services provided by other devices or networks.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-12
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2j)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall be designed, developed and produced to limit attack surfaces, including external interfaces.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-13
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2k)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall be designed, developed and produced to reduce the impact of an incident using appropriate exploitation mitigation mechanisms and techniques.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-14
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2l)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall provide security related information by recording and monitoring relevant internal activity, including the access to or modification of data, services or functions, with an opt-out mechanism for the user.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-15
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part I (2m)
+STATEMENT: >>>
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall provide the possibility for users to securely and easily remove on a permanent basis all data and settings and, where such data can be transferred to other products or systems, ensure that this is done in a secure manner.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Part II Vulnerability handling requirements
+
+[REQUIREMENT]
+UID: STKREQ-16
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (1)
+STATEMENT: >>>
+Manufacturers of products with digital elements shall identify and document vulnerabilities and components contained in products with digital elements, including by drawing up a software bill of materials in a commonly used and machine-readable format covering at the very least the top-level dependencies of the products.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-17
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (2)(a)
+STATEMENT: >>>
+Manufacturers of products with digital elements shall in relation to the risks posed to products with digital elements, address and remediate vulnerabilities without delay, including by providing security updates.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-18
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (2)(b)
+STATEMENT: >>>
+Where technically feasible, Manufacturers of products with digital elements shall provide new security updates separately from functionality updates.
+<<<
+RATIONALE: >>>
+Rephrased quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-19
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (3)
+STATEMENT: >>>
+Manufacturers of products with digital elements shall apply effective and regular tests and reviews of the security of the product with digital elements.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-20
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (4)(a)
+STATEMENT: >>>
+Once a security update has been made available, Manufacturers of products with digital elements shall share and publicly disclose information about fixed vulnerabilities, including a description of the vulnerabilities, information allowing users to identify the product with digital elements affected, the impacts of the vulnerabilities, their severity and clear and accessible information helping users to remediate the vulnerabilities.
+<<<
+RATIONALE: >>>
+Reordered quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-21
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (4)(b)
+STATEMENT: >>>
+Where Manufacturers of products with digital elements consider the security risks of publication to outweigh the security benefits,
+said Manufacturers shall duly justify for this case any delay in making public information regarding a fixed vulnerability until after users have
+been given the possibility to apply the relevant patch.
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847 into a requirement.
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-22
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (5)
+STATEMENT: >>>
+Manufacturers of products with digital elements shall put in place and enforce a policy on coordinated vulnerability disclosure.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-23
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (6)
+STATEMENT: >>>
+Manufacturers of products with digital elements shall take measures to facilitate the sharing of information about potential vulnerabilities in their product with digital elements as well as in third-party components contained in that product, including by providing a contact address for the reporting of the vulnerabilities discovered in the product with digital elements.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-24
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (7)
+STATEMENT: >>>
+Manufacturers of products with digital elements shall provide for mechanisms to securely distribute updates for products with digital elements to ensure that vulnerabilities are fixed or mitigated in a timely manner and, where applicable for security updates, in an automatic manner.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-25
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex I Part II (8)
+STATEMENT: >>>
+Manufacturers of products with digital elements shall ensure that, where security updates are available to address identified security issues, they are disseminated without delay and, unless otherwise agreed between a manufacturer and a business user in relation to a tailor-made product with digital elements, free of charge, accompanied by advisory messages providing users with the relevant information, including on potential action to be taken.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Annex II - INFORMATION AND INSTRUCTIONS TO THE USER
+
+[REQUIREMENT]
+UID: STKREQ-26
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (1)(a)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the name, registered trade name or registered trademark of the manufacturer.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-27
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (1)(b)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the postal address at which the manufacturer can be contacted.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-28
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (1)(c)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the email address or other digital contact at which the manufacturer can be contacted.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-29
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (1)(d)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by, where available, the website at which the manufacturer can be contacted.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-30
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (2)(a)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the single point of contact where information about vulnerabilities of the product with digital elements can be reported and received.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-31
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (2)(b)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by where the manufacturer’s policy on coordinated vulnerability disclosure can be found.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-32
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (3)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by name and type and any additional information enabling the unique identification of the product with digital elements.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-33
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (4)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the intended purpose of the product with digital elements, including:
+
+- the security environment provided by the manufacturer,
+- the product’s essential functionalities,
+- information about the security properties.
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-34
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (5)(a)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by any known or foreseeable circumstance, related to the use of the product with digital elements in accordance with its intended purpose, which may lead to significant cybersecurity risks.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-35
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (5)(b)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by any known or foreseeable circumstance, related to the use of the product with digital elements under conditions of reasonably foreseeable misuse, which may lead to significant cybersecurity risks.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-36
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (6)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by where applicable, the internet address at which the EU declaration of conformity can be accessed.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-37
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (7)(a)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the type of technical security support offered by the manufacturer.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-38
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (7)(b)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by the end-date of the support period during which users can expect:
+
+- vulnerabilities to be handled,
+- to receive security updates.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-39
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (8)(a)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by detailed instructions or an internet address referring to such detailed instructions and information on the necessary measures during initial commissioning and throughout the lifetime of the product with digital
+elements to ensure its secure use.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-40
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (8)(b)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by detailed instructions or an internet address referring to such detailed instructions and information on how changes to the product with digital elements can affect the security of data.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-41
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (8)(c)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by detailed instructions or an internet address referring to such detailed instructions and information on how security-relevant updates can be installed.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-42
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (8)(d)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by detailed instructions or an internet address referring to such detailed instructions and information on the secure decommissioning of the product with digital elements, including information on how user data can be
+securely removed.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-43
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (8)(e)
+STATEMENT: >>>
+The product with digital elements shall be accompanied by detailed instructions or an internet address referring to such detailed instructions and information on how the default setting enabling the automatic installation of security updates, as required by Part I, point (2)(c), of Annex I, can be turned off.
+<<<
+RATIONALE: >>>
+Direct quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-44
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (8)(f)
+STATEMENT: >>>
+Where the product with digital elements is intended for integration into other products with digital elements,
+the product with digital elements shall be accompanied by detailed instructions or an internet address referring to such detailed instructions and information on the information necessary for the integrator to comply with:
+
+- the essential cybersecurity requirements set out in Annex I,
+- the documentation requirements set out in Annex VII.
+<<<
+RATIONALE: >>>
+Reordered quote from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-45
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex II (9)
+STATEMENT: >>>
+Where the manufacturer of the product with digital elements decides to make available the software bill of materials to the user,
+the product with digital elements shall be accompanied by information on where the software bill of materials can be accessed.
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Annex VII - CONTENT OF THE TECHNICAL DOCUMENTATION
+
+[REQUIREMENT]
+UID: STKREQ-46
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (1)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements,
+the technical documentation referred to in EU CRA Article 31 shall contain a general description of the product with digital elements, including:
+
+- the intended purpose of said product,
+- versions of software affecting compliance with essential cybersecurity requirements,
+- where the product with digital elements is a hardware product, photographs or illustrations showing external features, marking and internal layout,
+- user information and instructions as set out in EU CRA Annex II.
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-47
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (2)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements, the technical documentation referred to in EU CRA Article 31 shall contain a description of the design, development and production of the product with digital elements and vulnerability handling processes, including:
+
+- necessary information on the design and development of the product with digital elements, including, where applicable, drawings and schemes and a description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing;
+- necessary information and specifications of the vulnerability handling processes put in place by the manufacturer, including the software bill of materials, the coordinated vulnerability disclosure policy, evidence of the provision of a contact address for the reporting of the vulnerabilities and a description of the technical solutions chosen for the secure distribution of updates;
+- necessary information and specifications of the production and monitoring processes of the product with digital elements and the validation of those processes;
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-48
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (3)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements, the technical documentation referred to in EU CRA Article 31 shall contain an assessment of the cybersecurity risks against which the product with digital elements is designed, developed, produced, delivered and maintained pursuant to Article 13, including how the essential cybersecurity requirements set out in Part I of Annex I are applicable;
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-49
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (4)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements, the technical documentation referred to in EU CRA Article 31 shall contain relevant information that was taken into account to determine the support period pursuant to Article 13(8) of the product with digital elements;
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-50
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (5)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements, the technical documentation referred to in EU CRA Article 31 shall contain:
+
+- a list of the harmonised standards applied in full or in part the references of which have been published in the Official Journal of the European Union, common specifications as set out in Article 27 of this Regulation or European cybersecurity certification schemes adopted pursuant to Regulation (EU) 2019/881 pursuant to Article 27(8) of this Regulation;
+- where those harmonised standards, common specifications or European cybersecurity certification schemes have not been applied, descriptions of the solutions adopted to meet the essential cybersecurity requirements set out in Parts I and II of Annex I, including a list of other relevant technical specifications applied.
+
+In the event of partly applied harmonised standards, common specifications or European cybersecurity certification schemes, the technical documentation shall specify the parts which have been applied;
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-51
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (6)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements, the technical documentation referred to in EU CRA Article 31 shall contain reports of:
+
+- the tests carried out to verify the conformity of the product with digital elements
+- the vulnerability handling processes with the applicable essential cybersecurity requirements as set out in Parts I and II of Annex I;
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-52
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (7)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements, the technical documentation referred to in EU CRA Article 31 shall contain a copy of the EU declaration of conformity.
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[REQUIREMENT]
+UID: STKREQ-53
+STATUS: Draft
+VERIFICATION: Review
+TITLE: EU CRA Annex VII (8)
+STATEMENT: >>>
+Where applicable to the relevant product with digital elements,
+the technical documentation referred to in EU CRA Article 31 shall contain where applicable, the software bill of materials, further to a reasoned request from a market surveillance authority provided that it is necessary in order for that authority to be able to check compliance with the essential cybersecurity requirements set out in Annex I.
+<<<
+RATIONALE: >>>
+Reworded statement from https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402847
+<<<
+
+[[/SECTION]]

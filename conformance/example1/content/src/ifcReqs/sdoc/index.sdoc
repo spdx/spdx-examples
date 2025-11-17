@@ -1,0 +1,21 @@
+[DOCUMENT]
+TITLE: Interface Requirements
+
+[GRAMMAR]
+IMPORT_FROM_FILE: interface_requirements.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - interface <https://sebokwiki.org/wiki/Interface_(glossary)>`_:
+
+- A shared boundary between two functional units, defined by various characteristics pertaining to the functions, physical signal exchanges, and other characteristics. (ISO/IEC 1993)
+
+- A hardware or software component that connects two or more other components for the purpose of passing information from one to the other. (ISO/IEC 1993)
+
+- To connect two or more components for the purpose of passing information from one to the other. (ISO/IEC/IEEE 2009)
+<<<

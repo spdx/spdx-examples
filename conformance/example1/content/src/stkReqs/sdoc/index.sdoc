@@ -1,0 +1,184 @@
+[DOCUMENT]
+TITLE: Stakeholder Requirements
+
+[GRAMMAR]
+IMPORT_FROM_FILE: stakeholder_requirements.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - stakeholder requirement <https://sebokwiki.org/wiki/Stakeholder_Needs_and_Requirements_(glossary)>`_:
+
+- Stakeholder requirements are transformed from the stakeholder needs to objectively adequate, structured and more formal statements. (ISO/IEC/IEEE 29148, 2018, Section 5.2.3)
+
+- Stakeholder requirements express the intended interaction the system will have with its operational environment and that are the reference against which each resulting operational capability is validated. The stakeholder requirements are defined considering the context of the system of interest with the interoperating systems and enabling systems. This also includes consideration of laws and regulations, environmental restrictions, and ethical values. (ISO/IEC/IEEE 15288, 2023, Section 6.4.2)
+<<<
+
+[[SECTION]]
+TITLE: Manufacturer
+
+[[SECTION]]
+TITLE: Engineering
+
+[REQUIREMENT]
+UID: STKREQ-54
+STATUS: Draft
+VERIFICATION: Review
+TITLE: System Engineering follows SEBoK 2.12 Wiki
+STATEMENT: >>>
+The System shall be developed following the best practices described in the Systems Engineering Body of Knowledge (SEBoK) v2.12 Wiki.
+<<<
+RATIONALE: >>>
+The SEBoK Wiki presents the Systems Engineering best practices without cost.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-7
+  ROLE: Refines
+
+[REQUIREMENT]
+UID: STKREQ-55
+STATUS: Draft
+VERIFICATION: Review
+TITLE: Requirements Written in EARS
+STATEMENT: >>>
+The System shall express requirements in the Easy Approach to Requirements Syntax (EARS).
+<<<
+RATIONALE: >>>
+EARS is a simple syntax already used in the development of certified safety-critical regulated products. The syntax is simple enough for accurate use by non-native English speakers.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-7
+  ROLE: Refines
+
+[REQUIREMENT]
+UID: STKREQ-56
+STATUS: Draft
+VERIFICATION: Review
+TITLE: Architectures Description Follows 4+1 View Model
+STATEMENT: >>>
+The System shall follow the 4+1 Architectural View Model for describing the architecture(s) within.
+<<<
+RATIONALE: >>>
+A System Engineering best practice is to describe architecture(s) from multiple viewpoints. One of the earliest successful examples of this is the 4+1 Architectural View Model (https://en.wikipedia.org/wiki/4%2B1_architectural_view_model), which provides a high-level breakdown that maps well for describing physical products-with-digital-elements.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-7
+  ROLE: Refines
+
+[REQUIREMENT]
+UID: STKREQ-59
+STATUS: Draft
+VERIFICATION: Review
+TITLE: Architectures Description Includes Decision Statements
+STATEMENT: >>>
+The System shall include documentation of the architectural decisions.
+<<<
+RATIONALE: >>>
+Engineering staff undergoes significant turnover during a product development and support lifetime. Following documented best practices minimizes the training overhead.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-8
+  ROLE: Refines
+
+[REQUIREMENT]
+UID: STKREQ-60
+STATUS: Draft
+VERIFICATION: Review
+TITLE: Architectures Description Includes Decision Timeline
+STATEMENT: >>>
+The System shall include documentation of the timeline of architectural decisions.
+<<<
+RATIONALE: >>>
+Engineering staff undergoes significant turnover during a product development and support lifetime. Following documented best practices minimizes the training overhead.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-8
+  ROLE: Refines
+
+[REQUIREMENT]
+UID: STKREQ-57
+STATUS: Draft
+VERIFICATION: Review
+TITLE: Technical Docs Captured in StrictDoc
+STATEMENT: >>>
+The System shall capture technical documentation in the open-source software tool StrictDoc.
+<<<
+RATIONALE: >>>
+- StrictDoc is a Free Open-Source Software package.
+- StrictDoc has already been used for capturing and tracing technical documentation for a space flight product.
+- StrictDoc has already been selected for capturing and tracing requirements for the Linux Foundation's Zephyr Project.
+- StrictDoc already has integrated the Free Open-Source Software graph generation tool MermaidUML.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-7
+  ROLE: Refines
+
+[REQUIREMENT]
+UID: STKREQ-58
+STATUS: Draft
+VERIFICATION: Review
+TITLE: StrictDoc configured with MermaidUML enabled
+STATEMENT: >>>
+The System shall configure StrictDoc such that embedded MermaidUML digrams are rendered.
+<<<
+RATIONALE: >>>
+StrictDoc provides an experimental feature to support embedded MermaidUML diagrams. This feature enables the StrictDoc server to render the diagrams for display on the web pages.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-7
+  ROLE: Refines
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Marketing
+
+[REQUIREMENT]
+UID: STKREQ-1
+STATUS: Draft
+VERIFICATION: Analysis
+TITLE: Released product conforms to EU CRA
+STATEMENT: >>>
+Where a consumer electronics product is designated for the European Union market,
+the product shall be developed in conformance to the EU Cyber Resilience Act.
+<<<
+RATIONALE: >>>
+EU regulation that comes into full enforcement on 2027 Dec 11.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-1
+  ROLE: Refines
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Markets
+
+[[SECTION]]
+TITLE: Regulating Authorities
+
+[DOCUMENT_FROM_FILE]
+FILE: stkReqs_eu_cra.sdoc
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Others
+
+[[/SECTION]]

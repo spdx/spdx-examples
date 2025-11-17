@@ -1,0 +1,275 @@
+[DOCUMENT]
+TITLE: Stakeholder Needs
+
+[GRAMMAR]
+IMPORT_FROM_FILE: stakeholder_needs.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - stakeholder needs <https://sebokwiki.org/wiki/Stakeholder_Needs_and_Requirements_(glossary)>`_:
+
+- Stakeholder needs include elicitation of needs, wants, desires, expectations and perceived constraints of identified stakeholders. Needs concentrate on system purpose and behavior, and are described in the context of the operational environment and conditions. (ISO/IEC/IEEE 15288, 2023, Section 6.4.2)
+<<<
+
+[[SECTION]]
+TITLE: Manufacturer
+
+[[SECTION]]
+TITLE: Engineering
+
+[NEED]
+UID: STKNEED-7
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Follow system engineering best practices
+STATEMENT: >>>
+Engineering needs product-as-a-system development to follow Systems Engineering best practices.
+<<<
+RATIONALE: >>>
+Engineering staff undergoes significant turnover during a product development and support lifetime. Following documented best practices minimizes the training overhead.
+<<<
+
+[NEED]
+UID: STKNEED-8
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Capture Architectural Decisions in Detail
+STATEMENT: >>>
+The System shall contain documentation capturing the internal decisions on the architecture of the system.
+<<<
+RATIONALE: >>>
+Engineering staff undergoes significant turnover during a product development and support lifetime. Following documented best practices minimizes the training overhead.
+<<<
+
+[NEED]
+UID: STKNEED-11
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Product-as-System Internal Name
+STATEMENT: >>>
+Engineering needs an internal code name for the Product-as-a-System.
+<<<
+RATIONALE: >>>
+System Engineering best practices requires clearly identifying the subject in each requirement statement.
+<<<
+
+[NEED]
+UID: STKNEED-12
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: HighWant
+TITLE: Product-as-a-System Name PRESCEDE
+STATEMENT: >>>
+System Engineering needs the internal name to be:
+
+- PROduct line Engineered to Support Consumer Electronics with Digital Elements (PRESCEDE).
+<<<
+RATIONALE: >>>
+- The term is easy to pronounce consistently and correctly.
+- Visually the acronym is not easily confused with the same sounding verb.
+- The term indicates that this is an example of what comes **before** a product is introduced on the market.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Product Manager
+
+[NEED]
+UID: STKNEED-13
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Consumer Devices must operate in environment 0-40 degrees C, 20%-95% Relative Humidity
+STATEMENT: >>>
+Product Manager needs the commodity consumer electronics devices to operate at full functionality within the following environment:
+
+- Minimum Temperature: 0 degrees C (32 degrees F)
+- Maximum Temperature: 40 degrees C (104 degrees F)
+- Minimum Relative Humidity: 20%
+- Maximum Relative Humidity: 95%
+<<<
+RATIONALE: >>>
+TBD
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Sponsor
+
+[NEED]
+UID: STKNEED-1
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Market new consumer electronics product in EU as early as 2028 Jan 1.
+STATEMENT: >>>
+The business Sponsor for Commodity Consumer Electronics needs to market a new product in the European Union as early as 2028 Jan 1.
+<<<
+RATIONALE: >>>
+The European Union is a major economic market for commodity-level Consumer Electronics. The new product (or product platform) development lifecycle for consumer electronics often ranges from 12 to 36 months or more.
+
+On 2027 Dec 11 the EU Cyber Resilience Act will be fully enforced, which requires passing a EU CRA Conformance Assessment covering both product functionality, secure development processes, and security vulnerability reporting and handling services. It is very practical for consumer electronics for this to be considered a *new product* rather than an additional label added to an existing product.
+<<<
+
+[NEED]
+UID: STKNEED-9
+STATUS: Draft
+SOURCE: Survey
+PRIORITY: Must
+TITLE: Use "example.com" for business URL
+STATEMENT: >>>
+The business Sponsor for Commodity Consumer Electronics needs products and business systems to use "example.com" for the business domain name.
+<<<
+RATIONALE: >>>
+'example.com' is a domain name reserved by IANA specifically for documents to use in examples.
+<<<
+
+[NEED]
+UID: STKNEED-10
+STATUS: Draft
+SOURCE: Survey
+PRIORITY: Must
+TITLE: Use "example.org" for OSS Steward URL
+STATEMENT: >>>
+The business Sponsor for Commodity Consumer Electronics needs products and business systems to use "example.org" for representing Open-Source Software Steward domain name.
+<<<
+RATIONALE: >>>
+'example.org' is a domain name reserved by IANA specifically for documents to use in examples.
+<<<
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Markets
+
+[[SECTION]]
+TITLE: Operator/User
+
+[[SECTION]]
+TITLE: Elderly
+
+[NEED]
+UID: STKNEED-6
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Consumer devices reboot automatically upon detecting a catastrophic error
+STATEMENT: >>>
+Elderly need consumer devices to reboot automatically upon detecting an internal catastrophic error.
+<<<
+RATIONALE: >>>
+Elderly may not be physically capable of accessing a consumer device to power cycle it when it detects a catastrophic error.
+
+Elderly may not be aware or around a when a consumer device detects a catastrophic error.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Engineering Student
+
+[NEED]
+UID: STKNEED-2
+STATUS: Draft
+SOURCE: Interview
+PRIORITY: HighWant
+TITLE: Out-of-warranty devices repairable by user
+STATEMENT: >>>
+Engineering students need the freedom to repair out-of-warranty commodity consumer electronics devices themselves.
+<<<
+RATIONALE: >>>
+Engineering students have the background and access to tools to repair commodity consumer electronics themselves. The expectation of consumers is that they purchase the device itself (hardware) and own it after it goes out-of-warranty. Engineering students are very cost-sensitive. They want to apply their knowledge and skills to repair devices rather than replace them.
+<<<
+
+[NEED]
+UID: STKNEED-4
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Visible indication of digital hardware held in reset
+STATEMENT: >>>
+Engineering Students need consumer hardware to give a visible indication that the digital electronics is held in reset.
+<<<
+RATIONALE: >>>
+Digital hardware that is held in reset is necessarily powered, indicating a need for heightened safety awareness. Digital electronics that is held in reset indicates the digital electronics is **not** executing a computer program.
+<<<
+
+[NEED]
+UID: STKNEED-14
+STATUS: Draft
+SOURCE: Observation
+PRIORITY: Must
+TITLE: Directly connect laptop without RJ-45 socket to target equipment with only RJ-45 socket
+STATEMENT: >>>
+Engineering Student needs to directly connect laptop without RJ-45 socket to target equipment with only RJ-45 socket.
+<<<
+RATIONALE: >>>
+Engineering Students need to set up a private network with controllable traffic and available bandwidth in order to control their experiments and develop functionality in an isolated environment.
+<<<
+
+[NEED]
+UID: STKNEED-15
+STATUS: Draft
+SOURCE: Observation
+PRIORITY: Must
+TITLE: Directly connect laptop without 802.15.4 radio to 802.15.4 network
+STATEMENT: >>>
+Engineering Student needs to directly connect laptop without 802.15.4 interface to an 802.15.4 network.
+<<<
+RATIONALE: >>>
+Engineering Students need to set up a private network with controllable traffic and available bandwidth in order to control their experiments and develop functionality in an isolated environment.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Youth
+
+[NEED]
+UID: STKNEED-3
+STATUS: Draft
+SOURCE: Observation
+PRIORITY: Must
+TITLE: Visible device alive indication soon after applying power
+STATEMENT: >>>
+Youth need a visible indication that a consumer electronics device is alive soon after applying power to the consumer electronics device.
+<<<
+RATIONALE: >>>
+Youth experiment with connections and have very little patience for devices that do not immediately seem to "work". The visible indication appearing soon after applying power gives the youth quick feedback on whether the device is actually powered and expected to be functional
+<<<
+
+[NEED]
+UID: STKNEED-5
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Visible indication of "bricked" device
+STATEMENT: >>>
+Youth need a visible indication on a device for when the device is no longer usable and not able to receive a FW update.
+<<<
+RATIONALE: >>>
+Devices may become unusable due to corrupted persistent data, expired certificates, or being explicitly revoked by a device owner. The critical need is to indicate between a device that knows it is no longer usable vs a device that may be recovered through a reset and/or a FW update.
+<<<
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Others
+
+[[/SECTION]]

@@ -1,0 +1,33 @@
+[DOCUMENT]
+TITLE: System Validations
+
+[GRAMMAR]
+IMPORT_FROM_FILE: system_validations.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - validation <https://sebokwiki.org/wiki/Validation_(glossary)>`_:
+
+- Confirmation, through the provision of objective evidence, that the (stakeholder) requirements for a specific intended use or application have been fulfilled. (ISO 9000:2015)
+
+- The set of activities ensuring and gaining confidence that a system is able to accomplish its intended use, goals and objectives (i.e., meet stakeholder requirements) in the intended operational environment. The right system was built. (ISO/IEEE 2015, 1, Section 6.4.8)
+
+- The assurance that a product, service, or system meets the needs of the customer and other identified stakeholders. It often involves acceptance and suitability with external customers. Contrast with verification. (PMI 2013)
+
+- The process of providing evidence that the software and its associated products satisfy system requirements allocated to software at the end of each life cycle activity, solve the right problem, and satisfy intended use and user needs. (IEEE 1012-2004, 3.1.35)
+<<<
+
+[[SECTION]]
+TITLE: Markets
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Others
+
+[[/SECTION]]

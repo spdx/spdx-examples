@@ -1,0 +1,167 @@
+[DOCUMENT]
+TITLE: System Architecture
+
+[GRAMMAR]
+IMPORT_FROM_FILE: system_architectures.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - Architecture <https://sebokwiki.org/wiki/Architecture_(glossary)>`_:
+
+- fundamental concepts or properties of a system in its environment embodied in its elements, relationships, and in the principles of its design and evolution (ISO/IEC/IEEE 2015, Section 4.5)
+
+- The organizational structure of a system or component; the organizational structure of a system and its implementation guidelines. (ISO/IEC 2009, 1)
+
+- Fundamental concepts or properties of a system in its environment embodied in its elements, relationships, and in the principles of its design and evolution. (ISO/IEC 2011, section 3.2)
+<<<
+
+[[SECTION]]
+TITLE: Architecture Decision Timeline
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Architecture Decisions
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Logical View
+
+[TEXT]
+STATEMENT: >>>
+From `4+1 Architectural View Model <https://en.wikipedia.org/wiki/4%2B1_architectural_view_model>`_:
+
+  The logical view is concerned with the functionality that the system provides to end-users. UML diagrams are used to represent the logical view, and include class diagrams, and state diagrams. (Mikko Kontio (2008, July) Architectural manifesto: Designing software architectures, Part 5)
+<<<
+
+[TEXT]
+STATEMENT: >>>
+.. raw:: html
+
+    <pre class="mermaid">
+    ---
+    title: Example UML State Diagram
+    ---
+    stateDiagram-v2
+
+        productMfg: Product Manufacturer
+        productMfgWebsite: Product Mfg. Website
+        productMfgSupport: Product Mfg. Customer Support
+        productSecurityReporting: Product Mfg. <br/> Security Reporting
+
+        state productMfg {
+            direction LR
+
+            productMfgWebsite
+            productMfgSupport
+            productSecurityReporting
+        }
+
+        Customer
+
+        Product
+
+    </pre>
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Physical View
+
+[TEXT]
+STATEMENT: >>>
+From `4+1 Architectural View Model <https://en.wikipedia.org/wiki/4%2B1_architectural_view_model>`_:
+
+  The physical view (aka the deployment view) depicts the system from a system engineer's point of view. It is concerned with the topology of software components on the physical layer as well as the physical connections between these components. UML diagrams used to represent the physical view include the deployment diagram. (Mikko Kontio (2008, July) Architectural manifesto: Designing software architectures, Part 5)
+<<<
+
+[TEXT]
+STATEMENT: >>>
+.. raw:: html
+
+    <pre class="mermaid">
+    ---
+    title: Example UML Entity Relationship
+    ---
+    erDiagram
+        CUSTOMER ||--o{ ORDER : places
+        ORDER ||--|{ LINE-ITEM : contains
+        CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+
+    </pre>
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Concurrency (Process) View
+
+[TEXT]
+STATEMENT: >>>
+From `4+1 Architectural View Model <https://en.wikipedia.org/wiki/4%2B1_architectural_view_model>`_:
+
+  The process view deals with the dynamic aspects of the system, explains the system processes and how they communicate, and focuses on the run time behavior of the system. The process view addresses concurrency, distribution, integrator, performance, and scalability, etc. UML diagrams to represent process view include the sequence diagram, communication diagram, activity diagram. (Hui, LM; Leung, CW; Fan, CK; Wong, TN (2004). "Modelling agent-based systems with UML". Proceedings of the Fifth Asia Pacific Industrial Engineering and Management Systems Conference.), (Mikko Kontio (2008, July) Architectural manifesto: Designing software architectures, Part 5)
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Development View
+
+[TEXT]
+STATEMENT: >>>
+From `4+1 Architectural View Model <https://en.wikipedia.org/wiki/4%2B1_architectural_view_model>`_:
+
+  The development view (aka the implementation view) illustrates a system from a programmer's perspective and is concerned with software management. UML Diagrams used to represent the development view include the Package diagram and the Component diagram. (Mikko Kontio (2008, July) Architectural manifesto: Designing software architectures, Part 5)
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Scenarios
+
+[TEXT]
+STATEMENT: >>>
+From `4+1 Architectural View Model <https://en.wikipedia.org/wiki/4%2B1_architectural_view_model>`_:
+
+  The description of an architecture is illustrated using a small set of use cases, or scenarios, which become a fifth view. The scenarios describe sequences of interactions between objects and between processes. They are used to identify architectural elements and to illustrate and validate the architecture design. They also serve as a starting point for tests of an architecture prototype. This view is also known as the use case view.
+<<<
+
+[TEXT]
+STATEMENT: >>>
+.. raw:: html
+
+    <pre class="mermaid">
+    ---
+    title Example UML Sequence Diagram
+    ---
+    sequenceDiagram
+
+      %% Set non-default presentation order of participants
+      participant A as Alice<br/>Johnson
+      participant J as John
+      participant C
+
+      C -->> A : Clock chimes
+
+      activate A
+      A ->> J : How are you?
+
+      activate J
+      note over J : John thinks for a moment
+
+      J ->> A : Fine
+      deactivate J
+      deactivate A
+
+    </pre>
+<<<
+
+[[/SECTION]]
