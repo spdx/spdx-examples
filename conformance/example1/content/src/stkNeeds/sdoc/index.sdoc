@@ -206,6 +206,19 @@ RATIONALE: >>>
 Digital hardware that is held in reset is necessarily powered, indicating a need for heightened safety awareness. Digital electronics that is held in reset indicates the digital electronics is **not** executing a computer program.
 <<<
 
+[NEED]
+UID: STKNEED-14
+STATUS: Draft
+SOURCE: Observation
+PRIORITY: Must
+TITLE: Directly connect laptop without RJ-45 socket to target equipment with only RJ-45 socket
+STATEMENT: >>>
+Engineering Student needs to directly connect laptop without RJ-45 socket to target equipment with only RJ-45 socket.
+<<<
+RATIONALE: >>>
+Engineering Students need to set up a private network with controllable traffic and available bandwidth in order to control their experiments and develop functionality in an isolated environment.
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
