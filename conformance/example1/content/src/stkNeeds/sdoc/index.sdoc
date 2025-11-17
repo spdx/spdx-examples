@@ -219,6 +219,19 @@ RATIONALE: >>>
 Engineering Students need to set up a private network with controllable traffic and available bandwidth in order to control their experiments and develop functionality in an isolated environment.
 <<<
 
+[NEED]
+UID: STKNEED-15
+STATUS: Draft
+SOURCE: Observation
+PRIORITY: Must
+TITLE: Directly connect laptop without 802.15.4 radio to 802.15.4 network
+STATEMENT: >>>
+Engineering Student needs to directly connect laptop without 802.15.4 interface to an 802.15.4 network.
+<<<
+RATIONALE: >>>
+Engineering Students need to set up a private network with controllable traffic and available bandwidth in order to control their experiments and develop functionality in an isolated environment.
+<<<
+
 [[/SECTION]]
 
 [[SECTION]]
