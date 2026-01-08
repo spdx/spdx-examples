@@ -1,0 +1,33 @@
+[DOCUMENT]
+TITLE: SAMPLE
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+STATEMENT: >>>
+The System-of-Interest named SAMPLE is the top-level system in this example. 
+
+It is expected to be composed of the following subsystems:
+
+.. raw:: html
+
+    <pre class="mermaid">
+    ---
+    title: Topology of Systems-of-Interest
+    ---
+    stateDiagram-v2
+
+        state SAMPLE {
+            TBD_Security_Vulnerability_Reporting: TBD <br/> Security <br/> Vulnerability <br/> Reporting <br/> Server
+            TBD_Desktop_SW: TBD <br/> Desktop SW
+            TBD_Mobile_SW: TBD <br/> Mobile SW
+            TBD_Devices: TBD <br/> Device(s)
+            TBD_Cloud_SW: TBD <br/> Cloud SW
+            TBD_Digital_Component_Update_Server: TBD <br/> Digital <br/> Component <br/> Update <br/> Server
+        }
+
+    </pre>
+<<<
