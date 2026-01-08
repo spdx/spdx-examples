@@ -12,3 +12,6 @@ FILE: system_validations/sdoc/index.sdoc
 
 [DOCUMENT_FROM_FILE]
 FILE: shared/interface_specifications/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: SOI/sdoc/index.sdoc

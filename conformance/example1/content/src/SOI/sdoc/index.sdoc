@@ -1,0 +1,16 @@
+[DOCUMENT]
+TITLE: System-of-Interest Catalog
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+STATEMENT: >>>
+From `SEBoK Wiki Glossary - system-of-interest <https://sebokwiki.org/wiki/System_Requirement_(glossary)>`_:
+
+- The system whose life cycle is under consideration. (ISO/IEC/IEEE 15288, 2015)
+
+- The system of interest to an observer. (von Bertalanffy, L. 1968. General system theory: Foundations, development, applications, revised ed. New York, NY: Braziller.)
+<<<
