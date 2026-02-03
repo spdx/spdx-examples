@@ -3,3 +3,6 @@ TITLE: SEBoK Product as System - Commodity Consumer Electronics
 
 [DOCUMENT_FROM_FILE]
 FILE: problem_space/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: system_concept_of_operations/sdoc/index.sdoc
