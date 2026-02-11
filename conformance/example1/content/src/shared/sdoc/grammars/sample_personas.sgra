@@ -1,0 +1,74 @@
+[GRAMMAR]
+ELEMENTS:
+- TAG: TEXT
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: True
+  - TITLE: UID
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: True
+- TAG: SECTION
+  PROPERTIES:
+    IS_COMPOSITE: True
+    PREFIX: None
+    VIEW_STYLE: Narrative
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: True
+  - TITLE: UID
+    TYPE: String
+    REQUIRED: False
+  - TITLE: TITLE
+    TYPE: String
+    REQUIRED: True
+- TAG: PERSONA
+  PROPERTIES:
+    PREFIX: PERSONA-
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: True
+  - TITLE: UID
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATUS
+    TYPE: SingleChoice(Draft, Active, Deleted)
+    REQUIRED: True
+  - TITLE: TITLE
+    TYPE: String
+    REQUIRED: True
+  - TITLE: NAME
+    TYPE: String
+    REQUIRED: True
+  - TITLE: AGE
+    TYPE: String
+    REQUIRED: True
+  - TITLE: EDUCATION
+    TYPE: String
+    REQUIRED: False
+  - TITLE: BEHAVIOR_PATTERNS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: GOALS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: SKILLS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: ATTITUDES
+    TYPE: String
+    REQUIRED: False
+  - TITLE: ENVIRONMENT
+    TYPE: String
+    REQUIRED: False
+  - TITLE: COMMENT
+    TYPE: String
+    REQUIRED: False
+  RELATIONS:
+  - TYPE: Parent
+    ROLE: Personifies
