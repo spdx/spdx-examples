@@ -1,0 +1,24 @@
+[DOCUMENT]
+MID: dba1eb04ad064dafbc9b7115c9e04985
+TITLE: Personas
+OPTIONS:
+  ENABLE_MID: True
+
+[GRAMMAR]
+IMPORT_FROM_FILE: @sample_personas_grammar
+
+[TEXT]
+MID: d495970e0ad34b9995417f85b90522f6
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[TEXT]
+MID: 05ec8177ef09485bab9276d64d2cc4a5
+STATEMENT: >>>
+From ISO/IEC/IEEE 24765:2017(en) Systems and software engineering - Vocabulary definition (2):
+
+  representation of a type of user that includes a concise summary of the characteristics of the user that is most informative to the design or illustrative of specific user requirements *[ISO/IEC 25063:2014 Systems and software engineering — Systems and software product Quality Requirements and Evaluation (SQuaRE) Common Industry Format (CIF) for usability: Context of use description]*
+
+  Note 1 to entry: A persona typically includes behavior patterns, goals, skills, attitudes, and environment, with a few fictional personal details to make the persona a realistic character.`
+<<<

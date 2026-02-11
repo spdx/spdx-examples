@@ -17,3 +17,6 @@ This problem space is likely larger than what will be addressed by a specific so
 
 [DOCUMENT_FROM_FILE]
 FILE: ../stakeholders/sdoc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: ../personas/sdoc/index.sdoc
