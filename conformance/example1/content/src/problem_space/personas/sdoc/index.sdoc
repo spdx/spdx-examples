@@ -22,3 +22,61 @@ From ISO/IEC/IEEE 24765:2017(en) Systems and software engineering - Vocabulary d
 
   Note 1 to entry: A persona typically includes behavior patterns, goals, skills, attitudes, and environment, with a few fictional personal details to make the persona a realistic character.`
 <<<
+
+[[SECTION]]
+MID: 458e0b7a382e4a5f85b2b4a8fbf2d208
+TITLE: Manufacturer
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: e0a26a5e5f7742b59a071bfc488a81fa
+TITLE: Markets
+
+[[SECTION]]
+MID: 5ff6bb8042c44b99b4284c1b29c09220
+TITLE: Operator/User
+
+[PERSONA]
+MID: 336b1678837740719105971c77c9a112
+UID: PERSONA-1
+STATUS: Draft
+TITLE: Esther the Engineering Student
+NAME: >>>
+Esther
+<<<
+AGE: >>>
+20
+<<<
+EDUCATION: >>>
+Esther is in the middle of her next-to-last year of a B.S. in Software Engineering. She has not yet taken a course in Engineering Ethics.
+
+During 9th through 12th grade Esther was a key software developer on her competitive robotics team.
+<<<
+BEHAVIOR_PATTERNS: >>>
+Esther is adventurous and not afraid to experiment with technology.
+<<<
+GOALS: >>>
+Esther has a goal of being a Software Engineer working on connected embedded products in a distributed system. This may be for systems for governmental, corporate, or consumer use.
+<<<
+SKILLS: >>>
+Esther is fluent in English. Her primary language is Turkish.
+
+Esther is moderately competent in:
+
+- distributed embedded/autonomous mechatronic controls,
+- full-stack web server and browser technologies,
+- Agile software development lifecycle using GitHub services,
+- Microcontroller development for original keypad and sensor devices,
+
+Esther has some experience in:
+
+- building her own Linux kernel for controlling experiments and proof-of-concept demonstrations.
+<<<
+ATTITUDES: >>>
+Esther wants to understand both the 'how' and the 'why' of best practices.
+<<<
+
+[[/SECTION]]
+
+[[/SECTION]]

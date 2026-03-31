@@ -26,3 +26,179 @@ From `SEBoK Wiki Glossary - stakeholder <https://sebokwiki.org/wiki/Stakeholder_
 
 - A stakeholder in an organisation is (by definition) any group or individual who can affect or is affected by the achievement of the organisation's objectives. (Freeman 1984)
 <<<
+
+[[SECTION]]
+MID: 0b181a28b6fe44aebdd68ec2659995ca
+TITLE: Manufacturer
+
+[STAKEHOLDER]
+MID: aa2b78a66c6c4ad79933a2a063a157d0
+UID: STKHLDR-21
+STATUS: Draft
+TITLE: Engineering
+
+[STAKEHOLDER]
+MID: 3efd7a67083f4bbb8330264736223e02
+UID: STKHLDR-3
+STATUS: Draft
+TITLE: Marketing
+
+[STAKEHOLDER]
+MID: a4e0ced45eb64212a1f2cad36017a395
+UID: STKHLDR-5
+STATUS: Draft
+TITLE: Production Organization
+
+[STAKEHOLDER]
+MID: 5b534475caea4f2bb7929596bc1f0e25
+UID: STKHLDR-2
+STATUS: Draft
+TITLE: Project Manager
+DESCRIPTION: >>>
+Stakeholder overseeing the expenditure of resource to the project.
+<<<
+
+[STAKEHOLDER]
+MID: 16991861fedf4ea0bc24df024d1164b2
+UID: STKHLDR-1
+STATUS: Draft
+TITLE: Sponsor
+DESCRIPTION: >>>
+Stakeholder authorizing the expenditure of resources to the project.
+<<<
+
+[STAKEHOLDER]
+MID: 7486c9e5dfae4694ac627e212d9763b0
+UID: STKHLDR-4
+STATUS: Draft
+TITLE: Suppliers
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: 88bf2d66924940c2a9803603e2185e12
+TITLE: Markets
+
+[STAKEHOLDER]
+MID: 49ccff22109a4cbab8f64fe9f20d2b70
+UID: STKHLDR-14
+STATUS: Draft
+TITLE: Distributor
+
+[STAKEHOLDER]
+MID: b407de6d1b86477db038462da4203358
+UID: STKHLDR-19
+STATUS: Draft
+TITLE: Integrator
+
+[STAKEHOLDER]
+MID: 712a006f6ee246889cd101ed30acc0a9
+UID: STKHLDR-13
+STATUS: Draft
+TITLE: Importer
+
+[[SECTION]]
+MID: ac58352046c249bd9bb55b0fd219696b
+UID: STKHLDR-9
+TITLE: Operator/User
+
+[STAKEHOLDER]
+MID: 4ecf7ee284bc4962ad2799b4f42661e0
+UID: STKHLDR-12
+STATUS: Draft
+TITLE: Elderly
+DESCRIPTION: >>>
+This operator is characterized by:
+- living alone or in an assisted living facility,
+- not being a "digital native",
+- may be easily confused,
+- has dedicated computing technology.
+<<<
+
+[STAKEHOLDER]
+MID: 9093f054b62d4dbeb318da2a49c005e7
+UID: STKHLDR-18
+STATUS: Draft
+TITLE: Engineering Student
+DESCRIPTION: >>>
+This operator is characterized by:
+
+- relatively high technical knowledge
+- access to sophisticated equipment
+- need to customize devices for personal and school projects
+- under relatively little oversight
+- may be operating device in a very high density environment (e.g., test labs, dormitories)
+<<<
+
+[STAKEHOLDER]
+MID: 1038e506f4b84d9bb0da4b4594a065fe
+UID: STKHLDR-11
+STATUS: Draft
+TITLE: Youth
+DESCRIPTION: >>>
+This operator is characterized by:
+
+- in primary/middle school
+- a novice to technology
+- does not have administrative access to computer technology
+- is provided with an inexpensive computer that is several years old
+- must share computer technology with other students.
+<<<
+
+[[/SECTION]]
+
+[STAKEHOLDER]
+MID: 278d287b16644244952af64c766fcd04
+UID: STKHLDR-8
+STATUS: Draft
+TITLE: Paying Customer
+
+[STAKEHOLDER]
+MID: 075082b24d44477c9325e8669263310e
+UID: STKHLDR-6
+STATUS: Draft
+TITLE: Regulating Authorities
+
+[STAKEHOLDER]
+MID: 8b3d6c5ec85a4785a6cf7a53079d0fc5
+UID: STKHLDR-7
+STATUS: Draft
+TITLE: Regulators
+
+[STAKEHOLDER]
+MID: e505d5d4b5c448ab8a27fc526aaad560
+UID: STKHLDR-10
+STATUS: Draft
+TITLE: Service Technician
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: 04439e1c6e7a42ef89a8e7ed53c73fd7
+TITLE: Others
+
+[STAKEHOLDER]
+MID: a6e4cc77798a4bf799b1cb67d0b144f4
+UID: STKHLDR-16
+STATUS: Draft
+TITLE: Conformity Assessment Body
+
+[STAKEHOLDER]
+MID: cb4a15c29b2b4346a1342af02e76fec8
+UID: STKHLDR-17
+STATUS: Draft
+TITLE: Market Surveillance Authority
+
+[STAKEHOLDER]
+MID: c282bb557bf54ecdb4028c0571718bc7
+UID: STKHLDR-20
+STATUS: Draft
+TITLE: Open-Source Software Developer
+
+[STAKEHOLDER]
+MID: e3a3127aa2d34b508a1b1ba7e9e6858a
+UID: STKHLDR-15
+STATUS: Draft
+TITLE: Open-Source Software Steward
+
+[[/SECTION]]
