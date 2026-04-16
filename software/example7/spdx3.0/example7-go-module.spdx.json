@@ -1,5 +1,5 @@
 {
-  "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
   "@graph": [
     {
       "spdxId": "urn:uuid:cf7dddac-8ce5-4a16-8860-ee255be7b4c8",
@@ -18,7 +18,7 @@
     {
       "@id": "_:creationInfo",
       "type": "CreationInfo",
-      "specVersion": "3.0.0",
+      "specVersion": "3.0.1",
       "created": "2020-11-25T01:12:27Z",
       "createdBy": [
         "urn:uuid:cf7dddac-8ce5-4a16-8860-ee255be7b4c8"

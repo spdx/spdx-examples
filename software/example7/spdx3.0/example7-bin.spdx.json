@@ -1,5 +1,5 @@
 {
-  "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
   "@graph": [
     {
       "spdxId": "urn:uuid:6731cd26-926c-486b-8127-340c0f11a228",
@@ -18,7 +18,7 @@
     {
       "@id": "_:creationInfo",
       "type": "CreationInfo",
-      "specVersion": "3.0.0",
+      "specVersion": "3.0.1",
       "created": "2020-11-24T01:12:27Z",
       "createdBy": [
         "urn:uuid:6731cd26-926c-486b-8127-340c0f11a228"
@@ -99,7 +99,7 @@
       "rootElement": [
         "urn:uuid:4c7ec5f3-875b-4f99-8c4c-f0a718da8c4f"
       ],
-      "imports": [
+      "import": [
         {
           "type": "ExternalMap",
           "externalSpdxId": "urn:uuid:a9f18ff3-17fa-419d-8966-abe4b992312b",

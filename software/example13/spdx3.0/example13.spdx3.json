@@ -1,5 +1,5 @@
 {
-	 "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+	 "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
 	 "@graph": [
 		 {
 			 "type": "Person",
@@ -43,7 +43,7 @@
 		 {
 			 "type": "CreationInfo",
 			 "@id": "_:creationinfo",
-			 "specVersion": "3.0.0",
+			 "specVersion": "3.0.1",
 			 "createdBy": [
 				 "urn:jane-doe-1@acme.com-4fe40e24-20e3-11ee-be56-0242ac120002",
 				 "urn:acme.com-4fe40e24-20e3-11ee-be56-0242ac120002"
