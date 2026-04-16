@@ -1,5 +1,5 @@
 {
-	"@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+	"@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
 	"@graph": [
 		{
 			"type": "Person",
@@ -23,7 +23,7 @@
 		{
 			"type": "CreationInfo",
 			"@id": "_:creationinfo",
-			"specVersion": "3.0.0",
+			"specVersion": "3.0.1",
 			"createdBy": [
 				"https://my-first-aibom.com/gopi"
 			],
@@ -32,7 +32,7 @@
 		{
 			"type": "CreationInfo",
 			"@id": "_:creationinfo_of_package",
-			"specVersion": "3.0.0",
+			"specVersion": "3.0.1",
 			"createdBy": [
 				"https://github.com/githubharald"
 			],
@@ -708,7 +708,7 @@
 		{
 			"type": "CreationInfo",
 			"@id": "_:creationinfo_of_editdistance",
-			"specVersion": "3.0.0",
+			"specVersion": "3.0.1",
 			"createdBy": [
 				"https://pypi.org/user/aflc/"
 			],
@@ -743,7 +743,7 @@
 		{
 			"type": "CreationInfo",
 			"@id": "_:creationinfo_of_lmdb",
-			"specVersion": "3.0.0",
+			"specVersion": "3.0.1",
 			"createdBy": [
 				"https://pypi.org/user/dw/",
 				"https://pypi.org/user/jnwatson/"
@@ -753,7 +753,7 @@
 		{
 			"type": "CreationInfo",
 			"@id": "_:creationinfo_of_matplotlib",
-			"specVersion": "3.0.0",
+			"specVersion": "3.0.1",
 			"createdBy": [
 				"https://pypi.org/org/matplotlib/"
 			],
@@ -781,7 +781,7 @@
 		{
 			"type": "CreationInfo",
 			"@id": "_:creationinfo_of_creationinfo_of_numpy",
-			"specVersion": "3.0.0",
+			"specVersion": "3.0.1",
 			"createdBy": [
 				"https://pypi.org/org/matplotlib/"
 			],
@@ -838,7 +838,7 @@
 		{
 			"type": "CreationInfo",
 			"@id": "_:creationinfo_of_numpy",
-			"specVersion": "3.0.0",
+			"specVersion": "3.0.1",
 			"createdBy": [
 				"https://pypi.org/user/charlesr.harris/",
 				"https://pypi.org/user/matthew.brett/",
@@ -892,7 +892,7 @@
 		{
 			"type": "CreationInfo",
 			"@id": "_:creationinfo_of_opencv-python",
-			"specVersion": "3.0.0",
+			"specVersion": "3.0.1",
 			"createdBy": [
 				"https://pypi.org/user/andrey.senyaev/",
 				"https://pypi.org/user/asmorkalov/",
@@ -924,7 +924,7 @@
 		{
 			"type": "CreationInfo",
 			"@id": "_:creationinfo_of_path",
-			"specVersion": "3.0.0",
+			"specVersion": "3.0.1",
 			"createdBy": [
 				"https://pypi.org/user/jaraco/"
 			],
@@ -971,7 +971,7 @@
 		{
 			"type": "CreationInfo",
 			"@id": "_:creationinfo_of_tensorflow",
-			"specVersion": "3.0.0",
+			"specVersion": "3.0.1",
 			"createdBy": [
 				"https://pypi.org/user/mihaimaruseac/",
 				"https://pypi.org/user/rishikasinha/",
