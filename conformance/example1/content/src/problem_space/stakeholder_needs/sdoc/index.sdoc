@@ -76,7 +76,7 @@ STATEMENT: >>>
 Engineering needs an internal code name for the Product-as-a-System.
 <<<
 RATIONALE: >>>
-System Engineering best practices requires clearly identifying the subject in each requirement statement.
+Product naming and market positioning tends to undergo a significant amount of churn during the ideation and development stages. An internal name ensures that internal teams have a consistent way to refer to the product that is not tied to an evolving definition.
 <<<
 RELATIONS:
 - TYPE: Parent
