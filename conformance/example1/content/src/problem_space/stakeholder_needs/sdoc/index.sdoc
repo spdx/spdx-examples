@@ -102,7 +102,7 @@ The business Sponsor for Commodity Consumer Electronics needs to market a new pr
 RATIONALE: >>>
 The European Union is a major economic market for commodity-level Consumer Electronics. The new product (or product platform) development lifecycle for consumer electronics often ranges from 12 to 36 months or more.
 
-On 2027 Dec 11 the EU Cyber Resilience Act will be fully enforced, which requires passing a EU CRA Conformance Assessment covering both product functionality, secure development processes, and security vulnerability reporting and handling services. It is very practical for consumer electronics for this to be considered a *new product* rather than an additional label added to an existing product.
+On 2027 Dec 11 the EU Cyber Resilience Act will be fully enforced, which requires passing a EU CRA Conformance Assessment covering both product functionality, secure development processes, and security vulnerability reporting and handling services. For practical reasons, this will tend to drive manufacturers to define things as a *new product* rather than going to the effort of re-labeling an existing product.
 <<<
 RELATIONS:
 - TYPE: Parent
