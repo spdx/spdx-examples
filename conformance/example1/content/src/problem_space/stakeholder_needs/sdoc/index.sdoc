@@ -120,7 +120,7 @@ STATEMENT: >>>
 The business Sponsor for Commodity Consumer Electronics needs products and business systems to use "example.com" for the business domain name.
 <<<
 RATIONALE: >>>
-'example.com' is a domain name reserved by IANA specifically for documents to use in examples.
+As defined in RFC6761, 'example.com' is a domain name reserved by IANA specifically for documents to use in examples.
 <<<
 RELATIONS:
 - TYPE: Parent
