@@ -20,3 +20,259 @@ From `SEBoK Wiki Glossary - stakeholder needs <https://sebokwiki.org/wiki/Stakeh
 
 - Stakeholder needs include elicitation of needs, wants, desires, expectations and perceived constraints of identified stakeholders. Needs concentrate on system purpose and behavior, and are described in the context of the operational environment and conditions. (ISO/IEC/IEEE 15288, 2023, Section 6.4.2)
 <<<
+
+[[SECTION]]
+MID: cb41f5865c1c4c75be4199f53e73ad76
+TITLE: Manufacturer
+
+[[SECTION]]
+MID: 72b885145dee417ebd8e82ea394b97c7
+TITLE: Engineering
+
+[NEED]
+MID: 25eb26f6a7f74c759434e02550b9e4e6
+UID: STKNEED-7
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Follow system engineering best practices
+STATEMENT: >>>
+Engineering needs product-as-a-system development to follow Systems Engineering best practices.
+<<<
+RATIONALE: >>>
+Engineering staff undergoes significant turnover during a product development and support lifetime. Following documented best practices minimizes the training overhead.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-21
+  ROLE: Refines
+
+[NEED]
+MID: 7603d4935e59414f8ebfcbee9f613ab2
+UID: STKNEED-8
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Capture Architectural Decisions in Detail
+STATEMENT: >>>
+Engineering needs the decisions on the internal architecture of the product-as-a-system to be documented for reference.
+<<<
+RATIONALE: >>>
+Engineering staff undergoes significant turnover during a product development and support lifetime. Following documented best practices minimizes the training overhead.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-21
+  ROLE: Refines
+
+[NEED]
+MID: c12616d3a42f4c5f85bb32fb96041718
+UID: STKNEED-11
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Product-as-System Internal Name
+STATEMENT: >>>
+Engineering needs an internal code name for the Product-as-a-System.
+<<<
+RATIONALE: >>>
+Product naming and market positioning tends to undergo a significant amount of churn during the ideation and development stages. An internal name ensures that internal teams have a consistent way to refer to the product that is not tied to an evolving definition.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-21
+  ROLE: Refines
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: b4c59f53e33e46e2a8e2c0d0c52468b0
+TITLE: Sponsor
+
+[NEED]
+MID: adaee0f0bf7a47c5b3503444fdb1e477
+UID: STKNEED-1
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Market new consumer electronics product in EU as early as 2028 Jan 1.
+STATEMENT: >>>
+The business Sponsor for Commodity Consumer Electronics needs to market a new product in the European Union as early as 2028 Jan 1.
+<<<
+RATIONALE: >>>
+The European Union is a major economic market for commodity-level Consumer Electronics. The new product (or product platform) development lifecycle for consumer electronics often ranges from 12 to 36 months or more.
+
+On 2027 Dec 11 the EU Cyber Resilience Act will be fully enforced, which requires passing a EU CRA Conformance Assessment covering both product functionality, secure development processes, and security vulnerability reporting and handling services. For practical reasons, this will tend to drive manufacturers to define things as a *new product* rather than going to the effort of re-labeling an existing product.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-1
+  ROLE: Refines
+
+[NEED]
+MID: 3b7b70d1a8dd49c7a9a96723b3081536
+UID: STKNEED-9
+STATUS: Draft
+SOURCE: Survey
+PRIORITY: Must
+TITLE: Use "example.com" for business URL
+STATEMENT: >>>
+The business Sponsor for Commodity Consumer Electronics needs products and business systems to use "example.com" for the business domain name.
+<<<
+RATIONALE: >>>
+As defined in RFC6761, 'example.com' is a domain name reserved by IANA specifically for documents to use in examples.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-1
+  ROLE: Refines
+
+[NEED]
+MID: eb1e9b086d264960a606984e4679fc7e
+UID: STKNEED-10
+STATUS: Draft
+SOURCE: Survey
+PRIORITY: Must
+TITLE: Use "example.org" for OSS Steward URL
+STATEMENT: >>>
+The business Sponsor for Commodity Consumer Electronics needs products and business systems to use "example.org" for representing Open-Source Software Steward domain name.
+<<<
+RATIONALE: >>>
+As defined in RFC6761, 'example.org' is a domain name reserved by IANA specifically for documents to use in examples.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-1
+  ROLE: Refines
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: bf57e3693f474fe4b69dfc692857df40
+TITLE: Markets
+
+[[SECTION]]
+MID: e8e42e655a67428397e2344d7b2c9e9b
+TITLE: Operator/User
+
+[[SECTION]]
+MID: 91af5e86c4f84651a9e704a34355e971
+TITLE: Elderly
+
+[NEED]
+MID: 1f027faa422e4ad5aadbf73faebd84b6
+UID: STKNEED-6
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Consumer devices reboot automatically upon detecting a catastrophic error
+STATEMENT: >>>
+Elderly need consumer devices to reboot automatically upon detecting an internal catastrophic error.
+<<<
+RATIONALE: >>>
+Elderly may not be physically capable of accessing a consumer device to power cycle it when it detects a catastrophic error.
+
+Elderly may not be aware or around a when a consumer device detects a catastrophic error.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-12
+  ROLE: Refines
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: e61137150e2f46f3b48f3b3bb562249c
+TITLE: Engineering Student
+
+[NEED]
+MID: 3c7a167185e5452aa7d3717484628c88
+UID: STKNEED-2
+STATUS: Draft
+SOURCE: Interview
+PRIORITY: HighWant
+TITLE: Out-of-warranty devices repairable by user
+STATEMENT: >>>
+Engineering students need the freedom to repair out-of-warranty commodity consumer electronics devices themselves.
+<<<
+RATIONALE: >>>
+Engineering students have the background and access to tools to repair commodity consumer electronics themselves. The expectation of consumers is that they purchase the device itself (hardware) and own it after it goes out-of-warranty. Engineering students are very cost-sensitive. They want to apply their knowledge and skills to repair devices rather than replace them.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-18
+  ROLE: Refines
+
+[NEED]
+MID: 41376c120fde4463a841b7feda559427
+UID: STKNEED-4
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Visible indication of digital hardware held in reset
+STATEMENT: >>>
+Engineering Students need consumer hardware to give a visible indication that the digital electronics is held in reset.
+<<<
+RATIONALE: >>>
+Digital hardware that is held in reset is necessarily powered, indicating a need for heightened safety awareness. Digital electronics that is held in reset indicates the digital electronics is **not** executing a computer program.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-18
+  ROLE: Refines
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: 7ad46cb21b834598beae3d1d73d7481c
+TITLE: Youth
+
+[NEED]
+MID: 1ae60ab0930d4a1f94cb996022eb4e67
+UID: STKNEED-3
+STATUS: Draft
+SOURCE: Observation
+PRIORITY: Must
+TITLE: Visible device alive indication soon after applying power
+STATEMENT: >>>
+Youth need a visible indication that a consumer electronics device is alive soon after applying power to the consumer electronics device.
+<<<
+RATIONALE: >>>
+Youth experiment with connections and have very little patience for devices that do not immediately seem to "work". The visible indication appearing soon after applying power gives the youth quick feedback on whether the device is actually powered and expected to be functional
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-11
+  ROLE: Refines
+
+[NEED]
+MID: 449be10602d24613b44babd186cdd39a
+UID: STKNEED-5
+STATUS: Draft
+SOURCE: Speculation
+PRIORITY: Must
+TITLE: Visible indication of "bricked" device
+STATEMENT: >>>
+Youth need a visible indication on a device for when the device is no longer usable and not able to receive a FW update.
+<<<
+RATIONALE: >>>
+Devices may become unusable due to corrupted persistent data, expired certificates, or being explicitly revoked by a device owner. The critical need is to indicate between a device that knows it is no longer usable vs a device that may be recovered through a reset and/or a FW update.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKHLDR-11
+  ROLE: Refines
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: d0df9460d24f4f8d8fe91e772b091393
+TITLE: Others
+
+[[/SECTION]]
