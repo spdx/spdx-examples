@@ -23,7 +23,7 @@ and `dataset_datasetSize` is replaced by `software_artifactSize`.
 | Version | File |
 | --------- | ------ |
 | SPDX 3.0 | [spdx3.0/sbom.spdx3.json](./spdx3.0/sbom.spdx3.json) |
-| SPDX 3.1 (draft) | [spdx3.1/sbom.spdx3.json](./spdx3.1/sbom.spdx3.json) |
+| SPDX 3.1 (draft) | [spdx3.1/sbom.spdx3.json-draft](./spdx3.1/sbom.spdx3.json-draft) |
 
 [![A diagram showing relationships between elements in the Sentiment Demo package (Example 2).](./sbom-spdx3.png "A diagram showing relationships between elements in the Sentiment Demo package (Example 2).")](sbom-spdx3.png)
 
