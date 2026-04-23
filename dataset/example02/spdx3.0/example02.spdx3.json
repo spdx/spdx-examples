@@ -1,0 +1,116 @@
+{
+    "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.0.1",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#Organization1"
+            ],
+            "created": "2024-07-01T00:00:00Z"
+        },
+        {
+            "type": "Organization",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#Organization1",
+            "creationInfo": "_:creationinfo",
+            "name": "Computer Vision Research Lab"
+        },
+        {
+            "type": "SpdxDocument",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#SBOM1"
+            ]
+        },
+        {
+            "type": "software_Sbom",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#SBOM1",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#DatasetPackage1"
+            ],
+            "software_sbomType": [
+                "analyzed"
+            ]
+        },
+        {
+            "type": "dataset_DatasetPackage",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#DatasetPackage1",
+            "creationInfo": "_:creationinfo",
+            "name": "FaceExpress-50K",
+            "summary": "Labeled image dataset of facial expressions for emotion recognition model training.",
+            "description": "50,000 labeled photographs of human faces showing one of seven basic emotions (angry, disgust, fear, happy, neutral, sad, surprise). Images collected in controlled laboratory conditions and in the wild. Intended for training and evaluating facial expression recognition models.",
+            "software_packageVersion": "1.2.0",
+            "software_primaryPurpose": "data",
+            "software_downloadLocation": "https://example.com/datasets/faceexpress-50k",
+            "software_copyrightText": "Copyright 2024 Computer Vision Research Lab",
+            "builtTime": "2024-01-15T00:00:00Z",
+            "releaseTime": "2024-07-01T00:00:00Z",
+            "dataset_datasetType": [
+                "image"
+            ],
+            "dataset_datasetSize": 21474836480,
+            "dataset_datasetAvailability": "registration",
+            "dataset_confidentialityLevel": "clear",
+            "dataset_dataCollectionProcess": "Images sourced from three channels: (1) laboratory sessions with consenting adult volunteers photographed under 4 different lighting conditions; (2) licensed stock photographs from commercial providers; (3) Creative Commons-licensed images from Flickr. Each image independently labeled by 3 annotators; majority vote used as ground truth. Annotators were trained on Paul Ekman's FACS basic emotion categories.",
+            "dataset_dataPreprocessing": [
+                "Face detection and alignment using MTCNN",
+                "Crop to 224x224 pixels centered on detected face bounding box",
+                "Images with face detection confidence below 0.9 excluded",
+                "Conversion to RGB; grayscale images excluded"
+            ],
+            "dataset_knownBias": [
+                "Demographic imbalance: approximately 62% images of perceived lighter skin tones",
+                "Laboratory-sourced images may overrepresent posed rather than spontaneous expressions",
+                "Age distribution skewed toward 20-35 age group (58% of dataset)"
+            ],
+            "dataset_hasSensitivePersonalInformation": "yes",
+            "dataset_intendedUse": "Training and evaluation of facial expression recognition and emotion detection models. Not intended for direct deployment in consumer applications without additional validation.",
+            "verifiedUsing": [
+                {
+                    "type": "Hash",
+                    "algorithm": "sha256",
+                    "hashValue": "a7f3b92e1cd458f9026e3a4b57c8d1e0f2a9b4c6d8e0f1a2b3c4d5e6f7a8b9c0"
+                }
+            ],
+            "comment": "SPDX 3.0 NOTE: 'dataset_datasetSize' (value: 21474836480 bytes) is DEPRECATED in SPDX 3.1 - use 'software_artifactSize' instead (same unit: bytes). Also, 'dataset_intendedUse' is DEPRECATED in SPDX 3.1 - use Core-level 'intendedUse' property instead."
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#Relationship1",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasDeclaredLicense",
+            "from": "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#DatasetPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#LicenseExpression1"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#Relationship2",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasConcludedLicense",
+            "from": "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#DatasetPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#LicenseExpression1"
+            ]
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example02-b1b2c3d4-e5f6-7890-abcd-000000002001#LicenseExpression1",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "LicenseRef-FaceExpress-NonCommercial-Research",
+            "comment": "Non-commercial research use only. Redistribution requires written permission. See https://example.com/datasets/faceexpress-50k/license"
+        }
+    ]
+}
