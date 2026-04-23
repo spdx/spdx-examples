@@ -29,7 +29,7 @@ including data collection, preprocessing, known bias, and privacy sensitivity.
 ## Key properties demonstrated
 
 | Property | Notes |
-| ---------- | ------- |
+| -------- | ----- |
 | `/Dataset/confidentialityLevel` | `clear` - freely distributable (with license) |
 | `/Dataset/dataCollectionProcess` | How the images were sourced |
 | `/Dataset/dataPreprocessing` | Steps applied to prepare images before use |
