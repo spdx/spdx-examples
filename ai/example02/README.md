@@ -10,7 +10,7 @@ SPDX-License-Identifier: CC-BY-4.0
 This example illustrates a software bill of materials (SBOM) for an AI
 application that employs machine learning to perform a text sentiment analysis.
 
-The SBOM ([spdx3.0/sbom.spdx.json](./spdx3.0/sbom.spdx.json)) demonstrates
+The SBOM ([spdx3.0/sbom.spdx3.json](./spdx3.0/sbom.spdx3.json)) demonstrates
 the structure between `AIPackage`, `DatasetPackage`, and their technical
 documentation through (lifecycle-scoped) relationship types such as
 `dependsOn`,
