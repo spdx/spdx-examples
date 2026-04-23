@@ -19,7 +19,7 @@
                     "type": "ExternalIdentifier"
                 },
                 {
-                    "externalIdentifierType": "webpage",
+                    "externalIdentifierType": "other",
                     "identifier": "bact",
                     "identifierLocator": [
                         "https://github.com/bact/"
