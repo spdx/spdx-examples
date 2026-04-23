@@ -1,0 +1,119 @@
+{
+    "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.0.1",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/dataset-example03-b1b2c3d4-e5f6-7890-abcd-000000003001#Organization1"
+            ],
+            "created": "2024-08-20T00:00:00Z"
+        },
+        {
+            "type": "Organization",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example03-b1b2c3d4-e5f6-7890-abcd-000000003001#Organization1",
+            "creationInfo": "_:creationinfo",
+            "name": "Multilingual NLP Consortium"
+        },
+        {
+            "type": "SpdxDocument",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example03-b1b2c3d4-e5f6-7890-abcd-000000003001",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/dataset-example03-b1b2c3d4-e5f6-7890-abcd-000000003001#SBOM1"
+            ]
+        },
+        {
+            "type": "software_Sbom",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example03-b1b2c3d4-e5f6-7890-abcd-000000003001#SBOM1",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/dataset-example03-b1b2c3d4-e5f6-7890-abcd-000000003001#DatasetPackage1"
+            ],
+            "software_sbomType": [
+                "analyzed"
+            ]
+        },
+        {
+            "type": "dataset_DatasetPackage",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example03-b1b2c3d4-e5f6-7890-abcd-000000003001#DatasetPackage1",
+            "creationInfo": "_:creationinfo",
+            "name": "MultiNews-SEA",
+            "summary": "Multilingual news article corpus covering five Southeast Asian languages for NLP pretraining and summarization tasks.",
+            "description": "A corpus of 2.4 million news articles in Thai, Indonesian, Vietnamese, Filipino, and Malay, collected from publicly accessible news sources. Covers the period 2018-2024. Designed to support development of multilingual language models for Southeast Asian languages, which are underrepresented in existing large-scale NLP corpora. Language distribution: Thai 24%, Indonesian 23%, Vietnamese 22%, Filipino 17%, Malay 14%.",
+            "software_packageVersion": "1.0.0",
+            "software_primaryPurpose": "data",
+            "software_downloadLocation": "https://example.com/datasets/multinews-sea",
+            "software_copyrightText": "Copyright 2024 Multilingual NLP Consortium",
+            "builtTime": "2024-06-01T00:00:00Z",
+            "releaseTime": "2024-08-20T00:00:00Z",
+            "dataset_datasetType": [
+                "text"
+            ],
+            "dataset_datasetSize": 53687091200,
+            "dataset_datasetAvailability": "directDownload",
+            "dataset_confidentialityLevel": "clear",
+            "dataset_dataCollectionProcess": "Articles collected via crawling of publicly accessible RSS feeds and news archives between January 2018 and March 2024. Only articles with explicit publication dates and bylines included. Duplicate detection using MinHash LSH with Jaccard threshold 0.8. robots.txt and terms of service checked per source domain; sources requiring authenticated access excluded.",
+            "dataset_dataPreprocessing": [
+                "HTML tag stripping and whitespace normalization",
+                "Language identification using langdetect; articles below 0.95 confidence excluded",
+                "Deduplication: near-duplicate articles removed using MinHash LSH (Jaccard >= 0.8)",
+                "Minimum article length filter: 150 tokens per article",
+                "Personally identifiable information (PII) scrubbing: email addresses and phone numbers replaced with [EMAIL] and [PHONE] tokens"
+            ],
+            "dataset_knownBias": [
+                "Urban and national news overrepresented relative to rural and local coverage",
+                "Online-native sources overrepresented; print newspapers with paywalls excluded",
+                "Filipino corpus sourced primarily from Manila-based outlets; regional languages (Cebuano, Ilocano) not included"
+            ],
+            "dataset_hasSensitivePersonalInformation": "no",
+            "dataset_intendedUse": "Pretraining and fine-tuning of multilingual NLP models. Benchmarking of multilingual text summarization and classification. Not intended for direct deployment as a news aggregation service.",
+            "dataset_datasetUpdateMechanism": "Annual release of incremental updates adding approximately 300,000 articles per year. Versioned releases published on project website.",
+            "verifiedUsing": [
+                {
+                    "type": "Hash",
+                    "algorithm": "sha256",
+                    "hashValue": "b8e4c03f2de569a1137f4b58d2e9c2f1a3b0c5d7e9f0a1b2c3d4e5f6a7b8c9d0"
+                }
+            ],
+            "comment": "SPDX 3.0 NOTE: 'dataset_intendedUse' is DEPRECATED in SPDX 3.1 - use the Core-level 'intendedUse' property instead. Also, 'dataset_datasetSize' (value: 53687091200 bytes) is DEPRECATED in SPDX 3.1 - use 'software_artifactSize' instead (same unit: bytes). In SPDX 3.1, language information can be added via Core 'inLanguage' property."
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example03-b1b2c3d4-e5f6-7890-abcd-000000003001#Relationship1",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasDeclaredLicense",
+            "from": "https://spdx.org/spdxdocs/dataset-example03-b1b2c3d4-e5f6-7890-abcd-000000003001#DatasetPackage1",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example03-b1b2c3d4-e5f6-7890-abcd-000000003001#Relationship2",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasConcludedLicense",
+            "from": "https://spdx.org/spdxdocs/dataset-example03-b1b2c3d4-e5f6-7890-abcd-000000003001#DatasetPackage1",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ]
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/licenses/CC-BY-4.0",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "CC-BY-4.0",
+            "simplelicensing_licenseListVersion": "3.25.0",
+            "comment": "Added as a workaround for the lack of https://spdx.org/licenses/CC-BY-4.0 as a valid ListedLicense in SPDX 3.0.1 RDF. This will be removed once https://github.com/spdx/LicenseListPublisher/issues/183 is implemented."
+        }
+    ]
+}
