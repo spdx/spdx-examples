@@ -7,7 +7,7 @@
             "createdBy": [
                 "https://spdx.org/spdxdocs/SpdxDocument1-d1edd8cb-935e-46f2-bd5b-43f5f554a097#Person-AS"
             ],
-            "specVersion": "3.1.0",
+            "specVersion": "3.1",
             "type": "CreationInfo"
         },
         {
