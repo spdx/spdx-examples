@@ -4,7 +4,7 @@
     {
       "type": "CreationInfo",
       "@id": "_:creationinfo",
-      "specVersion": "3.1.0",
+      "specVersion": "3.1",
       "createdBy": [
         "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Person1"
       ],
