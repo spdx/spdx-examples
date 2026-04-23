@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# SPDX AI Profile Usage Examples
+# SPDX AI profile examples
 
 This repository includes demonstrations of [SPDX documents](https://spdx.dev)
 for various examples of AI applications and models.
@@ -13,15 +13,16 @@ for various examples of AI applications and models.
 Directories of the form `example##` are structured as follows:
 
 - `content/`: contains the example's content (data files, source code, etc.)
-- `spdx3.0/`: contains one or more SPDX documents for the example
+- `spdx3.0/`: contains SPDX 3.0 documents for the example
+- `spdx3.1/`: contains SPDX 3.1 documents for the example
 - `README.md`: more details about the particular example
 
 ## Examples
 
-|  # | Sources | Binaries | Data | SPDX | Comments |
-|----|---------|----------|------|------|----------|
-| [1](./example01/) | - | - | - | 1 document | Demonstrating `dependsOn`, `testedOn`, and `trainedOn` relationships |
-| [2](./example02/) | 4 Python files | 1 model file | 3 data files | 1 document | Demonstrating `generates`, `hasDataFile`, and `hasDocumentation` (lifecycle-scoped) relationships |
+| # | Sources | Binaries | Data | SPDX 3.0 | SPDX 3.1 | Focus |
+| - | ------- | -------- | ---- | -------- | -------- | ----- |
+| [01](./example01/) | - | - | - | 1 document | - | `dependsOn`, `testedOn`, `trainedOn` relationships |
+| [02](./example02/) | 4 Python files | 1 model file | 3 data files | 1 document | 1 document | `generates`, `hasDataFile`, `hasDocumentation`; `ai_energyConsumption`, `ai_hyperparameter`; **3.0→3.1**: `ai_autonomyType` → `isoAutomationLevel` |
 
 ## Implementing SBOM for AI systems
 
