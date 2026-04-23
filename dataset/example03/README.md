@@ -32,7 +32,7 @@ or `comment` fields; SPDX 3.1 introduces the `inLanguage` property
 ## Key properties demonstrated
 
 | Property | Notes |
-| ---------- | ------- |
+| -------- | ----- |
 | `/Dataset/dataCollectionProcess` | How text was gathered and selected |
 | `/Dataset/dataPreprocessing` | Steps applied to clean and filter the text |
 | `/Dataset/datasetSize` | `53687091200` bytes (~50 GB) - deprecated in SPDX 3.1, use `/Software/artifactSize` |
