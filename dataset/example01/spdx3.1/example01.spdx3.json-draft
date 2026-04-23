@@ -1,14 +1,14 @@
 {
-  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@context": "https://spdx.org/rdf/3.1/spdx-context.jsonld",
   "@graph": [
     {
       "type": "CreationInfo",
       "@id": "_:creationinfo",
-      "specVersion": "3.0.1",
+      "specVersion": "3.1.0",
       "createdBy": [
         "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Person1"
       ],
-      "created": "2024-05-31T00:00:00Z"
+      "created": "2025-01-01T00:00:00Z"
     },
     {
       "type": "Person",
@@ -81,6 +81,7 @@
       "software_packageVersion": "2024-04-15",
       "software_copyrightText": "Copyright Our World in Data",
       "software_downloadLocation": "https://github.com/owid/co2-data/",
+      "software_artifactSize": 204800,
       "verifiedUsing": [
         {
           "type": "Hash",
@@ -94,6 +95,7 @@
         }
       ],
       "software_primaryPurpose": "data",
+      "intendedUse": "To make the data about greenhouse gas emissions accessible.",
       "dataset_confidentialityLevel": "clear",
       "dataset_dataPreprocessing": [
         "The dataset is built upon a number of datasets and processing steps.",
@@ -101,18 +103,16 @@
       ],
       "dataset_datasetAvailability": "directDownload",
       "dataset_dataCollectionProcess": "The data is collected from various sources, including international organizations and research institutions.",
-      "dataset_datasetSize": 204800,
       "dataset_datasetType": [
         "structured",
         "timestamp"
       ],
       "dataset_datasetUpdateMechanism": "Publish updated data as it becomes available. Most are on an annual basis.",
       "dataset_hasSensitivePersonalInformation": "no",
-      "dataset_intendedUse": "To make the data about greenhouse gas emissions accessible.",
       "dataset_knownBias": [
         "Data in some geographical areas are more completed than the others."
       ],
-      "comment": "This is a small excerpt of the full dataset."
+      "comment": "This is a small excerpt of the full dataset. SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 204800' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 204800' (~200 KB) in SPDX 3.1. (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse'. Compare with spdx3.0/example01.spdx3.json."
     },
     {
       "type": "software_File",
@@ -189,8 +189,7 @@
       "spdxId": "https://spdx.org/licenses/CC-BY-4.0",
       "creationInfo": "_:creationinfo",
       "simplelicensing_licenseExpression": "CC-BY-4.0",
-      "simplelicensing_licenseListVersion": "3.25.0",
-      "comment": "Added as a workaround for the lack of https://spdx.org/licenses/CC-BY-4.0 as a valid ListedLicense in SPDX 3.0.1 RDF. This will be removed once https://github.com/spdx/LicenseListPublisher/issues/183 is implemented."
+      "simplelicensing_licenseListVersion": "3.25.0"
     }
   ]
 }

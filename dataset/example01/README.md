@@ -36,3 +36,14 @@ class diagram illustrates Example 01.  Long string values are truncated and the
 spdxIds are shortened (by removing the UUID suffix), for brevity.
 
 [![A diagram of a bill of materials of Dataset Example 01](./spdx3.0/example01.png "A diagram of a bill of materials of Dataset Example 01")](./spdx3.0/example01.png)
+
+The SBOM uses `dataset_datasetSize` (~200 KB) and `dataset_intendedUse`, both
+of which are deprecated in SPDX 3.1 in favour of `software_artifactSize` and
+Core `intendedUse` respectively.
+
+## SPDX files
+
+| Version | File |
+| --------- | ------ |
+| SPDX 3.0 | [spdx3.0/example01.spdx3.json](./spdx3.0/example01.spdx3.json) |
+| SPDX 3.1 (draft) | [spdx3.1/example01.spdx3.json-draft](./spdx3.1/example01.spdx3.json-draft) |
