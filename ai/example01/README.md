@@ -1,4 +1,9 @@
-# Example 01
+---
+SPDX-FileType: DOCUMENTATION
+SPDX-License-Identifier: CC-BY-4.0
+---
+
+# AI example 1
 
 ## Description
 
@@ -9,3 +14,5 @@ recognition task.
 The BOM demonstrates the structure between `AIPackage`, `DatasetPackage`, and
 (software) `Package` through relationship types such as `dependsOn`,
 `testedOn`, and `trainedOn`.
+
+[![A diagram of AI example 1 - SimpleHTR handwriting recognition SBOM.](./example01.spdx3.png "A diagram of AI example 1 - SimpleHTR handwriting recognition SBOM.")](./example01.spdx3.png)
