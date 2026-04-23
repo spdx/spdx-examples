@@ -34,7 +34,7 @@ The SBOM structure (outlinedgenerate with
 [bom](https://github.com/kubernetes-sigs/bom)) looks like this:
 
 ```shell
-$ bom document outline example11/spdx/sbom.spdx.json
+$ bom document outline example11/spdx2.3/sbom.spdx.json
 
  📂 SPDX Document SBOM-SPDX-2d85f548-12fa-46d5-87ce-5e78e5e111f4
   │ 
