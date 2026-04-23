@@ -22,7 +22,7 @@ Directories of the form `example##` are structured as follows:
 | # | Sources | Binaries | Data | SPDX 3.0 | SPDX 3.1 | Focus |
 | - | ------- | -------- | ---- | -------- | -------- | ----- |
 | [01](./example01/) | - | - | - | 1 document | - | `dependsOn`, `testedOn`, `trainedOn` relationships |
-| [02](./example02/) | 4 Python files | 1 model file | 3 data files | 1 document | 1 document | `generates`, `hasDataFile`, `hasDocumentation`; `ai_energyConsumption`, `ai_hyperparameter`; **3.0→3.1**: `ai_autonomyType` → `isoAutomationLevel` |
+| [02](./example02/) | 4 Python files | 1 model file | 3 data files | 1 document | 1 document | `generates`, `hasDataFile`, `hasDocumentation` relationships; `/AI/energyConsumption`, `/AI/hyperparameter`; **3.0→3.1**: `/AI/autonomyType` → `/Core/isoAutomationLevel` |
 
 ## Implementing SBOM for AI systems
 
