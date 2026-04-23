@@ -19,7 +19,7 @@
                     "type": "ExternalIdentifier"
                 },
                 {
-                    "externalIdentifierType": "other",
+                    "externalIdentifierType": "webpage",
                     "identifier": "bact",
                     "identifierLocator": [
                         "https://github.com/bact/"
@@ -28,7 +28,7 @@
                     "type": "ExternalIdentifier"
                 },
                 {
-                    "externalIdentifierType": "other",
+                    "externalIdentifierType": "orchidid",
                     "identifier": "0000-0002-9698-1899",
                     "identifierLocator": [
                         "https://orcid.org/0000-0002-9698-1899"
