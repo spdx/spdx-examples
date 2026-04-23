@@ -21,4 +21,4 @@ Directories of the form `example##` are structured as follows:
 
 | # | Data | Sources | SPDX 3.0 | SPDX 3.1 | Focus |
 | - | ---- | ------- | -------- | -------- | ----- |
-| [01](./example01/) | 2 CSV files | - | 1 document | 1 document | Tabular CSV dataset; `dataset_datasetType: structured, timestamp`; **3.0→3.1**: `dataset_datasetSize` → `software_artifactSize`, `dataset_intendedUse` → Core `intendedUse` |
+| [01](./example01/) | 2 CSV files | - | 1 document | 1 document | Tabular CSV dataset; `/Dataset/datasetType: structured, timestamp`; **3.0→3.1**: `/Dataset/datasetSize` → `/Software/artifactSize`, `/Dataset/intendedUse` → `/Core/intendedUse` |
