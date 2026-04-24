@@ -31,7 +31,7 @@ noise characteristics, dataset type, and access controls.
 ## Key properties demonstrated
 
 | Property | Notes |
-| ---------- | ------- |
+| -------- | ----- |
 | `/Dataset/confidentialityLevel` | `clear` - freely distributable (CC0-1.0) |
 | `/Dataset/dataCollectionProcess` | Generation methodology documented (not collection) |
 | `/Dataset/datasetNoise` | Known limitations of synthetic generation |
