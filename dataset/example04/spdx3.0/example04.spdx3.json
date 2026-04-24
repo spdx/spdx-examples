@@ -60,6 +60,48 @@
                 "sensor",
                 "timestamp"
             ],
+            "dataset_sensor": [
+                {
+                    "type": "DictionaryEntry",
+                    "key": "vibration",
+                    "value": "Triaxial accelerometer; range 0–50 mm/s RMS; calibrated every 6 months"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "bearing_temperature",
+                    "value": "Type-K thermocouple; range -40–200 °C; ±0.5 °C accuracy"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "inlet_pressure",
+                    "value": "Piezoresistive transducer; range 0–10 bar; calibrated annually"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "outlet_pressure",
+                    "value": "Piezoresistive transducer; range 0–25 bar; calibrated annually"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "flow_rate",
+                    "value": "Electromagnetic flow meter; range 0–500 m³/h; ±0.3% full scale"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "motor_current",
+                    "value": "Hall-effect current clamp; range 0–100 A; ±0.5% accuracy"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "shaft_speed",
+                    "value": "Magnetic encoder; range 0–3600 RPM; resolution 1 RPM"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "fluid_temperature",
+                    "value": "PT100 RTD; range -20–150 °C; ±0.1 °C accuracy"
+                }
+            ],
             "dataset_datasetSize": 5798205850,
             "dataset_datasetAvailability": "registration",
             "dataset_confidentialityLevel": "green",
@@ -84,7 +126,7 @@
                     "hashValue": "c9e5d04a3ef67b82248a5c69e3f0d2e1b4c7a0f2d3e4f5a6b7c8d9e0f1a2b3c4"
                 }
             ],
-            "comment": "SPDX 3.0 NOTE: The 'dataset_sensor' property (array of DictionaryEntry) documents sensor metadata. This dataset has 8 sensor types. In SPDX 3.0, sensor information can be captured in this field. Also: 'dataset_datasetSize' (5798205850 bytes) and 'dataset_intendedUse' are DEPRECATED in SPDX 3.1 - use 'software_artifactSize' (same unit: bytes) and Core 'intendedUse' instead."
+            "comment": "SPDX 3.0→3.1 CHANGES: 'dataset_datasetSize' (5798205850 bytes) deprecated in SPDX 3.1, use 'software_artifactSize'. 'dataset_intendedUse' deprecated in SPDX 3.1, use Core 'intendedUse'. Compare with spdx3.1/example04.spdx3.json-draft."
         },
         {
             "type": "Relationship",

@@ -31,7 +31,7 @@ multiple dataset types, update mechanism, known bias, and access controls.
 ## Key properties demonstrated
 
 | Property | Notes |
-| ---------- | ------- |
+| -------- | ----- |
 | `/Dataset/confidentialityLevel` | `green` - data may be shared within a defined partner community |
 | `/Dataset/dataCollectionProcess` | How sensor readings were recorded and labeled |
 | `/Dataset/datasetSize` | `5798205850` bytes (~5.4 GB) - deprecated in SPDX 3.1, use `/Software/artifactSize` |
@@ -40,3 +40,4 @@ multiple dataset types, update mechanism, known bias, and access controls.
 | `/Dataset/hasSensitivePersonalInformation` | `no` |
 | `/Dataset/intendedUse` | Research use cases - deprecated in SPDX 3.1, use `/Core/intendedUse` |
 | `/Dataset/knownBias` | Gaps in equipment and failure type coverage documented |
+| `/Dataset/sensor` | 8 sensor types as key-value pairs: sensor name → calibration and range description |

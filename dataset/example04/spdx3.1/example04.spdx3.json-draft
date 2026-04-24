@@ -62,6 +62,48 @@
                 "sensor",
                 "timestamp"
             ],
+            "dataset_sensor": [
+                {
+                    "type": "DictionaryEntry",
+                    "key": "vibration",
+                    "value": "Triaxial accelerometer; range 0–50 mm/s RMS; calibrated every 6 months"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "bearing_temperature",
+                    "value": "Type-K thermocouple; range -40–200 °C; ±0.5 °C accuracy"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "inlet_pressure",
+                    "value": "Piezoresistive transducer; range 0–10 bar; calibrated annually"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "outlet_pressure",
+                    "value": "Piezoresistive transducer; range 0–25 bar; calibrated annually"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "flow_rate",
+                    "value": "Electromagnetic flow meter; range 0–500 m³/h; ±0.3% full scale"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "motor_current",
+                    "value": "Hall-effect current clamp; range 0–100 A; ±0.5% accuracy"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "shaft_speed",
+                    "value": "Magnetic encoder; range 0–3600 RPM; resolution 1 RPM"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "fluid_temperature",
+                    "value": "PT100 RTD; range -20–150 °C; ±0.1 °C accuracy"
+                }
+            ],
             "dataset_datasetAvailability": "registration",
             "dataset_confidentialityLevel": "green",
             "dataset_dataCollectionProcess": "Sensors installed and calibrated by certified technicians. Data logged via OPC-UA to a SCADA system, then extracted in CSV format at 1-second resolution. Fault events manually labeled by maintenance engineers from work order records and physical inspections. Normal/fault label verified by at least two engineers per event.",
