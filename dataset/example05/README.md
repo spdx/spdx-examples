@@ -30,7 +30,7 @@ methods, access controls, availability mode, and research use restrictions.
 ## Key properties demonstrated
 
 | Property | Notes |
-| ---------- | ------- |
+| -------- | ----- |
 | `/Dataset/anonymizationMethodUsed` | Multi-step process to remove identifying information |
 | `/Dataset/confidentialityLevel` | `amber` - access restricted to approved research organizations under data use agreements |
 | `/Dataset/datasetAvailability` | `query` - accessible only via a controlled interface, not direct download |
