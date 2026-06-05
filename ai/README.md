@@ -22,6 +22,7 @@ Directories of the form `example##` are structured as follows:
 |----|---------|----------|------|------|----------|
 | [1](./example01/) | - | - | - | 1 document | Demonstrating `dependsOn`, `testedOn`, and `trainedOn` relationships |
 | [2](./example02/) | 4 Python files | 1 model file | 3 data files | 1 document | Demonstrating `generates`, `hasDataFile`, and `hasDocumentation` (lifecycle-scoped) relationships |
+| [4](./example04/) | - | - | - | 1 document | Language model; Demonstrating `/AI/hyperparameter`, `/AI/modelExplainability`, `trainedOn`, and `finetunedOn`; **3.0 migration to 3.1**: `/Dataset/datasetSize` → `/Software/artifactSize`, `depeondsOn` → `finetunedOn` |
 
 ## Implementing SBOM for AI systems
 
