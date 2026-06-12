@@ -1,0 +1,117 @@
+{
+    "@context": "https://spdx.org/rdf/3.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.1",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#Organization1"
+            ],
+            "created": "2025-01-01T00:00:00Z"
+        },
+        {
+            "type": "Organization",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#Organization1",
+            "creationInfo": "_:creationinfo",
+            "name": "Clinical NLP Research Consortium"
+        },
+        {
+            "type": "SpdxDocument",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#SBOM1"
+            ]
+        },
+        {
+            "type": "software_Sbom",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#SBOM1",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#DatasetPackage1"
+            ],
+            "software_sbomType": [
+                "analyzed"
+            ]
+        },
+        {
+            "type": "dataset_DatasetPackage",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#DatasetPackage1",
+            "creationInfo": "_:creationinfo",
+            "name": "ClinicalNotes-DeID",
+            "summary": "De-identified clinical notes from electronic health records for clinical NLP model development.",
+            "description": "A corpus of 180,000 de-identified clinical notes (discharge summaries, progress notes, radiology reports) from a tertiary care hospital system, covering 2015-2022. Notes span 15 specialty departments. Annotated for named entity recognition (NER) covering diseases, medications, procedures, and dosages. Collected and de-identified under IRB approval. Data use restricted to non-commercial clinical NLP research.",
+            "software_packageVersion": "2.0.0",
+            "software_primaryPurpose": "data",
+            "software_downloadLocation": "https://example.com/datasets/clinicalnotes-deid",
+            "software_copyrightText": "Copyright 2024 Clinical NLP Research Consortium and Contributing Hospitals",
+            "software_artifactSize": 2684354560,
+            "inLanguage": [
+                "en"
+            ],
+            "builtTime": "2024-05-01T00:00:00Z",
+            "releaseTime": "2024-10-01T00:00:00Z",
+            "intendedUse": "Development and evaluation of clinical NLP models for named entity recognition, relation extraction, and clinical text summarization. Not intended for clinical decision support without additional validation studies.",
+            "dataset_datasetType": [
+                "text"
+            ],
+            "dataset_datasetAvailability": "query",
+            "dataset_confidentialityLevel": "amber",
+            "dataset_dataCollectionProcess": "Clinical notes extracted from the hospital EHR system under IRB protocol #2022-0841. Only notes from adult patients (18+) with written informed consent or covered by institutional waiver for de-identified data. Extracted notes span encounters from January 2015 to December 2022. NER annotations created by 6 clinical informatics specialists using BRAT annotation tool.",
+            "dataset_anonymizationMethodUsed": [
+                "Rule-based PHI detection covering 18 HIPAA Safe Harbor identifier categories",
+                "NLP-based residual PHI detection using i2b2 de-identification system",
+                "Manual review by clinical informatics specialist for all outputs",
+                "Re-identification attack simulation verified <0.1% re-identification rate on held-out set"
+            ],
+            "dataset_dataPreprocessing": [
+                "PHI de-identification using two-stage automated pipeline followed by manual review",
+                "Encoding normalization to UTF-8",
+                "Structured fields (ICD codes, medication orders) separated from free-text narrative",
+                "Minimum note length filter: 50 tokens"
+            ],
+            "dataset_knownBias": [
+                "Single-institution dataset; clinical practices and patient demographics specific to one urban academic medical center",
+                "Conditions with low prevalence in this patient population are underrepresented",
+                "Notes authored by residents may have different linguistic patterns than attending-authored notes"
+            ],
+            "dataset_hasSensitivePersonalInformation": "yes",
+            "comment": "SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 2684354560' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 2684354560' (~2.5 GB) in SPDX 3.1. (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse'. (3) 'inLanguage: [en]' added - new Core property in SPDX 3.1. Compare with spdx3.0/example05.spdx3.json."
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#Relationship1",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasDeclaredLicense",
+            "from": "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#DatasetPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#LicenseExpression1"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#Relationship2",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasConcludedLicense",
+            "from": "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#DatasetPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#LicenseExpression1"
+            ]
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example05-b1b2c3d4-e5f6-7890-abcd-000000005002#LicenseExpression1",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "LicenseRef-ClinicalNLP-DUA-v2"
+        }
+    ]
+}
