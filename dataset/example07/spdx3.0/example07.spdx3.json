@@ -1,0 +1,302 @@
+{
+    "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.0.1",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#Organization1"
+            ],
+            "created": "2024-10-01T00:00:00Z"
+        },
+        {
+            "type": "Organization",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#Organization1",
+            "creationInfo": "_:creationinfo",
+            "name": "European Calibration and Metrology Institute"
+        },
+        {
+            "type": "SpdxDocument",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#SBOM1"
+            ]
+        },
+        {
+            "type": "software_Sbom",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#SBOM1",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#DatasetPackage1"
+            ],
+            "software_sbomType": [
+                "analyzed"
+            ]
+        },
+        {
+            "type": "dataset_DatasetPackage",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#DatasetPackage1",
+            "creationInfo": "_:creationinfo",
+            "name": "PressCalib-120",
+            "summary": "Open reference calibration dataset for 120 industrial pressure sensors across three technology types, traceable to SI units.",
+            "description": "Calibration measurement records for 120 industrial pressure sensors of three technology types: piezoresistive gauge (40 units, range 0–700 kPa), capacitive absolute (40 units, range 10–300 kPa), and silicon differential (40 units, range 0–100 kPa). Each sensor undergoes a 5-point ascending and descending cycle repeated 3 times across its specified range, against a primary deadweight tester traceable to SI pressure units via PTB (Physikalisch-Technische Bundesanstalt, Germany). Measurements include raw electrical output, applied reference pressure, and concurrent ambient conditions. Derived calibration coefficients and expanded measurement uncertainties are provided in companion JSON certificates. Intended for validating calibration software, testing uncertainty propagation routines, and supporting accreditation of calibration laboratories under ISO/IEC 17025.",
+            "software_packageVersion": "2.0",
+            "software_primaryPurpose": "data",
+            "software_downloadLocation": "https://doi.org/10.example/presscalib-120-v2",
+            "software_copyrightText": "Copyright 2024 European Calibration and Metrology Institute",
+            "builtTime": "2024-06-01T00:00:00Z",
+            "releaseTime": "2024-10-01T00:00:00Z",
+            "dataset_datasetType": [
+                "numeric",
+                "structured"
+            ],
+            "dataset_sensor": [
+                {
+                    "type": "DictionaryEntry",
+                    "key": "deadweight_tester",
+                    "value": "DHI PG7302 pneumatic deadweight tester; range 10–1000 kPa; U = 0.005% of reading (k=2); traceable to PTB"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "reference_thermometer",
+                    "value": "Fluke 1594A SPRT; range 0–60 °C; resolution 0.001 °C; U = ±0.005 °C (k=2); calibrated to ITS-90"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "barometric_reference",
+                    "value": "Paroscientific 216B-101 quartz barometer; range 800–1100 hPa; U = ±0.08 hPa (k=2)"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "humidity_sensor",
+                    "value": "Rotronic HC2A-S; range 5–95% RH; U = ±0.8% RH (k=2); recalibrated annually"
+                }
+            ],
+            "dataset_datasetSize": 52428800,
+            "dataset_datasetAvailability": "directDownload",
+            "dataset_confidentialityLevel": "clear",
+            "dataset_dataCollectionProcess": "Calibration performed in a temperature-controlled laboratory (20 ±1 °C, 45–55% RH) accredited to ISO/IEC 17025:2017. Each sensor mounted on a dedicated pressure manifold connected to the deadweight tester. Applied pressures follow a 5-point sequence at 20%, 40%, 60%, 80%, and 100% of rated range, in ascending then descending order (10 readings per run, 3 runs per sensor). Raw ADC output recorded at 1 Hz for 60 s at each setpoint; median taken as the representative value. Ambient temperature, humidity, and barometric pressure logged concurrently at 1-minute intervals. Calibration certificates issued per batch of 20 sensors following EURAMET cg-17 v4 guidelines.",
+            "dataset_dataPreprocessing": [
+                "ADC offset and gain corrected using pre-calibration zero-point measurement",
+                "Readings with Allan deviation exceeding 0.01% of full scale in the 60 s window flagged and excluded",
+                "Ambient temperature drift correction applied where laboratory temperature deviated more than 0.5 °C from 20 °C during a run",
+                "Expanded uncertainty U calculated per GUM:2008 (Guide to the Expression of Uncertainty in Measurement) combining deadweight tester uncertainty, resolution, repeatability, and temperature coefficient",
+                "Hysteresis computed as the maximum difference between ascending and descending readings at matching pressure setpoints"
+            ],
+            "dataset_knownBias": [
+                "All sensors sourced from three manufacturers; cross-manufacturer generalization not evaluated",
+                "Calibration performed at a single ambient pressure site (670 m elevation); absolute sensors may show site-dependent offset if redeployed at significantly different altitudes",
+                "Piezoresistive sensors exhibit temperature sensitivity not fully corrected by the first-order coefficient included in the certificates"
+            ],
+            "dataset_hasSensitivePersonalInformation": "no",
+            "dataset_intendedUse": "Validating calibration software and uncertainty analysis routines against known reference data; benchmarking calibration algorithms; supporting accreditation audits of calibration laboratories under ISO/IEC 17025; metrological training and education. Not intended for direct deployment in safety-critical measurement systems without independent verification.",
+            "dataset_datasetUpdateMechanism": "Annual re-certification campaign adds 20–40 newly procured sensors per release. Historical sensor records remain unchanged; version number incremented on each annual release.",
+            "externalIdentifier": [
+                {
+                    "type": "ExternalIdentifier",
+                    "externalIdentifierType": "other",
+                    "identifier": "10.example/presscalib-120-v2",
+                    "identifierLocator": [
+                        "https://doi.org/10.example/presscalib-120-v2"
+                    ],
+                    "issuingAuthority": "DataCite"
+                }
+            ],
+            "verifiedUsing": [
+                {
+                    "type": "Hash",
+                    "algorithm": "sha256",
+                    "hashValue": "a3f8c2e1d4b7a9f0e2c5d8b1f4a7c0e3d6b9f2a5c8e1d4b7a0f3c6e9d2b5a8f1"
+                }
+            ],
+            "comment": "SPDX 3.0 NOTE: 'dataset_datasetSize' (52428800 bytes, ~50 MB) and 'dataset_intendedUse' are DEPRECATED in SPDX 3.1 - use 'software_artifactSize' and Core 'intendedUse' instead. Compare with spdx3.1/example07.spdx3.json-draft."
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File1",
+            "creationInfo": "_:creationinfo",
+            "name": "measurements/batch001_measurements.csv",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "contentType": "text/csv"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File2",
+            "creationInfo": "_:creationinfo",
+            "name": "measurements/batch002_measurements.csv",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "contentType": "text/csv"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File3",
+            "creationInfo": "_:creationinfo",
+            "name": "measurements/batch003_measurements.csv",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "contentType": "text/csv"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File4",
+            "creationInfo": "_:creationinfo",
+            "name": "measurements/batch004_measurements.csv",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "contentType": "text/csv"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File5",
+            "creationInfo": "_:creationinfo",
+            "name": "measurements/batch005_measurements.csv",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "contentType": "text/csv"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File6",
+            "creationInfo": "_:creationinfo",
+            "name": "measurements/batch006_measurements.csv",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "contentType": "text/csv"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File7",
+            "creationInfo": "_:creationinfo",
+            "name": "certificates/batch001_certificates.json",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "contentType": "application/json"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File8",
+            "creationInfo": "_:creationinfo",
+            "name": "certificates/batch002_certificates.json",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "contentType": "application/json"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File9",
+            "creationInfo": "_:creationinfo",
+            "name": "certificates/batch003_certificates.json",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "contentType": "application/json"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File10",
+            "creationInfo": "_:creationinfo",
+            "name": "certificates/batch004_certificates.json",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "contentType": "application/json"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File11",
+            "creationInfo": "_:creationinfo",
+            "name": "certificates/batch005_certificates.json",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "contentType": "application/json"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File12",
+            "creationInfo": "_:creationinfo",
+            "name": "certificates/batch006_certificates.json",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "contentType": "application/json"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File13",
+            "creationInfo": "_:creationinfo",
+            "name": "methodology/calibration_procedure.pdf",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "contentType": "application/pdf"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File14",
+            "creationInfo": "_:creationinfo",
+            "name": "README.md",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "contentType": "text/markdown"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#Relationship3",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "contains",
+            "from": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#DatasetPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File1",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File2",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File3",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File4",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File5",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File6",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File7",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File8",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File9",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File10",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File11",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File12",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File13",
+                "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#File14"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#Relationship1",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasDeclaredLicense",
+            "from": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#DatasetPackage1",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#Relationship2",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasConcludedLicense",
+            "from": "https://spdx.org/spdxdocs/dataset-example07-b1b2c3d4-e5f6-7890-abcd-000000007001#DatasetPackage1",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ]
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/licenses/CC-BY-4.0",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "CC-BY-4.0",
+            "simplelicensing_licenseListVersion": "3.25.0",
+            "comment": "Added as a workaround for the lack of https://spdx.org/licenses/CC-BY-4.0 as a valid ListedLicense in SPDX 3.0.1 RDF. This will be removed once https://github.com/spdx/LicenseListPublisher/issues/183 is implemented."
+        }
+    ]
+}
