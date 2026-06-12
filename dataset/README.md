@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# SPDX Dataset Profile Examples
+# SPDX Dataset profile examples
 
 This repository includes demonstrations of [SPDX documents](https://spdx.dev)
 for a Dataset Profile.
@@ -12,13 +12,13 @@ for a Dataset Profile.
 
 Directories of the form `example##` are structured as follows:
 
-- `content/`: contains the example's content (data files, related source code,
-  etc.)
-- `spdx3.0/`: contains one or more SPDX documents for the example
+- `content/`: contains the example's content (data files, source code, etc.)
+- `spdx3.0/`: contains SPDX 3.0 documents for the example
+- `spdx3.1/`: contains SPDX 3.1 documents for the example
 - `README.md`: more details about the particular example
 
 ## Examples
 
-| ## | Data | Sources | SPDX | Comments |
-|----|------|---------|------|----------|
-| [01](./example01/) | 2 CSV files | - | 1 document | An example of a simple dataset in tabular format. |
+| # | Data | Sources | SPDX 3.0 | SPDX 3.1 | Focus |
+| - | ---- | ------- | -------- | -------- | ----- |
+| [01](./example01/) | 2 CSV files | - | 1 document | 1 document | Tabular CSV dataset; `/Dataset/datasetType: structured, timestamp`; **3.0→3.1**: `/Dataset/datasetSize` → `/Software/artifactSize`, `/Dataset/intendedUse` → `/Core/intendedUse` |

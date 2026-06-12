@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# Example 01
+# Dataset example 1 - Gas emissions dataset
 
 ## Description
 
@@ -30,9 +30,14 @@ Greenhouse Gas Emissions dataset. It is available in full, under Creative
 Commons Attribution 4.0 International License, at
 <https://github.com/owid/co2-data/>.
 
-This simplified
-[Unified Modeling Language (UML)](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
-class diagram illustrates Example 01.  Long string values are truncated and the
-spdxIds are shortened (by removing the UUID suffix), for brevity.
+The SBOM uses `/Dataset/datasetSize` (~200 KB) and `/Dataset/intendedUse`, both
+of which are deprecated in SPDX 3.1 in favour of `/Software/artifactSize` and `/Core/intendedUse` respectively.
 
-[![A diagram of a bill of materials of Dataset Example 01](./spdx3.0/example01.png "A diagram of a bill of materials of Dataset Example 01")](./spdx3.0/example01.png)
+## SPDX files
+
+| Version | File |
+| ------- | ---- |
+| SPDX 3.0 | [spdx3.0/example01.spdx3.json](./spdx3.0/example01.spdx3.json) |
+| SPDX 3.1 (draft) | [spdx3.1/example01.spdx3.json-draft](./spdx3.1/example01.spdx3.json-draft) |
+
+[![A diagram of Dataset profile example 01 - Simple tabular dataset.](./example01.spdx3.png "A diagram of Dataset profile example 01 - Simple tabular dataset.")](./example01.spdx3.png)
