@@ -22,6 +22,7 @@ Directories of the form `example##` are structured as follows:
 |----|---------|----------|------|------|----------|
 | [1](./example01/) | - | - | - | 1 document | Demonstrating `dependsOn`, `testedOn`, and `trainedOn` relationships |
 | [2](./example02/) | 4 Python files | 1 model file | 3 data files | 1 document | Demonstrating `generates`, `hasDataFile`, and `hasDocumentation` (lifecycle-scoped) relationships |
+| [5](./example05/) | - | - | - | 1 document | `/AI/metric`, `/AI/metricDecisionThreshold`; **3.0 migration to 3.1**: `/AI/autonomyType` → `isoAutomationLevel` |
 
 ## Implementing SBOM for AI systems
 

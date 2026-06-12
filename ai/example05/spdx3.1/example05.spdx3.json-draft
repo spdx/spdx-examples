@@ -1,0 +1,183 @@
+{
+    "@context": "https://spdx.org/rdf/3.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.1",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#Organization1"
+            ],
+            "created": "2025-01-01T00:00:00Z"
+        },
+        {
+            "type": "Organization",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#Organization1",
+            "creationInfo": "_:creationinfo",
+            "name": "Autonomous Systems Lab"
+        },
+        {
+            "type": "SpdxDocument",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "ai",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#SBOM1"
+            ]
+        },
+        {
+            "type": "software_Sbom",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#SBOM1",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "ai",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#AIPackage1"
+            ],
+            "software_sbomType": [
+                "analyzed"
+            ]
+        },
+        {
+            "type": "ai_AIPackage",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#AIPackage1",
+            "creationInfo": "_:creationinfo",
+            "name": "WarehouseDetect",
+            "summary": "Real-time object detection model for warehouse safety monitoring.",
+            "description": "A YOLOv8-based object detection model that identifies workers, forklifts, pallets, and safety hazards in warehouse camera feeds. Designed for integration with safety management systems to trigger alerts when workers enter forklift operating zones.",
+            "software_packageVersion": "3.0.2",
+            "software_primaryPurpose": "model",
+            "software_downloadLocation": "https://example.com/models/warehousedetect",
+            "software_copyrightText": "Copyright 2024 Autonomous Systems Lab",
+            "ai_typeOfModel": [
+                "convolutional neural network",
+                "object detection",
+                "real-time"
+            ],
+            "ai_domain": [
+                "computer vision",
+                "workplace safety",
+                "object detection"
+            ],
+            "ai_informationAboutApplication": "Deployed on NVIDIA Jetson edge devices connected to IP cameras in warehouse facilities. Inference runs at 30 FPS. Detection results feed into a safety management system that triggers audible alerts and logs incidents.",
+            "ai_informationAboutTraining": "Fine-tuned from YOLOv8m pretrained on COCO. Training data augmented with synthetic images of warehouse environments. Three-stage training: (1) backbone frozen, head trained; (2) top layers unfrozen; (3) full fine-tuning with lower learning rate.",
+            "ai_modelDataPreprocessing": [
+                "Frame extraction at 5 FPS from training video clips",
+                "Resize to 640x640 with letterboxing",
+                "Data augmentation: random horizontal flip, mosaic augmentation, color jitter",
+                "Bounding box annotation format: YOLO normalized xywh"
+            ],
+            "ai_metric": [
+                {
+                    "type": "DictionaryEntry",
+                    "key": "mAP50",
+                    "value": "0.892"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "mAP50-95",
+                    "value": "0.741"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "precision",
+                    "value": "0.913"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "recall",
+                    "value": "0.878"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "inferenceLatencyMs (Jetson Orin)",
+                    "value": "18"
+                }
+            ],
+            "ai_metricDecisionThreshold": [
+                {
+                    "type": "DictionaryEntry",
+                    "key": "confidenceThreshold (alert trigger)",
+                    "value": "0.75"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "IoUThreshold (NMS)",
+                    "value": "0.45"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "workerDetectionMinConfidence",
+                    "value": "0.80"
+                }
+            ],
+            "ai_limitation": "Performance degrades under low-light conditions below 50 lux. Not validated for outdoor environments or facilities with non-standard floor markings. Class 'safety hazard (spill)' has lower recall (0.71) due to limited training examples.",
+            "ai_useSensitivePersonalInformation": "yes",
+            "isoAutomationLevel": "partialAutomation",
+            "comment": "SPDX 3.1 CHANGE: 'ai_autonomyType' (SPDX 3.0, PresenceType: yes/no/noAssertion) replaced by 'isoAutomationLevel' (Core property, ISO 22989-based vocabulary). Value 'partialAutomation' reflects that the system flags hazards autonomously but human operators make the final safety response decision. Compare with SPDX 3.0 value 'no' (ai_autonomyType) in spdx3.0/example05.spdx3.json."
+        },
+        {
+            "type": "dataset_DatasetPackage",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#DatasetPackage1",
+            "creationInfo": "_:creationinfo",
+            "name": "WarehouseSafety-Train",
+            "description": "Annotated image dataset from 12 warehouse facilities. 28,000 images with bounding box annotations for 6 object classes: worker, forklift, pallet, conveyor belt, safety hazard (spill), safety hazard (obstacle).",
+            "software_primaryPurpose": "data",
+            "software_artifactSize": 59768832,
+            "dataset_datasetType": [
+                "image"
+            ],
+            "dataset_confidentialityLevel": "amber",
+            "dataset_dataCollectionProcess": "Camera footage captured with consent from 12 facilities. Annotations created by 8 trained annotators using CVAT. Inter-annotator agreement measured by mAP: 0.94.",
+            "dataset_knownBias": [
+                "All facilities located in Western Europe; environmental conditions (lighting, floor marking colors) may not generalize globally",
+                "Worker class annotations may contain workers of primarily European appearance due to facility demographics"
+            ],
+            "dataset_hasSensitivePersonalInformation": "yes",
+            "comment": "SPDX 3.1 CHANGE: 'dataset_datasetSize: 59768832' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 59768832' (~57 MB) in SPDX 3.1. Compare with SPDX 3.0 version in spdx3.0/example05.spdx3.json."
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#Relationship1",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "trainedOn",
+            "from": "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#AIPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#DatasetPackage1"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#Relationship2",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasDeclaredLicense",
+            "from": "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#AIPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#LicenseExpression1"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#Relationship3",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasConcludedLicense",
+            "from": "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#AIPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#LicenseExpression1"
+            ]
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example05-a1b2c3d4-e5f6-7890-abcd-000000005002#LicenseExpression1",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "LicenseRef-WarehouseDetect-Commercial"
+        }
+    ]
+}
