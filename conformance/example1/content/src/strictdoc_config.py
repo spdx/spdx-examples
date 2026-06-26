@@ -71,7 +71,6 @@ def create_config() -> ProjectConfig:
         reqif_multiline_is_xhtml=True,
         reqif_enable_mid=True,
         section_behavior="[[SECTION]]",
-        statistics_generator="docs.sdoc_project_statistics.SDocStatisticsGenerator",
     )
     return config
 

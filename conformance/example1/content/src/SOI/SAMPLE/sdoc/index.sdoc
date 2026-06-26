@@ -8,29 +8,171 @@ SPDX-License-Identifier: Apache-2.0
 
 [TEXT]
 STATEMENT: >>>
-The System-of-Interest named SAMPLE is the top-level system in this example. 
+The System-of-Interest named SAMPLE is the top-level system in this example.
+<<<
 
-It is expected to be composed of the following subsystems:
+[[SECTION]]
+TITLE: Conceptual Overview
+
+[TEXT]
+STATEMENT: >>>
+SAMPLE is a Product Line of commodity consumer electronics devices intended for
+markets requiring conformance with the EU Cyber Resilience Act. The range of
+devices supported by this Product Line is expected to expand over time as
+more product types become commoditized.
+
+For this Product Line, "commodity devices" matches this definition from
+`SUSE.com <https://www.suse.com/topics/definition/commodity-hardware>`__:
+
+  Commodity hardware, sometimes known as off-the-shelf hardware,
+  is a computer device or IT component that is relatively inexpensive,
+  widely available and basically interchangeable with other hardware of its type.
+  Unlike purpose-built hardware designed for a specific IT function,
+  commodity hardware can perform many different functions.
+  Commodity hardware is usually low-end, broadly compatible and
+  can function on a plug-and-play basis with other commodity hardware products. ...
+
+  Generally, commodity hardware can evolve from any technologically mature product.
+  Thus, most hardware products that have been on the market for five years or more
+  are available in commodity versions. ...
+
+SAMPLE is expected to be **reused and extended** by
+interested Open-Source Software Projects and Component Manufacturers for
+developing assets conformant with the EU CRA.
+<<<
+
+[[SECTION]]
+TITLE: Product Line Problem Domain
+
+[TEXT]
+STATEMENT: >>>
+SAMPLE is intended to support at least
+commodity consumer electronics devices. These products may end
+up being used in commercial and/or civil deployments.
+These products are NOT expected to be used in industrial or
+safety-critical deployments.
+
+To support growth of the Product Line Solution Domain (solution space)
+with minimal impact on existing assets, the Product Line Problem Domain
+will be the context for evaluating and understanding all System Engineering
+artifacts for SAMPLE.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Product Line Solution Domain (Scope)
+
+[TEXT]
+STATEMENT: >>>
+SAMPLE is designed upon the following generic solution framework for products:
 
 .. raw:: html
 
     <pre class="mermaid">
     ---
-    title: Topology of Systems-of-Interest
+    title: Generic Product Solution Framework
     ---
     stateDiagram-v2
+	state "Cloud-based Services" as MfgCloudSvcs {
+	    direction LR
+	    state "Product Support" as PrdSupport {
+		direction LR
+		state "Documentation <br/>(per Product)" as PrdDocs
+	    }
+	}
 
-        state SAMPLE {
-            TBD_Security_Vulnerability_Reporting: TBD <br/> Security <br/> Vulnerability <br/> Reporting <br/> Server
-            TBD_Desktop_SW: TBD <br/> Desktop SW
-            TBD_Mobile_SW: TBD <br/> Mobile SW
-            TBD_Devices: TBD <br/> Device(s)
-            TBD_Cloud_SW: TBD <br/> Cloud SW
-            TBD_Digital_Component_Update_Server: TBD <br/> Digital <br/> Component <br/> Update <br/> Server
+	state "Applications" as MgrApps {
+	    direction LR
+	    state "Desktop Applications" as MfgDesktopApps
+	    state "Mobile Apps" as MfgMobileApps
+	}
+
+	state "Devices" as Devices {
+	    direction LR
+            state "Manufacturer Parts" as MfgParts
         }
-
     </pre>
 <<<
+
+[[SECTION]]
+TITLE: Feature List
+
+[TEXT]
+STATEMENT: >>>
+As a Product Line evolves the sponsors of the Product Line may require it
+to support a larger solution domain than previously chosen. A best practice
+for Product Line Engineering is to evaluate architectures and designs for
+reusability in reasonably foreseeable scope growth.
+
+The following Feature List outlines the breadth of product categories
+and functionalities to be considered when describing and evaluating
+SAMPLE requirements and designs.
+
+.. note::
+   Bold text indicates **invariant feature/value** across Product Line scope.
+
+   Italic text indicates *anticipated expansion* of Product Line scope.
+
+- User Interface
+
+  - Label(s)
+  - Device Status LED(s)
+  - Button(s)
+  - *Network Activity Indication(s)*
+  - *User Authentication via Finger Print*
+
+- Communication Interfaces
+
+  - USB Device
+
+    - Physical Connector
+
+      - *USB A Male*
+      - USB C Male connector
+
+  - Network Interface
+
+    - 100BASE-TX
+    - *10BASE-T1L*
+    - *802.15.4*
+    - *BlueTooth*
+    - *WIFI*
+
+- Functionality
+
+  - Secure Boot
+  - Firmware Update
+
+    - On-demand FW Update (pushed to Device)
+    - *Automated FW Update (pulled by Device)*
+    - *FW Update schedule control <br/>(periods of blocked vs listening vs requesting)*
+
+  - Network Interface
+  - *Network Sniffer*
+  - *Network Router*
+  - *Network Gateway*
+  - *Network-Attached Storage (NAS)*
+  - *BlueTooth Beacon*
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Product List
+
+[TEXT]
+STATEMENT: >>>
+The following are nominal descriptions of the products in SAMPLE:
+
+- SAMPLE Product 1: a USB-C to 100Base-T Network Interface Dongle
+<<<
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[/SECTION]]
 
 [DOCUMENT_FROM_FILE]
 FILE: ../system_requirements/sdoc/index.sdoc

@@ -22,3 +22,1355 @@ From `SEBoK Wiki Glossary - system requirement <https://sebokwiki.org/wiki/Syste
 
 - The System Requirement Definition process creates a set of measurable system requirements that specify, from the supplier’s perspective, what characteristics, attributes, and functional and performance requirements the system is to possess, in order to satisfy stakeholder requirements. (ISO/IEC/IEEE, 2015, section 6.4.2)
 <<<
+
+[TEXT]
+MID: 9876cbae93e44e5aa8501e1990e9c20c
+STATEMENT: >>>
+From `SEBoK Wiki System Requirements Definition - Categorizing Requirements <https://sebokwiki.org/wiki/System_Requirements_Definition#Categorizing_Requirements>`_ Table 1: Example Types of Requirement Categories. (Derived from the INCOSE Needs and Requirements Manual):
+
+  **Function/Performance**:
+  The primary functions and associated performance that the SoI needs to perform in terms of its intended use.
+  The functions address the capabilities and features the stakeholders expect the SoI to have;
+  performance addresses how well, how many, how fast attributes of the function.
+  Many of the primary functions involve interactions (interfaces) between the SOI and systems external to the SOI.
+  All critical and high priority needs would be included in this category.
+
+  **Fit/Operational**:
+  Requirements dealing with functions that deal with a secondary or enabling capabilities, functions, and interactions
+  between the SoI and external systems needed for the system to accomplish its primary functions.
+  This includes functions concerning the ability of the system to interface with, interact with,
+  connect to, operate within, and become an integral part of the macro system it is a part.
+  Fit includes human system interactions and interfaces as well as both the induced and natural environments
+  (conditions of operations, transportation, storage, maintenance).
+  For example, needs associated with safety, security, power, cooling, transportation and handling,
+  storage, maintenance, and disposal.
+
+  **Form**:
+  Physical Characteristics.
+  The shape, size, dimensions, mass, weight, and other observable parameters and characterizes that uniquely distinguish a system.
+  For software, form could address programming language, lines of code, memory requirements.
+
+  **Quality**:
+  Fitness for use.
+  For example, various “-ilities” such as reliability, testability, operability, availability,
+  maintainability, operability, supportability, manufacturability, and interoperability.
+
+  **Compliance**:
+  Conformance with design and construction standards and regulations.
+<<<
+
+[[SECTION]]
+MID: 1ebd277fe1684c7586190c48abb69f33
+TITLE: Products
+
+[[SECTION]]
+MID: b2c6b3945a7545af9e66c6301fa58d6c
+TITLE: Network Interfaces
+
+[[SECTION]]
+MID: a5631d22043e47a0bb411ffdde05b1f2
+TITLE: SAMPLE Product 1: USB-C 100Base-T Network Interface Dongle
+
+[REQUIREMENT]
+MID: 60743133bcc54686af56b015adf6983b
+UID: SYSREQ-2
+STATUS: Draft
+VERIFICATION: Review
+TITLE: SAMPLE Product 1: Feature List
+STATEMENT: >>>
+SAMPLE shall expose to market(s) a product with the following features:
+
+- Internal name: SAMPLE Product 1
+- Product Type: USB Network Interface Dongle
+- Communication Interfaces: USB-C (male), Ethernet 100Base-T (RJ-45 socket)
+- User Interface:
+
+  - Status LED(s)
+  - physical Command Button(s)
+
+- Product label, showing:
+
+  - Manufacturer Name (clear text)
+  - Product Model (clear text)
+  - Product Serial Number
+  - Date of Manufacture (clear text)
+<<<
+RATIONALE: >>>
+Approved by Business Sponsor.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-15
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 3d5e2e50cc96431cb23eb23d36a4e9b8
+UID: SYSREQ-4
+STATUS: Draft
+VERIFICATION: Review
+TITLE: SAMPLE Product 1: Dimensions
+STATEMENT: >>>
+Where SAMPLE Product 1 is exposed to market(s),
+SAMPLE shall limit said SAMPLE Product physical bounds to the SAMPLE USB Network Interface Dongle Dimension Limits.
+<<<
+RATIONALE: >>>
+Specified by Product Manager.
+<<<
+
+[REQUIREMENT]
+MID: 518b336e898843d3b72e4a8afaf72c53
+UID: SYSREQ-5
+STATUS: Draft
+VERIFICATION: Review
+TITLE: SAMPLE Product 1: Operating Environment
+STATEMENT: >>>
+Where SAMPLE Product 1 is exposed to market(s),
+SAMPLE shall operate SAMPLE Product 1 at full functionality within the SAMPLE Commercial Office Environment Limits.
+<<<
+RATIONALE: >>>
+Required by Product Manager.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-13
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 984dc2d685b04d5396885c34e73bf3f8
+UID: SYSREQ-3
+STATUS: Draft
+VERIFICATION: Review
+TITLE: SAMPLE Product 1: Market name
+STATEMENT: >>>
+Where SAMPLE Product 1 is referenced in a public-facing context,
+SAMPLE shall use the following values for product identification:
+
+- Manufacturer: EXAMPLE
+- Model: EXAMPLE USB Ethernet Dongle 100-C
+<<<
+RATIONALE: >>>
+Specified by Product Manager.
+<<<
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: 5ea16839694b4826b65b6c37b699520e
+TITLE: Form Requirements
+
+[[SECTION]]
+MID: 59e2bf589e134085bb7631f3515c4fb1
+TITLE: Network Interfaces
+
+[[SECTION]]
+MID: b3f779d7a30441088b4c319c5d731aad
+TITLE: USB Network Interface Dongles
+
+[REQUIREMENT]
+MID: 501d870a2f9e438fafcd9d68b8d10a10
+UID: SYSREQ-7
+STATUS: Draft
+VERIFICATION: Review
+TITLE: SAMPLE USB Network Interface Dongle Dimension Limits
+STATEMENT: >>>
+Where a SAMPLE Product is specified to meet the SAMPLE USB Network Interface Dongle Dimension Limits,
+SAMPLE shall limit said SAMPLE Product dimensions to the following (including all cables stretched to maximum length):
+
+- length: <= 30 cm.
+- width: <= 10 cm.
+- height <= 5 cm.
+- weight <= 500 g.
+<<<
+RATIONALE: >>>
+This is expected to be large enough to allow SOC Hardware Manufacturers to build this product using one of their SOC evaluation kits.
+<<<
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: 884cf538ab2045eabbe5c3eec0c5c5d8
+TITLE: Function/Performance Requirements
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: 37e5c597ed264cb2947fa545ce55f16a
+TITLE: Fit/Operational Requirements
+
+[REQUIREMENT]
+MID: a8144501d3724c6cbc69efe6fdd1d6cc
+UID: SYSREQ-6
+STATUS: Draft
+VERIFICATION: Review
+TITLE: SAMPLE Commercial Office Env Limits
+STATEMENT: >>>
+Where a SAMPLE Product is specified to operate in a SAMPLE Commercial Office Environment,
+SAMPLE shall operate said SAMPLE Product at full functionality within the following environment:
+
+- Minimum Temperature: 0 degrees C (32 degrees F)
+- Maximum Temperature: 40 degrees C (104 degrees F)
+- Minimum Relative Humidity: 20%
+- Maximum Relative Humidity: 95%
+<<<
+RATIONALE: >>>
+Required by Product Manager.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: b5da670d3a834dc49f81d30405f64186
+TITLE: Quality Requirements
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: 5e8fe852c4ab4bbcb65babb69cd54f54
+TITLE: Compliance Requirements
+
+[[SECTION]]
+MID: da48546cc8f042048ad11f86516be826
+TITLE: EU Cyber Resilience Act (CRA)
+
+[REQUIREMENT]
+MID: ed23e2e6e8254eb59c4508f69f84e226
+UID: SYSREQ-1
+STATUS: Draft
+VERIFICATION: Review
+TITLE: SAMPLE conforms with EU CRA
+STATEMENT: >>>
+SAMPLE shall be in conformance with the EU Cyber Resilience Act.
+<<<
+RATIONALE: >>>
+Initial SAMPLE products must be marketable in the EU. This impacts the entire product development process, therefore the entire SAMPLE should be developed conformant
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKNEED-1
+  ROLE: Refines
+
+[[SECTION]]
+MID: 19712c509b5742e6a2d50049b13ac395
+TITLE: EU CRA Annex I - Essential Cybersecurity Requirements
+
+[[SECTION]]
+MID: 0db4652dc8eb4d36bdf25f87b69b2a4a
+TITLE: Part I Cybersecurity requirements relating to the properties of products with digital elements
+
+[REQUIREMENT]
+MID: 024fc370f3e84eceb0d9c7d0f13b0bdd
+UID: SYSREQ-8
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (1)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall design, develop, and produce said product in such a way that it ensures an appropriate level of cybersecurity based on risks.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-2
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: f407f450f5d84a9e808fbfe43f6db343
+UID: SYSREQ-9
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2a)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in EU CRA Article 13(2) and where applicable,
+
+SAMPLE shall make available said product without known exploitable vulnerabilities.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-3
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 04c4521915eb4d359f5d21bf60905897
+UID: SYSREQ-10
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2b)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in EU CRA Article 13(2) and where applicable,
+
+SAMPLE shall make available said product with a secure by default configuration, unless otherwise agreed between manufacturer and business user in relation to a tailor-made SAMPLE product, including the possibility to reset the product to its original state.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-4
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 9379059ed06047f28580bbda86deedd0
+UID: SYSREQ-11
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2c)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable,
+
+SAMPLE shall ensure that vulnerabilities of said product can be addressed through security updates, including, where applicable, through automatic security updates that are installed within an appropriate timeframe enabled as a default setting, with a clear and easy-to-use opt-out mechanism, through the notification of available updates to users, and the option to temporarily postpone them.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-5
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: eee702f0779845a5a730947fce3749ad
+UID: SYSREQ-12
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2d)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in EU CRA Article 13(2) and where applicable,
+
+SAMPLE shall ensure protection from unauthorised access of said product by appropriate control mechanisms, including but not limited to authentication, identity or access management systems, and report on possible unauthorised access.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-6
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 10f815a21a574f8cb725c45ca35ee4f2
+UID: SYSREQ-13
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2e)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in EU CRA Article 13(2) and where applicable,
+
+SAMPLE shall protect the confidentiality of stored, transmitted or otherwise processed data by said product, personal or other, such as by encrypting relevant data at rest or in transit by state of the art mechanisms, and by using other technical means.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-7
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 5649a5815d9c4c669261dd92c0147e0e
+UID: SYSREQ-14
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2f)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in EU CRA Article 13(2) and where applicable,
+
+SAMPLE shall protect the integrity of stored, transmitted or otherwise processed data, personal or other, commands, programs and configuration by said product against any manipulation or modification not authorised by the user, and report on corruptions.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-8
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 1b59f57be743413fbbdeb402cb159bc2
+UID: SYSREQ-15
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2g)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable,
+
+SAMPLE shall process by said product only data, personal or other, that are adequate, relevant and limited to what is necessary in relation to the intended purpose of said product (data minimisation).
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-9
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 5dd4362d6ba6490083daf804c48c224b
+UID: SYSREQ-16
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2h)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable,
+
+SAMPLE shall protect the availability of essential and basic functions of said product, also after an incident, including through resilience and mitigation measures against denial-of-service attacks.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-10
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 3f0f4ca5a0064b90a41a6fc46af2b631
+UID: SYSREQ-17
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2i)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable,
+
+SAMPLE shall minimise the negative impact by said product itself or connected devices on the availability of services provided by other devices or networks.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-11
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: e40eca3d4be64c37b4765437b8bb0fff
+UID: SYSREQ-18
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2j)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in EU CRA Article 13(2) and where applicable,
+
+SAMPLE shall expose to market(s) said product that is designed, developed and produced to limit attack surfaces, including external interfaces.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-12
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 8e9ed7e1ef904e1a9daad9e6b9641337
+UID: SYSREQ-19
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2k)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in EU CRA Article 13(2) and where applicable,
+
+SAMPLE shall expose to market(s) said product that is designed, developed and produced to reduce the impact of an incident using appropriate exploitation mitigation mechanisms and techniques.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-13
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 6eb65000f7534df99c2fa65a1062b10f
+UID: SYSREQ-20
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2l)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in EU CRA Article 13(2) and where applicable,
+
+SAMPLE shall expose to market(s) said product that provides security related information by recording and monitoring relevant internal activity, including the access to or modification of data, services or functions, with an opt-out mechanism for the user.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-14
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: f3a69e5ee598469f95b60b76f586cb88
+UID: SYSREQ-21
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part I (2m)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+On the basis of the cybersecurity risk assessment referred to in EU CRA Article 13(2) and where applicable,
+
+SAMPLE shall expose to market(s) said product that provides the possibility for users to securely and easily remove on a permanent basis all data and settings and, where such data can be transferred to other products or systems, ensure that this is done in a secure manner.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-15
+  ROLE: Refines
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: da470fd368d640f7b4662ae9a53fff57
+TITLE: Part II Vulnerability handling requirements
+
+[REQUIREMENT]
+MID: 344696ab9db54f3a9b55be2d98e69c5c
+UID: SYSREQ-22
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part II (1)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall identify and document vulnerabilities and components contained in said product, including by drawing up a software bill of materials in a commonly used and machine-readable format covering at the very least the top-level dependencies of the product.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-16
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 7f52c152c7684e919af1c775ebd9129c
+UID: SYSREQ-23
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part II (2)(a)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall in relation to the risks posed to said product, address and remediate vulnerabilities without delay, including by providing security updates.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-17
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: a369011ad4814a3bbcc44644a1b07b89
+UID: SYSREQ-24
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part II (2)(b)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Where technically feasible,
+
+SAMPLE shall provide for said product new security updates separately from functionality updates.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-18
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: e8827c5c99574cf5a00e332f9f647ae2
+UID: SYSREQ-25
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part II (3)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall apply effective and regular tests and reviews of the security of said product.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-19
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: bb3ea745c70b4a34b857f37a1d541d6f
+UID: SYSREQ-26
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part II (4)(a)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Once a security update has been made available for said product,
+
+SAMPLE shall share and publicly disclose information about fixed vulnerabilities, including a description of the vulnerabilities, information allowing users to identify the SAMPLE product affected, the impacts of the vulnerabilities, their severity and clear and accessible information helping users to remediate the vulnerabilities.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-20
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: f19fc90733b9461da8f867664f0f1bf9
+UID: SYSREQ-27
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part II (4)(b)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Where Manufacturers of said product consider the security risks of publication to outweigh the security benefits,
+
+SAMPLE shall duly justify for this case any delay in making public information regarding a fixed vulnerability until after users have been given the possibility to apply the relevant patch.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-21
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: aa777f856bd047b8b03c81a8565ad280
+UID: SYSREQ-28
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part II (5)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall have in place and enforce a policy on coordinated vulnerability disclosure.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-22
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 5b289af5050745a59b3d757cdb6bec99
+UID: SYSREQ-29
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part II (6)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall take measures to facilitate the sharing of information about potential vulnerabilities in said product as well as in third-party components contained in said product, including by providing a contact address for the reporting of the vulnerabilities discovered in the SAMPLE product.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-23
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: be65a0346dea4d1ba68c4aafc2dc9e41
+UID: SYSREQ-30
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part II (7)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall provide for mechanisms to securely distribute updates for said product to ensure that vulnerabilities are fixed or mitigated in a timely manner and, where applicable for security updates, in an automatic manner.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-24
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 2b6535d0e51d4933bcc5e3fad64ee0bd
+UID: SYSREQ-31
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex I Part II (8)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall ensure that, where security updates are available to address identified security issues, they are disseminated without delay and, unless otherwise agreed between a manufacturer and a business user in relation to a tailor-made SAMPLE product, free of charge, accompanied by advisory messages providing users with the relevant information, including on potential action to be taken.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-25
+  ROLE: Refines
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: 8cfb56fdeb62410997700ba4f36c71d6
+TITLE: EU CRA Annex II - Information and Instructions to the User
+
+[REQUIREMENT]
+MID: 3e894e64a9454a7ea214e5a0cca561eb
+UID: SYSREQ-32
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (1)(a)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by the name, registered trade name or registered trademark of the manufacturer.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-26
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: eb617e9542dc4484bca920736c61c07c
+UID: SYSREQ-33
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (1)(b)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by the postal address at which the manufacturer can be contacted.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-27
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: fbc0c2c06d10461c8ca78aeb67c4cae8
+UID: SYSREQ-34
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (1)(c)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by the email address or other digital contact at which the manufacturer can be contacted.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-28
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 3497d0df96f34d22b01931a62464ebef
+UID: SYSREQ-35
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (1)(d)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by, where available, the website at which the manufacturer can be contacted.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-29
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 7479d55bd90e4305952dae351280a624
+UID: SYSREQ-36
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (2)(a)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by the single point of contact where information about vulnerabilities of the SAMPLE product can be reported and received.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-30
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 44eb9f55e3434c79808df49068ec696a
+UID: SYSREQ-37
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (2)(b)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by where the manufacturer’s policy on coordinated vulnerability disclosure can be found.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-31
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 68d4f0bf7c5549b29e16a74a30c52cd8
+UID: SYSREQ-38
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (3)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by name and type and any additional information enabling the unique identification of said product.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-32
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: f11f4fe45e554ab3826efd3f6703b413
+UID: SYSREQ-39
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (4)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by the intended purpose of said product, including:
+
+- the security environment provided by the manufacturer,
+- the product’s essential functionalities,
+- information about the security properties.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-33
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: d7e6c7e539f3446cbccb5f820f6a05d8
+UID: SYSREQ-40
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (5)(a)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by any known or foreseeable circumstance, related to the use of the SAMPLE product in accordance with its intended purpose, which may lead to significant cybersecurity risks.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-34
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: e4d63b545df94751a2be659166bfb3e9
+UID: SYSREQ-41
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (5)(b)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by any known or foreseeable circumstance, related to the use of the SAMPLE product under conditions of reasonably foreseeable misuse, which may lead to significant cybersecurity risks.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-35
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: f70db83f8e3c420a9b497b43abece708
+UID: SYSREQ-42
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (6)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by where applicable, the internet address at which the EU declaration of conformity can be accessed.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-36
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: fed4f268465b4412a682d05595e8b0f3
+UID: SYSREQ-43
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (7)(a)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by the type of technical security support offered by the manufacturer.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-37
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: ef718eade30140e7801c992c9ba5e5da
+UID: SYSREQ-44
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (7)(b)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by the end-date of the support period during which users can expect:
+
+- vulnerabilities to be handled,
+- to receive security updates.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-38
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: a3880db5c00b4cd28fd01ebb1a6b0b12
+UID: SYSREQ-45
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (8)(a)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by detailed instructions or an internet address referring to such detailed instructions and information on the necessary measures during initial commissioning and throughout the lifetime of the SAMPLE product to ensure its secure use.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-39
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: fd553831781342c2ad9307acee5b4595
+UID: SYSREQ-46
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (8)(b)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by detailed instructions or an internet address referring to such detailed instructions and information on how changes to said product can affect the security of data.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-40
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 7d15d96c1cc04b48a3a29fcdd8f59f87
+UID: SYSREQ-47
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (8)(c)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by detailed instructions or an internet address referring to such detailed instructions and information on how security-relevant updates can be installed for said product.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-41
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 65a9f7d7945145d28c1c6a73b1399f3c
+UID: SYSREQ-48
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (8)(d)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by detailed instructions or an internet address referring to such detailed instructions and information on the secure decommissioning of said product, including information on how user data can be securely removed.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-42
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: f9e627c6734941b5bf2f0c05e26dfdfa
+UID: SYSREQ-49
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (8)(e)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+SAMPLE shall expose to market(s) said product accompanied by detailed instructions or an internet address referring to such detailed instructions and information on how the default setting enabling the automatic installation of security updates can be turned off.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-43
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: ac13e5e0bea242728e96379c4229b50f
+UID: SYSREQ-50
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (8)(f)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Where said product is intended for integration into other products with digital elements,
+
+SAMPLE shall expose to market(s) said product accompanied by detailed instructions or an internet address referring to such detailed instructions and information on the information necessary for the integrator to comply with:
+
+- the essential cybersecurity requirements set out in Annex I,
+- the documentation requirements set out in Annex VII.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-44
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 72d69823809a412eb98a15aba88ef601
+UID: SYSREQ-51
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex II (9)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Where the manufacturer of said product decides to make available the software bill of materials to the user,
+
+SAMPLE shall expose to market(s) said product accompanied by information on where the software bill of materials can be accessed.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-45
+  ROLE: Refines
+
+[[/SECTION]]
+
+[[SECTION]]
+MID: 45bfb6ee6be540b29d7670cb85b26485
+TITLE: EU CRA Annex VII - Content of the Technical Documentation
+
+[REQUIREMENT]
+MID: 21a7a8d02f7c44c09bb4b4ffe892c632
+UID: SYSREQ-52
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex VII (1)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Where the technical documentation referred to in EU CRA Article 31 shall be provided for said product,
+
+SAMPLE shall expose to market(s) said product accompanied by technical documentation containing a general description of said product, including:
+
+- the intended purpose of said product;
+- versions of software affecting compliance with essential cybersecurity requirements;
+- where the product with digital elements is a hardware product
+
+  - photographs or illustrations showing external features, marking and internal layout;
+
+- user information and instructions as set out in EU CRA Annex II.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-46
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 8faf538ede0547ba8204f50d1a77d73b
+UID: SYSREQ-53
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex VII (2)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Where the technical documentation referred to in EU CRA Article 31 shall be provided for said product,
+
+SAMPLE shall expose to market(s) said product accompanied by technical documentation containing a description of the design, development and production of said product and vulnerability handling processes, including:
+
+- necessary information on the design and development of said product, including, where applicable,
+
+  - drawings and schemes and
+  - a description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing;
+
+- necessary information and specifications of the vulnerability handling processes put in place by the manufacturer, including
+
+  - the software bill of materials,
+  - the coordinated vulnerability disclosure policy,
+  - evidence of the provision of a contact address for the reporting of the vulnerabilities and
+  - a description of the technical solutions chosen for the secure distribution of updates;
+
+- necessary information and specifications of the production and monitoring processes of said product and the validation of those processes;
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-47
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 0d4e78a61fc942308d26e609d86eedcd
+UID: SYSREQ-54
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex VII (3)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Where the technical documentation referred to in EU CRA Article 31 shall be provided for said product,
+
+SAMPLE shall expose to market(s) said product accompanied by technical documentation containing an assessment of the cybersecurity risks against which said product is designed, developed, produced, delivered and maintained pursuant to EU CRA Article 13, including how the essential cybersecurity requirements set out in Part I of Annex I are applicable;
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-48
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: c2576dd2ef2544398bdbc8ddde30e764
+UID: SYSREQ-55
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex VII (4)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Where the technical documentation referred to in EU CRA Article 31 shall be provided for said product,
+
+SAMPLE shall expose to market(s) said product accompanied by technical documentation containing relevant information that was taken into account to determine the support period pursuant to EU CRA Article 13(8) of said product.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-49
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: ba6a29ecea3f4c0484c534d5f90ef19a
+UID: SYSREQ-56
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex VII (5)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Where the technical documentation referred to in EU CRA Article 31 shall be provided for said product,
+
+SAMPLE shall expose to market(s) said product accompanied by technical documentation containing:
+
+- a list of the harmonised standards applied in full or in part the references of which have been published in the Official Journal of the European Union, common specifications as set out in Article 27 of this Regulation or European cybersecurity certification schemes adopted pursuant to Regulation (EU) 2019/881 pursuant to Article 27(8) of this Regulation;
+
+- where those harmonised standards, common specifications or European cybersecurity certification schemes have not been applied,
+
+  - descriptions of the solutions adopted to meet the essential cybersecurity requirements set out in Parts I and II of Annex I, including a list of other relevant technical specifications applied.
+
+In the event of partly applied harmonised standards, common specifications or European cybersecurity certification schemes, the technical documentation shall specify the parts which have been applied;
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-50
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: a8ef6ed84f9c454b86315fa1e5a2e5d8
+UID: SYSREQ-57
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex VII (6)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Where the technical documentation referred to in EU CRA Article 31 shall be provided for said product,
+
+SAMPLE shall expose to market(s) said product accompanied by technical documentation containing:
+
+- reports of the tests carried out to verify the conformity of said product,
+
+- the vulnerability handling processes with the applicable essential cybersecurity requirements as set out in Parts I and II of EU CRA Annex I;
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-51
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: ddb5c0e0021d4c69b4501542ea3cdb28
+UID: SYSREQ-58
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex VII (7)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Where the technical documentation referred to in EU CRA Article 31 shall be provided for said product,
+
+SAMPLE shall expose to market(s) said product accompanied by technical documentation containing a copy of the EU declaration of conformity.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-52
+  ROLE: Refines
+
+[REQUIREMENT]
+MID: 85a4138c197c44e1a1d3f0f15969c0af
+UID: SYSREQ-59
+STATUS: Draft
+VERIFICATION: Test
+TITLE: SAMPLE complies with EU CRA Annex VII (8)
+STATEMENT: >>>
+Where a SAMPLE product is exposed to the EU marketplace,
+
+Where the technical documentation referred to in EU CRA Article 31 shall be provided for said product,
+
+SAMPLE shall expose to market(s) said product accompanied by technical documentation containing (where applicable to said product) the software bill of materials, further to a reasoned request from a market surveillance authority provided that it is necessary in order for that authority to be able to check compliance with the essential cybersecurity requirements set out in EU CRA Annex I.
+<<<
+RATIONALE: >>>
+This only is required of products exposed to the EU marketplace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: STKREQ-53
+  ROLE: Refines
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[/SECTION]]

@@ -1,6 +1,13 @@
 [DOCUMENT]
 TITLE: SEBoK Product as System - Commodity Consumer Electronics
 
+[TEXT]
+STATEMENT: >>>
+NOTE: Normative content is captured in structured, traceable StrictDoc items.
+
+StrictDoc `[TEXT]` blocks are unstructured and hold only informative content. 
+<<<
+
 [DOCUMENT_FROM_FILE]
 FILE: problem_space/sdoc/index.sdoc
 
