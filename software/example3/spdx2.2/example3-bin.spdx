@@ -3,7 +3,7 @@ DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: main-bin
 DocumentNamespace: https://swinslow.net/spdx-examples/example3/main-bin-v2
-ExternalDocumentRef: DocumentRef-main-src https://swinslow.net/spdx-examples/example3/main-src-v2 SHA1: a97140dd179eaa0595e47cbeae6e069666053774
+ExternalDocumentRef: DocumentRef-main-src https://raw.githubusercontent.com/spdx/spdx-examples/refs/heads/master/software/example3/spdx2.2/example3-src.spdx SHA1: d4f3fc9347e57a3d3467f0d1dfd8899f7cf73fbd
 Creator: Person: Steve Winslow (steve@swinslow.net)
 Creator: Tool: github.com/spdx/tools-golang/builder
 Creator: Tool: github.com/spdx/tools-golang/idsearcher
