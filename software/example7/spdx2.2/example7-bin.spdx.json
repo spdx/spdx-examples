@@ -15,25 +15,25 @@
       "externalDocumentId": "DocumentRef-hello-go-module",
       "checksum": {
         "algorithm": "SHA1",
-        "checksumValue": "11d7774ac38f40e009dcee453a760750aea75bbd"
+        "checksumValue": "3772297afdad7327861377cc1e86a8996d0045dc"
       },
-      "spdxDocument": "https://swinslow.net/spdx-examples/example7/hello-go-module-cfa0c58d-79db-4860-99b6-258477e4838b"
+      "spdxDocument": "https://raw.githubusercontent.com/spdx/spdx-examples/refs/heads/master/software/example7/spdx2.2/example7-go-module.spdx.json"
     },
     {
       "externalDocumentId": "DocumentRef-golang-dist",
       "checksum": {
         "algorithm": "SHA1",
-        "checksumValue": "fd1a82d7affd688cca8896211ca1a3f177214323"
+        "checksumValue": "e63a55c974edf9ec8c1eb0d82f9c19d49a08a518"
       },
-      "spdxDocument": "https://swinslow.net/spdx-examples/example7/golang-dist-492dfde4-318b-49f7-b48c-934bfafbde48"
+      "spdxDocument": "https://raw.githubusercontent.com/spdx/spdx-examples/refs/heads/master/software/example7/spdx2.2/example7-golang.spdx.json"
     },
     {
       "externalDocumentId": "DocumentRef-hello-imports",
       "checksum": {
         "algorithm": "SHA1",
-        "checksumValue": "c8a2beb3405bfe9eed0076b0e237ff59f6c4188f"
+        "checksumValue": "328e56560935a91776ec74d1050e0c7ee98e092f"
       },
-      "spdxDocument": "https://swinslow.net/spdx-examples/example7/hello-imports-c2d068df-67aa-4c68-98c8-100b450fc408"
+      "spdxDocument": "https://raw.githubusercontent.com/spdx/spdx-examples/refs/heads/master/software/example7/spdx2.2/example7-third-party-modules.spdx.json"
     }
   ],
   "documentDescribes": [

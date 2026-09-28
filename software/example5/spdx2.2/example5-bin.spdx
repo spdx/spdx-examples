@@ -3,7 +3,7 @@ DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: hello-go-bin
 DocumentNamespace: https://swinslow.net/spdx-examples/example5/hello-go-bin-v2
-ExternalDocumentRef:DocumentRef-hello-go-src https://swinslow.net/spdx-examples/example5/hello-go-src-v2 SHA1: c7ecde060983373ace6ff9cfd1ddc7ccd5ce5e29
+ExternalDocumentRef:DocumentRef-hello-go-src https://raw.githubusercontent.com/spdx/spdx-examples/refs/heads/master/software/example5/spdx2.2/example5-src.spdx SHA1: 1158991824344c77c79aba1c06861f08728a819f
 Creator: Person: Steve Winslow (steve@swinslow.net)
 Creator: Tool: github.com/spdx/tools-golang/builder
 Creator: Tool: github.com/spdx/tools-golang/idsearcher
