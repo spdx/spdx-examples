@@ -107,19 +107,19 @@
       "verifiedUsing" : [ {
         "type" : "Hash",
         "algorithm" : "sha1",
-        "hashValue" : "a97140dd179eaa0595e47cbeae6e069666053774"
+        "hashValue" : "3b8598a200ad387119e53775b0507b3669bbce75"
       } ],
       "externalSpdxId" : "https://swinslow.net/spdx-examples/example3/main-src-v2#SPDXRef-lib-src",
-      "locationHint" : "https://swinslow.net/spdx-examples/example3/main-src-v2"
+      "locationHint" : "https://raw.githubusercontent.com/nokia/spdx-examples/refs/heads/master/software/example3/spdx3.0/example3-src.spdx3.json"
     }, {
       "type" : "ExternalMap",
       "verifiedUsing" : [ {
         "type" : "Hash",
         "algorithm" : "sha1",
-        "hashValue" : "a97140dd179eaa0595e47cbeae6e069666053774"
+        "hashValue" : "3b8598a200ad387119e53775b0507b3669bbce75"
       } ],
       "externalSpdxId" : "https://swinslow.net/spdx-examples/example3/main-src-v2#SPDXRef-main-src",
-      "locationHint" : "https://swinslow.net/spdx-examples/example3/main-src-v2"
+      "locationHint" : "https://raw.githubusercontent.com/nokia/spdx-examples/refs/heads/master/software/example3/spdx3.0/example3-src.spdx3.json"
     } ],
     "name" : "main-bin",
     "namespaceMap" : [ {

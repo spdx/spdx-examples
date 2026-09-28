@@ -103,60 +103,60 @@
         {
           "type": "ExternalMap",
           "externalSpdxId": "urn:uuid:a9f18ff3-17fa-419d-8966-abe4b992312b",
-          "locationHint": "https://github.com/spdx/spdx-examples/software/example7/example7-golang.spdx3.json",
+          "locationHint": "https://raw.githubusercontent.com/spdx/spdx-examples/refs/heads/master/software/example7/spdx3.0/example7-golang.spdx3.json",
           "verifiedUsing": [
             {
               "type": "Hash",
               "algorithm": "sha256",
-              "hashValue": "15ed567c36a30fb37f7d19f0f471434b9453909bf62d925194efe713ede62086"
+              "hashValue": "d3a3d88065879e1d6c2c2fd4559841df8a4b9c59d2b2f28d36002bf9aaa468b9"
             }
           ]
         },
         {
           "type": "ExternalMap",
           "externalSpdxId": "urn:uuid:3b2939bf-fcce-4617-a06f-115168870b95",
-          "locationHint": "https://github.com/spdx/spdx-examples/software/example7/example7-golang.spdx3.json",
+          "locationHint": "https://raw.githubusercontent.com/spdx/spdx-examples/refs/heads/master/software/example7/spdx3.0/example7-golang.spdx3.json",
           "verifiedUsing": [
             {
               "type": "Hash",
               "algorithm": "sha256",
-              "hashValue": "15ed567c36a30fb37f7d19f0f471434b9453909bf62d925194efe713ede62086"
+              "hashValue": "d3a3d88065879e1d6c2c2fd4559841df8a4b9c59d2b2f28d36002bf9aaa468b9"
             }
           ]
         },
         {
           "type": "ExternalMap",
           "externalSpdxId": "urn:uuid:e1877974-0aaa-48e6-931f-db4898c543f8",
-          "locationHint": "https://github.com/spdx/spdx-examples/software/example7/example7-go-module.spdx3.json",
+          "locationHint": "https://raw.githubusercontent.com/spdx/spdx-examples/refs/heads/master/software/example7/spdx3.0/example7-go-module.spdx3.json",
           "verifiedUsing": [
             {
               "type": "Hash",
               "algorithm": "sha256",
-              "hashValue": "7bb2343efdccb4a2a2947219c87747673854fc6b550b2f98518af342f8dded17"
+              "hashValue": "644d15987a48a4079f206e08a006cbf83b91f184b0a471f57815e22d8badb7a9"
             }
           ]
         },
         {
            "type": "ExternalMap",
            "externalSpdxId": "urn:uuid:4918b993-36f8-4e75-bf94-2f017575eae5",
-           "locationHint": "https://github.com/spdx/spdx-examples/software/example7/example7-third-party-modules.spdx3.json",
+           "locationHint": "https://raw.githubusercontent.com/spdx/spdx-examples/refs/heads/master/software/example7/spdx3.0/example7-third-party-modules.spdx3.json",
            "verifiedUsing": [
              {
               "type": "Hash",
               "algorithm": "sha256",
-              "hashValue": "0e3532e0773d24d1a3a0a58592effd67daf22ac89282dc18805e1eef23f68dfe"
+              "hashValue": "96f39eb47f4831b46306c78654bb6b52fa6541b3088183f962a1751e38e3b90b"
             }
           ]
         },
         {
           "type": "ExternalMap",
           "externalSpdxId": "urn:uuid:84e4231d-fc1d-4b4e-9609-05781f81fa73",
-          "locationHint": "https://github.com/spdx/spdx-examples/software/example7/example7-third-party-modules.spdx3.json",
+          "locationHint": "https://raw.githubusercontent.com/spdx/spdx-examples/refs/heads/master/software/example7/spdx3.0/example7-third-party-modules.spdx3.json",
           "verifiedUsing": [
             {
               "type": "Hash",
               "algorithm": "sha256",
-              "hashValue": "0e3532e0773d24d1a3a0a58592effd67daf22ac89282dc18805e1eef23f68dfe"
+              "hashValue": "96f39eb47f4831b46306c78654bb6b52fa6541b3088183f962a1751e38e3b90b"
             }
           ]
         }
