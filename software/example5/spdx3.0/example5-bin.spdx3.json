@@ -77,19 +77,19 @@
       "verifiedUsing" : [ {
         "type" : "Hash",
         "algorithm" : "sha1",
-        "hashValue" : "c7ecde060983373ace6ff9cfd1ddc7ccd5ce5e29"
+        "hashValue" : "40ecab4e4bc4ad4a1f16e1ccdeeb6ea00ebe2373"
       } ],
       "externalSpdxId" : "https://swinslow.net/spdx-examples/example5/hello-go-src-v2#SPDXRef-hello-go-src",
-      "locationHint" : "https://swinslow.net/spdx-examples/example5/hello-go-src-v2"
+      "locationHint" : "https://raw.githubusercontent.com/nokia/spdx-examples/refs/heads/master/software/example5/spdx3.0/example5-src.spdx3.json"
     }, {
       "type" : "ExternalMap",
       "verifiedUsing" : [ {
         "type" : "Hash",
         "algorithm" : "sha1",
-        "hashValue" : "c7ecde060983373ace6ff9cfd1ddc7ccd5ce5e29"
+        "hashValue" : "40ecab4e4bc4ad4a1f16e1ccdeeb6ea00ebe2373"
       } ],
       "externalSpdxId" : "https://swinslow.net/spdx-examples/example5/hello-go-src-v2#SPDXRef-Makefile",
-      "locationHint" : "https://swinslow.net/spdx-examples/example5/hello-go-src-v2"
+      "locationHint" : "https://raw.githubusercontent.com/nokia/spdx-examples/refs/heads/master/software/example5/spdx3.0/example5-src.spdx3.json"
     } ],
     "name" : "hello-go-bin",
     "namespaceMap" : [ {

@@ -114,55 +114,55 @@
       "verifiedUsing" : [ {
         "type" : "Hash",
         "algorithm" : "sha1",
-        "hashValue" : "58e4a6d5745f032b9788142e49edee1b508c7ac5"
+        "hashValue" : "f80e09958070ae0d80cd6207920cfc747dafd754"
       } ],
       "externalSpdxId" : "https://swinslow.net/spdx-examples/example6/go-lib-v2#SPDXRef-Package-go-compiler",
-      "locationHint" : "https://swinslow.net/spdx-examples/example6/go-lib-v2"
+      "locationHint" : "https://raw.githubusercontent.com/nokia/spdx-examples/refs/heads/master/software/example6/spdx3.0/example6-lib.spdx3.json"
     }, {
 	"type" : "ExternalMap",
       "verifiedUsing" : [ {
         "type" : "Hash",
         "algorithm" : "sha1",
-        "hashValue" : "58e4a6d5745f032b9788142e49edee1b508c7ac5"
+        "hashValue" : "f80e09958070ae0d80cd6207920cfc747dafd754"
       } ],
       "externalSpdxId" : "https://swinslow.net/spdx-examples/example6/go-lib-v2#SPDXRef-Package-go.fmt",
-      "locationHint" : "https://swinslow.net/spdx-examples/example6/go-lib-v2"
+      "locationHint" : "https://raw.githubusercontent.com/nokia/spdx-examples/refs/heads/master/software/example6/spdx3.0/example6-lib.spdx3.json"
     }, {
 	"type" : "ExternalMap",
       "verifiedUsing" : [ {
         "type" : "Hash",
         "algorithm" : "sha1",
-        "hashValue" : "58e4a6d5745f032b9788142e49edee1b508c7ac5"
+        "hashValue" : "f80e09958070ae0d80cd6207920cfc747dafd754"
       } ],
       "externalSpdxId" : "https://swinslow.net/spdx-examples/example6/go-lib-v2#SPDXRef-Package-go.reflect",
-      "locationHint" : "https://swinslow.net/spdx-examples/example6/go-lib-v2"
+      "locationHint" : "https://raw.githubusercontent.com/nokia/spdx-examples/refs/heads/master/software/example6/spdx3.0/example6-lib.spdx3.json"
     }, {
 	"type" : "ExternalMap",
       "verifiedUsing" : [ {
         "type" : "Hash",
         "algorithm" : "sha1",
-        "hashValue" : "58e4a6d5745f032b9788142e49edee1b508c7ac5"
+        "hashValue" : "f80e09958070ae0d80cd6207920cfc747dafd754"
       } ],
       "externalSpdxId" : "https://swinslow.net/spdx-examples/example6/go-lib-v2#SPDXRef-Package-go.strconv",
-      "locationHint" : "https://swinslow.net/spdx-examples/example6/go-lib-v2"
+      "locationHint" : "https://raw.githubusercontent.com/nokia/spdx-examples/refs/heads/master/software/example6/spdx3.0/example6-lib.spdx3.json"
     }, {
 	"type" : "ExternalMap",
       "verifiedUsing" : [ {
         "type" : "Hash",
         "algorithm" : "sha1",
-        "hashValue" : "b3018ddb18802a56b60ad839c98d279687b60bd6"
+        "hashValue" : "1073011182df2f8d98e9794f632c97611dfbd18e"
       } ],
       "externalSpdxId" : "https://swinslow.net/spdx-examples/example6/hello-go-src-v2#SPDXRef-hello-go-src",
-      "locationHint" : "https://swinslow.net/spdx-examples/example6/hello-go-src-v2"
+      "locationHint" : "https://raw.githubusercontent.com/nokia/spdx-examples/refs/heads/master/software/example6/spdx3.0/example6-src.spdx3.json"
     }, {
       "type" : "ExternalMap",
       "verifiedUsing" : [ {
         "type" : "Hash",
         "algorithm" : "sha1",
-        "hashValue" : "b3018ddb18802a56b60ad839c98d279687b60bd6"
+        "hashValue" : "1073011182df2f8d98e9794f632c97611dfbd18e"
       } ],
       "externalSpdxId" : "https://swinslow.net/spdx-examples/example6/hello-go-src-v2#SPDXRef-Makefile",
-      "locationHint" : "https://swinslow.net/spdx-examples/example6/hello-go-src-v2"
+      "locationHint" : "https://raw.githubusercontent.com/nokia/spdx-examples/refs/heads/master/software/example6/spdx3.0/example6-src.spdx3.json"
     } ],
     "name" : "hello-go-bin",
     "namespaceMap" : [ {
