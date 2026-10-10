@@ -1,0 +1,178 @@
+{
+  "@context" : "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph" : [ {
+    "@id" : "_:creationInfo_0",
+    "type" : "CreationInfo",
+    "specVersion" : "3.0.1",
+    "createdBy" : [ "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd0" ],
+    "createdUsing" : [ "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/additionalToolSPDXRef-gnrtd2", "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/additionalToolSPDXRef-gnrtd1" ],
+    "created" : "2021-08-26T01:47:00Z"
+  }, {
+    "@id" : "_:creationInfo_1",
+    "type" : "CreationInfo",
+    "specVersion" : "3.0.1",
+    "createdBy" : [ "https://spdx.org/licenses/creatoragent/3_26_0" ],
+    "created" : "2024-12-30T00:00:00Z",
+    "comment" : "This is a generated SPDX License object from the SPDX license list"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd3",
+    "type" : "Relationship",
+    "relationshipType" : "describes",
+    "completeness" : "noAssertion",
+    "to" : [ "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd4" ],
+    "from" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/document0",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd5",
+    "type" : "Relationship",
+    "relationshipType" : "contains",
+    "completeness" : "noAssertion",
+    "to" : [ "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd6" ],
+    "from" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd4",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd8",
+    "type" : "Relationship",
+    "relationshipType" : "hasConcludedLicense",
+    "to" : [ "http://spdx.org/licenses/GPL-3.0-or-later" ],
+    "from" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd6",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd9",
+    "type" : "Relationship",
+    "relationshipType" : "hasDeclaredLicense",
+    "to" : [ "http://spdx.org/licenses/GPL-3.0-or-later" ],
+    "from" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd6",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd10",
+    "type" : "Relationship",
+    "relationshipType" : "contains",
+    "completeness" : "noAssertion",
+    "to" : [ "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd11" ],
+    "from" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd4",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd12",
+    "type" : "Relationship",
+    "relationshipType" : "hasConcludedLicense",
+    "to" : [ "http://spdx.org/licenses/GPL-3.0-or-later" ],
+    "from" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd11",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd13",
+    "type" : "Relationship",
+    "relationshipType" : "hasDeclaredLicense",
+    "to" : [ "http://spdx.org/licenses/GPL-3.0-or-later" ],
+    "from" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd11",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd14",
+    "type" : "Relationship",
+    "relationshipType" : "hasConcludedLicense",
+    "to" : [ "https://spdx.org/rdf/3.0.1/terms/ExpandedLicensing/NoAssertionLicense" ],
+    "from" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd4",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd15",
+    "type" : "Relationship",
+    "relationshipType" : "hasDeclaredLicense",
+    "to" : [ "http://spdx.org/licenses/GPL-3.0-or-later" ],
+    "from" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd4",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/document0",
+    "type" : "SpdxDocument",
+    "dataLicense" : "http://spdx.org/licenses/CC0-1.0",
+    "rootElement" : [ "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd4" ],
+    "name" : "hello-src",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/additionalToolSPDXRef-gnrtd1",
+    "type" : "Tool",
+    "name" : "github.com/spdx/tools-golang/builder",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/additionalToolSPDXRef-gnrtd2",
+    "type" : "Tool",
+    "name" : "github.com/spdx/tools-golang/idsearcher",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://spdx.org/licenses/creatoragent/3_26_0",
+    "type" : "Agent",
+    "description" : "This object is created and maintained by the SPDX legal team (https://spdx.dev/engage/participate/legal-team/)",
+    "name" : "SPDX Legal Team",
+    "creationInfo" : "_:creationInfo_1"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd7",
+    "type" : "LifecycleScopedRelationship",
+    "relationshipType" : "usesTool",
+    "scope" : "build",
+    "to" : [ "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd6" ],
+    "completeness" : "noAssertion",
+    "from" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd4",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd0",
+    "type" : "Person",
+    "externalIdentifier" : [ {
+      "type" : "ExternalIdentifier",
+      "identifier" : "steve@swinslow.net",
+      "externalIdentifierType" : "email"
+    } ],
+    "name" : "Steve Winslow",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd6",
+    "type" : "software_File",
+    "software_copyrightText" : "NOASSERTION",
+    "verifiedUsing" : [ {
+      "type" : "Hash",
+      "algorithm" : "sha1",
+      "hashValue" : "69a2e85696fff1865c3f0686d6c3824b59915c80"
+    }, {
+      "type" : "Hash",
+      "algorithm" : "sha256",
+      "hashValue" : "5da19033ba058e322e21c90e6d6d859c90b1b544e7840859c12cae5da005e79c"
+    }, {
+      "type" : "Hash",
+      "algorithm" : "md5",
+      "hashValue" : "559424589a4f3f75fd542810473d8bc1"
+    } ],
+    "name" : "./Makefile",
+    "software_primaryPurpose" : "source",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd11",
+    "type" : "software_File",
+    "software_copyrightText" : "Copyright Contributors to the spdx-examples project.",
+    "verifiedUsing" : [ {
+      "type" : "Hash",
+      "algorithm" : "sha256",
+      "hashValue" : "b4e5ca56d1f9110ca94ed0bf4e6d9ac11c2186eb7cd95159c6fdb50e8db5a823"
+    }, {
+      "type" : "Hash",
+      "algorithm" : "md5",
+      "hashValue" : "935054fe899ca782e11003bbae5e166c"
+    }, {
+      "type" : "Hash",
+      "algorithm" : "sha1",
+      "hashValue" : "20862a6d08391d07d09344029533ec644fac6b21"
+    } ],
+    "name" : "./hello.c",
+    "software_primaryPurpose" : "source",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://swinslow.net/spdx-examples/example2/hello-src-v3-specv3/SPDXRef-gnrtd4",
+    "type" : "software_Package",
+    "software_copyrightText" : "NOASSERTION",
+    "software_downloadLocation" : "git+https://github.com/swinslow/spdx-examples.git#example2/content/src",
+    "verifiedUsing" : [ {
+      "type" : "PackageVerificationCode",
+      "algorithm" : "sha1",
+      "hashValue" : "c6cb0949d7cd7439fce8690262a0946374824639"
+    } ],
+    "name" : "hello-src",
+    "creationInfo" : "_:creationInfo_0"
+  } ]
+}
