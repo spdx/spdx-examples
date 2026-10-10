@@ -1,0 +1,262 @@
+{
+    "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.0.1",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#Person1"
+            ],
+            "created": "2024-10-15T00:00:00Z"
+        },
+        {
+            "type": "Person",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#Person1",
+            "creationInfo": "_:creationinfo",
+            "name": "NLP Research Team",
+            "externalIdentifier": [
+                {
+                    "type": "ExternalIdentifier",
+                    "externalIdentifierType": "other",
+                    "identifier": "nlp-research",
+                    "identifierLocator": [
+                        "https://github.com/example-org/nlp-research"
+                    ],
+                    "issuingAuthority": "GitHub"
+                }
+            ]
+        },
+        {
+            "type": "SpdxDocument",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "ai",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#SBOM1"
+            ]
+        },
+        {
+            "type": "software_Sbom",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#SBOM1",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "ai",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#AIPackage1"
+            ],
+            "software_sbomType": [
+                "analyzed"
+            ]
+        },
+        {
+            "type": "ai_AIPackage",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#AIPackage1",
+            "creationInfo": "_:creationinfo",
+            "name": "LegalBERT-Contracts",
+            "summary": "BERT fine-tuned on contract clauses for clause type classification.",
+            "description": "A BERT-base model fine-tuned on a labeled corpus of commercial contract clauses. Classifies clauses into 15 legal clause types (e.g., liability, indemnification, governing law, payment terms). Developed to support contract review automation.",
+            "software_packageVersion": "1.0.0",
+            "software_primaryPurpose": "model",
+            "software_downloadLocation": "https://huggingface.co/example-org/legalbert-contracts",
+            "software_copyrightText": "Copyright 2024 Example Organization",
+            "ai_typeOfModel": [
+                "transformer",
+                "fine-tuned",
+                "supervised",
+                "text classification"
+            ],
+            "ai_domain": [
+                "natural language processing",
+                "legal text analysis",
+                "contract review"
+            ],
+            "ai_informationAboutTraining": "Fine-tuned from bert-base-uncased (HuggingFace) for 5 epochs on the ContractClauses-v2 dataset. AdamW optimizer with linear learning rate warmup. Mixed precision (fp16) training on 2x NVIDIA A100 GPUs. Reproducibility: fixed random seed 42 throughout.",
+            "ai_hyperparameter": [
+                {
+                    "type": "DictionaryEntry",
+                    "key": "baseModel",
+                    "value": "bert-base-uncased"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "learningRate",
+                    "value": "2e-5"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "batchSize",
+                    "value": "32"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "epochs",
+                    "value": "5"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "warmupSteps",
+                    "value": "500"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "weightDecay",
+                    "value": "0.01"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "maxSeqLength",
+                    "value": "512"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "randomSeed",
+                    "value": "42"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "optimizer",
+                    "value": "AdamW"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "lrScheduler",
+                    "value": "linear_with_warmup"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "precision",
+                    "value": "fp16"
+                }
+            ],
+            "ai_modelDataPreprocessing": [
+                "Clause boundary detection and segmentation using sentence splitter",
+                "Tokenization with bert-base-uncased WordPiece tokenizer",
+                "Truncation and padding to max sequence length 512",
+                "Label encoding to integer indices (0-14)"
+            ],
+            "ai_modelExplainability": [
+                "LIME local explanations available via companion script explain.py",
+                "Attention weights logged for each inference for human review"
+            ],
+            "ai_metric": [
+                {
+                    "type": "DictionaryEntry",
+                    "key": "accuracy",
+                    "value": "0.913"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "macro-F1",
+                    "value": "0.891"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "weighted-F1",
+                    "value": "0.909"
+                }
+            ],
+            "ai_useSensitivePersonalInformation": "no",
+            "ai_limitation": "Performance varies across legal jurisdictions. Trained primarily on US and UK commercial contracts. Performance on civil law jurisdictions or non-English contracts is not validated."
+        },
+        {
+            "type": "dataset_DatasetPackage",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#DatasetPackage1",
+            "creationInfo": "_:creationinfo",
+            "name": "ContractClauses-v2",
+            "description": "Annotated corpus of 42,000 contract clauses from US and UK commercial agreements, labeled across 15 clause types by legal experts.",
+            "software_packageVersion": "2.0",
+            "software_primaryPurpose": "data",
+            "dataset_datasetType": [
+                "text"
+            ],
+            "dataset_datasetSize": 524288000,
+            "dataset_datasetAvailability": "registration",
+            "dataset_confidentialityLevel": "green",
+            "dataset_dataCollectionProcess": "Clauses extracted from publicly filed commercial contracts on SEC EDGAR and UK Companies House. Manual annotation by 3 qualified legal professionals with inter-annotator agreement (Cohen's kappa = 0.87).",
+            "dataset_knownBias": [
+                "Overrepresentation of technology sector and financial services contracts",
+                "Underrepresentation of SME contracts and non-English law jurisdictions"
+            ],
+            "dataset_hasSensitivePersonalInformation": "no",
+            "comment": "SPDX 3.0 NOTE: 'dataset_datasetSize' (value: 524288000 bytes) is DEPRECATED in SPDX 3.1 - use 'software_artifactSize' instead (same unit: bytes)."
+        },
+        {
+            "type": "software_Package",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#Package1",
+            "creationInfo": "_:creationinfo",
+            "name": "bert-base-uncased",
+            "summary": "Base BERT model (uncased) from Google, used as fine-tuning foundation.",
+            "software_packageVersion": "4.35.0",
+            "software_primaryPurpose": "model",
+            "software_downloadLocation": "https://huggingface.co/bert-base-uncased",
+            "externalIdentifier": [
+                {
+                    "type": "ExternalIdentifier",
+                    "externalIdentifierType": "other",
+                    "identifier": "bert-base-uncased",
+                    "identifierLocator": [
+                        "https://huggingface.co/bert-base-uncased"
+                    ],
+                    "issuingAuthority": "HuggingFace Hub"
+                }
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#Relationship1",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "trainedOn",
+            "from": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#AIPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#DatasetPackage1"
+            ],
+            "description": "LegalBERT-Contracts was fine-tuned on ContractClauses-v2."
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#Relationship2",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "dependsOn",
+            "from": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#AIPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#Package1"
+            ],
+            "description": "LegalBERT-Contracts was fine-tuned from bert-base-uncased."
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#Relationship3",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasDeclaredLicense",
+            "from": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#AIPackage1",
+            "to": [
+                "https://spdx.org/licenses/Apache-2.0"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#Relationship4",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasConcludedLicense",
+            "from": "https://spdx.org/spdxdocs/ai-example04-a1b2c3d4-e5f6-7890-abcd-000000004001#AIPackage1",
+            "to": [
+                "https://spdx.org/licenses/Apache-2.0"
+            ]
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/licenses/Apache-2.0",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "Apache-2.0",
+            "simplelicensing_licenseListVersion": "3.25.0"
+        }
+    ]
+}
