@@ -1,0 +1,132 @@
+{
+    "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.0.1",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#Organization1"
+            ],
+            "created": "2024-09-01T00:00:00Z"
+        },
+        {
+            "type": "Organization",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#Organization1",
+            "creationInfo": "_:creationinfo",
+            "name": "MedTech Imaging Solutions"
+        },
+        {
+            "type": "SpdxDocument",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "ai"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#SBOM1"
+            ]
+        },
+        {
+            "type": "software_Sbom",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#SBOM1",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "ai"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#AIPackage1"
+            ],
+            "software_sbomType": [
+                "analyzed"
+            ]
+        },
+        {
+            "type": "ai_AIPackage",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#AIPackage1",
+            "creationInfo": "_:creationinfo",
+            "name": "RetinaScan AI",
+            "summary": "AI model for automated diabetic retinopathy grading from fundus photographs.",
+            "description": "A convolutional neural network that classifies diabetic retinopathy severity (no DR, mild, moderate, severe, proliferative) from retinal fundus images. Intended for use as a decision-support tool under ophthalmologist supervision.",
+            "software_packageVersion": "2.1.0",
+            "software_primaryPurpose": "model",
+            "software_downloadLocation": "https://example.com/retinascan-ai",
+            "software_copyrightText": "Copyright 2024 MedTech Imaging Solutions",
+            "ai_typeOfModel": [
+                "convolutional neural network",
+                "supervised"
+            ],
+            "ai_domain": [
+                "medical imaging",
+                "ophthalmology",
+                "diabetic retinopathy screening"
+            ],
+            "ai_limitation": "Performance may degrade on images captured with equipment not represented in training data. Not validated for pediatric patients or patients with co-existing ocular conditions other than diabetic retinopathy. Requires image quality score above threshold before classification.",
+            "ai_safetyRiskAssessment": "high",
+            "ai_standardCompliance": [
+                "IEC 62304:2006+AMD1:2015",
+                "ISO 14971:2019",
+                "EU MDR 2017/745 Class IIb"
+            ],
+            "ai_informationAboutApplication": "Deployed as a triage tool within ophthalmology screening workflows. A trained clinician reviews all AI-generated classifications before clinical decisions are made. The system flags images below quality threshold for re-capture.",
+            "ai_informationAboutTraining": "Trained on a curated dataset of 180,000 fundus photographs with expert grading labels following the International Clinical Diabetic Retinopathy Disease Severity Scale. Class imbalance addressed via weighted sampling. Transfer learning from ImageNet-pretrained backbone.",
+            "ai_modelDataPreprocessing": [
+                "CLAHE contrast enhancement",
+                "Center crop to optic disc region",
+                "Resize to 512x512 pixels",
+                "Normalization to ImageNet mean and standard deviation"
+            ],
+            "ai_modelExplainability": [
+                "Grad-CAM saliency maps generated at inference time to highlight retinal regions influencing the classification",
+                "Uncertainty estimation via MC Dropout (20 forward passes)"
+            ],
+            "ai_metric": [
+                {
+                    "type": "DictionaryEntry",
+                    "key": "AUC-ROC (referable DR)",
+                    "value": "0.97"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "sensitivity",
+                    "value": "0.95"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "specificity",
+                    "value": "0.93"
+                }
+            ],
+            "ai_useSensitivePersonalInformation": "yes"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#Relationship1",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasDeclaredLicense",
+            "from": "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#AIPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#LicenseExpression1"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#Relationship2",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasConcludedLicense",
+            "from": "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#AIPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#LicenseExpression1"
+            ]
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example03-a1b2c3d4-e5f6-7890-abcd-000000003001#LicenseExpression1",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "LicenseRef-MedTech-Proprietary-2024",
+            "comment": "Proprietary license. Distribution restricted to authorized healthcare institutions."
+        }
+    ]
+}

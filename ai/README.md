@@ -14,14 +14,16 @@ Directories of the form `example##` are structured as follows:
 
 - `content/`: contains the example's content (data files, source code, etc.)
 - `spdx3.0/`: contains one or more SPDX documents for the example
+- `spdx3.1/`: contains SPDX 3.1 documents for the example
 - `README.md`: more details about the particular example
 
 ## Examples
 
-|  # | Sources | Binaries | Data | SPDX | Comments |
-|----|---------|----------|------|------|----------|
+| # | Sources | Binaries | Data | SPDX | Comments |
+| - | ------- | -------- | ---- | ---- | -------- |
 | [1](./example01/) | - | - | - | 1 document | Demonstrating `dependsOn`, `testedOn`, and `trainedOn` relationships |
 | [2](./example02/) | 4 Python files | 1 model file | 3 data files | 1 document | Demonstrating `generates`, `hasDataFile`, and `hasDocumentation` (lifecycle-scoped) relationships |
+| [3](./example03/) | - | - | - | 1 document | Demonstrating `/AI/safetyRiskAssessment`, `/AI/standardCompliance`, and `/AI/limitation` (medical AI) |
 
 ## Implementing SBOM for AI systems
 
