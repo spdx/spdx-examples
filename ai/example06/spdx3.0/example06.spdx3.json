@@ -1,0 +1,193 @@
+{
+    "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.0.1",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/ai-example06-a1b2c3d4-e5f6-7890-abcd-000000006001#Organization1"
+            ],
+            "created": "2024-12-01T00:00:00Z"
+        },
+        {
+            "type": "Organization",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example06-a1b2c3d4-e5f6-7890-abcd-000000006001#Organization1",
+            "creationInfo": "_:creationinfo",
+            "name": "Sustainable AI Initiative"
+        },
+        {
+            "type": "SpdxDocument",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example06-a1b2c3d4-e5f6-7890-abcd-000000006001",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "ai"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/ai-example06-a1b2c3d4-e5f6-7890-abcd-000000006001#SBOM1"
+            ]
+        },
+        {
+            "type": "software_Sbom",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example06-a1b2c3d4-e5f6-7890-abcd-000000006001#SBOM1",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "ai"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/ai-example06-a1b2c3d4-e5f6-7890-abcd-000000006001#AIPackage1"
+            ],
+            "software_sbomType": [
+                "analyzed"
+            ]
+        },
+        {
+            "type": "ai_AIPackage",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example06-a1b2c3d4-e5f6-7890-abcd-000000006001#AIPackage1",
+            "creationInfo": "_:creationinfo",
+            "name": "EcoVision-Large",
+            "summary": "Large-scale satellite image classifier for land use and deforestation monitoring, with comprehensive energy consumption disclosure.",
+            "description": "A vision transformer model (ViT-Large/16) trained to classify land use from multispectral satellite imagery into 12 categories including forest, cropland, urban, wetland, and deforested areas. Developed with sustainability principles: energy consumption measured and disclosed at all lifecycle stages to support carbon footprint assessment as required under emerging AI transparency regulations.",
+            "software_packageVersion": "2.0.0",
+            "software_primaryPurpose": "model",
+            "software_downloadLocation": "https://example.com/models/ecovision-large",
+            "software_copyrightText": "Copyright 2024 Sustainable AI Initiative",
+            "ai_typeOfModel": [
+                "vision transformer",
+                "supervised",
+                "multi-class classification"
+            ],
+            "ai_domain": [
+                "remote sensing",
+                "environmental monitoring",
+                "land use classification",
+                "deforestation detection"
+            ],
+            "ai_informationAboutTraining": "Trained from scratch on BigEarthNet-MM (590,326 Sentinel-1 and Sentinel-2 patch pairs) plus a proprietary dataset of 120,000 labeled multispectral tiles. Training ran for 200 epochs on a cluster of 32x A100 80GB GPUs over 14 days. Energy measured using NVIDIA NVML power sampling at 100ms intervals and datacenter PUE factor of 1.3.",
+            "ai_informationAboutApplication": "Deployed as a monthly batch inference job processing new satellite imagery tiles. Inference runs on 4x A10 GPUs. Results fed into a deforestation alert dashboard used by environmental NGOs and government agencies.",
+            "ai_energyConsumption": {
+                "type": "ai_EnergyConsumption",
+                "ai_trainingEnergyConsumption": [
+                    {
+                        "type": "ai_EnergyConsumptionDescription",
+                        "ai_energyQuantity": "4823.5",
+                        "ai_energyUnit": "kilowattHour"
+                    }
+                ],
+                "ai_finetuningEnergyConsumption": [
+                    {
+                        "type": "ai_EnergyConsumptionDescription",
+                        "ai_energyQuantity": "187.2",
+                        "ai_energyUnit": "kilowattHour"
+                    }
+                ],
+                "ai_inferenceEnergyConsumption": [
+                    {
+                        "type": "ai_EnergyConsumptionDescription",
+                        "ai_energyQuantity": "0.0041",
+                        "ai_energyUnit": "kilowattHour"
+                    }
+                ]
+            },
+            "ai_hyperparameter": [
+                {
+                    "type": "DictionaryEntry",
+                    "key": "architecture",
+                    "value": "ViT-Large/16"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "patchSize",
+                    "value": "16"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "imageSize",
+                    "value": "224"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "numClasses",
+                    "value": "12"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "learningRate",
+                    "value": "1e-3"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "batchSize",
+                    "value": "512"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "epochs",
+                    "value": "200"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "optimizer",
+                    "value": "AdamW"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "lrSchedule",
+                    "value": "cosine_annealing"
+                }
+            ],
+            "ai_metric": [
+                {
+                    "type": "DictionaryEntry",
+                    "key": "overall_accuracy",
+                    "value": "0.942"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "mean_IoU",
+                    "value": "0.871"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "deforestation_recall",
+                    "value": "0.963"
+                }
+            ],
+            "ai_standardCompliance": [
+                "ISO/IEC 42001:2023"
+            ],
+            "ai_useSensitivePersonalInformation": "no",
+            "ai_autonomyType": "noAssertion",
+            "comment": "SPDX 3.0 NOTE: This example demonstrates the 'ai_energyConsumption' structure covering all three lifecycle stages: training (4,823.5 kWh), fine-tuning (187.2 kWh), and inference per batch (0.0041 kWh). Energy transparency is increasingly required under AI governance frameworks such as the EU AI Act and ISO/IEC 42001. Also: 'ai_autonomyType' is DEPRECATED in SPDX 3.1 - use 'isoAutomationLevel' instead."
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example06-a1b2c3d4-e5f6-7890-abcd-000000006001#Relationship1",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasDeclaredLicense",
+            "from": "https://spdx.org/spdxdocs/ai-example06-a1b2c3d4-e5f6-7890-abcd-000000006001#AIPackage1",
+            "to": [
+                "https://spdx.org/licenses/Apache-2.0"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example06-a1b2c3d4-e5f6-7890-abcd-000000006001#Relationship2",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasConcludedLicense",
+            "from": "https://spdx.org/spdxdocs/ai-example06-a1b2c3d4-e5f6-7890-abcd-000000006001#AIPackage1",
+            "to": [
+                "https://spdx.org/licenses/Apache-2.0"
+            ]
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/licenses/Apache-2.0",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "Apache-2.0",
+            "simplelicensing_licenseListVersion": "3.25.0"
+        }
+    ]
+}

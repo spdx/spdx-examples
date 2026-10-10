@@ -22,6 +22,7 @@ Directories of the form `example##` are structured as follows:
 |----|---------|----------|------|------|----------|
 | [1](./example01/) | - | - | - | 1 document | Demonstrating `dependsOn`, `testedOn`, and `trainedOn` relationships |
 | [2](./example02/) | 4 Python files | 1 model file | 3 data files | 1 document | Demonstrating `generates`, `hasDataFile`, and `hasDocumentation` (lifecycle-scoped) relationships |
+| [6](./example06/) | - | - | - | 1 document | `/AI/energyConsumption` (training + finetuning + inference) |
 
 ## Implementing SBOM for AI systems
 
