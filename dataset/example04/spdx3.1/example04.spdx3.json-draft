@@ -1,0 +1,158 @@
+{
+    "@context": "https://spdx.org/rdf/3.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.1",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#Organization1"
+            ],
+            "created": "2025-01-01T00:00:00Z"
+        },
+        {
+            "type": "Organization",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#Organization1",
+            "creationInfo": "_:creationinfo",
+            "name": "Industrial IoT Consortium"
+        },
+        {
+            "type": "SpdxDocument",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#SBOM1"
+            ]
+        },
+        {
+            "type": "software_Sbom",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#SBOM1",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#DatasetPackage1"
+            ],
+            "software_sbomType": [
+                "analyzed"
+            ]
+        },
+        {
+            "type": "dataset_DatasetPackage",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#DatasetPackage1",
+            "creationInfo": "_:creationinfo",
+            "name": "PumpHealth-Sensors",
+            "summary": "Time series sensor dataset from industrial centrifugal pumps for predictive maintenance model training.",
+            "description": "Multivariate time series data collected from 47 centrifugal pumps at two manufacturing facilities over 18 months. Each pump is instrumented with 8 sensor types sampled at 1-second intervals. The dataset includes labeled fault events (bearing wear, seal degradation, impeller imbalance, cavitation) and normal operation periods. Designed for training anomaly detection and remaining useful life (RUL) prediction models.",
+            "software_packageVersion": "3.1",
+            "software_primaryPurpose": "data",
+            "software_downloadLocation": "https://example.com/datasets/pumphealth-sensors",
+            "software_copyrightText": "Copyright 2024 Industrial IoT Consortium",
+            "software_artifactSize": 5798205850,
+            "builtTime": "2024-01-01T00:00:00Z",
+            "releaseTime": "2024-09-15T00:00:00Z",
+            "intendedUse": "Training predictive maintenance models for industrial centrifugal pumps. Benchmarking of anomaly detection and remaining useful life algorithms.",
+            "dataset_datasetType": [
+                "sensor",
+                "timestamp"
+            ],
+            "dataset_sensor": [
+                {
+                    "type": "DictionaryEntry",
+                    "key": "vibration",
+                    "value": "Triaxial accelerometer; range 0–50 mm/s RMS; calibrated every 6 months"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "bearing_temperature",
+                    "value": "Type-K thermocouple; range -40–200 °C; ±0.5 °C accuracy"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "inlet_pressure",
+                    "value": "Piezoresistive transducer; range 0–10 bar; calibrated annually"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "outlet_pressure",
+                    "value": "Piezoresistive transducer; range 0–25 bar; calibrated annually"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "flow_rate",
+                    "value": "Electromagnetic flow meter; range 0–500 m³/h; ±0.3% full scale"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "motor_current",
+                    "value": "Hall-effect current clamp; range 0–100 A; ±0.5% accuracy"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "shaft_speed",
+                    "value": "Magnetic encoder; range 0–3600 RPM; resolution 1 RPM"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "fluid_temperature",
+                    "value": "PT100 RTD; range -20–150 °C; ±0.1 °C accuracy"
+                }
+            ],
+            "dataset_datasetAvailability": "registration",
+            "dataset_confidentialityLevel": "green",
+            "dataset_dataCollectionProcess": "Sensors installed and calibrated by certified technicians. Data logged via OPC-UA to a SCADA system, then extracted in CSV format at 1-second resolution. Fault events manually labeled by maintenance engineers from work order records and physical inspections. Normal/fault label verified by at least two engineers per event.",
+            "dataset_dataPreprocessing": [
+                "Missing values (sensor dropout <0.5% of records) filled by linear interpolation",
+                "Outliers beyond 5 sigma removed and flagged in a companion outlier log",
+                "Synchronized across sensors using nearest-timestamp alignment within 50ms window",
+                "Train/validation/test split: 70/15/15 by pump ID (not by time) to prevent data leakage"
+            ],
+            "dataset_datasetUpdateMechanism": "Quarterly snapshots appended. Each release includes new labeled fault events from the previous quarter. Historical data unchanged; version number incremented on each release.",
+            "dataset_knownBias": [
+                "Fault events are underrepresented relative to normal operation (ratio approximately 1:23)",
+                "Both facilities use pumps from the same manufacturer family; generalization to other manufacturers not validated"
+            ],
+            "dataset_hasSensitivePersonalInformation": "no",
+            "verifiedUsing": [
+                {
+                    "type": "Hash",
+                    "algorithm": "sha256",
+                    "hashValue": "c9e5d04a3ef67b82248a5c69e3f0d2e1b4c7a0f2d3e4f5a6b7c8d9e0f1a2b3c4"
+                }
+            ],
+            "comment": "SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 5798205850' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 5798205850' (~5.4 GB) in SPDX 3.1. (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse'. Compare with spdx3.0/example04.spdx3.json."
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#Relationship1",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasDeclaredLicense",
+            "from": "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#DatasetPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#LicenseExpression1"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#Relationship2",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasConcludedLicense",
+            "from": "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#DatasetPackage1",
+            "to": [
+                "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#LicenseExpression1"
+            ]
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/spdxdocs/dataset-example04-b1b2c3d4-e5f6-7890-abcd-000000004002#LicenseExpression1",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "LicenseRef-PumpHealth-Research"
+        }
+    ]
+}
