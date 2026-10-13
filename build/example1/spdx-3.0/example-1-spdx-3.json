@@ -1,0 +1,220 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+  "@graph": [
+    {
+      "type": "build_Build",
+      "spdxId": "urn:build-5720104418-5449a1c6-7ee2-455c-88b1-8a7486999ec4",
+      "creationInfo": "_:creationinfo",
+      "name": "build-github.com/pypa/wheel/actions/runs/8238629017",
+      "buildId": "github.com/pypa/wheel/actions/runs/8238629017",
+      "configSourceEntrypoint": "publish",
+      "configSourceUri": "https://github.com/pypa/wheel/blob/0.43.0/.github/workflows/publish.yml",
+      "configSourceDigest": "sha256:b547ebcce03a462d8501af34847afcec1d999a8a1a5f6a141526a830b0ace550",
+      "parameters": {
+        "tag": "refs/tags/0.43.0"
+      },
+      "buildStartTime": "Wed, 09 Feb 2024 20:43:15 GMT",
+      "buildEndTime": "Wed, 09 Feb 2024 20:44:10 GMT",
+      "buildType": "http://github.com/action",
+      "environment": {},
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "comment": "Log:pipelines.actions.githubusercontent.com/serviceHosts/e1601983-7498-4146-8b7e-d980acc528f7/_apis/pipelines/1/runs/475/signedlogcontent/2",
+          "locator": "https://pipelines.actions.githubusercontent.com/serviceHosts/e1601983-7498-4146-8b7e-d980acc528f7/_apis/pipelines/1/runs/475/signedlogcontent/2?urlExpires=2022-11-14T19%3A57%3A18.9879422Z&urlSigningMethod=HMACV1&urlSignature=n8ZX90Vna8QrHHiiZCxMhX1D8oyWMSj5aKxxqDkiREA%3D",
+          "contentType": "text/plain"
+        }
+      ]
+    },
+    {
+      "type": "Person",
+      "spdxId": "urn:alex.gronholm@nextday.fi-d12d2d3e-df16-4ae8-ad5b-1aae5b8afd2c",
+      "creationInfo": "_:creationinfo",
+      "name": "Alex Grönholm",
+      "externalIdentifier": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "other",
+          "identifier": "https://github.com/alex.gronholm"
+        },
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "email",
+          "identifier": "alex.gronholm@nextday.fi"
+        }
+      ]
+    },
+    {
+      "type": "SoftwareAgent",
+      "spdxId": "urn:github.com/pypa/wheel/actions/runs/8238629017-6c108bf5-eb1f-49cb-a908-0001c5b17f43",
+      "creationInfo": "_:creationinfo",
+      "name": "Github Actions",
+      "externalIdentifier": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "urlScheme",
+          "identifier": "https://github.com/pypa/wheel/actions/runs/8238629017"
+        }
+      ]
+    },
+    {
+      "type": "LifecycleScopedRelationship",
+      "spdxId": "urn:build-5720104418-5449a1c6-7ee2-455c-88b1-8a7486999ec4",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:build-5720104418-5449a1c6-7ee2-455c-88b1-8a7486999ec4",
+      "to": [
+        "urn:github.com/pypa/wheel/actions/runs/8238629017-6c108bf5-eb1f-49cb-a908-0001c5b17f43"
+      ],
+      "relationshipType": "invokedBy",
+      "scope": "build"
+    },
+    {
+      "type": "LifecycleScopedRelationship",
+      "spdxId": "urn:acme-relationship-2-4fe40e24-20e3-11ee-be56-0242ac120002",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:build-5720104418-5449a1c6-7ee2-455c-88b1-8a7486999ec4",
+      "to": [
+        "urn:github.com/pypa/wheel/actions/runs/8238629017-6c108bf5-eb1f-49cb-a908-0001c5b17f43"
+      ],
+      "relationshipType": "delegatedTo",
+      "scope": "build"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "file-wheel-0.43.0.tar.gz-f28feac1-28ef-43c0-9a25-1f67f0655fef",
+      "name": "wheel-0.43.0.tar.gz",
+      "contentType": "application/tar+gzip",
+      "fileKind": "file",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "465ef92c69fa5c5da2d1cf8ac40559a8c940886afcef87dcf14b9470862f1d85"
+        },
+        {
+          "type": "Hash",
+          "algorithm": "md5",
+          "hashValue": "387af15d51367a19d834d6db413547d0"
+        },
+        {
+          "type": "Hash",
+          "algorithm": "blake2b256",
+          "hashValue": "b8d6ac9cd92ea2ad502ff7c1ab683806a9deb34711a1e2bd8a59814e8fc27e69"
+        }
+      ]
+    },
+    {
+      "type": "software_File",
+      "name": "wheel-0.43.0-py3-none-any.whl",
+      "spdxId": "file-wheel-0.43.0-py3-none-any.whl-4bd70837-ce4a-4e4f-8e72-68831a69aa6b",
+      "contentType": "application/binary",
+      "fileKind": "file",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "55c570405f142630c6b9f72fe09d9b67cf1477fcf543ae5b8dcb1f5b7377da81"
+        },
+        {
+          "type": "Hash",
+          "algorithm": "md5",
+          "hashValue": "e65b1197e1dfc6bbc8df362935f5943d"
+        },
+        {
+          "type": "Hash",
+          "algorithm": "blake2b256",
+          "hashValue": "7dcdd7460c9a869b16c3dd4e1e403cce337df165368c71d6af229a74699622ce"
+        }
+      ]
+    },
+    {
+      "type": "LifecycleScopedRelationship",
+      "spdxId": "urn:build-5720104418-5449a1c6-7ee2-455c-88b1-8a7486999ec4",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:build-5720104418-5449a1c6-7ee2-455c-88b1-8a7486999ec4",
+      "to": [
+        "file-wheel-0.43.0.tar.gz-f28feac1-28ef-43c0-9a25-1f67f0655fef",
+        "file-wheel-0.43.0-py3-none-any.whl-4bd70837-ce4a-4e4f-8e72-68831a69aa6b"
+      ],
+      "completeness": "complete",
+      "relationshipType": "hasOutputs",
+      "scope": "build"
+    },
+    {
+      "type": "LifecycleScopedRelationship",
+      "spdxId": "urn:build-relationship-06d71be2-3615-4928-b793-efb8399e6c7b",
+      "completeness": "noAssertion",
+      "creationInfo": "_:creationinfo",
+      "relationshipType": "hasHost"
+    },
+    {
+      "type": "software_File",
+      "name": "https://github.com/pypa/wheel/blob/0.43.0/.github/workflows/publish.yml",
+      "spdxId": "file-publish.yml-35ceebd7-236d-471b-99d6-05ab29350fca",
+      "contentType": "application/text",
+      "fileKind": "file",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "b547ebcce03a462d8501af34847afcec1d999a8a1a5f6a141526a830b0ace550"
+        }
+      ]
+    },
+    {
+      "type": "software_Package",
+      "name": "github.com/pypa/wheel",
+      "packageVersion": "0.43.0",
+      "spdxId": "pkg-pypa-wheel-0.43.0-5cd6d810-d255-47bf-a18e-100db39f2255",
+      "primaryPurpose": "source",
+      "downloadLocation": "https://github.com/pypa/wheel/releases/tag/0.43.0",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha1",
+          "hashValue": "fa33dfd01fd665c1fd90097563b34bce4b5527ef"
+        }
+      ]
+    },
+    {
+      "type": "LifecycleScopedRelationship",
+      "spdxId": "urn:build-5720104418-5449a1c6-7ee2-455c-88b1-8a7486999ec4",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:build-5720104418-5449a1c6-7ee2-455c-88b1-8a7486999ec4",
+      "to": [
+        "file-publish.yml-35ceebd7-236d-471b-99d6-05ab29350fca",
+        "pkg-tag-0.43.0-5cd6d810-d255-47bf-a18e-100db39f2255"
+      ],
+      "completeness": "incomplete",
+      "relationshipType": "hasInputs",
+      "scope": "build"
+    },
+    {
+      "type": "LifecycleScopedRelationship",
+      "spdxId": "urn:acme-relationship-819bd99d-e214-48c5-93f9-e3a232a6ba3f",
+      "creationInfo": "_:creationinfo",
+	  "completeness": "noassertion",
+      "relationshipType": "usesTool"
+    },
+    {
+      "type": "CreationInfo",
+      "@id": "_:creationinfo",
+      "specVersion": "3.0.0",
+      "created": "2024-05-02T00:00:00Z"
+    },
+    {
+      "type": "SpdxDocument",
+      "spdxId": "http://spdx.example.com/Document1",
+      "creationInfo": "_:creationinfo",
+      "profileConformance": [
+        "core",
+        "software",
+        "build"
+      ],
+      "rootElement": [
+        "urn:build-5720104418-5449a1c6-7ee2-455c-88b1-8a7486999ec4"
+      ]
+    }
+  ]
+}
+
